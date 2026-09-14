@@ -11,7 +11,9 @@ import {
   Maximize2, 
   SlidersHorizontal,
   Volume2,
-  VolumeX
+  VolumeX,
+  Play,
+  Pause
 } from 'lucide-react';
 import { FIGHTERS } from '../data/fighters';
 
@@ -21,6 +23,7 @@ export default function ChooseYourFighter({ onAddToCart }) {
   const [isDetailsOpen, setIsDetailsOpen] = useState(false);
   const [addedAnimation, setAddedAnimation] = useState(false);
   const [audioMuted, setAudioMuted] = useState(true);
+  const [isAutoplay, setIsAutoplay] = useState(false);
 
   // Smooth scroll and momentum state
   const scrollProgress = useRef(0);
@@ -99,6 +102,19 @@ export default function ChooseYourFighter({ onAddToCart }) {
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [selectedIndex]);
 
+  // Autoplay runway progression
+  useEffect(() => {
+    let timer = null;
+    if (isAutoplay && !isDragging.current) {
+      timer = setInterval(() => {
+        handleNext();
+      }, 3500);
+    }
+    return () => {
+      if (timer) clearInterval(timer);
+    };
+  }, [isAutoplay, selectedIndex, totalFighters]);
+
   // Main GSAP animation loop for cinematic momentum runway physics
   useEffect(() => {
     let animId;
@@ -131,14 +147,14 @@ export default function ChooseYourFighter({ onAddToCart }) {
           const xPos = delta * spacing;
           const absDelta = Math.abs(delta);
 
-          // Center model is grand (1.22x), sides shrink to 0.75x
-          const scale = Math.max(0.75, 1.22 - absDelta * 0.40);
+          // Center model is full grand scale (1.06x), side models scale down to 0.70x
+          const scale = Math.max(0.68, 1.06 - absDelta * 0.36);
           
-          // Center is full opacity (1.0), sides fade to 0.20
-          const opacity = Math.max(0.18, 1 - absDelta * 0.68);
+          // Center is full opacity (1.0), side models fade to ~0.26, distant fade to 0
+          const opacity = Math.max(0, 1 - absDelta * 0.74);
           
           // Progressive optical blur
-          const blur = Math.min(5, absDelta * 2.8);
+          const blur = Math.min(6, absDelta * 2.8);
           
           // Active model always on top
           const zIndex = Math.max(1, 30 - Math.round(absDelta * 10));
@@ -149,6 +165,8 @@ export default function ChooseYourFighter({ onAddToCart }) {
             opacity: opacity,
             filter: `blur(${blur}px)`,
             zIndex: zIndex,
+            transformOrigin: 'top center',
+            pointerEvents: absDelta < 1.2 ? 'auto' : 'none',
           });
         });
       }
@@ -175,7 +193,7 @@ export default function ChooseYourFighter({ onAddToCart }) {
 
   return (
     <section 
-      id="fighter-select" 
+      id="fighters" 
       ref={containerRef}
       onWheel={handleWheel}
       className="py-12 md:py-20 bg-[#faf8f5] relative overflow-hidden select-none"
@@ -210,33 +228,49 @@ export default function ChooseYourFighter({ onAddToCart }) {
             ></div>
           </div>
 
-          {/* 3. Top Studio Header (Exact Mockup Branding & Atelier Code) */}
+          {/* 3. Top Studio Header (Option 1: Modern Zudio Runway & Localized Branding) */}
           <div className="flex items-center justify-between relative z-30">
             
             {/* Left Brand Identity */}
             <div>
-              <span className="font-bodoni text-2xl sm:text-3xl font-semibold tracking-[0.16em] text-neutral-950 uppercase block leading-none">
+              <span className="font-bodoni text-2xl sm:text-3xl font-bold tracking-[0.16em] text-neutral-950 uppercase block leading-none">
                 ZUDIO
               </span>
-              <span className="text-[9px] font-mono tracking-[0.35em] text-neutral-500 uppercase block mt-1 font-semibold">
-                HAUTE COUTURE • PARIS
+              <span className="text-[9px] font-mono tracking-[0.32em] text-[#e83d34] uppercase block mt-1.5 font-bold">
+                SPRING / SUMMER 2026 &bull; INDIA
               </span>
             </div>
 
             {/* Center Status Code Pill */}
-            <div className="hidden sm:flex items-center gap-2 font-mono text-xs uppercase tracking-[0.2em] bg-white/90 backdrop-blur-md px-4 py-1.5 rounded-full border border-neutral-200/90 shadow-sm">
-              <span className="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></span>
-              <span className="font-bold text-neutral-900">CODICE ATELIER BLM-{String(selectedIndex + 1).padStart(2, '0')}V26</span>
+            <div className="hidden sm:flex items-center gap-2 font-mono text-xs uppercase tracking-[0.2em] bg-white/95 backdrop-blur-md px-5 py-2 rounded-full border border-neutral-200/90 shadow-sm">
+              <span className="w-2 h-2 rounded-full bg-[#e83d34] animate-pulse"></span>
+              <span className="font-bold text-neutral-900">TRENDING RUNWAY LOOKS</span>
+              <span className="text-neutral-400 font-bold">&bull;</span>
+              <span className="font-bold text-[#e83d34]">{String(selectedIndex + 1).padStart(2, '0')}</span>
               <span className="text-neutral-400">/ {String(totalFighters).padStart(2, '0')}</span>
             </div>
 
-            {/* Right Atmosphere Toggle */}
+            {/* Right Autoplay / 360° Runway Toggle */}
             <button 
-              onClick={() => setAudioMuted(!audioMuted)}
-              className="p-2 rounded-full text-neutral-600 hover:text-black hover:bg-neutral-200/60 transition-colors hidden md:flex items-center gap-2 text-xs font-mono"
+              onClick={() => setIsAutoplay(!isAutoplay)}
+              className={`px-4 py-2 rounded-full border transition-all flex items-center gap-2 text-xs font-mono cursor-pointer shadow-sm ${
+                isAutoplay 
+                  ? 'bg-neutral-950 text-white border-neutral-950 ring-2 ring-neutral-950/20' 
+                  : 'bg-white/95 text-neutral-700 hover:text-black hover:bg-white border-neutral-300'
+              }`}
+              title={isAutoplay ? "Pause auto-gliding" : "Auto-glide runway models"}
             >
-              {audioMuted ? <VolumeX className="w-4 h-4" /> : <Volume2 className="w-4 h-4 text-amber-600 animate-pulse" />}
-              <span className="text-[11px] uppercase tracking-wider">{audioMuted ? 'Atmosphere: Off' : 'Soundtrack: Live'}</span>
+              {isAutoplay ? (
+                <>
+                  <Pause className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
+                  <span className="text-[10.5px] uppercase tracking-wider font-bold">RUNWAY: LIVE</span>
+                </>
+              ) : (
+                <>
+                  <Play className="w-3.5 h-3.5 text-neutral-500 fill-neutral-500" />
+                  <span className="text-[10.5px] uppercase tracking-wider font-bold">AUTOPLAY RUNWAY</span>
+                </>
+              )}
             </button>
 
           </div>

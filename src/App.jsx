@@ -3,7 +3,6 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import MarqueeBanner from './components/MarqueeBanner';
 import FeaturedCollections from './components/FeaturedCollections';
-import ChooseYourFighter from './components/ChooseYourFighter';
 import CommunitySection from './components/CommunitySection';
 import ContactFaqSection from './components/ContactFaqSection';
 import ProductsPage from './components/ProductsPage';
@@ -191,12 +190,7 @@ export default function App() {
               }}
             />
 
-            {/* 5. Zudio Runway & Atelier Configurator */}
-            <ChooseYourFighter
-              onAddToCart={handleAddToCart}
-            />
-
-            {/* 7. ZUDIO Community + Marquee Ticker 2 */}
+            {/* 6. ZUDIO Community + Marquee Ticker 2 */}
             <CommunitySection />
 
             {/* 8. Editorial Magazine Contact & FAQ Section (Juun.J / Atelier inspired) */}
