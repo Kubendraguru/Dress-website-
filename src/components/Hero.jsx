@@ -207,17 +207,6 @@ export default function Hero({ onAddToCart }) {
           </div>
         </div>
 
-        {/* Left Editorial Description (Under "We Bel" - Updates Smoothly for Active Look) */}
-        <div className="absolute left-2 sm:left-6 md:left-10 top-[52%] sm:top-[50%] max-w-[180px] sm:max-w-[220px] md:max-w-[250px] z-30 text-left pointer-events-auto">
-          <div className="mb-2">
-            <span className="text-[10px] uppercase font-mono tracking-[0.2em] font-semibold text-amber-900 bg-amber-100/80 px-2 py-0.5 rounded-full">
-              {currentOutfit.tag}
-            </span>
-          </div>
-          <p className="text-neutral-800 text-[11px] sm:text-xs md:text-[13px] font-sans font-normal leading-relaxed transition-all duration-300">
-            {currentOutfit.description}
-          </p>
-        </div>
 
         {/* Diagonal Ribbon Banner (Passing Behind Model & Hips - Locked Background) */}
         <div className="absolute inset-x-[-15%] bottom-[16%] sm:bottom-[15%] -rotate-[7deg] pointer-events-none z-10 overflow-hidden">

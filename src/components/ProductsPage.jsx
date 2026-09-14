@@ -261,30 +261,6 @@ export default function ProductsPage({
     }).length;
   };
 
-  const categoryTabs = [
-    { id: 'All', label: 'All', count: getCategoryCount('All') },
-    { id: 'Shirts', label: 'Shirts', count: getCategoryCount('Shirts') },
-    { id: 'T-Shirts', label: 'T-Shirts', count: getCategoryCount('T-Shirts') },
-    { id: 'Pants', label: 'Pants', count: getCategoryCount('Pants') },
-    { id: 'Hoodies', label: 'Hoodies', count: getCategoryCount('Hoodies') },
-    { id: 'Objects', label: 'Objects', count: getCategoryCount('Objects') }
-  ];
-
-  const activeCatalogIndex = Math.max(0, categoryTabs.findIndex((t) => t.id === activeCategory));
-  const catalogTabRefs = useRef([]);
-  const [catalogGliderStyle, setCatalogGliderStyle] = useState({ left: 6, width: 60 });
-
-  // Dynamically update catalog category glider pill position and width
-  useEffect(() => {
-    const activeEl = catalogTabRefs.current[activeCatalogIndex];
-    if (activeEl) {
-      setCatalogGliderStyle({
-        left: activeEl.offsetLeft,
-        width: activeEl.offsetWidth
-      });
-    }
-  }, [activeCatalogIndex, activeCategory, activeGender]);
-
   return (
     <div className="bg-[#fcfbf9] text-neutral-900 min-h-screen selection:bg-neutral-900 selection:text-white font-sans antialiased">
       
@@ -601,51 +577,16 @@ export default function ProductsPage({
           </div>
         </div>
 
-        {/* Navigation Bar with Category Tabs & Dynamic Glider */}
-        <div className="flex flex-col md:flex-row items-center justify-between pb-6 border-b border-neutral-200/80 gap-5">
+        {/* Navigation Bar / Catalog Header */}
+        <div className="flex items-center justify-between pb-6 border-b border-neutral-200/80 gap-5">
           
-          {/* Uiverse.io Dynamic Sliding Glider Tabs */}
-          <div className="overflow-x-auto scrollbar-none py-1 max-w-full">
-            <div className="relative inline-flex items-center bg-white p-1.5 rounded-full shadow-[0_2px_12px_rgba(0,0,0,0.06),0_0_0_1px_rgba(0,0,0,0.06)] border border-neutral-200/80">
-              
-              {/* Dynamic Glider Pill */}
-              <div 
-                className="absolute rounded-full bg-neutral-950 shadow-md transition-all duration-300 ease-out z-0"
-                style={{
-                  left: `${catalogGliderStyle.left}px`,
-                  width: `${catalogGliderStyle.width}px`,
-                  top: '6px',
-                  bottom: '6px'
-                }}
-              />
-
-              {/* Tab Buttons */}
-              {categoryTabs.map((tab, idx) => {
-                const isActive = activeCatalogIndex === idx;
-                return (
-                  <button
-                    key={tab.id}
-                    ref={(el) => (catalogTabRefs.current[idx] = el)}
-                    onClick={() => setActiveCategory(tab.id)}
-                    className={`relative z-10 flex items-center justify-center gap-1.5 px-4 sm:px-5 py-2 text-xs font-mono uppercase tracking-wider transition-colors duration-200 rounded-full cursor-pointer select-none whitespace-nowrap ${
-                      isActive 
-                        ? 'text-white font-bold' 
-                        : 'text-neutral-600 hover:text-neutral-950'
-                    }`}
-                  >
-                    <span>{tab.label}</span>
-                    <span className={`flex items-center justify-center min-w-[16px] h-4 px-1 text-[9px] font-sans font-bold rounded-full transition-colors ${
-                      isActive 
-                        ? 'bg-amber-400 text-neutral-950' 
-                        : 'bg-neutral-100 text-neutral-600'
-                    }`}>
-                      {tab.count}
-                    </span>
-                  </button>
-                );
-              })}
-
-            </div>
+          <div className="flex items-center gap-3">
+            <h3 className="font-editorial text-2xl font-bold text-neutral-950">
+              {activeGender === 'all' ? 'All Archive Garments' : activeGender === 'men' ? "Men's Atelier Wardrobe" : "Women's Atelier Wardrobe"}
+            </h3>
+            <span className="text-xs font-mono text-neutral-400">
+              ({filteredProducts.length} pieces)
+            </span>
           </div>
 
           {/* Right: Department Label & Grid Switcher */}

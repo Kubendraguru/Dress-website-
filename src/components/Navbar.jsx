@@ -20,30 +20,6 @@ export default function Navbar({
 }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  const tabs = [
-    { id: 'All', label: 'All', count: null },
-    { id: 'Shirts', label: 'Shirts', count: 5 },
-    { id: 'T-Shirts', label: 'T-Shirts', count: 2 },
-    { id: 'Pants', label: 'Pants', count: 2 },
-    { id: 'Hoodies', label: 'Hoodies', count: 2 }
-  ];
-
-  const activeIndex = Math.max(0, tabs.findIndex((t) => t.id === activeCategory));
-  const tabRefs = useRef([]);
-  const [gliderStyle, setGliderStyle] = useState({ left: 4, width: 64, height: 32 });
-
-  // Update Glider position and width dynamically to match the active tab element
-  useEffect(() => {
-    const activeEl = tabRefs.current[activeIndex];
-    if (activeEl) {
-      setGliderStyle({
-        left: activeEl.offsetLeft,
-        width: activeEl.offsetWidth,
-        height: activeEl.offsetHeight
-      });
-    }
-  }, [activeIndex, currentPage]);
-
   const handleNav = (page, category = 'All', gender = null) => {
     onNavigate(page, category, gender);
     setMobileMenuOpen(false);
@@ -170,74 +146,6 @@ export default function Navbar({
           </button>
         </div>
 
-      </div>
-
-      {/* ----------------------------------------------------------------- */}
-      {/* 2. DOWN THE NAV BAR: PERFECT DYNAMIC GLIDER TAB BAR */}
-      {/* ----------------------------------------------------------------- */}
-      <div className="bg-[#f5f1ea]/90 border-t border-neutral-200/60 py-2 sm:py-2.5 px-4 sm:px-8">
-        <div className="max-w-[1400px] mx-auto flex items-center justify-between gap-4">
-          
-          {/* Left Sub-Label */}
-          <div className="hidden sm:flex items-center gap-2 text-[10px] font-mono uppercase tracking-[0.2em] text-neutral-500 font-semibold">
-            <span className="w-1.5 h-1.5 rounded-full bg-amber-700 animate-pulse" />
-            <span>Category:</span>
-          </div>
-
-          {/* Glider Container (Uiverse.io Dynamic Sliding Tabs) */}
-          <div className="mx-auto sm:mx-0 w-full sm:w-auto overflow-x-auto scrollbar-none flex justify-center py-0.5">
-            <div className="relative inline-flex items-center bg-white p-1 rounded-full shadow-[0_2px_12px_rgba(0,0,0,0.06),0_0_0_1px_rgba(0,0,0,0.06)] border border-neutral-200/80">
-              
-              {/* Dynamic Sliding Animated Glider Pill */}
-              <div 
-                className="absolute rounded-full bg-neutral-950 shadow-md transition-all duration-300 ease-out z-0"
-                style={{
-                  left: `${gliderStyle.left}px`,
-                  width: `${gliderStyle.width}px`,
-                  top: '4px',
-                  bottom: '4px'
-                }}
-              />
-
-              {/* Tab Buttons */}
-              {tabs.map((tab, idx) => {
-                const isActive = activeIndex === idx && currentPage === 'products';
-                return (
-                  <button
-                    key={tab.id}
-                    ref={(el) => (tabRefs.current[idx] = el)}
-                    onClick={() => handleNav('products', tab.id, activeGender)}
-                    className={`relative z-10 flex items-center justify-center gap-1.5 px-3.5 sm:px-5 py-1.5 text-xs font-mono uppercase tracking-wider transition-colors duration-200 rounded-full cursor-pointer select-none whitespace-nowrap ${
-                      isActive 
-                        ? 'text-white font-bold' 
-                        : 'text-neutral-600 hover:text-neutral-950'
-                    }`}
-                  >
-                    <span>{tab.label}</span>
-                    {tab.count !== null && (
-                      <span className={`flex items-center justify-center min-w-[16px] h-4 px-1 text-[9px] font-sans font-bold rounded-full transition-colors ${
-                        isActive 
-                          ? 'bg-amber-400 text-neutral-950' 
-                          : 'bg-neutral-100 text-neutral-600'
-                      }`}>
-                        {tab.count}
-                      </span>
-                    )}
-                  </button>
-                );
-              })}
-
-            </div>
-          </div>
-
-          {/* Right Curation Tag */}
-          <div className="hidden md:flex items-center gap-2 text-[10px] font-mono uppercase tracking-widest text-neutral-400">
-            <span>Atelier Curation</span>
-            <span className="text-amber-800">&bull;</span>
-            <span className="text-neutral-600 font-semibold">2026</span>
-          </div>
-
-        </div>
       </div>
 
       {/* Slide-out Navigation Drawer (Mobile) */}
