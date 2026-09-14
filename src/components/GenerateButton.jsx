@@ -1,4 +1,4 @@
-﻿import React, { useState } from "react";
+import React, { useState } from "react";
 import { cn } from "../lib/utils";
 
 export function GenerateButton({
@@ -15,7 +15,7 @@ export function GenerateButton({
   
   const isGenerating = controlledIsGenerating !== undefined ? controlledIsGenerating : isFocused;
 
-  const displayText = price ? `${text} ($${price})` : text;
+  const displayText = price ? `${text} (₹${price})` : text;
 
   return (
     <div className="relative inline-block group">

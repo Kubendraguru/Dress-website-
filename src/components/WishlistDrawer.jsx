@@ -59,7 +59,7 @@ export default function WishlistDrawer({ isOpen, onClose, wishlist, onRemoveWish
                 />
                 <div className="flex-1 min-w-0">
                   <h5 className="font-semibold text-xs text-neutral-900 truncate">{item.name || item.title}</h5>
-                  <p className="text-xs text-amber-700 font-mono font-bold mt-0.5">${item.price}</p>
+                  <p className="text-xs text-amber-700 font-mono font-bold mt-0.5">₹{item.price}</p>
                   
                   <div className="flex items-center justify-between mt-3">
                     <button

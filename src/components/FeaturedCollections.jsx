@@ -223,7 +223,7 @@ export default function FeaturedCollections({ onAddToCart, onSelectCollection })
                           
                           <div className="pt-1 flex items-center justify-between">
                             <span className="text-xs font-mono font-bold text-white/95">
-                              ${slice.price}.00
+                              ₹{slice.price}
                             </span>
                             <span className="inline-flex items-center gap-1 text-[10px] font-mono font-bold text-neutral-950 bg-amber-400 hover:bg-amber-300 px-2.5 py-1 rounded-full shadow-xs transition-colors">
                               <span>VIEW LOOK</span>

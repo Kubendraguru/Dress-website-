@@ -404,7 +404,7 @@ export default function StyleLab3DScroll({ onAddToCart }) {
               className="py-3 px-6 rounded-2xl bg-neutral-950 hover:bg-neutral-800 text-white font-bold text-xs uppercase tracking-[0.2em] flex items-center gap-2 shadow-xl active:scale-95 transition-all"
             >
               <ShoppingBag className="w-4 h-4 text-amber-400" />
-              <span>Customize & Add to Bag ($240)</span>
+              <span>Customize & Add to Bag (₹240)</span>
             </button>
           </div>
 

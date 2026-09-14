@@ -194,11 +194,11 @@ export default function Hero({ onAddToCart }) {
           </h1>
         </div>
 
-        {/* Split Second Line: "We Bel" (Left) and "Fashion" (Right) (Wide Spaced Out) */}
+        {/* Split Second Line: "Style" (Left) and "Fashion" (Right) (Wide Spaced Out) */}
         <div className="absolute top-[36%] sm:top-[34%] md:top-[33%] inset-x-0 flex items-center justify-between px-4 sm:px-10 md:px-16 lg:px-24 pointer-events-none z-0">
           <div className="w-1/2 pr-16 sm:pr-24 md:pr-32 lg:pr-40 text-left">
             <span className="font-bodoni italic text-5xl sm:text-7xl md:text-8xl lg:text-[96px] font-normal text-[#121212] tracking-tight leading-none block">
-              We Bel
+              Style
             </span>
           </div>
           <div className="w-1/2 pl-16 sm:pl-24 md:pl-32 lg:pl-40 text-right">
@@ -306,7 +306,7 @@ export default function Hero({ onAddToCart }) {
         {/* Floating Prominent Liquid Carve Shop Pill Button */}
         <div className="absolute bottom-[2%] sm:bottom-[2.5%] left-1/2 -translate-x-1/2 z-30 whitespace-nowrap pointer-events-auto filter drop-shadow-[0_12px_28px_rgba(0,0,0,0.35)]">
           <LiquidCarveButton
-            label={`SHOP LOOK • $${currentOutfit.price}`}
+            label={`SHOP LOOK • ₹${currentOutfit.price}`}
             colors={{
               fill: "#101012",
               textColor: "#FFFFFF"

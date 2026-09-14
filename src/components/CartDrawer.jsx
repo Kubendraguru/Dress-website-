@@ -13,7 +13,7 @@ export default function CartDrawer({ isOpen, onClose, cartItems, onUpdateQuantit
 
   const subtotal = cartItems.reduce((sum, item) => sum + (item.price * item.quantity), 0);
   const calculatedDiscount = discountApplied ? Math.round(subtotal * 0.15) : 0;
-  const shipping = subtotal > 250 || subtotal === 0 ? 0 : 25;
+  const shipping = subtotal > 999 || subtotal === 0 ? 0 : 99;
   const finalTotal = Math.max(0, subtotal - calculatedDiscount + shipping);
 
   const applyCoupon = () => {
@@ -83,7 +83,7 @@ export default function CartDrawer({ isOpen, onClose, cartItems, onUpdateQuantit
               <div className="p-4 bg-white rounded-2xl border border-neutral-200 text-left space-y-2 text-xs font-mono">
                 <div className="flex justify-between"><span>Atelier Courier:</span><span className="font-bold">DHL Express Worldwide</span></div>
                 <div className="flex justify-between"><span>Estimated Delivery:</span><span className="font-bold">3 Business Days</span></div>
-                <div className="flex justify-between"><span>Total Paid:</span><span className="font-bold text-amber-700">${finalTotal}</span></div>
+                <div className="flex justify-between"><span>Total Paid:</span><span className="font-bold text-amber-700">₹{finalTotal}</span></div>
               </div>
               <button
                 onClick={() => {
@@ -126,7 +126,7 @@ export default function CartDrawer({ isOpen, onClose, cartItems, onUpdateQuantit
                   />
                   <div className="flex-1 min-w-0">
                     <h5 className="font-semibold text-xs text-neutral-900 truncate">{item.name}</h5>
-                    <p className="text-[11px] text-neutral-500 font-mono mt-0.5">Size: {item.size || 'M'} • ${item.price}</p>
+                    <p className="text-[11px] text-neutral-500 font-mono mt-0.5">Size: {item.size || 'M'} • ₹{item.price}</p>
                     
                     <div className="flex items-center justify-between mt-3">
                       {/* Quantity buttons */}
@@ -192,23 +192,23 @@ export default function CartDrawer({ isOpen, onClose, cartItems, onUpdateQuantit
             <div className="space-y-1.5 text-xs text-neutral-600">
               <div className="flex justify-between">
                 <span>Subtotal:</span>
-                <span className="font-mono text-neutral-900 font-semibold">${subtotal}</span>
+                <span className="font-mono text-neutral-900 font-semibold">₹{subtotal}</span>
               </div>
               {discountApplied && (
                 <div className="flex justify-between text-emerald-600 font-semibold">
                   <span>VIP Discount (15%):</span>
-                  <span className="font-mono">-${calculatedDiscount}</span>
+                  <span className="font-mono">-₹{calculatedDiscount}</span>
                 </div>
               )}
               <div className="flex justify-between">
                 <span>Express Worldwide Shipping:</span>
                 <span className="font-mono text-neutral-900">
-                  {shipping === 0 ? <span className="text-emerald-600 font-bold uppercase">Complimentary</span> : `$${shipping}`}
+                  {shipping === 0 ? <span className="text-emerald-600 font-bold uppercase">Complimentary</span> : `₹${shipping}`}
                 </span>
               </div>
               <div className="flex justify-between text-base font-bold text-neutral-950 pt-2 border-t border-neutral-200">
                 <span>Estimated Total:</span>
-                <span className="font-mono font-editorial text-xl text-amber-700">${finalTotal}</span>
+                <span className="font-mono font-editorial text-xl text-amber-700">₹{finalTotal}</span>
               </div>
             </div>
 
@@ -221,7 +221,7 @@ export default function CartDrawer({ isOpen, onClose, cartItems, onUpdateQuantit
                 <span>Securing Atelier Allocation...</span>
               ) : (
                 <>
-                  <span>Proceed to Checkout (${finalTotal})</span>
+                  <span>Proceed to Checkout (₹{finalTotal})</span>
                   <ArrowRight className="w-4 h-4" />
                 </>
               )}

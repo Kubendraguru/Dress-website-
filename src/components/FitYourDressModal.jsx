@@ -1340,9 +1340,7 @@ export default function FitYourDressModal({ isOpen, onClose, onAddToCart }) {
                   <h4 className="font-bodoni text-lg sm:text-xl font-bold text-white truncate max-w-xs">
                     {activeOutfit.name}
                   </h4>
-                  <p className="font-mono text-xs font-bold text-amber-300">
-                    ${activeOutfit.price} USD
-                  </p>
+                  <p className="font-mono text-xs font-bold text-amber-300">₹{activeOutfit.price}</p>
                 </div>
 
                 <button
@@ -1388,9 +1386,7 @@ export default function FitYourDressModal({ isOpen, onClose, onAddToCart }) {
                           alt={outfit.name} 
                           className="h-[68px] w-auto object-contain drop-shadow-md"
                         />
-                        <span className="text-[9px] font-mono text-neutral-300 font-bold truncate w-full text-center">
-                          ${outfit.price}
-                        </span>
+                        <span className="text-[9px] font-mono text-neutral-300 font-bold truncate w-full text-center">₹{outfit.price}</span>
                       </div>
                     </div>
                   );

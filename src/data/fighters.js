@@ -6,7 +6,7 @@ export const FIGHTERS = [
     subtitle: 'Oversized French Poplin Shirt & Pleated Sand Wide-Leg Trousers',
     image: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393788/white-poplin-cutout_f4zcld.png",
     handwritten: 'Clara (Poplin)',
-    price: 370,
+    price: 4099,
     collectionBadge: 'PARISIAN MINIMALISM • SS26',
     category: 'FRENCH POPLIN & SAND TROUSERS',
     description: 'Modern relaxed tailoring marrying an oversized crisp white French poplin button-down shirt with fluid pleated sand wide-leg trousers, box leather crossbody saddle bag, and classic gum-sole court sneakers.',
@@ -23,9 +23,9 @@ export const FIGHTERS = [
       modelStats: 'Model is 178 cm / 5\'10" wearing Size S'
     },
     pieces: [
-      { name: 'Oversized Crisp White Poplin Shirt', price: 115 },
-      { name: 'Pleated Sand Fluid Wide-Leg Trousers', price: 145 },
-      { name: 'Box Leather Crossbody Saddle Bag', price: 110 }
+      { name: 'Oversized Crisp White Poplin Shirt', price: 2149 },
+      { name: 'Pleated Sand Fluid Wide-Leg Trousers', price: 2699 },
+      { name: 'Box Leather Crossbody Saddle Bag', price: 2049 }
     ],
     vibe: 'Parisian Minimalist Chic • Le Marais'
   },
@@ -36,7 +36,7 @@ export const FIGHTERS = [
     subtitle: 'Heavyweight French Terry Sweatshirt & Wide Cream Denim',
     image: '/navy-crewneck-cutout.png',
     handwritten: 'Julian (Ivy Crew)',
-    price: 410,
+    price: 4499,
     collectionBadge: 'IVY STREETWEAR • SS26',
     category: 'FRENCH TERRY & CREAM DENIM',
     description: 'Classic collegiate streetwear reimagined with an oversized heavyweight midnight navy French terry crewneck sweatshirt layered over a sharp white point-collar shirt, paired with wide-leg relaxed cream denim and chunky sport trainers.',
@@ -53,9 +53,9 @@ export const FIGHTERS = [
       modelStats: 'Model is 184 cm / 6\'0.5" wearing Size L'
     },
     pieces: [
-      { name: 'Heavyweight French Terry Navy Crewneck', price: 140 },
-      { name: 'Point-Collar White Oxford Shirt', price: 110 },
-      { name: 'Relaxed Wide-Leg Cream Denim Trousers', price: 155 }
+      { name: 'Heavyweight French Terry Navy Crewneck', price: 2599 },
+      { name: 'Point-Collar White Oxford Shirt', price: 2049 },
+      { name: 'Relaxed Wide-Leg Cream Denim Trousers', price: 2799 }
     ],
     vibe: 'Collegiate Street Luxe • New York / Paris'
   },
@@ -66,7 +66,7 @@ export const FIGHTERS = [
     subtitle: 'Oversized Striped Poplin Shirt, Ribbed Tank & Wide Trousers',
     image: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393785/paris-striped-cutout_n8cibd.png",
     handwritten: 'Chloé (Stripe)',
-    price: 390,
+    price: 4299,
     collectionBadge: 'PARISIAN TAILORING • SS26',
     category: 'BENGAL STRIPE & WHITE LINEN',
     description: 'Quintessential Parisian street elegance pairing an oversized Bengal blue striped poplin shirt over a ribbed white contour tank, fluid wide-leg white linen trousers, slouchy suede hobo bag, and neutral retro sneakers.',
@@ -83,9 +83,9 @@ export const FIGHTERS = [
       modelStats: 'Model is 177 cm / 5\'9.5" wearing Size S'
     },
     pieces: [
-      { name: 'Oversized Bengal Striped Poplin Shirt', price: 120 },
-      { name: 'Fluid Wide-Leg White Linen Trousers', price: 150 },
-      { name: 'Slouchy Suede Hobo Shoulder Bag', price: 110 }
+      { name: 'Oversized Bengal Striped Poplin Shirt', price: 2249 },
+      { name: 'Fluid Wide-Leg White Linen Trousers', price: 2749 },
+      { name: 'Slouchy Suede Hobo Shoulder Bag', price: 2049 }
     ],
     vibe: 'Effortless Parisian Summer • Saint-Germain'
   },
@@ -96,7 +96,7 @@ export const FIGHTERS = [
     subtitle: 'Airy French Linen Shirt & Washed Olive Utility Skirt',
     image: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393771/lemon-linen-cutout_taimes.png",
     handwritten: 'Amélie (Resort)',
-    price: 360,
+    price: 4099,
     collectionBadge: 'RIVIERA RESORT • SS26',
     category: 'LEMON LINEN & OLIVE CARGO',
     description: 'Sun-drenched coastal styling featuring an oversized airy pastel lemon yellow French linen button-down shirt paired with an olive green washed cargo utility mini skirt, handwoven raffia straw tote, and retro tortoiseshell shades.',
@@ -113,9 +113,9 @@ export const FIGHTERS = [
       modelStats: 'Model is 175 cm / 5\'9" wearing Size S'
     },
     pieces: [
-      { name: 'Airy Lemon Linen Oxford Shirt', price: 110 },
-      { name: 'Washed Olive Cargo Utility Mini Skirt', price: 120 },
-      { name: 'Handwoven Raffia Straw Tote Bag', price: 85 }
+      { name: 'Airy Lemon Linen Oxford Shirt', price: 2049 },
+      { name: 'Washed Olive Cargo Utility Mini Skirt', price: 2249 },
+      { name: 'Handwoven Raffia Straw Tote Bag', price: 1499 }
     ],
     vibe: 'French Riviera Coastal Elegance • Cannes'
   },
@@ -126,7 +126,7 @@ export const FIGHTERS = [
     subtitle: 'Chore Trucker Jacket, French Terry Hoodie & Relaxed Denim',
     image: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393785/sand-denim-cutout_hfcqyg.png",
     handwritten: 'Minho (Sand Denim)',
-    price: 460,
+    price: 4899,
     collectionBadge: 'SEOUL STREET ATELIER • SS26',
     category: 'CHORE DENIM & 90S WASH',
     description: 'Effortless multi-layered street silhouette pairing a sand beige chore denim trucker jacket with a heavyweight white French terry hoodie, wide-leg relaxed light blue wash denim, chunky sneakers, and minimalist silver pendant.',
@@ -143,9 +143,9 @@ export const FIGHTERS = [
       modelStats: 'Model is 183 cm / 6\'0" wearing Size L'
     },
     pieces: [
-      { name: 'Sand Chore Denim Trucker Jacket', price: 180 },
-      { name: 'French Terry Pullover Hoodie', price: 135 },
-      { name: 'Relaxed Wide-Leg Light Washed Jeans', price: 165 }
+      { name: 'Sand Chore Denim Trucker Jacket', price: 3199 },
+      { name: 'French Terry Pullover Hoodie', price: 2499 },
+      { name: 'Relaxed Wide-Leg Light Washed Jeans', price: 2899 }
     ],
     vibe: 'Seoul Design District Streetwear • Gangnam'
   },
@@ -156,7 +156,7 @@ export const FIGHTERS = [
     subtitle: 'Layered Oversized Silhouette & Washed Utility',
     image: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393791/streetwear-cutout_pu0nq7.png",
     handwritten: 'Ren (Tokyo Cargo)',
-    price: 380,
+    price: 4199,
     collectionBadge: 'URBAN ATELIER • SS26',
     category: 'LAYERED TEES & UTILITY CARGO',
     description: 'Effortlessly styled Tokyo streetwear fit featuring a heavyweight drop-shoulder black tee layered over a white long-sleeve tee, wide-leg vintage washed cargo utility pants, silver tag necklace, and dark acetate shades.',
@@ -173,9 +173,9 @@ export const FIGHTERS = [
       modelStats: 'Model is 181 cm / 5\'11" wearing Size L'
     },
     pieces: [
-      { name: 'Heavyweight Layered Double Tee', price: 110 },
-      { name: 'Vintage Washed Relaxed Cargo Pants', price: 175 },
-      { name: 'Sterling Silver Tag Pendant Necklace', price: 95 }
+      { name: 'Heavyweight Layered Double Tee', price: 2049 },
+      { name: 'Vintage Washed Relaxed Cargo Pants', price: 3099 },
+      { name: 'Sterling Silver Tag Pendant Necklace', price: 1799 }
     ],
     vibe: 'Metropolitan Harajuku Minimalist • Tokyo'
   },
@@ -186,7 +186,7 @@ export const FIGHTERS = [
     subtitle: 'French Flax Linen Shirt & Pleated Sand Fluid Trousers',
     image: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393776/men-navy-linen-cutout_z2irht.png",
     handwritten: 'Luc (Navy Linen)',
-    price: 345,
+    price: 3899,
     collectionBadge: 'EDITORIAL ATELIER • SS26',
     category: 'FRENCH LINEN DRAPING',
     description: 'Tailored French Normandy midnight navy open-collar linen shirt paired effortlessly with pleated sand fluid wide-leg trousers, vintage leather watch, and clean retro court sneakers.',
@@ -203,9 +203,9 @@ export const FIGHTERS = [
       modelStats: 'Model is 185 cm / 6\'1" wearing European Atelier Size 48'
     },
     pieces: [
-      { name: 'Normandy Midnight Navy Linen Shirt', price: 84 },
-      { name: 'Pleated Sand Fluid Wide-Leg Trousers', price: 145 },
-      { name: 'Minimalist Retro Court Low-Tops', price: 120 }
+      { name: 'Normandy Midnight Navy Linen Shirt', price: 1489 },
+      { name: 'Pleated Sand Fluid Wide-Leg Trousers', price: 2699 },
+      { name: 'Minimalist Retro Court Low-Tops', price: 2249 }
     ],
     vibe: 'Atelier French Tailoring • Paris SS26'
   },
@@ -216,7 +216,7 @@ export const FIGHTERS = [
     subtitle: 'Johnny Collar Knit Polo & Relaxed Black Denim',
     image: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393774/men-ecru-polo-cutout_pfoen8.png",
     handwritten: 'Marco (Quiet Luxury)',
-    price: 310,
+    price: 3599,
     collectionBadge: 'QUIET LUXURY • SS26',
     category: 'RIBBED KNIT & BLACK DENIM',
     description: 'Open-collar ribbed combed cotton knit polo in natural ecru paired with relaxed washed black denim jeans and handcrafted full-grain leather weekender duffel.',
@@ -233,9 +233,9 @@ export const FIGHTERS = [
       modelStats: 'Model is 183 cm / 6\'0" wearing Size L'
     },
     pieces: [
-      { name: 'Johnny Collar Ribbed Ecru Knit Polo', price: 78 },
-      { name: 'Washed Black Relaxed Denim Jeans', price: 140 },
-      { name: 'Heritage Full-Grain Leather Duffel', price: 195 }
+      { name: 'Johnny Collar Ribbed Ecru Knit Polo', price: 1389 },
+      { name: 'Washed Black Relaxed Denim Jeans', price: 2599 },
+      { name: 'Heritage Full-Grain Leather Duffel', price: 3399 }
     ],
     vibe: 'Quiet Luxury Minimalism • Milan'
   },
@@ -246,7 +246,7 @@ export const FIGHTERS = [
     subtitle: 'Waffle-Knit Zip Polo & Tailored Italian Chinos',
     image: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393770/men-black-zip-polo-cutout_bel8mx.png",
     handwritten: 'Matteo (Zip Polo)',
-    price: 345,
+    price: 3899,
     collectionBadge: 'MILAN ATELIER • SS26',
     category: 'TEXTURED KNIT & STONE CHINOS',
     description: 'Fine-textured quarter-zip ribbed knit polo in midnight onyx black, styled with tailored stone-beige relaxed trousers, stainless chronograph watch, and minimal styling.',
@@ -263,9 +263,9 @@ export const FIGHTERS = [
       modelStats: 'Model is 185 cm / 6\'1" wearing Size L'
     },
     pieces: [
-      { name: 'Ribbed Quarter-Zip Onyx Polo', price: 88 },
-      { name: 'Tailored Stone Italian Chinos', price: 145 },
-      { name: 'Chronograph Steel Link Watch', price: 112 }
+      { name: 'Ribbed Quarter-Zip Onyx Polo', price: 1549 },
+      { name: 'Tailored Stone Italian Chinos', price: 2699 },
+      { name: 'Chronograph Steel Link Watch', price: 2099 }
     ],
     vibe: 'Milanese Riviera Sophistication • SS26'
   },
@@ -276,7 +276,7 @@ export const FIGHTERS = [
     subtitle: '480 GSM French Terry & Washed Cargo Silhouette',
     image: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393768/men-archive-mocha-cutout_d4aze5.png",
     handwritten: 'Theo (Archive Mocha)',
-    price: 360,
+    price: 4099,
     collectionBadge: 'STREET ATELIER • SS26',
     category: 'HEAVYWEIGHT RAGLAN & CARGO',
     description: 'Heavyweight two-tone mocha brown and cream raglan French terry hoodie paired with vintage washed grey wide utility cargo pants.',
@@ -293,9 +293,9 @@ export const FIGHTERS = [
       modelStats: 'Model is 182 cm / 6\'0" wearing Size L'
     },
     pieces: [
-      { name: 'Two-Tone Archive Mocha Raglan Hoodie', price: 98 },
-      { name: 'Vintage Washed Grey Wide Utility Cargo', price: 165 },
-      { name: 'Silver Box Chain Pendant', price: 75 }
+      { name: 'Two-Tone Archive Mocha Raglan Hoodie', price: 1849 },
+      { name: 'Vintage Washed Grey Wide Utility Cargo', price: 2899 },
+      { name: 'Silver Box Chain Pendant', price: 1339 }
     ],
     vibe: 'Archive Streetwear Drop • Berlin'
   },
@@ -306,7 +306,7 @@ export const FIGHTERS = [
     subtitle: '450 GSM Heavyweight Hoodie & Light Wash Denim',
     image: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393775/men-oatmeal-cutout_xtfxwq.png",
     handwritten: 'Noah (Oatmeal Terry)',
-    price: 320,
+    price: 3699,
     collectionBadge: 'CORE ESSENTIALS • SS26',
     category: 'ORGANIC FRENCH TERRY & DENIM',
     description: 'Heavyweight organic French terry hoodie in natural heather oatmeal paired with vintage relaxed light wash denim jeans.',
@@ -323,9 +323,9 @@ export const FIGHTERS = [
       modelStats: 'Model is 183 cm / 6\'0" wearing Size L'
     },
     pieces: [
-      { name: 'Heavyweight Oatmeal French Terry Hoodie', price: 92 },
-      { name: 'Relaxed Light Wash 90s Denim Jeans', price: 145 },
-      { name: 'Retro Gum-Sole Trainers', price: 120 }
+      { name: 'Heavyweight Oatmeal French Terry Hoodie', price: 1749 },
+      { name: 'Relaxed Light Wash 90s Denim Jeans', price: 2699 },
+      { name: 'Retro Gum-Sole Trainers', price: 2249 }
     ],
     vibe: 'Timeless Minimalist Essentials • Atelier'
   },
@@ -336,7 +336,7 @@ export const FIGHTERS = [
     subtitle: 'Wool-Blend Cropped Shirt Jacket & Pleated Wide Trousers',
     image: '/women-plaid-crop-cutout.png',
     handwritten: 'Camille (Milan Chic)',
-    price: 385,
+    price: 4299,
     collectionBadge: 'MILAN STREET CHIC • SS26',
     category: 'CROPPED FLANNEL & NOIR TROUSERS',
     description: 'Cropped earth-tone plaid wool-blend flannel overshirt layered over a clean ribbed contour tank, styled with high-waisted pleated noir wide-leg trousers, black leather baguette bag, and platform sneakers.',
@@ -353,11 +353,11 @@ export const FIGHTERS = [
       modelStats: 'Model is 176 cm / 5\'9" wearing Size S'
     },
     pieces: [
-      { name: 'Cropped Plaid Flannel Shirt Jacket', price: 135 },
-      { name: 'Ribbed Seamless Contour Crop Tank', price: 45 },
-      { name: 'High-Waist Pleated Noir Wide Trousers', price: 145 },
-      { name: 'Box Leather Shoulder Baguette', price: 95 },
-      { name: 'Chunky Platform Canvas Sneakers', price: 110 }
+      { name: 'Cropped Plaid Flannel Shirt Jacket', price: 2499 },
+      { name: 'Ribbed Seamless Contour Crop Tank', price: 699 },
+      { name: 'High-Waist Pleated Noir Wide Trousers', price: 2699 },
+      { name: 'Box Leather Shoulder Baguette', price: 1799 },
+      { name: 'Chunky Platform Canvas Sneakers', price: 2049 }
     ],
     vibe: 'Milan High-Street Editorial • Runway SS26'
   },
@@ -368,7 +368,7 @@ export const FIGHTERS = [
     subtitle: 'Heavyweight Football Jersey & 90s Wide-Leg Jeans',
     image: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393793/women-navy-ny23-cutout_dx47sj.png",
     handwritten: 'Maya (Varsity 23)',
-    price: 330,
+    price: 3799,
     collectionBadge: 'VINTAGE VARSITY • SS26',
     category: 'VARSITY JERSEY & 90S DENIM',
     description: 'Oversized midnight navy collegiate varsity football jersey with vintage athletic sleeve stripes, paired with relaxed light wash wide-leg denim, brown shoulder tote with teddy keychain, and clean white sneakers.',
@@ -385,10 +385,10 @@ export const FIGHTERS = [
       modelStats: 'Model is 172 cm / 5\'8" wearing Size M'
     },
     pieces: [
-      { name: 'Oversized New York 23 Varsity Tee', price: 85 },
-      { name: 'Relaxed Light Wash 90s Wide Jeans', price: 145 },
-      { name: 'Cognac Leather Shoulder Tote', price: 95 },
-      { name: 'Pristine Court Low-Top Sneakers', price: 120 }
+      { name: 'Oversized New York 23 Varsity Tee', price: 1499 },
+      { name: 'Relaxed Light Wash 90s Wide Jeans', price: 2699 },
+      { name: 'Cognac Leather Shoulder Tote', price: 1799 },
+      { name: 'Pristine Court Low-Top Sneakers', price: 2249 }
     ],
     vibe: 'Vintage Collegiate Varsity • Tokyo Drop'
   },
@@ -399,7 +399,7 @@ export const FIGHTERS = [
     subtitle: 'Drop-Shoulder Heavyweight Tee & Baggy Denim',
     image: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393795/women-mocha-ny-cutout_nidkiz.png",
     handwritten: 'Zoe (Campus Mocha)',
-    price: 310,
+    price: 3599,
     collectionBadge: 'CAMPUS LUXE • SS26',
     category: 'MOCHA GRAPHIC & LIGHT BLUE DENIM',
     description: 'Rich chocolate mocha heavyweight drop-shoulder graphic tee styled with relaxed wide-leg light blue jeans, retro cat-eye sunglasses, canvas backpack, and pristine court sneakers.',
@@ -416,10 +416,10 @@ export const FIGHTERS = [
       modelStats: 'Model is 174 cm / 5\'8.5" wearing Size M'
     },
     pieces: [
-      { name: 'Heavyweight Mocha New York Oversized Tee', price: 80 },
-      { name: 'Relaxed Light Blue Baggy Denim Jeans', price: 140 },
-      { name: 'Minimalist Canvas Daypack', price: 85 },
-      { name: 'Classic Retro Sunglasses', price: 60 }
+      { name: 'Heavyweight Mocha New York Oversized Tee', price: 1419 },
+      { name: 'Relaxed Light Blue Baggy Denim Jeans', price: 2599 },
+      { name: 'Minimalist Canvas Daypack', price: 1499 },
+      { name: 'Classic Retro Sunglasses', price: 1089 }
     ],
     vibe: 'Campus Editorial Aesthetic • New York'
   }

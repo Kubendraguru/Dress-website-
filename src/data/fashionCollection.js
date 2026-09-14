@@ -5,7 +5,7 @@ export const FASHION_COLLECTION = [
     collection: 'SS26 Paris Runway Debut',
     name: 'Solar Ochre Tailored Suit',
     category: 'Haute Couture Jumpsuit',
-    price: 420,
+    price: 4599,
     palette: '#e5a919',
     accentColor: 'from-amber-100/30 to-amber-50/10',
     description: 'A striking study in structured solar hues. Crafted from heavy double-faced Italian silk-wool with peak lapels, belted cinched waist, and straight-line trousers.',
@@ -17,8 +17,8 @@ export const FASHION_COLLECTION = [
       modelStats: 'Model is 179cm wearing size 36'
     },
     pieces: [
-      { name: 'Solar Tailored Jumpsuit', price: 340 },
-      { name: 'Amber Cat-Eye Acetate Shades', price: 95 }
+      { name: 'Solar Tailored Jumpsuit', price: 3899 },
+      { name: 'Amber Cat-Eye Acetate Shades', price: 1799 }
     ]
   },
   {
@@ -27,7 +27,7 @@ export const FASHION_COLLECTION = [
     collection: 'Atelier Tailoring Series',
     name: 'Midnight Navy & Pleated Sand',
     category: 'French Flax Linen Menswear',
-    price: 345,
+    price: 3899,
     palette: '#1c2d42',
     accentColor: 'from-neutral-200/40 to-neutral-100/10',
     description: 'Tailored French Normandy midnight navy open-collar linen shirt paired effortlessly with pleated sand fluid wide-leg trousers and retro court sneakers.',
@@ -39,9 +39,9 @@ export const FASHION_COLLECTION = [
       modelStats: 'Model is 185 cm / 6\'1" wearing European Atelier Size 48'
     },
     pieces: [
-      { name: 'Normandy Midnight Navy Linen Shirt', price: 84 },
-      { name: 'Pleated Sand Fluid Wide-Leg Trousers', price: 145 },
-      { name: 'Minimalist Retro Court Low-Tops', price: 120 }
+      { name: 'Normandy Midnight Navy Linen Shirt', price: 1489 },
+      { name: 'Pleated Sand Fluid Wide-Leg Trousers', price: 2699 },
+      { name: 'Minimalist Retro Court Low-Tops', price: 2249 }
     ]
   },
   {
@@ -50,7 +50,7 @@ export const FASHION_COLLECTION = [
     collection: 'Berlin Brutalist Salon',
     name: 'Tammy Oversized Leather',
     category: 'Streetwear Couture',
-    price: 380,
+    price: 4199,
     palette: '#2b2b2b',
     accentColor: 'from-stone-200/40 to-stone-100/10',
     description: 'An oversized vintage-finish leather bomber jacket paired with relaxed raw-hem denim bermuda shorts, athletic white ribbed socks, and chunky platform lug sandals.',
@@ -62,9 +62,9 @@ export const FASHION_COLLECTION = [
       modelStats: 'Model is 175cm wearing size Medium'
     },
     pieces: [
-      { name: 'Oversized Leather Bomber Jacket', price: 220 },
-      { name: 'Raw-Hem Denim Bermuda Jorts', price: 95 },
-      { name: 'Lug-Sole Platform Sandals', price: 140 }
+      { name: 'Oversized Leather Bomber Jacket', price: 3799 },
+      { name: 'Raw-Hem Denim Bermuda Jorts', price: 1799 },
+      { name: 'Lug-Sole Platform Sandals', price: 2599 }
     ]
   },
   {
@@ -73,7 +73,7 @@ export const FASHION_COLLECTION = [
     collection: 'Cobalt Horizon Capsule',
     name: 'Yuki Parachute Track',
     category: 'Kinetic Movement Outerwear',
-    price: 320,
+    price: 3699,
     palette: '#0e38b1',
     accentColor: 'from-blue-100/30 to-blue-50/10',
     description: 'Electric cobalt technical parachute pants with side contrast piping, styled effortlessly over a vintage washed heavyweight sportive crewneck fleece.',
@@ -85,9 +85,9 @@ export const FASHION_COLLECTION = [
       modelStats: 'Model is 172cm wearing size Small'
     },
     pieces: [
-      { name: 'Cobalt Parachute Cargo Pants', price: 155 },
-      { name: 'Washed Sportive Crewneck Fleece', price: 120 },
-      { name: 'Technical Trekking Runners', price: 160 }
+      { name: 'Cobalt Parachute Cargo Pants', price: 2799 },
+      { name: 'Washed Sportive Crewneck Fleece', price: 2249 },
+      { name: 'Technical Trekking Runners', price: 2899 }
     ]
   },
   {
@@ -96,7 +96,7 @@ export const FASHION_COLLECTION = [
     collection: 'London 90s Revival',
     name: 'Elena Minimal Utility Flare',
     category: 'Minimalist Streetwear',
-    price: 290,
+    price: 3499,
     palette: '#55634e',
     accentColor: 'from-emerald-100/25 to-stone-50/10',
     description: 'High-waisted wide utility cargo trousers in army olive, paired with a ribbed charcoal long-sleeve crop top, subtle chain accents, and retro sunglasses.',
@@ -108,9 +108,9 @@ export const FASHION_COLLECTION = [
       modelStats: 'Model is 176cm wearing size 26'
     },
     pieces: [
-      { name: 'Wide Utility Cargo Trousers', price: 140 },
-      { name: 'Ribbed Long-Sleeve Crop Top', price: 85 },
-      { name: 'Wireframe 90s Sunglasses', price: 95 }
+      { name: 'Wide Utility Cargo Trousers', price: 2599 },
+      { name: 'Ribbed Long-Sleeve Crop Top', price: 1499 },
+      { name: 'Wireframe 90s Sunglasses', price: 1799 }
     ]
   },
   {
@@ -119,7 +119,7 @@ export const FASHION_COLLECTION = [
     collection: 'Tokyo Underground Skate',
     name: 'Kai Washed Graphic Jorts',
     category: 'Heavyweight Skate Atelier',
-    price: 260,
+    price: 3299,
     palette: '#3a3a3a',
     accentColor: 'from-neutral-300/30 to-neutral-100/10',
     description: 'Washed charcoal heavyweight graphic tee paired with oversized vintage grey skate jorts, white mid-calf socks, and retro chunky skate runners.',
@@ -131,9 +131,9 @@ export const FASHION_COLLECTION = [
       modelStats: 'Model is 183cm wearing size Large'
     },
     pieces: [
-      { name: 'Washed City Graphic Heavyweight Tee', price: 85 },
-      { name: 'Baggy Washed Grey Denim Shorts', price: 110 },
-      { name: 'Retro Chunky Skate Runners', price: 135 }
+      { name: 'Washed City Graphic Heavyweight Tee', price: 1499 },
+      { name: 'Baggy Washed Grey Denim Shorts', price: 2049 },
+      { name: 'Retro Chunky Skate Runners', price: 2499 }
     ]
   },
   {
@@ -142,7 +142,7 @@ export const FASHION_COLLECTION = [
     collection: 'Tokyo Minimalist Streetwear',
     name: 'Kenji Relaxed Sand Cargo',
     category: 'Boxy Heavyweight & Sand Cargo',
-    price: 310,
+    price: 3599,
     palette: '#78716c',
     accentColor: 'from-stone-200/30 to-stone-100/10',
     description: 'Modern architectural streetwear fusing a heavyweight drop-shoulder noir cotton tee with relaxed multi-pocket sand cargo trousers and pristine leather runners.',
@@ -154,9 +154,9 @@ export const FASHION_COLLECTION = [
       modelStats: 'Model is 181cm wearing size Large'
     },
     pieces: [
-      { name: 'Heavyweight Boxy Noir Tee', price: 85 },
-      { name: 'Baggy Sand Multi-Pocket Cargo Trousers', price: 135 },
-      { name: 'Sterling Silver Minimalist Pendant Chain', price: 90 }
+      { name: 'Heavyweight Boxy Noir Tee', price: 1499 },
+      { name: 'Baggy Sand Multi-Pocket Cargo Trousers', price: 2499 },
+      { name: 'Sterling Silver Minimalist Pendant Chain', price: 1579 }
     ]
   }
 ];

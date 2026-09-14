@@ -8,7 +8,7 @@ const BLOG_ARTICLES = {
   dress_right: {
     tag: 'STYLE GUIDE • SS26',
     category: 'EDITORIAL COLUMN',
-    title: 'DRESS RIGHT, FEEL GOOD: The Modern Sartorial Philosophy',
+    title: 'Dress Right, Feel Good: The Modern Sartorial Philosophy',
     subtitle: 'Shirts, Trousers, Blazers & Layered sets tailored to elevate your natural presence.',
     author: 'Zudio Atelier Editorial Staff',
     readTime: '3 min read',
@@ -23,7 +23,7 @@ const BLOG_ARTICLES = {
   new_collection: {
     tag: 'LOOKBOOK REVIEW',
     category: 'SEASONAL ARCHIVE',
-    title: 'THE NEW COLLECTION: Classic, Modern & Versatile Silhouettes',
+    title: 'The New Collection: Classic, Modern & Versatile Silhouettes',
     subtitle: 'Deconstructing modern silhouettes built for effortless daily rotation.',
     author: 'Elena Rostova • Atelier Direction',
     readTime: '4 min read',
@@ -31,14 +31,14 @@ const BLOG_ARTICLES = {
     image: ZUDIO_TIMES_IMAGE,
     content: [
       'The SS26 capsule reflects a deep appreciation for tonal harmony. We embraced earthy sand tones, washed olive charcoals, and crisp Parisian poplin white to construct an interchangeable capsule wardrobe.',
-      'Every garment is rigorously wear-tested by our team in Mumbai and Milan to ensure durable seam integrity, zero shrinkage, and long-lasting shape retention.',
+      'Every garment is rigorously wear-tested by our design teams across Tamil Nadu, Mumbai, and Milan to ensure durable seam integrity, zero shrinkage, and long-lasting shape retention.',
       'Whether layered as a complete co-ord set or styled as standalone separates, this collection defines the essence of modern understated elegance.'
     ]
   },
   zudio_difference: {
     tag: 'ATELIER MANIFESTO',
     category: 'BRAND VALUES',
-    title: 'THE ZUDIO DIFFERENCE: Premium Looks at Everyday Prices',
+    title: 'The Zudio Difference: Premium Looks at Everyday Prices',
     subtitle: 'Democratizing high-fashion design without compromising on fabric quality.',
     author: 'Zudio Design Council',
     readTime: '3 min read',
@@ -53,7 +53,7 @@ const BLOG_ARTICLES = {
   every_occasion: {
     tag: 'OCCASION WEAR',
     category: 'STYLE JOURNAL',
-    title: 'STYLE FOR EVERY OCCASION: Office, College, Casual & Party',
+    title: 'Style For Every Occasion: Office, College, Casual & Party',
     subtitle: 'One versatile capsule, endless expressions across all aspects of life.',
     author: 'Atelier Styling Desk',
     readTime: '3 min read',
@@ -151,8 +151,8 @@ export default function CommunitySection() {
                   <span>OFFICIAL ATELIER JOURNAL</span>
                 </div>
 
-                <h3 className="font-bebas text-3xl sm:text-4xl lg:text-5xl tracking-wide leading-none text-neutral-900">
-                  TRENDING STYLES AT ZUDIO
+                <h3 className="font-bodoni text-3xl sm:text-4xl lg:text-5xl tracking-tight leading-tight text-neutral-900">
+                  Trending Styles <span className="italic font-normal">at Zudio</span>
                 </h3>
 
                 <p className="font-bodoni text-sm sm:text-base text-neutral-700 font-light leading-relaxed">
@@ -175,8 +175,8 @@ export default function CommunitySection() {
                       </span>
                       <ArrowUpRight className="w-3.5 h-3.5 text-neutral-400 group-hover/card:text-white group-hover/card:translate-x-0.5 group-hover/card:-translate-y-0.5 transition-all" />
                     </div>
-                    <h4 className="font-syne text-xs sm:text-[13px] font-bold uppercase tracking-wider leading-snug">
-                      DRESS RIGHT &bull; FEEL GOOD
+                    <h4 className="font-bodoni text-sm sm:text-[15px] font-bold tracking-tight leading-snug">
+                      Dress Right <span className="italic font-normal">&bull; Feel Good</span>
                     </h4>
                     <p className="font-serif italic text-[11px] text-neutral-600 group-hover/card:text-neutral-300 leading-relaxed pt-0.5">
                       Shirts, Trousers, Blazers &amp; Layered sets that look better on you.
@@ -200,8 +200,8 @@ export default function CommunitySection() {
                       </span>
                       <ArrowUpRight className="w-3.5 h-3.5 text-neutral-400 group-hover/card:text-white group-hover/card:translate-x-0.5 group-hover/card:-translate-y-0.5 transition-all" />
                     </div>
-                    <h4 className="font-syne text-xs sm:text-[13px] font-bold uppercase tracking-wider leading-snug">
-                      THE NEW COLLECTION
+                    <h4 className="font-bodoni text-sm sm:text-[15px] font-bold tracking-tight leading-snug">
+                      The New Collection
                     </h4>
                     <p className="font-serif italic text-[11px] text-neutral-600 group-hover/card:text-neutral-300 leading-relaxed pt-0.5">
                       Classic, modern &amp; versatile cuts crafted for everyday wear.
@@ -225,8 +225,8 @@ export default function CommunitySection() {
                       </span>
                       <ArrowUpRight className="w-3.5 h-3.5 text-neutral-400 group-hover/card:text-white group-hover/card:translate-x-0.5 group-hover/card:-translate-y-0.5 transition-all" />
                     </div>
-                    <h4 className="font-syne text-xs sm:text-[13px] font-bold uppercase tracking-wider leading-snug">
-                      ZUDIO DIFFERENCE
+                    <h4 className="font-bodoni text-sm sm:text-[15px] font-bold tracking-tight leading-snug">
+                      Zudio Difference
                     </h4>
                     <p className="font-mono text-[10.5px] text-neutral-700 group-hover/card:text-neutral-300 leading-relaxed pt-0.5">
                       &bull; Premium Looks &bull; Everyday Prices &bull; For Every You
@@ -250,8 +250,8 @@ export default function CommunitySection() {
                       </span>
                       <ArrowUpRight className="w-3.5 h-3.5 text-neutral-400 group-hover/card:text-white group-hover/card:translate-x-0.5 group-hover/card:-translate-y-0.5 transition-all" />
                     </div>
-                    <h4 className="font-syne text-xs sm:text-[13px] font-bold uppercase tracking-wider leading-snug">
-                      FOR EVERY OCCASION
+                    <h4 className="font-bodoni text-sm sm:text-[15px] font-bold tracking-tight leading-snug">
+                      For Every Occasion
                     </h4>
                     <p className="font-serif italic text-[11px] text-neutral-600 group-hover/card:text-neutral-300 leading-relaxed pt-0.5">
                       Office &bull; College &bull; Casual &bull; Party Wear for Men &amp; Women.
@@ -346,11 +346,11 @@ export default function CommunitySection() {
                   {selectedArticle.tag}
                 </span>
                 
-                <h2 className="font-serif text-2xl sm:text-3xl text-neutral-900 font-bold tracking-tight leading-snug">
+                <h2 className="font-bodoni text-2xl sm:text-3xl md:text-4xl text-neutral-900 font-bold tracking-tight leading-snug">
                   {selectedArticle.title}
                 </h2>
 
-                <p className="font-serif italic text-sm sm:text-base text-neutral-600 font-light leading-relaxed">
+                <p className="font-bodoni italic text-base sm:text-lg text-neutral-600 font-light leading-relaxed">
                   &ldquo;{selectedArticle.subtitle}&rdquo;
                 </p>
               </div>
@@ -368,9 +368,9 @@ export default function CommunitySection() {
               </div>
 
               {/* Article Paragraphs with elegant editorial typography */}
-              <div className="space-y-4 text-neutral-700 font-sans text-sm sm:text-base leading-relaxed">
+              <div className="space-y-4 text-neutral-800 font-serif text-[15px] sm:text-base leading-relaxed">
                 {selectedArticle.content.map((p, idx) => (
-                  <p key={idx} className="text-neutral-700 leading-relaxed">
+                  <p key={idx} className="leading-relaxed">
                     {p}
                   </p>
                 ))}
@@ -442,8 +442,8 @@ export default function CommunitySection() {
 
               <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-2 border-t border-neutral-100">
                 <div className="text-left">
-                  <h4 className="font-bebas text-2xl tracking-wide text-neutral-900">
-                    STYLE &bull; FASHION &bull; YOU
+                  <h4 className="font-bodoni text-2xl tracking-tight text-neutral-900 font-bold">
+                    Style <span className="italic font-normal">&bull; Fashion &bull; You</span>
                   </h4>
                   <p className="text-xs text-neutral-500 font-mono">
                     Official Zudio Atelier &bull; Everyday Wear &bull; Everyday Prices

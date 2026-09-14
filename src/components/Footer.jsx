@@ -58,15 +58,15 @@ export default function Footer() {
             </h4>
             <div className="grid grid-cols-2 gap-2 text-[11.5px] font-mono text-neutral-400 font-light">
               <div className="space-y-1.5">
-                <p>SOUTH KOREA</p>
-                <p>AUSTRALIA</p>
-                <p>AUSTRIA</p>
-                <p>INDIA (BKC MUMBAI)</p>
+                <p className="text-neutral-200">TAMIL NADU &bull; CHENNAI</p>
+                <p className="text-neutral-200">TAMIL NADU &bull; COIMBATORE</p>
+                <p>INDIA &bull; MUMBAI (BKC)</p>
+                <p>INDIA &bull; BENGALURU</p>
               </div>
               <div className="space-y-1.5">
-                <p>FRANCE (PARIS)</p>
-                <p>ITALY (MILAN)</p>
-                <p>JAPAN (TOKYO)</p>
+                <p>FRANCE &bull; PARIS</p>
+                <p>ITALY &bull; MILAN</p>
+                <p>JAPAN &bull; TOKYO</p>
                 <p>UNITED KINGDOM</p>
               </div>
             </div>

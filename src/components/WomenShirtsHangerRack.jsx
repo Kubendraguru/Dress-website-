@@ -164,9 +164,7 @@ export default function WomenShirtsHangerRack({ onAddToCart, onToggleWishlist, w
                   {activeShirt.subName}
                 </p>
               </div>
-              <span className="text-xl sm:text-2xl font-medium text-neutral-950">
-                ${activeShirt.price.toFixed(2)}
-              </span>
+              <span className="text-xl sm:text-2xl font-medium text-neutral-950">₹{activeShirt.price.toFixed(2)}</span>
             </div>
 
             {/* Description / Fabric */}
@@ -239,7 +237,7 @@ export default function WomenShirtsHangerRack({ onAddToCart, onToggleWishlist, w
                 className="flex-1 bg-neutral-950 hover:bg-neutral-800 text-white h-10 px-4 rounded-full text-xs font-medium uppercase tracking-[0.12em] flex items-center justify-center gap-2 transition-all duration-200 shadow-sm hover:shadow-md cursor-pointer"
               >
                 <ShoppingBag className="w-3.5 h-3.5" />
-                <span>Add To Bag &bull; ${activeShirt.price.toFixed(2)}</span>
+                <span>Add To Bag &bull; ₹{activeShirt.price.toFixed(2)}</span>
               </button>
 
               <button

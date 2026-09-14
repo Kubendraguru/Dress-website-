@@ -348,7 +348,7 @@ export default function CinematicHorizontalScroll({ onAddToCart, cartCount, onOp
                 ) : (
                   <>
                     <ShoppingBag className="w-3.5 h-3.5 text-[#e6c281]" />
-                    <span>Add to Bag (${activeOutfit.price})</span>
+                    <span>Add to Bag (₹{activeOutfit.price})</span>
                   </>
                 )}
               </button>
@@ -461,9 +461,7 @@ export default function CinematicHorizontalScroll({ onAddToCart, cartCount, onOp
                 <h3 className="font-bodoni text-3xl font-bold text-neutral-950">
                   {selectedOutfit.name}
                 </h3>
-                <p className="text-base font-bold font-mono text-neutral-900">
-                  ${selectedOutfit.price} USD
-                </p>
+                <p className="text-base font-bold font-mono text-neutral-900">₹{selectedOutfit.price}</p>
                 <p className="text-xs text-neutral-600 pt-2 font-light leading-relaxed">
                   {selectedOutfit.description}
                 </p>
@@ -491,7 +489,7 @@ export default function CinematicHorizontalScroll({ onAddToCart, cartCount, onOp
                   {selectedOutfit.pieces.map((piece, i) => (
                     <div key={i} className="flex justify-between text-xs text-neutral-700 bg-white px-3.5 py-2 rounded-xl border border-neutral-100">
                       <span>• {piece.name}</span>
-                      <span className="font-mono font-bold">${piece.price}</span>
+                      <span className="font-mono font-bold">₹{piece.price}</span>
                     </div>
                   ))}
                 </div>
@@ -515,7 +513,7 @@ export default function CinematicHorizontalScroll({ onAddToCart, cartCount, onOp
                 className="w-full py-4 bg-neutral-950 hover:bg-neutral-800 text-white rounded-2xl font-bold text-xs uppercase tracking-[0.2em] transition-all flex items-center justify-center gap-2 shadow-xl"
               >
                 <ShoppingBag className="w-4 h-4 text-[#e6c281]" />
-                <span>Acquire Full Look (${selectedOutfit.price})</span>
+                <span>Acquire Full Look (₹{selectedOutfit.price})</span>
               </button>
             </div>
 

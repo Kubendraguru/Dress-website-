@@ -50,7 +50,7 @@ export default function ContactFaqSection({ onAddToCart = () => {} }) {
       id: 3,
       number: '03',
       question: 'How can I reach your customer support & concierge team?',
-      answer: "Our dedicated client concierge is available Monday through Saturday, 9:00 AM – 8:00 PM IST / CET. You can reach out directly via support@zudio.com or schedule a private showroom consultation in Mumbai, Milan, or Paris."
+      answer: "Our dedicated client concierge is available Monday through Saturday, 9:00 AM – 8:00 PM IST / CET. You can reach out directly via support@zudio.com or schedule a private showroom consultation across Tamil Nadu (Chennai & Coimbatore), Mumbai, Bengaluru, Milan, or Paris."
     },
     {
       id: 4,
@@ -149,7 +149,7 @@ export default function ContactFaqSection({ onAddToCart = () => {} }) {
                 SS26 RUNWAY PIECE
               </p>
               <p className="font-bebas text-xs sm:text-sm tracking-wider leading-tight pt-0.5">
-                TOKYO LAYERED SET • $340
+                TOKYO LAYERED SET • ₹340
               </p>
             </div>
             <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" />
@@ -170,7 +170,7 @@ export default function ContactFaqSection({ onAddToCart = () => {} }) {
             {/* Quick View Floating Pill on Hover */}
             <div className="absolute bottom-6 sm:bottom-10 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-all duration-300 bg-black/90 text-white px-3.5 py-1.5 rounded-full text-[10.5px] font-bebas tracking-[0.18em] uppercase flex items-center gap-1.5 shadow-2xl pointer-events-none whitespace-nowrap border border-neutral-700">
               <ShoppingBag className="w-3 h-3 text-[#fbbf24]" />
-              <span>SHOP THIS LOOK • $340</span>
+              <span>SHOP THIS LOOK • ₹340</span>
             </div>
           </div>
 
@@ -205,17 +205,17 @@ export default function ContactFaqSection({ onAddToCart = () => {} }) {
               </div>
             </div>
 
-            {/* SALES */}
+            {/* SALES / SHOWROOM */}
             <div className="space-y-2">
               <h3 className="font-mono text-xs font-bold uppercase tracking-widest text-black">
-                SALES
+                SALES &amp; SALONS
               </h3>
               <div className="text-[11px] text-neutral-500 space-y-1 font-light leading-relaxed">
-                <p className="font-medium text-neutral-800">ZUDIO SHOWROOM</p>
-                <p>Private Salon &amp; Sizing</p>
+                <p className="font-medium text-neutral-800">TAMIL NADU &bull; CHENNAI</p>
+                <p>Anna Nagar / T. Nagar Salon</p>
                 <p className="pt-1">
-                  <a href="mailto:showroom@zudio.com" className="font-mono text-black underline underline-offset-2 hover:text-neutral-600">
-                    showroom@zudio.com
+                  <a href="mailto:showroom.tn@zudio.com" className="font-mono text-black underline underline-offset-2 hover:text-neutral-600">
+                    showroom.tn@zudio.com
                   </a>
                 </p>
               </div>
@@ -324,11 +324,15 @@ export default function ContactFaqSection({ onAddToCart = () => {} }) {
         <div className="flex whitespace-nowrap animate-marquee">
           {[...Array(6)].map((_, i) => (
             <div key={i} className="flex items-center gap-8 mx-4 font-mono text-xs sm:text-sm font-bold uppercase tracking-[0.25em]">
-              <span>FROM SEOUL TO PARIS</span>
+              <span>FROM CHENNAI &bull; TAMIL NADU TO PARIS</span>
               <span className="text-[#e83d34] text-base">✻</span>
               <span>FROM MUMBAI TO MILAN</span>
               <span className="text-[#e83d34] text-base">✻</span>
-              <span>FROM TOKYO TO NEW YORK</span>
+              <span>FROM COIMBATORE &bull; TAMIL NADU TO TOKYO</span>
+              <span className="text-[#e83d34] text-base">✻</span>
+              <span>FROM BENGALURU TO NEW YORK</span>
+              <span className="text-[#e83d34] text-base">✻</span>
+              <span>ACROSS TAMIL NADU &amp; ALL OVER INDIA</span>
               <span className="text-[#e83d34] text-base">✻</span>
             </div>
           ))}

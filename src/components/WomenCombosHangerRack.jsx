@@ -174,9 +174,7 @@ export default function WomenCombosHangerRack({ onAddToCart, onToggleWishlist, w
                   {activeCombo.subName}
                 </p>
               </div>
-              <span className="text-xl sm:text-2xl font-medium text-neutral-950">
-                ${activeCombo.price.toFixed(2)}
-              </span>
+              <span className="text-xl sm:text-2xl font-medium text-neutral-950">₹{activeCombo.price.toFixed(2)}</span>
             </div>
 
             {/* Description / Fabric */}
@@ -249,7 +247,7 @@ export default function WomenCombosHangerRack({ onAddToCart, onToggleWishlist, w
                 className="flex-1 bg-neutral-950 hover:bg-neutral-800 text-white h-10 px-4 rounded-full text-xs font-medium uppercase tracking-[0.12em] flex items-center justify-center gap-2 transition-all duration-200 shadow-sm hover:shadow-md cursor-pointer"
               >
                 <ShoppingBag className="w-3.5 h-3.5" />
-                <span>Add Set To Bag &bull; ${activeCombo.price.toFixed(2)}</span>
+                <span>Add Set To Bag &bull; ₹{activeCombo.price.toFixed(2)}</span>
               </button>
 
               <button
@@ -386,9 +384,7 @@ export default function WomenCombosHangerRack({ onAddToCart, onToggleWishlist, w
                     <h3 className="font-bodoni text-sm sm:text-base font-normal text-neutral-950 leading-snug line-clamp-2">
                       {c.name}
                     </h3>
-                    <span className="text-sm font-medium text-neutral-950 flex-shrink-0">
-                      ${c.price.toFixed(2)}
-                    </span>
+                    <span className="text-sm font-medium text-neutral-950 flex-shrink-0">₹{c.price.toFixed(2)}</span>
                   </div>
 
                   {/* Subtitle */}

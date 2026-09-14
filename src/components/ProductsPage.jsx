@@ -470,9 +470,7 @@ export default function ProductsPage({
                     <h2 className="font-bodoni text-xl sm:text-2xl font-normal text-neutral-950 leading-tight">
                       {activeShirt.name}
                     </h2>
-                    <span className="text-xl sm:text-2xl font-medium text-neutral-950">
-                      ${activeShirt.price.toFixed(2)}
-                    </span>
+                    <span className="text-xl sm:text-2xl font-medium text-neutral-950">₹{activeShirt.price.toFixed(2)}</span>
                   </div>
 
                   {/* Colorway Selection Swatches */}
@@ -540,7 +538,7 @@ export default function ProductsPage({
                       className="flex-1 bg-neutral-950 hover:bg-neutral-800 text-white h-10 px-4 rounded-full text-xs font-medium uppercase tracking-[0.12em] flex items-center justify-center gap-2 transition-all duration-200 shadow-sm hover:shadow-md cursor-pointer"
                     >
                       <ShoppingBag className="w-3.5 h-3.5" />
-                      <span>Add To Bag &bull; ${activeShirt.price.toFixed(2)}</span>
+                      <span>Add To Bag &bull; ₹{activeShirt.price.toFixed(2)}</span>
                     </button>
 
                     <button
@@ -890,9 +888,7 @@ export default function ProductsPage({
                     <h3 className="font-bodoni text-sm sm:text-base font-normal text-neutral-950 leading-snug line-clamp-2">
                       {product.name}
                     </h3>
-                    <span className="text-sm font-medium text-neutral-950 flex-shrink-0">
-                      ${product.price.toFixed(2)}
-                    </span>
+                    <span className="text-sm font-medium text-neutral-950 flex-shrink-0">₹{product.price.toFixed(2)}</span>
                   </div>
 
                   {/* Subtitle / Colorway */}
@@ -1013,9 +1009,7 @@ export default function ProductsPage({
                 <h2 className="font-bodoni text-2xl font-normal mt-2 text-neutral-950">
                   {quickViewProduct.name}
                 </h2>
-                <p className="text-xl font-light text-neutral-950 mt-1">
-                  ${quickViewProduct.price.toFixed(2)}
-                </p>
+                <p className="text-xl font-light text-neutral-950 mt-1">₹{quickViewProduct.price.toFixed(2)}</p>
 
                 <p className="text-xs text-neutral-600 font-light mt-3 leading-relaxed">
                   {quickViewProduct.description || 'Crafted with premium materials and signature atelier tailoring for everyday durability.'}
@@ -1054,7 +1048,7 @@ export default function ProductsPage({
                   className="mt-6 w-full bg-neutral-950 hover:bg-neutral-800 text-white py-3 rounded-full text-xs font-medium uppercase tracking-wider flex items-center justify-center gap-2 shadow-md transition-all"
                 >
                   <ShoppingBag className="w-4 h-4" />
-                  <span>Add To Bag &bull; ${quickViewProduct.price.toFixed(2)}</span>
+                  <span>Add To Bag &bull; ₹{quickViewProduct.price.toFixed(2)}</span>
                 </button>
               </div>
 

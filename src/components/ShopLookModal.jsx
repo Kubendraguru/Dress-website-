@@ -163,7 +163,7 @@ export default function ShopLookModal({ outfit, isOpen, onClose, onAddToCart }) 
                       </div>
 
                       <span className="font-mono text-xs font-bold text-neutral-950">
-                        ${item.price}
+                        ₹{item.price}
                       </span>
                     </div>
 

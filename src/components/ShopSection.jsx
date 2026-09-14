@@ -148,9 +148,7 @@ export default function ShopSection({ onAddToCart, onQuickView, onToggleWishlist
                 {/* Pricing & Size Pills */}
                 <div className="pt-4 mt-4 border-t border-neutral-100 flex items-center justify-between">
                   <div className="flex items-baseline gap-2">
-                    <span className="font-editorial text-2xl font-bold text-neutral-950">
-                      ${product.price}
-                    </span>
+                    <span className="font-editorial text-2xl font-bold text-neutral-950">₹{product.price}</span>
                     {product.originalPrice && (
                       <span className="text-xs text-neutral-400 line-through">
                         ${product.originalPrice}
