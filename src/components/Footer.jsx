@@ -38,7 +38,7 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2.5 text-neutral-400 font-light text-[12px]">
               <li><a href="#hero" className="hover:text-white transition-colors">Collections</a></li>
-              <li><a href="#lookbook" className="hover:text-white transition-colors">Lookbook SS26</a></li>
+              <li><a href="#collections" className="hover:text-white transition-colors">Modern Room Showroom</a></li>
               <li><a href="#ethos" className="hover:text-white transition-colors">The Ethos</a></li>
               <li><a href="#products" className="hover:text-white transition-colors">2-Piece Sets</a></li>
               <li><a href="#community" className="hover:text-white transition-colors">Community &amp; Gallery</a></li>
@@ -91,7 +91,7 @@ export default function Footer() {
         {/* ========================================================================= */}
         <div className="relative w-full rounded-2xl sm:rounded-3xl overflow-hidden bg-white border border-neutral-800 shadow-2xl group">
           <img 
-            src="/zudio-footer-banner.png" 
+            src="https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393807/zudio-footer-banner_fzpsmb.webp" 
             alt="Zudio - Style That Moves You | Trendy Styles For Every You"
             className="w-full h-auto block select-none"
           />

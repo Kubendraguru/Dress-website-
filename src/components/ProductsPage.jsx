@@ -453,7 +453,7 @@ export default function ProductsPage({
                   <img 
                     key={activeShirt.id}
                     src={activeShirt.imageUrl}
-                    onError={(e) => { e.currentTarget.src = activeShirt.localImage || '/shirt-white.jpg'; }}
+                    onError={(e) => { e.currentTarget.src = activeShirt.localImage || "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789314781/linenshirt_lqdcpp.jpg"; }}
                     alt={`${activeShirt.name} Portrait View`}
                     className="w-full h-full object-contain p-2 transition-transform duration-700 group-hover/portrait:scale-105 animate-in fade-in zoom-in-95 drop-shadow-sm"
                   />
@@ -534,7 +534,7 @@ export default function ProductsPage({
                           color: activeShirt.name,
                           category: 'Shirts',
                           gender: 'men',
-                          image: activeShirt.imageUrl || activeShirt.localImage || '/shirt-white.jpg'
+                          image: activeShirt.imageUrl || activeShirt.localImage || "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789314781/linenshirt_lqdcpp.jpg"
                         });
                       }}
                       className="flex-1 bg-neutral-950 hover:bg-neutral-800 text-white h-10 px-4 rounded-full text-xs font-medium uppercase tracking-[0.12em] flex items-center justify-center gap-2 transition-all duration-200 shadow-sm hover:shadow-md cursor-pointer"

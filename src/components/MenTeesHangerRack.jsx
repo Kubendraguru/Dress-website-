@@ -10,7 +10,7 @@ import {
 } from 'lucide-react';
 import { MEN_TEES_HERO } from '../data/productsCatalog';
 
-const MEN_TEES_HERO_IMAGE_URL = '/men-tees-hanger-hero.jpg';
+const MEN_TEES_HERO_IMAGE_URL = "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393779/men-tees-hanger-hero_q76qr8.jpg";
 
 // The 5 Interactive Hotspot Coordinates across the Clothes Rail Photo
 const MEN_TEES_HOTSPOTS = [
@@ -152,7 +152,7 @@ export default function MenTeesHangerRack({ onAddToCart, onToggleWishlist, wishl
             <img 
               key={activeTee.id}
               src={activeTee.imageUrl}
-              onError={(e) => { e.currentTarget.src = activeTee.localImage || '/men-tee-ivory-pleated-polo.png'; }}
+              onError={(e) => { e.currentTarget.src = activeTee.localImage || "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393781/men-tee-ivory-pleated-polo_heoxp9.png"; }}
               alt={`${activeTee.name} Portrait View`}
               className="w-full h-full object-contain p-3 transition-transform duration-700 group-hover/portrait:scale-105 animate-in fade-in zoom-in-95 drop-shadow-sm"
             />

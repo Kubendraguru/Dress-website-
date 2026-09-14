@@ -3,7 +3,6 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import MarqueeBanner from './components/MarqueeBanner';
 import FeaturedCollections from './components/FeaturedCollections';
-import LookbookShowcase from './components/LookbookShowcase';
 import ChooseYourFighter from './components/ChooseYourFighter';
 import CommunitySection from './components/CommunitySection';
 import NewsletterArch from './components/NewsletterArch';
@@ -26,7 +25,7 @@ export default function App() {
       price: 370,
       quantity: 1,
       size: 'M',
-      image: '/white-poplin-cutout.png',
+      image: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393788/white-poplin-cutout_f4zcld.png",
       category: 'Atelier Poplin Set'
     }
   ]);
@@ -183,20 +182,16 @@ export default function App() {
             {/* 3. Marquee Ticker Strip 1 */}
             <MarqueeBanner />
 
-            {/* 4. Featured Collections (Color Meets Clarity) */}
+            {/* 4. Modern Room / Featured Showroom */}
             <FeaturedCollections
+              onAddToCart={handleAddToCart}
               onSelectCollection={() => {
-                const el = document.getElementById('lookbook');
+                const el = document.getElementById('products');
                 if (el) el.scrollIntoView({ behavior: 'smooth' });
               }}
             />
 
-            {/* 5. Architectural Showcase & Tonal Rich Slider */}
-            <LookbookShowcase
-              onAddToCart={handleAddToCart}
-            />
-
-            {/* 6. Zudio Runway & Atelier Configurator */}
+            {/* 5. Zudio Runway & Atelier Configurator */}
             <ChooseYourFighter
               onAddToCart={handleAddToCart}
             />

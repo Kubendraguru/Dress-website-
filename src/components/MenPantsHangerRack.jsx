@@ -10,7 +10,7 @@ import {
 } from 'lucide-react';
 import { MEN_PANTS_HERO } from '../data/productsCatalog';
 
-const MEN_PANTS_HERO_IMAGE_URL = '/men-pants-hanger-hero.jpg';
+const MEN_PANTS_HERO_IMAGE_URL = "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393777/men-pants-hanger-hero_z0g0oo.jpg";
 
 // The 5 Interactive Hotspot Coordinates across the Clothes Rail Photo
 const MEN_PANTS_HOTSPOTS = [
@@ -152,7 +152,7 @@ export default function MenPantsHangerRack({ onAddToCart, onToggleWishlist, wish
             <img 
               key={activePant.id}
               src={activePant.imageUrl}
-              onError={(e) => { e.currentTarget.src = activePant.localImage || '/men-pants-noir-pleated.png'; }}
+              onError={(e) => { e.currentTarget.src = activePant.localImage || "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393778/men-pants-noir-pleated_uoyv0z.png"; }}
               alt={`${activePant.name} Portrait View`}
               className="w-full h-full object-contain p-3 transition-transform duration-700 group-hover/portrait:scale-105 animate-in fade-in zoom-in-95 drop-shadow-sm"
             />

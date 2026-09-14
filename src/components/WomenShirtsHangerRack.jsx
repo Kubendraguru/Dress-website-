@@ -142,7 +142,7 @@ export default function WomenShirtsHangerRack({ onAddToCart, onToggleWishlist, w
             <img 
               key={activeShirt.id}
               src={activeShirt.imageUrl}
-              onError={(e) => { e.currentTarget.src = activeShirt.localImage || '/women-shirt-crinkle-blue.png'; }}
+              onError={(e) => { e.currentTarget.src = activeShirt.localImage || "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393802/women-shirt-crinkle-blue_gebghj.png"; }}
               alt={`${activeShirt.name} Portrait View`}
               className="w-full h-full object-contain p-3 transition-transform duration-700 group-hover/portrait:scale-105 animate-in fade-in zoom-in-95 drop-shadow-sm"
             />

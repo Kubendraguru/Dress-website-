@@ -360,10 +360,10 @@ export default function Hero({ onAddToCart }) {
               </button>
 
               <button
-                onClick={() => handleNavClick('lookbook')}
+                onClick={() => handleNavClick('collections')}
                 className="w-full text-left px-3 py-2 rounded-lg text-xs sm:text-[13px] font-semibold tracking-wide flex items-center justify-between transition-all text-neutral-800 hover:bg-neutral-100 cursor-pointer"
               >
-                <span>View Lookbook</span>
+                <span>Explore Showrooms</span>
                 <ArrowRight className="w-3.5 h-3.5" />
               </button>
 

@@ -8,7 +8,7 @@ import {
 } from 'lucide-react';
 import { WOMEN_TEES_HERO } from '../data/productsCatalog';
 
-const WOMEN_HERO_IMAGE_URL = '/women-tees-hanger-hero.jpg';
+const WOMEN_HERO_IMAGE_URL = "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393806/women-tees-hanger-hero_wa5mfw.jpg";
 
 // The 4 Interactive Hotspot Coordinates on the Real Photo
 const WOMEN_TEE_HOTSPOTS = [
@@ -140,7 +140,7 @@ export default function WomenTeesHangerRack({ onAddToCart, onToggleWishlist, wis
             <img 
               key={activeTee.id}
               src={activeTee.imageUrl}
-              onError={(e) => { e.currentTarget.src = activeTee.localImage || '/women-tee-block-stripe-polo.png'; }}
+              onError={(e) => { e.currentTarget.src = activeTee.localImage || "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393806/women-tee-block-stripe-polo_woq63u.png"; }}
               alt={`${activeTee.name} Portrait View`}
               className="w-full h-full object-contain p-2 transition-transform duration-700 group-hover/portrait:scale-105 animate-in fade-in zoom-in-95 drop-shadow-sm"
             />

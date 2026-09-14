@@ -22,7 +22,7 @@ export const DRESS_SHIRTS_HERO = [
     hotspotX: 18,
     hotspotY: 50,
     imageUrl: 'https://res.cloudinary.com/qrhgjdrs/image/upload/v1789314781/linenshirt_lqdcpp.jpg',
-    localImage: '/linenshirt-rust-detail.jpg',
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789314781/linenshirt_lqdcpp.jpg",
     details: 'Button-down collar, single chest pocket, rolled-up sleeve cuffs, bleached natural buttons.',
     description: 'Pure optical white linen crafted with high-density weave. Luminous, airy, and versatile under casual jackets or worn untucked.'
   },
@@ -42,7 +42,7 @@ export const DRESS_SHIRTS_HERO = [
     hotspotX: 34,
     hotspotY: 50,
     imageUrl: 'https://res.cloudinary.com/qrhgjdrs/image/upload/v1789315007/half_y2ettu.jpg',
-    localImage: '/shirt-half.jpg',
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789315007/half_y2ettu.jpg",
     details: 'Classic soft spread collar, unbleached organic flax fibers, neutral horn buttons.',
     description: 'Natural oatmeal sand linen woven without harsh bleaches. Features subtle slub texture and exceptional warm-weather breathability.'
   },
@@ -62,7 +62,7 @@ export const DRESS_SHIRTS_HERO = [
     hotspotX: 50,
     hotspotY: 50,
     imageUrl: 'https://res.cloudinary.com/qrhgjdrs/image/upload/v1789315007/strip_tx7ml9.jpg',
-    localImage: '/shirt-strip.jpg',
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789315007/strip_tx7ml9.jpg",
     details: 'Button-down collar points, alternating micro-stripe weave, pearlescent shell buttons.',
     description: 'Heritage Bengal stripe oxford tailored with fine-gauge yarn. Combines crisp architectural lines with relaxed summer comfort.'
   },
@@ -82,7 +82,7 @@ export const DRESS_SHIRTS_HERO = [
     hotspotX: 66,
     hotspotY: 50,
     imageUrl: 'https://res.cloudinary.com/qrhgjdrs/image/upload/v1789315007/brown_qpsytq.jpg',
-    localImage: '/shirt-brown.jpg',
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789315007/brown_qpsytq.jpg",
     details: 'Button-down collar, single chest pocket, rolled-up sleeve cuffs, organic horn buttons.',
     description: 'Warm roasted terracotta linen woven from long-staple French flax. Garment washed for an immediate relaxed drape with tailored button-down collar points.'
   },
@@ -125,8 +125,8 @@ export const WOMEN_TEES_HERO = [
     gender: 'women',
     hotspotX: 16,
     hotspotY: 52,
-    imageUrl: '/women-tee-block-stripe-polo.png',
-    localImage: '/women-tee-block-stripe-polo.png',
+    imageUrl: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393806/women-tee-block-stripe-polo_woq63u.png",
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393806/women-tee-block-stripe-polo_woq63u.png",
     details: 'Contrast white twill collar, hidden button placket, drop-shoulder seams, reinforced side slits.',
     description: 'A contemporary take on the timeless heritage rugby polo with bold horizontal block stripes in saturated navy and unbleached ecru.'
   },
@@ -145,8 +145,8 @@ export const WOMEN_TEES_HERO = [
     gender: 'women',
     hotspotX: 33,
     hotspotY: 52,
-    imageUrl: '/women-tee-beardless-jersey.png',
-    localImage: '/women-tee-beardless-jersey.png',
+    imageUrl: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393804/women-tee-beardless-jersey_pk9fqt.png",
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393804/women-tee-beardless-jersey_pk9fqt.png",
     details: 'Aerodynamic white piping across raglan sleeves, chest archive graphic, high crewneck binding.',
     description: 'Sporty athletic streetwear cut from breathable structured jersey with contrast white raglan seam piping and a relaxed drape.'
   },
@@ -165,8 +165,8 @@ export const WOMEN_TEES_HERO = [
     gender: 'women',
     hotspotX: 50,
     hotspotY: 52,
-    imageUrl: '/women-tee-la-varsity-polo.png',
-    localImage: '/women-tee-la-varsity-polo.png',
+    imageUrl: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393808/women-tee-la-varsity-polo_lbfhj5.png",
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393808/women-tee-la-varsity-polo_lbfhj5.png",
     details: 'Split v-neckline, contrast white flat-knit collar, arched Los Angeles collegiate chest embroidery.',
     description: 'Vintage varsity styling with a flattering fine-ribbed body, crisp white collar trim, and open split v-neck.'
   },
@@ -185,8 +185,8 @@ export const WOMEN_TEES_HERO = [
     gender: 'women',
     hotspotX: 67,
     hotspotY: 52,
-    imageUrl: '/women-tee-milan-striped-knit.png',
-    localImage: '/women-tee-milan-striped-knit.png',
+    imageUrl: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393806/women-tee-milan-striped-knit_h2vrgy.png",
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393806/women-tee-milan-striped-knit_h2vrgy.png",
     details: 'Full front mother-of-pearl button placket, French Breton stripe repeat, ribbed waist and sleeve cuffs.',
     description: 'A luxurious Riviera resort knit spun from fine-gauge combed cotton featuring delicate horizontal Breton striping.'
   },
@@ -205,8 +205,8 @@ export const WOMEN_TEES_HERO = [
     gender: 'women',
     hotspotX: 84,
     hotspotY: 52,
-    imageUrl: '/women-tee-contrast-collar-polo.png',
-    localImage: '/women-tee-contrast-collar-polo.png',
+    imageUrl: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393804/women-tee-contrast-collar-polo_u3ukva.png",
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393804/women-tee-contrast-collar-polo_u3ukva.png",
     details: 'Buttonless open Johnny collar with contrast white tipping, white tipped cuffs, reinforced side vents.',
     description: 'Effortless tennis polo aesthetic featuring a clean buttonless open collar, contrast tipping, and airy cotton piqué.'
   }
@@ -227,8 +227,8 @@ export const WOMEN_SHIRTS_HERO = [
     fabric: 'Textured Micro-Plissé Breathable Weave',
     fit: 'Relaxed Oversized Drape',
     gender: 'women',
-    imageUrl: '/women-shirt-crinkle-blue.png',
-    localImage: '/women-shirt-crinkle-blue.png',
+    imageUrl: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393802/women-shirt-crinkle-blue_gebghj.png",
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393802/women-shirt-crinkle-blue_gebghj.png",
     details: 'Anti-wrinkle fluid micro-crinkle texture, relaxed dropped shoulders, point collar, buttoned cuffs.',
     description: 'Micro-plissé crinkled lightweight fabric with an oversized relaxed drape, dropped shoulders, and airy fluid silhouette for effortless everyday elegance.'
   },
@@ -281,8 +281,8 @@ export const WOMEN_SHIRTS_HERO = [
     fabric: 'Layered Dual-Piece Fine Pinstripe Cotton',
     fit: 'Airy High-Low Layered Hang',
     gender: 'women',
-    imageUrl: '/women-shirt-sage-pinstripe.png',
-    localImage: '/women-shirt-sage-pinstripe.png',
+    imageUrl: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393802/women-shirt-sage-pinstripe_p9ql6o.png",
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393802/women-shirt-sage-pinstripe_p9ql6o.png",
     details: 'Integrated layered 2-in-1 silhouette, micro pinstripe yarn dye, drop shoulders, side split hem.',
     description: 'Fine pinstriped two-piece layered open overshirt set in earthy sage green. Designed for chic high-low summer layering.'
   },
@@ -299,8 +299,8 @@ export const WOMEN_SHIRTS_HERO = [
     fabric: 'Breathable Fluid Rayon-Cotton Blend',
     fit: 'Fluid Parisian Drape',
     gender: 'women',
-    imageUrl: '/women-shirt-noir-pinstripe.png',
-    localImage: '/women-shirt-noir-pinstripe.png',
+    imageUrl: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393802/women-shirt-noir-pinstripe_p3skaw.png",
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393802/women-shirt-noir-pinstripe_p3skaw.png",
     details: 'Open notch lapel collar, clean finished cuffs, continuous vertical monochrome pinstripe weave.',
     description: 'Sophisticated monochrome black & white vertical stripe shirt with open spread collar and graceful fluid drape.'
   }
@@ -337,8 +337,8 @@ export const WOMEN_PANTS_HERO = [
     fabric: 'Premium Anti-Crease Structured Crepe',
     fit: 'Extended Cinched Corset High Waist',
     gender: 'women',
-    imageUrl: '/women-pants-black-corset.png',
-    localImage: '/women-pants-black-corset.png',
+    imageUrl: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393794/women-pants-black-corset_jtkcjw.png",
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393794/women-pants-black-corset_jtkcjw.png",
     details: 'Extended cinched corset waistband, dual engraved metallic buttons, sharp front crease lines.',
     description: 'Sculptural high-rise trousers featuring an extended corset-style waistband with dual gold-toned metallic buttons, sharp structured pleats, and sweeping palazzo legs.'
   },
@@ -354,8 +354,8 @@ export const WOMEN_PANTS_HERO = [
     fabric: 'Breathable Matte-Weave Linen Blend',
     fit: 'Floor-Skimming Relaxed Palazzo',
     gender: 'women',
-    imageUrl: '/women-pants-white-palazzo.png',
-    localImage: '/women-pants-white-palazzo.png',
+    imageUrl: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393798/women-pants-white-palazzo_xgiwtz.png",
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393798/women-pants-white-palazzo_xgiwtz.png",
     details: 'High-rise contoured waist panel, floor-skimming silhouette, seamless hidden side zipper.',
     description: 'Effortless Riviera resort aesthetic with a high-rise seamless waistline, subtle darting, and billowing relaxed palazzo legs.'
   },
@@ -371,8 +371,8 @@ export const WOMEN_PANTS_HERO = [
     fabric: '13.5oz Heavyweight 100% Ring-Spun Cotton',
     fit: 'Architectural Curved Horseshoe Balloon',
     gender: 'women',
-    imageUrl: '/women-pants-charcoal-horseshoe.png',
-    localImage: '/women-pants-charcoal-horseshoe.png',
+    imageUrl: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393795/women-pants-charcoal-horseshoe_t80ftv.png",
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393795/women-pants-charcoal-horseshoe_t80ftv.png",
     details: 'Curved balloon outer seam, vintage stone wash whiskering, 5-pocket denim styling.',
     description: 'The definitive modern statement silhouette: dramatic curved horseshoe / balloon leg cut from 13.5oz vintage washed black denim with whiskered thighs.'
   },
@@ -388,8 +388,8 @@ export const WOMEN_PANTS_HERO = [
     fabric: '100% Cotton Authentic Stone-Washed Denim',
     fit: 'Dramatic Curved Horseshoe Barrel',
     gender: 'women',
-    imageUrl: '/women-pants-indigo-horseshoe.png',
-    localImage: '/women-pants-indigo-horseshoe.png',
+    imageUrl: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393805/women-pants-indigo-horseshoe_v2akiv.png",
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393805/women-pants-indigo-horseshoe_v2akiv.png",
     details: 'Dramatic horseshoe curved outer seams, high-rise with relaxed hip volume, clean heavy gauge hem.',
     description: 'Sculpted curved barrel denim in an authentic vintage blue stone wash. Features an exaggerated outer curve through the knee with gentle inward taper at the ankles.'
   },
@@ -405,8 +405,8 @@ export const WOMEN_PANTS_HERO = [
     fabric: '4-Way Stretch High-Density Sculpting Knit',
     fit: 'High-Rise Crossover Bootcut Flare',
     gender: 'women',
-    imageUrl: '/women-pants-black-flare.png',
-    localImage: '/women-pants-black-flare.png',
+    imageUrl: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393797/women-pants-black-flare_pxg505.png",
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393797/women-pants-black-flare_pxg505.png",
     details: 'Core support crossover waistband, elongating bootcut flare hem, non-sheer squat-proof weave.',
     description: 'Sculptural high-waisted flared bootcut yoga pants engineered with four-way stretch compression fabric, tummy-control crossover waistband, and an elongated flare hem.'
   }
@@ -426,8 +426,8 @@ export const WOMEN_COMBOS_HERO = [
     fabric: 'Soft Fine-Wale Velvet Corduroy & Heavyweight Ring-Spun Denim',
     fit: 'Cropped Boxy Jacket & High-Rise Wide-Leg Denim',
     gender: 'women',
-    imageUrl: '/women-combo-pink-corduroy.png',
-    localImage: '/women-combo-pink-corduroy.png',
+    imageUrl: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393792/women-combo-pink-corduroy_mbiouw.png",
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393792/women-combo-pink-corduroy_mbiouw.png",
     details: '2-Piece Outfit: Dusty rose cropped corduroy jacket with balloon gathered cuffs over white ribbed tank, paired with wide-leg light indigo denim and canvas studio tote.',
     description: 'Playful yet elevated Parisian aesthetic: vintage dusty rose cropped corduroy overshirt layered over a soft ribbed crop tank and relaxed wide-leg blue jeans.'
   },
@@ -443,8 +443,8 @@ export const WOMEN_COMBOS_HERO = [
     fabric: 'Heavyweight Fine-Rib Warm Cotton Corduroy & 13.5oz Washed Denim',
     fit: 'Relaxed Cropped Jacket & High-Waist Charcoal Balloon Denim',
     gender: 'women',
-    imageUrl: '/women-combo-brown-corduroy.png',
-    localImage: '/women-combo-brown-corduroy.png',
+    imageUrl: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393789/women-combo-brown-corduroy_derg0r.png",
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393789/women-combo-brown-corduroy_derg0r.png",
     details: '2-Piece Outfit: Rich espresso mocha cropped corduroy utility jacket with white ribbed tank, paired with washed charcoal wide-leg barrel denim and canvas tote.',
     description: 'Earthy rich espresso mocha corduroy tailored into a sophisticated modern streetwear ensemble with washed charcoal curved wide-leg denim.'
   },
@@ -460,8 +460,8 @@ export const WOMEN_COMBOS_HERO = [
     fabric: '12oz Structured Stone-Washed Indigo Cotton Denim',
     fit: 'Fitted Structured Corset & High-Rise Wide-Leg Sweep',
     gender: 'women',
-    imageUrl: '/women-combo-denim-corset.png',
-    localImage: '/women-combo-denim-corset.png',
+    imageUrl: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393793/women-combo-denim-corset_t0tn2e.png",
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393793/women-combo-denim-corset_t0tn2e.png",
     details: '2-Piece Outfit: Strapless structured denim corset with architectural contour seam boning, paired with high-rise relaxed wide-leg indigo denim trousers.',
     description: 'Runway statement duo: sculpted light indigo stone-washed denim corset featuring vertical boning and clean topstitching with floor-length wide-leg palazzo jeans.'
   },
@@ -477,8 +477,8 @@ export const WOMEN_COMBOS_HERO = [
     fabric: 'French Floral Chantilly Lace & Tailored Cotton Twill Chinos',
     fit: 'Boning Cinched Bustier & High-Rise Straight Cuffed Chinos',
     gender: 'women',
-    imageUrl: '/women-combo-lace-corset.png',
-    localImage: '/women-combo-lace-corset.png',
+    imageUrl: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393792/women-combo-lace-corset_z2aboy.png",
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393792/women-combo-lace-corset_z2aboy.png",
     details: '2-Piece Outfit: Espresso dark chocolate Chantilly floral lace underwire corset top, paired with relaxed sand-beige high-waist straight cuffed cotton chinos.',
     description: 'A striking luxury ensemble pairing delicate espresso brown underwire lace corset bustier with relaxed tailored sand-beige cuffed chinos and strappy sandal heels.'
   }
@@ -501,8 +501,8 @@ export const COUPLE_HERO = [
     gender: 'couple',
     category: 'Combos',
     badge: 'COUPLE CO-ORD • 15% OFF',
-    imageUrl: '/couple-burgundy-cord.png',
-    localImage: '/couple-burgundy-cord.png',
+    imageUrl: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393749/couple-burgundy-cord_rqepmt.png",
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393749/couple-burgundy-cord_rqepmt.png",
     details: 'Coordinated 2-person ensemble: tailored wine burgundy button-downs paired with high-waisted pleated fluid cream trousers and white leather trainers.',
     description: 'Harmoniously coordinated couple ensemble featuring rich wine burgundy button-down overshirts paired with high-waisted pleated fluid cream trousers.'
   },
@@ -521,8 +521,8 @@ export const COUPLE_HERO = [
     gender: 'couple',
     category: 'Combos',
     badge: 'SIGNATURE PAIR • 15% OFF',
-    imageUrl: '/couple-noir-linen.png',
-    localImage: '/couple-noir-linen.png',
+    imageUrl: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393750/couple-noir-linen_jhoevy.png",
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393750/couple-noir-linen_jhoevy.png",
     details: 'Coordinated 2-person ensemble: matching midnight black relaxed shirts with tailored high-waisted sand chino trousers, dark acetate sunglasses, and minimalist trainers.',
     description: 'Effortless cosmopolitan pair featuring matching midnight black relaxed shirts with tailored high-waisted sand chino trousers and sleek black accessories.'
   },
@@ -541,8 +541,8 @@ export const COUPLE_HERO = [
     gender: 'couple',
     category: 'Combos',
     badge: 'FESTIVE CAPSULE • 15% OFF',
-    imageUrl: '/couple-indigo-festive.png',
-    localImage: '/couple-indigo-festive.png',
+    imageUrl: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393751/couple-indigo-festive_wirzr7.png",
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393751/couple-indigo-festive_wirzr7.png",
     details: 'Coordinated 2-person ensemble: gentleman\'s midnight navy linen button-down with relaxed cream trousers, complemented by her intricately embroidered indigo tunic and matching palazzo with dupatta.',
     description: 'Exquisite celebration pair featuring gentleman\'s midnight navy linen button-down with relaxed cream trousers, and her silver-thread embroidered indigo tunic with dupatta.'
   },
@@ -561,8 +561,8 @@ export const COUPLE_HERO = [
     gender: 'couple',
     category: 'Combos',
     badge: 'AUTUMN RESORT • 15% OFF',
-    imageUrl: '/couple-mocha-linen.png',
-    localImage: '/couple-mocha-linen.png',
+    imageUrl: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393752/couple-mocha-linen_q7b1gk.png",
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393752/couple-mocha-linen_q7b1gk.png",
     details: 'Coordinated 2-person ensemble: matching rich mocha espresso linen button-downs paired with flowing high-rise ivory pleated trousers and tortoiseshell accents.',
     description: 'Romantic earthy palette: matching rich mocha espresso linen button-downs paired with flowing high-rise ivory pleated trousers and tortoiseshell accessories.'
   },
@@ -581,8 +581,8 @@ export const COUPLE_HERO = [
     gender: 'couple',
     category: 'Combos',
     badge: 'SUMMER ESCAPE • 15% OFF',
-    imageUrl: '/couple-sky-stripe.png',
-    localImage: '/couple-sky-stripe.png',
+    imageUrl: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393751/couple-sky-stripe_xffsj2.png",
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393751/couple-sky-stripe_xffsj2.png",
     details: 'Coordinated 2-person ensemble: gentleman\'s relaxed sky blue Bengal vertical stripe linen shirt, paired with her matching bow-tie peplum stripe top and airy ecru linen wide trousers.',
     description: 'Sunny Riviera summer charm: gentleman\'s relaxed sky blue Bengal vertical stripe linen shirt, paired with her matching bow-tie peplum stripe top and airy ecru linen wide trousers.'
   }
@@ -607,8 +607,8 @@ export const MEN_TEES_HERO = [
     badge: 'NEW SEASON',
     hotspotX: 11.0,
     hotspotY: 45,
-    imageUrl: '/men-tee-ivory-pleated-polo.png',
-    localImage: '/men-tee-ivory-pleated-polo.png',
+    imageUrl: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393781/men-tee-ivory-pleated-polo_heoxp9.png",
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393781/men-tee-ivory-pleated-polo_heoxp9.png",
     details: 'Relaxed open notch Johnny collar, architectural vertical pleat knit texture, ribbed sleeve cuffs and hem.',
     description: 'Architectural fine-gauge vertical pleated knit polo featuring a relaxed Johnny open collar, ribbed sleeve cuffs, and tailored fluid drape.'
   },
@@ -629,8 +629,8 @@ export const MEN_TEES_HERO = [
     badge: 'ATELIER DROP',
     hotspotX: 30.0,
     hotspotY: 45,
-    imageUrl: '/men-tee-noir-zip-polo.png',
-    localImage: '/men-tee-noir-zip-polo.png',
+    imageUrl: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393779/men-tee-noir-zip-polo_szazic.png",
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393779/men-tee-noir-zip-polo_szazic.png",
     details: 'Polished silver quarter-zip closure, contrast double white tipped collar and sleeve cuffs.',
     description: 'Modern luxury athletic silhouette crafted with subtle stretch jersey knit, polished silver quarter-zip collar, and contrast dual white tipping on collar and sleeves.'
   },
@@ -652,8 +652,8 @@ export const MEN_TEES_HERO = [
     badge: 'BESTSELLER',
     hotspotX: 50.0,
     hotspotY: 45,
-    imageUrl: '/men-tee-stripe-knit.png',
-    localImage: '/men-tee-stripe-knit.png',
+    imageUrl: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393782/men-tee-stripe-knit_ms8ipb.png",
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393782/men-tee-stripe-knit_ms8ipb.png",
     details: 'Engineered yarn-dyed horizontal chest stripes, textured vertical grid knit body, reinforced ribbed crewneck collar.',
     description: 'Retro European aesthetic featuring horizontal chest color-block stripes over vertical grid-textured knit with reinforced ribbed crewneck collar.'
   },
@@ -674,8 +674,8 @@ export const MEN_TEES_HERO = [
     badge: 'ANIME CAPSULE',
     hotspotX: 70.0,
     hotspotY: 45,
-    imageUrl: '/men-tee-luffy-anime.png',
-    localImage: '/men-tee-luffy-anime.png',
+    imageUrl: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393782/men-tee-luffy-anime_merfml.png",
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393782/men-tee-luffy-anime_merfml.png",
     details: 'High-definition back screenprint artwork, Japanese kanji calligraphy, pirate insignia crest, reinforced neckline.',
     description: 'Statement streetwear graphic tee showcasing bold Luffy straw hat artwork, brush calligraphy, and oversized drop-shoulder cut crafted from 260 GSM heavyweight cotton.'
   },
@@ -696,8 +696,8 @@ export const MEN_TEES_HERO = [
     badge: 'STREETWEAR',
     hotspotX: 89.0,
     hotspotY: 45,
-    imageUrl: '/men-tee-tokyo-racing.png',
-    localImage: '/men-tee-tokyo-racing.png',
+    imageUrl: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393781/men-tee-tokyo-racing_ygxqir.png",
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393781/men-tee-tokyo-racing_ygxqir.png",
     details: 'Multi-layer front tuner sports car illustration, Tokyo underground dual sleeve screenprints, boxy relaxed drape.',
     description: 'Japanese car culture racing tee with detailed underground tuner sports car art, dual sleeve typographic prints, and coordinates in a relaxed boxy fit.'
   }
@@ -722,8 +722,8 @@ export const MEN_PANTS_HERO = [
     badge: 'ATELIER SUITING',
     hotspotX: 11.0,
     hotspotY: 45,
-    imageUrl: '/men-pants-noir-pleated.png',
-    localImage: '/men-pants-noir-pleated.png',
+    imageUrl: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393778/men-pants-noir-pleated_uoyv0z.png",
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393778/men-pants-noir-pleated_uoyv0z.png",
     details: 'Extended high-rise waistband with button tab closure, double front knife pleats, sharp pressed center crease lines, side slant pockets.',
     description: 'Masterfully tailored high-rise suiting trousers featuring deep front double pleats, an extended waistband with side button tab, and an ultra-fluid drape.'
   },
@@ -744,8 +744,8 @@ export const MEN_PANTS_HERO = [
     badge: 'UTILITY ESSENTIAL',
     hotspotX: 30.0,
     hotspotY: 45,
-    imageUrl: '/men-pants-olive-cargo.png',
-    localImage: '/men-pants-olive-cargo.png',
+    imageUrl: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393778/men-pants-olive-cargo_bnzfat.png",
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393778/men-pants-olive-cargo_bnzfat.png",
     details: 'Encased elastic waistband with tonal drawstring, dual side bellows cargo pockets with flap closures, articulated knee darts, relaxed hem.',
     description: 'Functional utilitarian aesthetic tailored from vintage washed olive-gray cotton twill with roomy cargo flap pockets and articulated knee panels.'
   },
@@ -766,8 +766,8 @@ export const MEN_PANTS_HERO = [
     badge: 'MINIMALIST',
     hotspotX: 50.0,
     hotspotY: 45,
-    imageUrl: '/men-pants-white-skate.png',
-    localImage: '/men-pants-white-skate.png',
+    imageUrl: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393777/men-pants-white-skate_fxvzkq.png",
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393777/men-pants-white-skate_fxvzkq.png",
     details: 'Architectural vertical center leg seams, clean tailored waistband, 4-pocket construction with relaxed skater silhouette.',
     description: 'Pristine optical white wide-leg denim trousers detailed with distinct vertical center front seams and a sweeping floor-grazing hem.'
   },
@@ -788,8 +788,8 @@ export const MEN_PANTS_HERO = [
     badge: 'VINTAGE DROP',
     hotspotX: 70.0,
     hotspotY: 45,
-    imageUrl: '/men-pants-acid-denim.png',
-    localImage: '/men-pants-acid-denim.png',
+    imageUrl: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393779/men-pants-acid-denim_jenaqq.png",
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393779/men-pants-acid-denim_jenaqq.png",
     details: 'Allover vintage marble acid wash whiskering, subtle micro-distressing at coin pocket, 5-pocket hardware, loose slouchy drape.',
     description: 'Iconic 90s skater nostalgia cut from 13.5oz heavyweight marble stone-washed denim in an effortless relaxed baggy silhouette.'
   },
@@ -810,8 +810,8 @@ export const MEN_PANTS_HERO = [
     badge: 'STREETWEAR',
     hotspotX: 89.0,
     hotspotY: 45,
-    imageUrl: '/men-pants-cyber-jogger.png',
-    localImage: '/men-pants-cyber-jogger.png',
+    imageUrl: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393776/men-pants-cyber-jogger_bmpw4k.png",
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393776/men-pants-cyber-jogger_bmpw4k.png",
     details: 'Oversized white cyber-tribal gothic screenprint graphics running down both pant legs, thick ribbed elastic waistband, deep side pockets.',
     description: 'Statement streetwear sweatpants crafted from 400 GSM ultra-heavy French terry fleece featuring bold Y2K cyber-tribal screenprint artwork down both legs.'
   }
@@ -836,8 +836,8 @@ export const MEN_COMBOS_HERO = [
     badge: '2-PIECE SET • 15% OFF',
     hotspotX: 11.0,
     hotspotY: 44,
-    imageUrl: '/men-combo-camel-jacket-set.png',
-    localImage: '/men-combo-camel-jacket-set.png',
+    imageUrl: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393772/men-combo-camel-jacket-set_yixzvb.png",
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393772/men-combo-camel-jacket-set_yixzvb.png",
     details: '2-Piece Outfit: Camel brown brushed melton wool work jacket with dual flap chest pockets over white mock-neck knit, paired with tailored noir pleated trousers and clean court sneakers.',
     description: 'Elevated Parisian autumn aesthetic pairing a rich camel brown structured wool overshirt with high-rise pleated black trousers, white knit underlayer, and white leather trainers.'
   },
@@ -858,8 +858,8 @@ export const MEN_COMBOS_HERO = [
     badge: '2-PIECE SET • 15% OFF',
     hotspotX: 30.0,
     hotspotY: 44,
-    imageUrl: '/men-combo-black-oxford-denim.png',
-    localImage: '/men-combo-black-oxford-denim.png',
+    imageUrl: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393772/men-combo-black-oxford-denim_lt7tpv.png",
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393772/men-combo-black-oxford-denim_lt7tpv.png",
     details: '2-Piece Outfit: Pitch black relaxed button-down oxford shirt with rolled sleeves and unbuttoned collar, paired with light indigo baggy stone-washed denim jeans and white sneakers.',
     description: 'Effortless cosmopolitan street style combining an unbuttoned black oxford long-sleeve shirt with vintage stone-washed baggy denim and retro white trainers.'
   },
@@ -880,8 +880,8 @@ export const MEN_COMBOS_HERO = [
     badge: 'STREETWEAR • 15% OFF',
     hotspotX: 50.0,
     hotspotY: 44,
-    imageUrl: '/men-combo-graphic-23-streetwear.png',
-    localImage: '/men-combo-graphic-23-streetwear.png',
+    imageUrl: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393772/men-combo-graphic-23-streetwear_w3wae9.png",
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393772/men-combo-graphic-23-streetwear_w3wae9.png",
     details: '2-Piece Outfit: Heavyweight optic white graphic boxy streetwear tee with bold front and sleeve varsity numbering, paired with washed charcoal black puddle denim jeans and sneakers.',
     description: 'Tokyo Y2K streetwear vibe featuring an oversized heavyweight #23 graphic tee paired with washed black wide-leg puddle jeans and skate sneakers.'
   },
@@ -902,8 +902,8 @@ export const MEN_COMBOS_HERO = [
     badge: 'ATELIER SMART • 15% OFF',
     hotspotX: 70.0,
     hotspotY: 44,
-    imageUrl: '/men-combo-pinstripe-charcoal.png',
-    localImage: '/men-combo-pinstripe-charcoal.png',
+    imageUrl: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393772/men-combo-pinstripe-charcoal_nnd119.png",
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393772/men-combo-pinstripe-charcoal_nnd119.png",
     details: '2-Piece Outfit: Skyline blue & white pinstripe button-down shirt with rolled cuffs and subtle chest embroidery, paired with relaxed washed charcoal denim and dark sunglasses.',
     description: 'Modern smart-casual aesthetic pairing a relaxed blue-and-white vertical pinstripe oxford button-down with washed charcoal denim trousers and white trainers.'
   },
@@ -924,8 +924,8 @@ export const MEN_COMBOS_HERO = [
     badge: 'SUMMER ESSENTIAL • 15% OFF',
     hotspotX: 89.0,
     hotspotY: 44,
-    imageUrl: '/men-combo-plaid-linen-black.png',
-    localImage: '/men-combo-plaid-linen-black.png',
+    imageUrl: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393776/men-combo-plaid-linen-black_olelys.png",
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393776/men-combo-plaid-linen-black_olelys.png",
     details: '2-Piece Outfit: Silver-grey and white subtle windowpane plaid linen overshirt with chest pocket, paired with straight-leg tailored noir black chinos, leather backpack and watch.',
     description: 'Minimalist Tokyo cafe aesthetic pairing a breathable silver plaid linen-cotton shirt with straight tailored black cotton chinos and refined leather accessories.'
   }
@@ -984,8 +984,8 @@ export const CATALOG_PRODUCTS = [
     badge: 'NEW ARRIVAL',
     colorHex: '#7c94a6',
     isDressShirt: true,
-    imageUrl: '/women-shirt-crinkle-blue.png',
-    localImage: '/women-shirt-crinkle-blue.png',
+    imageUrl: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393802/women-shirt-crinkle-blue_gebghj.png",
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393802/women-shirt-crinkle-blue_gebghj.png",
     description: 'Micro-plissé crinkled lightweight fabric with an oversized relaxed drape, dropped shoulders, and airy fluid silhouette for effortless everyday elegance.',
     swatches: [
       { name: 'Slate Blue', hex: '#7c94a6', id: 'shirt-crinkle-blue' },
@@ -1060,8 +1060,8 @@ export const CATALOG_PRODUCTS = [
     badge: 'TRENDING',
     colorHex: '#93a793',
     isDressShirt: true,
-    imageUrl: '/women-shirt-sage-pinstripe.png',
-    localImage: '/women-shirt-sage-pinstripe.png',
+    imageUrl: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393802/women-shirt-sage-pinstripe_p9ql6o.png",
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393802/women-shirt-sage-pinstripe_p9ql6o.png",
     description: 'Fine pinstriped two-piece layered open overshirt set in earthy sage green. Designed for chic high-low summer layering.',
     swatches: [
       { name: 'Sage Green Stripe', hex: '#93a793', id: 'shirt-sage-stripe' },
@@ -1085,8 +1085,8 @@ export const CATALOG_PRODUCTS = [
     badge: 'PARISIAN CHIC',
     colorHex: '#3a3a3c',
     isDressShirt: true,
-    imageUrl: '/women-shirt-noir-pinstripe.png',
-    localImage: '/women-shirt-noir-pinstripe.png',
+    imageUrl: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393802/women-shirt-noir-pinstripe_p3skaw.png",
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393802/women-shirt-noir-pinstripe_p3skaw.png",
     description: 'Sophisticated monochrome black & white vertical stripe shirt with open spread collar and graceful fluid drape.',
     swatches: [
       { name: 'Monochrome Noir Stripe', hex: '#3a3a3c', id: 'shirt-noir-stripe' },
@@ -1113,9 +1113,9 @@ export const CATALOG_PRODUCTS = [
     badge: 'NEW DROP',
     colorHex: '#1b2838',
     type: 'polo',
-    imageUrl: '/women-tee-block-stripe-polo.png',
-    localImage: '/women-tee-block-stripe-polo.png',
-    modelImage: '/women-tee-block-stripe-polo.png',
+    imageUrl: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393806/women-tee-block-stripe-polo_woq63u.png",
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393806/women-tee-block-stripe-polo_woq63u.png",
+    modelImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393806/women-tee-block-stripe-polo_woq63u.png",
     swatches: [
       { name: 'Navy & Cream Stripe', hex: '#1b2838', id: 'stripe-navy' },
       { name: 'Forest & Ecru Stripe', hex: '#233829', id: 'stripe-forest' }
@@ -1141,9 +1141,9 @@ export const CATALOG_PRODUCTS = [
     badge: 'TRENDING',
     colorHex: '#141416',
     type: 'streetwear',
-    imageUrl: '/women-tee-beardless-jersey.png',
-    localImage: '/women-tee-beardless-jersey.png',
-    modelImage: '/women-tee-beardless-jersey.png',
+    imageUrl: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393804/women-tee-beardless-jersey_pk9fqt.png",
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393804/women-tee-beardless-jersey_pk9fqt.png",
+    modelImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393804/women-tee-beardless-jersey_pk9fqt.png",
     swatches: [
       { name: 'Matte Black', hex: '#141416', id: 'jersey-black' },
       { name: 'Slate Grey', hex: '#4a4f56', id: 'jersey-slate' }
@@ -1169,9 +1169,9 @@ export const CATALOG_PRODUCTS = [
     badge: 'COLLEGIATE',
     colorHex: '#162238',
     type: 'polo',
-    imageUrl: '/women-tee-la-varsity-polo.png',
-    localImage: '/women-tee-la-varsity-polo.png',
-    modelImage: '/women-tee-la-varsity-polo.png',
+    imageUrl: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393808/women-tee-la-varsity-polo_lbfhj5.png",
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393808/women-tee-la-varsity-polo_lbfhj5.png",
+    modelImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393808/women-tee-la-varsity-polo_lbfhj5.png",
     swatches: [
       { name: 'Varsity Navy', hex: '#162238', id: 'la-navy' },
       { name: 'Ivy Green', hex: '#1c3422', id: 'la-green' }
@@ -1197,9 +1197,9 @@ export const CATALOG_PRODUCTS = [
     badge: 'ATELIER KNIT',
     colorHex: '#1c2430',
     type: 'knit',
-    imageUrl: '/women-tee-milan-striped-knit.png',
-    localImage: '/women-tee-milan-striped-knit.png',
-    modelImage: '/women-tee-milan-striped-knit.png',
+    imageUrl: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393806/women-tee-milan-striped-knit_h2vrgy.png",
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393806/women-tee-milan-striped-knit_h2vrgy.png",
+    modelImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393806/women-tee-milan-striped-knit_h2vrgy.png",
     swatches: [
       { name: 'Breton Navy', hex: '#1c2430', id: 'milan-navy' },
       { name: 'Sand Khaki', hex: '#b39c82', id: 'milan-sand' }
@@ -1225,9 +1225,9 @@ export const CATALOG_PRODUCTS = [
     badge: 'SIGNATURE',
     colorHex: '#111e33',
     type: 'polo',
-    imageUrl: '/women-tee-contrast-collar-polo.png',
-    localImage: '/women-tee-contrast-collar-polo.png',
-    modelImage: '/women-tee-contrast-collar-polo.png',
+    imageUrl: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393804/women-tee-contrast-collar-polo_u3ukva.png",
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393804/women-tee-contrast-collar-polo_u3ukva.png",
+    modelImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393804/women-tee-contrast-collar-polo_u3ukva.png",
     swatches: [
       { name: 'Midnight Navy', hex: '#111e33', id: 'vneck-navy' },
       { name: 'Burgundy Wine', hex: '#4a1525', id: 'vneck-wine' }
@@ -1291,9 +1291,9 @@ export const CATALOG_PRODUCTS = [
     "gender": "women",
     "badge": "NEW SILHOUETTE",
     "colorHex": "#121214",
-    "imageUrl": "/women-pants-black-corset.png",
-    "localImage": "/women-pants-black-corset.png",
-    "hoverImage": "/women-pants-black-corset.png",
+    "imageUrl": "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393794/women-pants-black-corset_jtkcjw.png",
+    "localImage": "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393794/women-pants-black-corset_jtkcjw.png",
+    "hoverImage": "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393794/women-pants-black-corset_jtkcjw.png",
     "description": "Sculptural high-rise trousers featuring an extended corset-style waistband with dual gold-toned metallic buttons, sharp structured pleats, and sweeping wide palazzo legs.",
     "swatches": [
         {
@@ -1327,9 +1327,9 @@ export const CATALOG_PRODUCTS = [
     "gender": "women",
     "badge": "RUNWAY RESORT",
     "colorHex": "#ffffff",
-    "imageUrl": "/women-pants-white-palazzo.png",
-    "localImage": "/women-pants-white-palazzo.png",
-    "hoverImage": "/women-pants-white-palazzo.png",
+    "imageUrl": "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393798/women-pants-white-palazzo_xgiwtz.png",
+    "localImage": "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393798/women-pants-white-palazzo_xgiwtz.png",
+    "hoverImage": "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393798/women-pants-white-palazzo_xgiwtz.png",
     "description": "Effortless Riviera resort aesthetic with a high-rise seamless waistline, subtle darting, and billowing relaxed palazzo legs tailored from breathable matte-weave linen blend.",
     "swatches": [
         {
@@ -1363,9 +1363,9 @@ export const CATALOG_PRODUCTS = [
     "gender": "women",
     "badge": "STATEMENT DENIM",
     "colorHex": "#2c2c2e",
-    "imageUrl": "/women-pants-charcoal-horseshoe.png",
-    "localImage": "/women-pants-charcoal-horseshoe.png",
-    "hoverImage": "/women-pants-charcoal-horseshoe.png",
+    "imageUrl": "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393795/women-pants-charcoal-horseshoe_t80ftv.png",
+    "localImage": "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393795/women-pants-charcoal-horseshoe_t80ftv.png",
+    "hoverImage": "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393795/women-pants-charcoal-horseshoe_t80ftv.png",
     "description": "The definitive modern statement silhouette: dramatic curved horseshoe / balloon leg cut from 13.5oz vintage washed black denim with whiskered thighs and tapered hem.",
     "swatches": [
         {
@@ -1399,9 +1399,9 @@ export const CATALOG_PRODUCTS = [
     "gender": "women",
     "badge": "STATEMENT DENIM",
     "colorHex": "#6d8fa8",
-    "imageUrl": "/women-pants-indigo-horseshoe.png",
-    "localImage": "/women-pants-indigo-horseshoe.png",
-    "hoverImage": "/women-pants-indigo-horseshoe.png",
+    "imageUrl": "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393805/women-pants-indigo-horseshoe_v2akiv.png",
+    "localImage": "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393805/women-pants-indigo-horseshoe_v2akiv.png",
+    "hoverImage": "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393805/women-pants-indigo-horseshoe_v2akiv.png",
     "description": "Sculpted curved barrel denim in an authentic vintage blue stone wash. Features an exaggerated outer curve through the knee with gentle inward taper at the stacked ankles.",
     "swatches": [
         {
@@ -1435,9 +1435,9 @@ export const CATALOG_PRODUCTS = [
     "gender": "women",
     "badge": "ATELIER ACTIVE",
     "colorHex": "#121212",
-    "imageUrl": "/women-pants-black-flare.png",
-    "localImage": "/women-pants-black-flare.png",
-    "hoverImage": "/women-pants-black-flare.png",
+    "imageUrl": "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393797/women-pants-black-flare_pxg505.png",
+    "localImage": "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393797/women-pants-black-flare_pxg505.png",
+    "hoverImage": "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393797/women-pants-black-flare_pxg505.png",
     "description": "Sculptural high-waisted flared bootcut yoga pants engineered with four-way stretch compression fabric, tummy-control crossover waistband, and an elongated bootcut flare hem.",
     "swatches": [
         {
@@ -1474,9 +1474,9 @@ export const CATALOG_PRODUCTS = [
     isCombo: true,
     badge: '2-PIECE CO-ORD • 15% OFF',
     colorHex: '#d89b9e',
-    imageUrl: '/women-combo-pink-corduroy.png',
-    localImage: '/women-combo-pink-corduroy.png',
-    hoverImage: '/women-combo-pink-corduroy.png',
+    imageUrl: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393792/women-combo-pink-corduroy_mbiouw.png",
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393792/women-combo-pink-corduroy_mbiouw.png",
+    hoverImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393792/women-combo-pink-corduroy_mbiouw.png",
     description: 'Playful yet elevated Parisian aesthetic: vintage dusty rose cropped corduroy overshirt layered over a soft ribbed crop tank and relaxed wide-leg blue jeans.',
     swatches: [
       { name: 'Dusty Rose & Denim', hex: '#d89b9e', id: 'w-combo-pink' }
@@ -1501,9 +1501,9 @@ export const CATALOG_PRODUCTS = [
     isCombo: true,
     badge: '2-PIECE CO-ORD • 15% OFF',
     colorHex: '#6c4e3e',
-    imageUrl: '/women-combo-brown-corduroy.png',
-    localImage: '/women-combo-brown-corduroy.png',
-    hoverImage: '/women-combo-brown-corduroy.png',
+    imageUrl: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393789/women-combo-brown-corduroy_derg0r.png",
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393789/women-combo-brown-corduroy_derg0r.png",
+    hoverImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393789/women-combo-brown-corduroy_derg0r.png",
     description: 'Earthy rich espresso mocha corduroy tailored into a sophisticated modern streetwear ensemble with washed charcoal curved wide-leg denim.',
     swatches: [
       { name: 'Mocha & Charcoal', hex: '#6c4e3e', id: 'w-combo-brown' }
@@ -1528,9 +1528,9 @@ export const CATALOG_PRODUCTS = [
     isCombo: true,
     badge: 'RUNWAY DUO • 15% OFF',
     colorHex: '#6d8fa8',
-    imageUrl: '/women-combo-denim-corset.png',
-    localImage: '/women-combo-denim-corset.png',
-    hoverImage: '/women-combo-denim-corset.png',
+    imageUrl: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393793/women-combo-denim-corset_t0tn2e.png",
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393793/women-combo-denim-corset_t0tn2e.png",
+    hoverImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393793/women-combo-denim-corset_t0tn2e.png",
     description: 'Runway statement duo: sculpted light indigo stone-washed denim corset featuring vertical boning and clean topstitching with floor-length wide-leg palazzo jeans.',
     swatches: [
       { name: 'Indigo Stone Wash', hex: '#6d8fa8', id: 'w-combo-denim' }
@@ -1555,9 +1555,9 @@ export const CATALOG_PRODUCTS = [
     isCombo: true,
     badge: 'LUXURY CO-ORD • 15% OFF',
     colorHex: '#4a2e24',
-    imageUrl: '/women-combo-lace-corset.png',
-    localImage: '/women-combo-lace-corset.png',
-    hoverImage: '/women-combo-lace-corset.png',
+    imageUrl: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393792/women-combo-lace-corset_z2aboy.png",
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393792/women-combo-lace-corset_z2aboy.png",
+    hoverImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393792/women-combo-lace-corset_z2aboy.png",
     description: 'A striking luxury ensemble pairing delicate espresso brown underwire lace corset bustier with relaxed tailored sand-beige cuffed chinos and strappy sandal heels.',
     swatches: [
       { name: 'Espresso & Sand', hex: '#4a2e24', id: 'w-combo-lace' }
@@ -1591,7 +1591,7 @@ export const CATALOG_PRODUCTS = [
     colorHex: '#f8f8fa',
     isDressShirt: true,
     imageUrl: 'https://res.cloudinary.com/qrhgjdrs/image/upload/v1789314781/linenshirt_lqdcpp.jpg',
-    localImage: '/linenshirt-rust-detail.jpg',
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789314781/linenshirt_lqdcpp.jpg",
     description: 'Clean optical white linen with structured collar and mother-of-pearl accents.',
     swatches: [
       { name: 'Crisp White', hex: '#f8f8fa', id: 'shirt-white' },
@@ -1620,7 +1620,7 @@ export const CATALOG_PRODUCTS = [
     colorHex: '#d8caa8',
     isDressShirt: true,
     imageUrl: 'https://res.cloudinary.com/qrhgjdrs/image/upload/v1789315007/half_y2ettu.jpg',
-    localImage: '/shirt-half.jpg',
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789315007/half_y2ettu.jpg",
     description: 'Natural unbleached flax beige linen with subtle botanical warmth.',
     swatches: [
       { name: 'Sand Beige', hex: '#d8caa8', id: 'shirt-beige' },
@@ -1648,7 +1648,7 @@ export const CATALOG_PRODUCTS = [
     colorHex: '#7ba4c9',
     isDressShirt: true,
     imageUrl: 'https://res.cloudinary.com/qrhgjdrs/image/upload/v1789315007/strip_tx7ml9.jpg',
-    localImage: '/shirt-strip.jpg',
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789315007/strip_tx7ml9.jpg",
     description: 'Classic Bengal blue & white striped oxford tailored with linen blend yarn.',
     swatches: [
       { name: 'Bengal Blue Stripe', hex: '#7ba4c9', id: 'shirt-stripe' },
@@ -1676,7 +1676,7 @@ export const CATALOG_PRODUCTS = [
     colorHex: '#8c4a38',
     isDressShirt: true,
     imageUrl: 'https://res.cloudinary.com/qrhgjdrs/image/upload/v1789315007/brown_qpsytq.jpg',
-    localImage: '/shirt-brown.jpg',
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789315007/brown_qpsytq.jpg",
     description: '100% French Normandy Linen. Tailored button-down collar, chest pocket, and rolled sleeve cuffs.',
     swatches: [
       { name: 'Rust Terracotta', hex: '#8c4a38', id: 'shirt-brown' },
@@ -1735,9 +1735,9 @@ export const CATALOG_PRODUCTS = [
     badge: 'NEW SEASON',
     colorHex: '#f6f4ee',
     type: 'polo',
-    imageUrl: '/men-tee-ivory-pleated-polo.png',
-    localImage: '/men-tee-ivory-pleated-polo.png',
-    modelImage: '/men-tee-ivory-pleated-polo.png',
+    imageUrl: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393781/men-tee-ivory-pleated-polo_heoxp9.png",
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393781/men-tee-ivory-pleated-polo_heoxp9.png",
+    modelImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393781/men-tee-ivory-pleated-polo_heoxp9.png",
     swatches: [
       { name: 'Pure Cream', hex: '#f6f4ee', id: 'polo-ivory' },
       { name: 'Noir Black', hex: '#161618', id: 'polo-black' }
@@ -1763,9 +1763,9 @@ export const CATALOG_PRODUCTS = [
     badge: 'ATELIER DROP',
     colorHex: '#141416',
     type: 'polo',
-    imageUrl: '/men-tee-noir-zip-polo.png',
-    localImage: '/men-tee-noir-zip-polo.png',
-    modelImage: '/men-tee-noir-zip-polo.png',
+    imageUrl: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393779/men-tee-noir-zip-polo_szazic.png",
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393779/men-tee-noir-zip-polo_szazic.png",
+    modelImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393779/men-tee-noir-zip-polo_szazic.png",
     swatches: [
       { name: 'Midnight Black', hex: '#141416', id: 'polo-zip-black' },
       { name: 'Slate Gray', hex: '#484c54', id: 'polo-zip-slate' }
@@ -1791,9 +1791,9 @@ export const CATALOG_PRODUCTS = [
     badge: 'BESTSELLER',
     colorHex: '#f0ece1',
     type: 'streetwear',
-    imageUrl: '/men-tee-stripe-knit.png',
-    localImage: '/men-tee-stripe-knit.png',
-    modelImage: '/men-tee-stripe-knit.png',
+    imageUrl: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393782/men-tee-stripe-knit_ms8ipb.png",
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393782/men-tee-stripe-knit_ms8ipb.png",
+    modelImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393782/men-tee-stripe-knit_ms8ipb.png",
     swatches: [
       { name: 'Ivory / Sand Stripe', hex: '#f0ece1', id: 'knit-stripe-ivory' },
       { name: 'Navy / Forest Stripe', hex: '#1e2838', id: 'knit-stripe-navy' }
@@ -1819,9 +1819,9 @@ export const CATALOG_PRODUCTS = [
     badge: 'ANIME CAPSULE',
     colorHex: '#f5efe4',
     type: 'graphic',
-    imageUrl: '/men-tee-luffy-anime.png',
-    localImage: '/men-tee-luffy-anime.png',
-    modelImage: '/men-tee-luffy-anime.png',
+    imageUrl: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393782/men-tee-luffy-anime_merfml.png",
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393782/men-tee-luffy-anime_merfml.png",
+    modelImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393782/men-tee-luffy-anime_merfml.png",
     swatches: [
       { name: 'Vintage Off-White', hex: '#f5efe4', id: 'luffy-white' },
       { name: 'Washed Charcoal', hex: '#2c2c30', id: 'luffy-charcoal' }
@@ -1847,9 +1847,9 @@ export const CATALOG_PRODUCTS = [
     badge: 'STREETWEAR',
     colorHex: '#f5ecd5',
     type: 'graphic',
-    imageUrl: '/men-tee-tokyo-racing.png',
-    localImage: '/men-tee-tokyo-racing.png',
-    modelImage: '/men-tee-tokyo-racing.png',
+    imageUrl: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393781/men-tee-tokyo-racing_ygxqir.png",
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393781/men-tee-tokyo-racing_ygxqir.png",
+    modelImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393781/men-tee-tokyo-racing_ygxqir.png",
     swatches: [
       { name: 'Butter Cream', hex: '#f5ecd5', id: 'tokyo-cream' },
       { name: 'Matte Black', hex: '#161616', id: 'tokyo-black' }
@@ -1877,9 +1877,9 @@ export const CATALOG_PRODUCTS = [
     badge: 'ATELIER SUITING',
     colorHex: '#18181a',
     type: 'pants',
-    imageUrl: '/men-pants-noir-pleated.png',
-    localImage: '/men-pants-noir-pleated.png',
-    modelImage: '/men-pants-noir-pleated.png',
+    imageUrl: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393778/men-pants-noir-pleated_uoyv0z.png",
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393778/men-pants-noir-pleated_uoyv0z.png",
+    modelImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393778/men-pants-noir-pleated_uoyv0z.png",
     swatches: [
       { name: 'Midnight Noir', hex: '#18181a', id: 'pants-noir' },
       { name: 'Sand Khaki', hex: '#ded3c1', id: 'pants-sand-khaki' }
@@ -1905,9 +1905,9 @@ export const CATALOG_PRODUCTS = [
     badge: 'UTILITY ESSENTIAL',
     colorHex: '#646862',
     type: 'pants',
-    imageUrl: '/men-pants-olive-cargo.png',
-    localImage: '/men-pants-olive-cargo.png',
-    modelImage: '/men-pants-olive-cargo.png',
+    imageUrl: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393778/men-pants-olive-cargo_bnzfat.png",
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393778/men-pants-olive-cargo_bnzfat.png",
+    modelImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393778/men-pants-olive-cargo_bnzfat.png",
     swatches: [
       { name: 'Washed Olive', hex: '#646862', id: 'cargo-olive' },
       { name: 'Washed Black', hex: '#242426', id: 'cargo-black' }
@@ -1933,9 +1933,9 @@ export const CATALOG_PRODUCTS = [
     badge: 'MINIMALIST',
     colorHex: '#f5f4ef',
     type: 'pants',
-    imageUrl: '/men-pants-white-skate.png',
-    localImage: '/men-pants-white-skate.png',
-    modelImage: '/men-pants-white-skate.png',
+    imageUrl: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393777/men-pants-white-skate_fxvzkq.png",
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393777/men-pants-white-skate_fxvzkq.png",
+    modelImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393777/men-pants-white-skate_fxvzkq.png",
     swatches: [
       { name: 'Optical White', hex: '#f5f4ef', id: 'skate-white' },
       { name: 'Raw Indigo', hex: '#26344d', id: 'skate-indigo' }
@@ -1961,9 +1961,9 @@ export const CATALOG_PRODUCTS = [
     badge: 'VINTAGE DROP',
     colorHex: '#7ba4c9',
     type: 'pants',
-    imageUrl: '/men-pants-acid-denim.png',
-    localImage: '/men-pants-acid-denim.png',
-    modelImage: '/men-pants-acid-denim.png',
+    imageUrl: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393779/men-pants-acid-denim_jenaqq.png",
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393779/men-pants-acid-denim_jenaqq.png",
+    modelImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393779/men-pants-acid-denim_jenaqq.png",
     swatches: [
       { name: 'Marble Acid Blue', hex: '#7ba4c9', id: 'denim-acid' },
       { name: 'Vintage Stone Black', hex: '#303034', id: 'denim-stone-black' }
@@ -1989,9 +1989,9 @@ export const CATALOG_PRODUCTS = [
     badge: 'STREETWEAR',
     colorHex: '#141416',
     type: 'pants',
-    imageUrl: '/men-pants-cyber-jogger.png',
-    localImage: '/men-pants-cyber-jogger.png',
-    modelImage: '/men-pants-cyber-jogger.png',
+    imageUrl: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393776/men-pants-cyber-jogger_bmpw4k.png",
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393776/men-pants-cyber-jogger_bmpw4k.png",
+    modelImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393776/men-pants-cyber-jogger_bmpw4k.png",
     swatches: [
       { name: 'Onyx Black', hex: '#141416', id: 'jogger-cyber-black' },
       { name: 'Heather Gray', hex: '#8a8c90', id: 'jogger-cyber-gray' }
@@ -2018,8 +2018,8 @@ export const CATALOG_PRODUCTS = [
     badge: 'ARCHIVE DROP',
     colorHex: '#5c4033',
     type: 'hoodie',
-    imageUrl: '/men-archive-mocha-cutout.png',
-    localImage: '/men-archive-mocha-cutout.png',
+    imageUrl: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393768/men-archive-mocha-cutout_d4aze5.png",
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393768/men-archive-mocha-cutout_d4aze5.png",
     swatches: [
       { name: 'Mocha & Cream', hex: '#5c4033', id: 'hoodie-mocha' },
       { name: 'Mineral Charcoal', hex: '#2c2e33', id: 'hoodie-charcoal' }
@@ -2042,8 +2042,8 @@ export const CATALOG_PRODUCTS = [
     badge: 'ESSENTIAL DROP',
     colorHex: '#dcd7cd',
     type: 'hoodie',
-    imageUrl: '/men-oatmeal-cutout.png',
-    localImage: '/men-oatmeal-cutout.png',
+    imageUrl: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393775/men-oatmeal-cutout_xtfxwq.png",
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393775/men-oatmeal-cutout_xtfxwq.png",
     swatches: [
       { name: 'Heather Oatmeal', hex: '#dcd7cd', id: 'hoodie-oatmeal' },
       { name: 'Washed Black', hex: '#222326', id: 'hoodie-black' },
@@ -2071,9 +2071,9 @@ export const CATALOG_PRODUCTS = [
     gender: "couple",
     badge: "COUPLE CO-ORD • 15% OFF",
     colorHex: "#581825",
-    imageUrl: "/couple-burgundy-cord.png",
-    localImage: "/couple-burgundy-cord.png",
-    hoverImage: "/couple-burgundy-cord.png",
+    imageUrl: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393749/couple-burgundy-cord_rqepmt.png",
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393749/couple-burgundy-cord_rqepmt.png",
+    hoverImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393749/couple-burgundy-cord_rqepmt.png",
     description: "Harmoniously coordinated couple ensemble: tailored relaxed wine burgundy button-down overshirts paired with high-waisted pleated fluid cream trousers and crisp white court sneakers.",
     swatches: [
       { name: "Burgundy & Ivory", hex: "#581825", id: "couple-burgundy" }
@@ -2097,9 +2097,9 @@ export const CATALOG_PRODUCTS = [
     gender: "couple",
     badge: "SIGNATURE PAIR • 15% OFF",
     colorHex: "#18181a",
-    imageUrl: "/couple-noir-linen.png",
-    localImage: "/couple-noir-linen.png",
-    hoverImage: "/couple-noir-linen.png",
+    imageUrl: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393750/couple-noir-linen_jhoevy.png",
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393750/couple-noir-linen_jhoevy.png",
+    hoverImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393750/couple-noir-linen_jhoevy.png",
     description: "Effortless cosmopolitan pair: matching midnight black relaxed shirts with tailored high-waisted sand chino trousers, dark acetate sunglasses, and minimalist white leather trainers.",
     swatches: [
       { name: "Noir & Sand", hex: "#18181a", id: "couple-noir" }
@@ -2123,9 +2123,9 @@ export const CATALOG_PRODUCTS = [
     gender: "couple",
     badge: "FESTIVE CAPSULE • 15% OFF",
     colorHex: "#1e293b",
-    imageUrl: "/couple-indigo-festive.png",
-    localImage: "/couple-indigo-festive.png",
-    hoverImage: "/couple-indigo-festive.png",
+    imageUrl: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393751/couple-indigo-festive_wirzr7.png",
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393751/couple-indigo-festive_wirzr7.png",
+    hoverImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393751/couple-indigo-festive_wirzr7.png",
     description: "Exquisite celebration pair: gentleman's midnight navy linen button-down with relaxed cream trousers, complemented by her intricately embroidered indigo tunic with matching palazzo and sheer drape dupatta.",
     swatches: [
       { name: "Midnight Indigo", hex: "#1e293b", id: "couple-indigo" }
@@ -2149,9 +2149,9 @@ export const CATALOG_PRODUCTS = [
     gender: "couple",
     badge: "AUTUMN RESORT • 15% OFF",
     colorHex: "#5c4033",
-    imageUrl: "/couple-mocha-linen.png",
-    localImage: "/couple-mocha-linen.png",
-    hoverImage: "/couple-mocha-linen.png",
+    imageUrl: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393752/couple-mocha-linen_q7b1gk.png",
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393752/couple-mocha-linen_q7b1gk.png",
+    hoverImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393752/couple-mocha-linen_q7b1gk.png",
     description: "Romantic earthy palette: matching rich mocha espresso linen button-downs paired with flowing high-rise ivory pleated trousers, tortoiseshell accents, and white platform trainers.",
     swatches: [
       { name: "Mocha & Cream", hex: "#5c4033", id: "couple-mocha" }
@@ -2175,9 +2175,9 @@ export const CATALOG_PRODUCTS = [
     gender: "couple",
     badge: "SUMMER ESCAPE • 15% OFF",
     colorHex: "#7ba4c9",
-    imageUrl: "/couple-sky-stripe.png",
-    localImage: "/couple-sky-stripe.png",
-    hoverImage: "/couple-sky-stripe.png",
+    imageUrl: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393751/couple-sky-stripe_xffsj2.png",
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393751/couple-sky-stripe_xffsj2.png",
+    hoverImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393751/couple-sky-stripe_xffsj2.png",
     description: "Sunny Riviera summer charm: gentleman's relaxed sky blue Bengal vertical stripe linen shirt, paired with her matching bow-tie peplum stripe top and airy ecru linen wide trousers.",
     swatches: [
       { name: "Sky Bengal Stripe", hex: "#7ba4c9", id: "couple-sky" }
@@ -2206,9 +2206,9 @@ export const CATALOG_PRODUCTS = [
     isCombo: true,
     badge: "2-PIECE SET • 15% OFF",
     colorHex: "#9e734c",
-    imageUrl: "/men-combo-camel-jacket-set.png",
-    localImage: "/men-combo-camel-jacket-set.png",
-    hoverImage: "/men-combo-camel-jacket-set.png",
+    imageUrl: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393772/men-combo-camel-jacket-set_yixzvb.png",
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393772/men-combo-camel-jacket-set_yixzvb.png",
+    hoverImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393772/men-combo-camel-jacket-set_yixzvb.png",
     description: "Elevated Parisian autumn aesthetic pairing a rich camel brown structured wool overshirt with high-rise pleated black trousers, white knit underlayer, and white leather trainers.",
     swatches: [
       { name: "Camel & Noir", hex: "#9e734c", id: "combo-camel-noir" }
@@ -2233,9 +2233,9 @@ export const CATALOG_PRODUCTS = [
     isCombo: true,
     badge: "2-PIECE SET • 15% OFF",
     colorHex: "#141416",
-    imageUrl: "/men-combo-black-oxford-denim.png",
-    localImage: "/men-combo-black-oxford-denim.png",
-    hoverImage: "/men-combo-black-oxford-denim.png",
+    imageUrl: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393772/men-combo-black-oxford-denim_lt7tpv.png",
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393772/men-combo-black-oxford-denim_lt7tpv.png",
+    hoverImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393772/men-combo-black-oxford-denim_lt7tpv.png",
     description: "Effortless cosmopolitan street style combining an unbuttoned black oxford long-sleeve shirt with vintage stone-washed baggy denim and retro white trainers.",
     swatches: [
       { name: "Noir & Ice Blue", hex: "#141416", id: "combo-noir-ice" }
@@ -2260,9 +2260,9 @@ export const CATALOG_PRODUCTS = [
     isCombo: true,
     badge: "STREETWEAR • 15% OFF",
     colorHex: "#f6f4ee",
-    imageUrl: "/men-combo-graphic-23-streetwear.png",
-    localImage: "/men-combo-graphic-23-streetwear.png",
-    hoverImage: "/men-combo-graphic-23-streetwear.png",
+    imageUrl: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393772/men-combo-graphic-23-streetwear_w3wae9.png",
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393772/men-combo-graphic-23-streetwear_w3wae9.png",
+    hoverImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393772/men-combo-graphic-23-streetwear_w3wae9.png",
     description: "Tokyo Y2K streetwear vibe featuring an oversized heavyweight #23 graphic tee paired with washed black wide-leg puddle jeans and skate sneakers.",
     swatches: [
       { name: "Optic White & Charcoal", hex: "#f6f4ee", id: "combo-23-charcoal" }
@@ -2287,9 +2287,9 @@ export const CATALOG_PRODUCTS = [
     isCombo: true,
     badge: "ATELIER SMART • 15% OFF",
     colorHex: "#7c94a6",
-    imageUrl: "/men-combo-pinstripe-charcoal.png",
-    localImage: "/men-combo-pinstripe-charcoal.png",
-    hoverImage: "/men-combo-pinstripe-charcoal.png",
+    imageUrl: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393772/men-combo-pinstripe-charcoal_nnd119.png",
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393772/men-combo-pinstripe-charcoal_nnd119.png",
+    hoverImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393772/men-combo-pinstripe-charcoal_nnd119.png",
     description: "Modern smart-casual aesthetic pairing a relaxed blue-and-white vertical pinstripe oxford button-down with washed charcoal denim trousers and white trainers.",
     swatches: [
       { name: "Skyline Stripe & Noir", hex: "#7c94a6", id: "combo-stripe-noir" }
@@ -2314,9 +2314,9 @@ export const CATALOG_PRODUCTS = [
     isCombo: true,
     badge: "SUMMER ESSENTIAL • 15% OFF",
     colorHex: "#d4d6db",
-    imageUrl: "/men-combo-plaid-linen-black.png",
-    localImage: "/men-combo-plaid-linen-black.png",
-    hoverImage: "/men-combo-plaid-linen-black.png",
+    imageUrl: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393776/men-combo-plaid-linen-black_olelys.png",
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393776/men-combo-plaid-linen-black_olelys.png",
+    hoverImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393776/men-combo-plaid-linen-black_olelys.png",
     description: "Minimalist Tokyo cafe aesthetic pairing a breathable silver plaid linen-cotton shirt with straight tailored black cotton chinos and refined leather accessories.",
     swatches: [
       { name: "Silver Plaid & Noir", hex: "#d4d6db", id: "combo-plaid-noir" }
@@ -2341,9 +2341,9 @@ export const CATALOG_PRODUCTS = [
     isCombo: true,
     badge: "2-PIECE SET • 15% OFF",
     colorHex: "#1c2d42",
-    imageUrl: "/men-navy-linen-cutout.png",
-    localImage: "/men-navy-linen-cutout.png",
-    hoverImage: "/men-navy-linen-cutout.png",
+    imageUrl: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393776/men-navy-linen-cutout_z2irht.png",
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393776/men-navy-linen-cutout_z2irht.png",
+    hoverImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393776/men-navy-linen-cutout_z2irht.png",
     description: "Tailored French Normandy midnight navy open-collar linen shirt paired effortlessly with pleated sand fluid wide-leg trousers and retro court sneakers.",
     swatches: [
       { name: "Midnight Navy & Sand", hex: "#1c2d42", id: "combo-navy-sand" }
@@ -2368,9 +2368,9 @@ export const CATALOG_PRODUCTS = [
     isCombo: true,
     badge: "QUIET LUXURY • 15% OFF",
     colorHex: "#f4efe6",
-    imageUrl: "/men-ecru-polo-cutout.png",
-    localImage: "/men-ecru-polo-cutout.png",
-    hoverImage: "/men-ecru-polo-cutout.png",
+    imageUrl: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393774/men-ecru-polo-cutout_pfoen8.png",
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393774/men-ecru-polo-cutout_pfoen8.png",
+    hoverImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393774/men-ecru-polo-cutout_pfoen8.png",
     description: "Open-collar ribbed cotton knit polo in natural ecru paired with relaxed washed black denim and vintage leather weekender duffel.",
     swatches: [
       { name: "Ecru & Washed Black", hex: "#f4efe6", id: "combo-ecru-black" }
@@ -2395,9 +2395,9 @@ export const CATALOG_PRODUCTS = [
     isCombo: true,
     badge: "2-PIECE SET • 15% OFF",
     colorHex: "#121212",
-    imageUrl: "/men-black-zip-polo-cutout.png",
-    localImage: "/men-black-zip-polo-cutout.png",
-    hoverImage: "/men-black-zip-polo-cutout.png",
+    imageUrl: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393770/men-black-zip-polo-cutout_bel8mx.png",
+    localImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393770/men-black-zip-polo-cutout_bel8mx.png",
+    hoverImage: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393770/men-black-zip-polo-cutout_bel8mx.png",
     description: "Fine-textured quarter-zip ribbed knit polo in midnight onyx black, styled with tailored stone-beige relaxed trousers and stainless steel chronograph.",
     swatches: [
       { name: "Onyx Black & Stone", hex: "#121212", id: "combo-black-stone" }

@@ -10,7 +10,7 @@ import {
 } from 'lucide-react';
 import { WOMEN_COMBOS_HERO } from '../data/productsCatalog';
 
-const WOMEN_COMBOS_HERO_IMAGE_URL = '/women-combos-hanger-hero.jpg';
+const WOMEN_COMBOS_HERO_IMAGE_URL = "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393792/women-combos-hanger-hero_c82mv0.jpg";
 
 // The 4 Interactive Hotspot Coordinates on the Real Photo
 const WOMEN_COMBOS_HOTSPOTS = [
@@ -151,7 +151,7 @@ export default function WomenCombosHangerRack({ onAddToCart, onToggleWishlist, w
             <img 
               key={activeCombo.id}
               src={activeCombo.imageUrl}
-              onError={(e) => { e.currentTarget.src = activeCombo.localImage || '/women-combo-pink-corduroy.png'; }}
+              onError={(e) => { e.currentTarget.src = activeCombo.localImage || "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393792/women-combo-pink-corduroy_mbiouw.png"; }}
               alt={`${activeCombo.name} Portrait View`}
               className="w-full h-full object-contain p-3 transition-transform duration-700 group-hover/portrait:scale-105 animate-in fade-in zoom-in-95 drop-shadow-sm"
             />

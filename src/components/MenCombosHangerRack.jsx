@@ -10,7 +10,7 @@ import {
 } from 'lucide-react';
 import { MEN_COMBOS_HERO, CATALOG_PRODUCTS } from '../data/productsCatalog';
 
-const MEN_COMBOS_HERO_IMAGE_URL = '/men-combos-hanger-hero.jpg';
+const MEN_COMBOS_HERO_IMAGE_URL = "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393774/men-combos-hanger-hero_kvjlz4.jpg";
 
 // The 5 Interactive Hotspot Coordinates across the Clothes Rail Photo
 const MEN_COMBOS_HOTSPOTS = [
@@ -156,7 +156,7 @@ export default function MenCombosHangerRack({ onAddToCart, onToggleWishlist, wis
             <img 
               key={activeCombo.id}
               src={activeCombo.imageUrl}
-              onError={(e) => { e.currentTarget.src = activeCombo.localImage || '/men-combo-camel-jacket-set.png'; }}
+              onError={(e) => { e.currentTarget.src = activeCombo.localImage || "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393772/men-combo-camel-jacket-set_yixzvb.png"; }}
               alt={`${activeCombo.name} Portrait View`}
               className="w-full h-full object-contain p-3 transition-transform duration-700 group-hover/portrait:scale-105 animate-in fade-in zoom-in-95 drop-shadow-sm"
             />
@@ -346,7 +346,7 @@ export default function MenCombosHangerRack({ onAddToCart, onToggleWishlist, wis
             const currentCardSize = cardSelectedSizes[c.id] || 'M';
             const isWishlisted = wishlist.includes(c.id);
             const cardHex = c.colorHex || c.hex || (c.swatches && c.swatches[0]?.hex) || '#141416';
-            const cardImg = c.imageUrl || c.localImage || '/men-combo-camel-jacket-set.png';
+            const cardImg = c.imageUrl || c.localImage || "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393772/men-combo-camel-jacket-set_yixzvb.png";
 
             return (
               <div

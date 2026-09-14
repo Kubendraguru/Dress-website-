@@ -10,7 +10,7 @@ import {
 } from 'lucide-react';
 import { COUPLE_HERO } from '../data/productsCatalog';
 
-const COUPLE_HERO_IMAGE_URL = '/couple-hanger-hero.jpg';
+const COUPLE_HERO_IMAGE_URL = "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393749/couple-hanger-hero_i1lpgf.jpg";
 
 // The 8 Interactive Hotspot Coordinates across the Clothes Rail Photo
 const COUPLE_HOTSPOTS = [
@@ -155,7 +155,7 @@ export default function CoupleHangerRack({ onAddToCart, onToggleWishlist, wishli
             <img 
               key={activeCouple.id}
               src={activeCouple.imageUrl}
-              onError={(e) => { e.currentTarget.src = activeCouple.localImage || '/couple-burgundy-cord.png'; }}
+              onError={(e) => { e.currentTarget.src = activeCouple.localImage || "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393749/couple-burgundy-cord_rqepmt.png"; }}
               alt={`${activeCouple.name} Portrait View`}
               className="w-full h-full object-contain p-3 transition-transform duration-700 group-hover/portrait:scale-105 animate-in fade-in zoom-in-95 drop-shadow-sm"
             />

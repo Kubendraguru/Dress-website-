@@ -8,7 +8,7 @@ import {
 } from 'lucide-react';
 import { WOMEN_PANTS_HERO } from '../data/productsCatalog';
 
-const WOMEN_PANTS_HERO_IMAGE_URL = '/women-pants-hanger-hero.jpg';
+const WOMEN_PANTS_HERO_IMAGE_URL = "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393796/women-pants-hanger-hero_ngr7mb.jpg";
 
 // The 6 Interactive Hotspot Coordinates on the Real Photo
 const WOMEN_PANTS_HOTSPOTS = [

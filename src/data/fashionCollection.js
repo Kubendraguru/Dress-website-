@@ -31,7 +31,7 @@ export const FASHION_COLLECTION = [
     palette: '#1c2d42',
     accentColor: 'from-neutral-200/40 to-neutral-100/10',
     description: 'Tailored French Normandy midnight navy open-collar linen shirt paired effortlessly with pleated sand fluid wide-leg trousers and retro court sneakers.',
-    image: '/men-navy-linen-cutout.png',
+    image: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393776/men-navy-linen-cutout_z2irht.png",
     details: {
       fabric: '100% Normandy Pure Flax Linen (180 GSM)',
       tailoring: 'Double Front Knife Pleats • Fluid Drape',
@@ -146,7 +146,7 @@ export const FASHION_COLLECTION = [
     palette: '#78716c',
     accentColor: 'from-stone-200/30 to-stone-100/10',
     description: 'Modern architectural streetwear fusing a heavyweight drop-shoulder noir cotton tee with relaxed multi-pocket sand cargo trousers and pristine leather runners.',
-    image: '/fighter-kenji.png',
+    image: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393753/fighter-kenji_pufr1a.png",
     details: {
       fabric: '340 GSM Heavy Combed Jersey & Sand Cotton-Nylon Twill',
       tailoring: 'Boxy Dropped Shoulder • Bellowed Utility Cargo',
