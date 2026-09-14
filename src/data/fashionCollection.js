@@ -24,24 +24,24 @@ export const FASHION_COLLECTION = [
   {
     id: 'look-02',
     number: '02',
-    collection: 'Monochrome Atelier Series',
-    name: 'Noir Pleated Silhouette',
-    category: 'Atelier Tailored Menswear',
-    price: 340,
-    palette: '#121212',
+    collection: 'Atelier Tailoring Series',
+    name: 'Midnight Navy & Pleated Sand',
+    category: 'French Flax Linen Menswear',
+    price: 345,
+    palette: '#1c2d42',
     accentColor: 'from-neutral-200/40 to-neutral-100/10',
-    description: 'Understated dark luxury. Features a relaxed silk-blend Cuban collar shirt with rolled sleeves, architectural double-pleated trousers, and Italian calfskin loafers.',
-    image: '/mannequin-cutout.png',
+    description: 'Tailored French Normandy midnight navy open-collar linen shirt paired effortlessly with pleated sand fluid wide-leg trousers and retro court sneakers.',
+    image: '/men-navy-linen-cutout.png',
     details: {
-      fabric: 'Heavyweight Sandwashed Silk & Tropical Wool',
+      fabric: '100% Normandy Pure Flax Linen (180 GSM)',
       tailoring: 'Double Front Knife Pleats • Fluid Drape',
       care: 'Gentle Hand Wash or Dry Clean',
-      modelStats: 'Mannequin Proportions: Size 48 / 32 Waist'
+      modelStats: 'Model is 185 cm / 6\'1" wearing European Atelier Size 48'
     },
     pieces: [
-      { name: 'Fluid Noir Cuban Shirt', price: 140 },
-      { name: 'Architectural Pleated Trousers', price: 165 },
-      { name: 'Lug-Sole Calfskin Loafers', price: 210 }
+      { name: 'Normandy Midnight Navy Linen Shirt', price: 84 },
+      { name: 'Pleated Sand Fluid Wide-Leg Trousers', price: 145 },
+      { name: 'Minimalist Retro Court Low-Tops', price: 120 }
     ]
   },
   {

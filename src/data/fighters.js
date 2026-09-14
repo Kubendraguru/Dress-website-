@@ -1,211 +1,332 @@
 export const FIGHTERS = [
   {
-    id: 'fighter-sarah',
+    id: 'hero-white-poplin',
     number: '01',
-    name: 'Solar Ochre Tailored Suit',
-    subtitle: 'Peaked-Lapel Tailored Runway Jumpsuit',
-    image: '/hero-model-cutout.png',
-    handwritten: 'Sarah (Solar)',
-    price: 420,
-    collectionBadge: 'SS26 PARIS RUNWAY DEBUT',
-    category: 'HAUTE COUTURE JUMPSUIT',
-    description: 'A striking study in structured solar hues. Crafted from heavy double-faced Italian silk-wool with peak lapels, belted cinched waist, and elongated trousers.',
-    palette: '#f59e0b',
+    name: 'Crisp White & Sand Trouser',
+    subtitle: 'Oversized French Poplin Shirt & Pleated Sand Wide-Leg Trousers',
+    image: '/white-poplin-cutout.png',
+    handwritten: 'Clara (Poplin)',
+    price: 370,
+    collectionBadge: 'PARISIAN MINIMALISM • SS26',
+    category: 'FRENCH POPLIN & SAND TROUSERS',
+    description: 'Modern relaxed tailoring marrying an oversized crisp white French poplin button-down shirt with fluid pleated sand wide-leg trousers, box leather crossbody saddle bag, and classic gum-sole court sneakers.',
+    palette: '#d6caa8',
     stats: {
-      power: 92,
-      speed: 78,
+      power: 90,
+      speed: 85,
       chic: 100
     },
     details: {
-      fabric: '100% Double-Faced Italian Wool & Mulberry Silk blend (420 GSM)',
-      tailoring: 'Hand-canvassed chest piece, structured pagoda shoulders, hidden horn buttons',
-      care: 'Specialist dry clean only • Store on cedar atelier hanger',
-      modelStats: 'Model is 179 cm / 5\'10.5" wearing European Atelier Size 38'
+      fabric: '100% Crisp Long-Staple French Cotton Poplin (140 GSM)',
+      tailoring: 'Drop-shoulder architectural drape, reverse double front pleats',
+      care: 'Machine wash delicate cold • Steam gently',
+      modelStats: 'Model is 178 cm / 5\'10" wearing Size S'
     },
     pieces: [
-      { name: 'Solar Peaked-Lapel Couture Jumpsuit', price: 340 },
-      { name: 'Amber Tinted Retro Cat-Eye Shades', price: 95 }
+      { name: 'Oversized Crisp White Poplin Shirt', price: 115 },
+      { name: 'Pleated Sand Fluid Wide-Leg Trousers', price: 145 },
+      { name: 'Box Leather Crossbody Saddle Bag', price: 110 }
     ],
-    vibe: 'Paris Fashion Week Runway Flagship'
+    vibe: 'Parisian Minimalist Chic • Le Marais'
   },
   {
-    id: 'fighter-luc',
+    id: 'hero-navy-crewneck',
     number: '02',
-    name: 'Noir Pleated Silhouette',
-    subtitle: 'Silk Cuban Shirt & Pleated Wide Trousers',
-    image: '/mannequin-cutout.png',
-    handwritten: 'Luc (Noir)',
-    price: 340,
-    collectionBadge: 'MILAN ATELIER EXCLUSIVE',
-    category: 'MONOCHROME DRAPING',
-    description: 'Sculptural silhouette balancing architectural double-pleated noir trousers with the fluid softness of heavy matte-silk tailoring.',
-    palette: '#52525b',
+    name: 'Midnight Navy Crew & Oxford',
+    subtitle: 'Heavyweight French Terry Sweatshirt & Wide Cream Denim',
+    image: '/navy-crewneck-cutout.png',
+    handwritten: 'Julian (Ivy Crew)',
+    price: 410,
+    collectionBadge: 'IVY STREETWEAR • SS26',
+    category: 'FRENCH TERRY & CREAM DENIM',
+    description: 'Classic collegiate streetwear reimagined with an oversized heavyweight midnight navy French terry crewneck sweatshirt layered over a sharp white point-collar shirt, paired with wide-leg relaxed cream denim and chunky sport trainers.',
+    palette: '#1e293b',
+    stats: {
+      power: 95,
+      speed: 82,
+      chic: 98
+    },
+    details: {
+      fabric: '480 GSM Custom-Milled Organic Cotton French Terry & 13.5oz Rigid Cream Denim',
+      tailoring: 'Ribbed collar and side gussets, wide straight-leg denim taper',
+      care: 'Machine wash cold inside out • Hang dry',
+      modelStats: 'Model is 184 cm / 6\'0.5" wearing Size L'
+    },
+    pieces: [
+      { name: 'Heavyweight French Terry Navy Crewneck', price: 140 },
+      { name: 'Point-Collar White Oxford Shirt', price: 110 },
+      { name: 'Relaxed Wide-Leg Cream Denim Trousers', price: 155 }
+    ],
+    vibe: 'Collegiate Street Luxe • New York / Paris'
+  },
+  {
+    id: 'hero-bengal-stripe',
+    number: '03',
+    name: 'Bengal Stripe & Pleated White',
+    subtitle: 'Oversized Striped Poplin Shirt, Ribbed Tank & Wide Trousers',
+    image: '/paris-striped-cutout.png',
+    handwritten: 'Chloé (Stripe)',
+    price: 390,
+    collectionBadge: 'PARISIAN TAILORING • SS26',
+    category: 'BENGAL STRIPE & WHITE LINEN',
+    description: 'Quintessential Parisian street elegance pairing an oversized Bengal blue striped poplin shirt over a ribbed white contour tank, fluid wide-leg white linen trousers, slouchy suede hobo bag, and neutral retro sneakers.',
+    palette: '#7ba4c9',
+    stats: {
+      power: 88,
+      speed: 86,
+      chic: 100
+    },
+    details: {
+      fabric: 'Normandy Linen-Cotton Blend & Fluid White Linen (180 GSM)',
+      tailoring: 'Oversized fluid tunic cut with buttoned sleeve placket and deep pleats',
+      care: 'Gentle hand wash or delicate cycle',
+      modelStats: 'Model is 177 cm / 5\'9.5" wearing Size S'
+    },
+    pieces: [
+      { name: 'Oversized Bengal Striped Poplin Shirt', price: 120 },
+      { name: 'Fluid Wide-Leg White Linen Trousers', price: 150 },
+      { name: 'Slouchy Suede Hobo Shoulder Bag', price: 110 }
+    ],
+    vibe: 'Effortless Parisian Summer • Saint-Germain'
+  },
+  {
+    id: 'hero-lemon-linen',
+    number: '04',
+    name: 'Lemon Linen & Cargo Mini',
+    subtitle: 'Airy French Linen Shirt & Washed Olive Utility Skirt',
+    image: '/lemon-linen-cutout.png',
+    handwritten: 'Amélie (Resort)',
+    price: 360,
+    collectionBadge: 'RIVIERA RESORT • SS26',
+    category: 'LEMON LINEN & OLIVE CARGO',
+    description: 'Sun-drenched coastal styling featuring an oversized airy pastel lemon yellow French linen button-down shirt paired with an olive green washed cargo utility mini skirt, handwoven raffia straw tote, and retro tortoiseshell shades.',
+    palette: '#fde047',
+    stats: {
+      power: 82,
+      speed: 90,
+      chic: 96
+    },
+    details: {
+      fabric: '100% French Normandy Linen (160 GSM) & Washed Cotton Twill',
+      tailoring: 'Airy relaxed button-down with utility bellow pockets on skirt',
+      care: 'Hand wash cold • Line dry in shade',
+      modelStats: 'Model is 175 cm / 5\'9" wearing Size S'
+    },
+    pieces: [
+      { name: 'Airy Lemon Linen Oxford Shirt', price: 110 },
+      { name: 'Washed Olive Cargo Utility Mini Skirt', price: 120 },
+      { name: 'Handwoven Raffia Straw Tote Bag', price: 85 }
+    ],
+    vibe: 'French Riviera Coastal Elegance • Cannes'
+  },
+  {
+    id: 'hero-sand-denim',
+    number: '05',
+    name: 'Sand Trucker & Baggy Denim',
+    subtitle: 'Chore Trucker Jacket, French Terry Hoodie & Relaxed Denim',
+    image: '/sand-denim-cutout.png',
+    handwritten: 'Minho (Sand Denim)',
+    price: 460,
+    collectionBadge: 'SEOUL STREET ATELIER • SS26',
+    category: 'CHORE DENIM & 90S WASH',
+    description: 'Effortless multi-layered street silhouette pairing a sand beige chore denim trucker jacket with a heavyweight white French terry hoodie, wide-leg relaxed light blue wash denim, chunky sneakers, and minimalist silver pendant.',
+    palette: '#d8caa8',
+    stats: {
+      power: 94,
+      speed: 88,
+      chic: 97
+    },
+    details: {
+      fabric: '14 oz Heavy Sand Cotton Canvas Trucker, 450 GSM Terry Hoodie',
+      tailoring: 'Boxy trucker cut with dropped shoulders and 90s skater taper',
+      care: 'Machine wash cold delicate • Air dry flat',
+      modelStats: 'Model is 183 cm / 6\'0" wearing Size L'
+    },
+    pieces: [
+      { name: 'Sand Chore Denim Trucker Jacket', price: 180 },
+      { name: 'French Terry Pullover Hoodie', price: 135 },
+      { name: 'Relaxed Wide-Leg Light Washed Jeans', price: 165 }
+    ],
+    vibe: 'Seoul Design District Streetwear • Gangnam'
+  },
+  {
+    id: 'hero-tokyo-streetwear',
+    number: '06',
+    name: 'Tokyo Streetwear Cargo Fit',
+    subtitle: 'Layered Oversized Silhouette & Washed Utility',
+    image: '/streetwear-cutout.png',
+    handwritten: 'Ren (Tokyo Cargo)',
+    price: 380,
+    collectionBadge: 'URBAN ATELIER • SS26',
+    category: 'LAYERED TEES & UTILITY CARGO',
+    description: 'Effortlessly styled Tokyo streetwear fit featuring a heavyweight drop-shoulder black tee layered over a white long-sleeve tee, wide-leg vintage washed cargo utility pants, silver tag necklace, and dark acetate shades.',
+    palette: '#4a4a50',
+    stats: {
+      power: 92,
+      speed: 94,
+      chic: 95
+    },
+    details: {
+      fabric: '340 GSM Ring-Spun Combed Jersey & Vintage Cavalry Twill',
+      tailoring: 'Dual-layered collar and hemline with tactical 3D bellows pockets',
+      care: 'Machine wash cold inside out • Hang dry',
+      modelStats: 'Model is 181 cm / 5\'11" wearing Size L'
+    },
+    pieces: [
+      { name: 'Heavyweight Layered Double Tee', price: 110 },
+      { name: 'Vintage Washed Relaxed Cargo Pants', price: 175 },
+      { name: 'Sterling Silver Tag Pendant Necklace', price: 95 }
+    ],
+    vibe: 'Metropolitan Harajuku Minimalist • Tokyo'
+  },
+  {
+    id: 'hero-navy-linen-model',
+    number: '07',
+    name: 'Midnight Navy & Pleated Sand',
+    subtitle: 'French Flax Linen Shirt & Pleated Sand Fluid Trousers',
+    image: '/men-navy-linen-cutout.png',
+    handwritten: 'Luc (Navy Linen)',
+    price: 345,
+    collectionBadge: 'EDITORIAL ATELIER • SS26',
+    category: 'FRENCH LINEN DRAPING',
+    description: 'Tailored French Normandy midnight navy open-collar linen shirt paired effortlessly with pleated sand fluid wide-leg trousers, vintage leather watch, and clean retro court sneakers.',
+    palette: '#1c2d42',
     stats: {
       power: 96,
       speed: 84,
       chic: 99
     },
     details: {
-      fabric: 'Matte Silk Twill upper, high-twist virgin tropical wool trouser',
-      tailoring: 'Deep reverse double pleats, extended tab waistband, blind-stitched hem',
-      care: 'Specialist dry clean only • Steam gently',
-      modelStats: 'Mannequin sculpted to Paris Haute Couture Menswear Standard 48'
+      fabric: '100% Normandy Pure Flax Linen (180 GSM), Fluid Tencel-Linen Trouser',
+      tailoring: 'Deep reverse double pleats, open camp collar, contoured seams',
+      care: 'Specialist dry clean or gentle hand wash • Steam gently',
+      modelStats: 'Model is 185 cm / 6\'1" wearing European Atelier Size 48'
     },
     pieces: [
-      { name: 'Fluid Noir Cuban Collar Shirt', price: 140 },
-      { name: 'Architectural Pleated Noir Trousers', price: 165 },
-      { name: 'Lug-Sole Calfskin Loafers', price: 210 }
+      { name: 'Normandy Midnight Navy Linen Shirt', price: 84 },
+      { name: 'Pleated Sand Fluid Wide-Leg Trousers', price: 145 },
+      { name: 'Minimalist Retro Court Low-Tops', price: 120 }
     ],
-    vibe: 'Atelier Monochrome Discipline • Milan'
+    vibe: 'Atelier French Tailoring • Paris SS26'
   },
   {
-    id: 'fighter-tammy',
-    number: '03',
-    name: 'Tammy Oversized Leather Bomber',
-    subtitle: 'Oversized Bomber & Denim Jorts',
-    image: '/fighter-tammy.png',
-    handwritten: 'Tammy (Leather)',
-    price: 380,
-    collectionBadge: 'BERLIN COUTURE STREET',
-    category: 'HEAVYWEIGHT GRAIN LEATHER',
-    description: 'Bespoke boxy motorcycle silhouette with dropped shoulders and antiqued silver hardware, juxtaposed against relaxed raw-selvedge denim bermudas.',
-    palette: '#b45309',
+    id: 'hero-ecru-polo-model',
+    number: '08',
+    name: 'Ribbed Ecru Polo & Washed Black',
+    subtitle: 'Johnny Collar Knit Polo & Relaxed Black Denim',
+    image: '/men-ecru-polo-cutout.png',
+    handwritten: 'Marco (Quiet Luxury)',
+    price: 310,
+    collectionBadge: 'QUIET LUXURY • SS26',
+    category: 'RIBBED KNIT & BLACK DENIM',
+    description: 'Open-collar ribbed combed cotton knit polo in natural ecru paired with relaxed washed black denim jeans and handcrafted full-grain leather weekender duffel.',
+    palette: '#f4efe6',
     stats: {
       power: 88,
-      speed: 72,
-      chic: 96
+      speed: 86,
+      chic: 100
     },
     details: {
-      fabric: 'Full-grain vintage-treated calfskin leather with cupro lining',
-      tailoring: 'Drop-shoulder boxy cut, ribbed wool hem, custom cast metal pulls',
-      care: 'Leather specialist care only',
-      modelStats: 'Model is 176 cm / 5\'9" wearing Size M (Oversized Silhouette)'
+      fabric: '100% Mercerized Combed Ribbed Cotton Knit & 13.5oz Washed Denim',
+      tailoring: 'Johnny open V-collar, shape-memory ribbing, relaxed straight taper',
+      care: 'Gentle hand wash cold • Dry flat',
+      modelStats: 'Model is 183 cm / 6\'0" wearing Size L'
     },
     pieces: [
-      { name: 'Oversized Vintage Leather Bomber', price: 220 },
-      { name: 'Raw-Hem Relaxed Denim Bermuda', price: 95 },
-      { name: 'Chunky Lug-Sole Platform Sandals', price: 140 }
+      { name: 'Johnny Collar Ribbed Ecru Knit Polo', price: 78 },
+      { name: 'Washed Black Relaxed Denim Jeans', price: 140 },
+      { name: 'Heritage Full-Grain Leather Duffel', price: 195 }
     ],
-    vibe: 'Industrial Street Luxe • Berlin / Paris'
+    vibe: 'Quiet Luxury Minimalism • Milan'
   },
   {
-    id: 'fighter-yuki',
-    number: '04',
-    name: 'Yuki Cobalt Parachute Cargo',
-    subtitle: 'Sportive Fleece & Electric Parachute Cargo',
-    image: '/fighter-yuki.png',
-    handwritten: 'Yuki (Parachute)',
-    price: 320,
-    collectionBadge: 'SEOUL CAPSULE DROP',
-    category: 'TECHNICAL RUNWAY NYLON',
-    description: 'Kinetic runway design featuring ultra-wide electric cobalt nylon cargo with bungee articulation and relaxed brushed cotton layering.',
-    palette: '#3b82f6',
+    id: 'hero-navy-contrast-polo',
+    number: '09',
+    name: 'Contrast Collar Navy Knit',
+    subtitle: 'Mercerized Cotton Knit Polo & Tailored White Trousers',
+    image: '/men-navy-contrast-cutout.png',
+    handwritten: 'Enzo (Contrast Polo)',
+    price: 330,
+    collectionBadge: 'MILAN ATELIER • SS26',
+    category: 'MERCERIZED KNIT & WHITE TROUSERS',
+    description: 'Refined Italian-style fine-gauge navy knit polo with contrast white collar and cuffs, styled with tailored pleated white trousers and minimal leather low-tops.',
+    palette: '#1e293b',
     stats: {
-      power: 68,
-      speed: 88,
+      power: 90,
+      speed: 85,
+      chic: 99
+    },
+    details: {
+      fabric: '100% Mercerized Egyptian Cotton Knit & High-Density White Tropical Linen',
+      tailoring: 'Contrast collar tipping, razor sharp trouser front crease',
+      care: 'Dry clean or gentle hand wash',
+      modelStats: 'Model is 184 cm / 6\'0.5" wearing Size L'
+    },
+    pieces: [
+      { name: 'Contrast Collar Navy Knit Polo', price: 82 },
+      { name: 'Tailored Pleated White Linen Trousers', price: 150 },
+      { name: 'Minimalist White Calfskin Low-Tops', price: 125 }
+    ],
+    vibe: 'Italian Riviera Sartorial • Portofino'
+  },
+  {
+    id: 'hero-archive-mocha-hoodie',
+    number: '10',
+    name: 'Archive Two-Tone Mocha Hoodie',
+    subtitle: '480 GSM French Terry & Washed Cargo Silhouette',
+    image: '/men-archive-mocha-cutout.png',
+    handwritten: 'Theo (Archive Mocha)',
+    price: 360,
+    collectionBadge: 'STREET ATELIER • SS26',
+    category: 'HEAVYWEIGHT RAGLAN & CARGO',
+    description: 'Heavyweight two-tone mocha brown and cream raglan French terry hoodie paired with vintage washed grey wide utility cargo pants.',
+    palette: '#5c4033',
+    stats: {
+      power: 96,
+      speed: 90,
       chic: 94
     },
     details: {
-      fabric: 'Water-repellent Japanese ripstop parachute nylon (180 GSM)',
-      tailoring: 'Articulated knee darts, bungee cinch cuff systems, 6 3D cargo pockets',
-      care: 'Machine wash cold delicate • Air dry flat',
+      fabric: '480 GSM Milled Organic French Terry & Heavy Cavalry Twill',
+      tailoring: 'Contrast raglan sleeve cut, seamless kangaroo pocket, wide cargo leg',
+      care: 'Machine wash cold inside out • Hang dry',
       modelStats: 'Model is 182 cm / 6\'0" wearing Size L'
     },
     pieces: [
-      { name: 'Electric Cobalt Nylon Parachute Pants', price: 155 },
-      { name: 'Vintage Washed Sportive Crewneck', price: 120 },
-      { name: 'Technical Trekking Runners', price: 160 }
+      { name: 'Two-Tone Archive Mocha Raglan Hoodie', price: 98 },
+      { name: 'Vintage Washed Grey Wide Utility Cargo', price: 165 },
+      { name: 'Silver Box Chain Pendant', price: 75 }
     ],
-    vibe: 'Cyber Movement & Utility Chic • Seoul'
+    vibe: 'Archive Streetwear Drop • Berlin'
   },
   {
-    id: 'fighter-elena',
-    number: '05',
-    name: 'Elena Minimalist Olive Cargo',
-    subtitle: 'Ribbed Long-Sleeve & Wide Utility Cargo',
-    image: '/fighter-elena.png',
-    handwritten: 'Elena (Cargo)',
-    price: 290,
-    collectionBadge: 'LONDON ATELIER EDIT',
-    category: 'STRUCTURED MILITARY TWILL',
-    description: 'Modern utilitarianism translated into couture. Deep earth-toned olive cargo with elongated rise and ribbed modal micro-knit top.',
-    palette: '#10b981',
+    id: 'hero-oatmeal-terry-hoodie',
+    number: '11',
+    name: 'Organic Oatmeal Terry Hoodie',
+    subtitle: '450 GSM Heavyweight Hoodie & Light Wash Denim',
+    image: '/men-oatmeal-cutout.png',
+    handwritten: 'Noah (Oatmeal Terry)',
+    price: 320,
+    collectionBadge: 'CORE ESSENTIALS • SS26',
+    category: 'ORGANIC FRENCH TERRY & DENIM',
+    description: 'Heavyweight organic French terry hoodie in natural heather oatmeal paired with vintage relaxed light wash denim jeans.',
+    palette: '#dcd7cd',
     stats: {
-      power: 74,
-      speed: 82,
-      chic: 98
+      power: 92,
+      speed: 88,
+      chic: 96
     },
     details: {
-      fabric: 'Garment-dyed heavyweight cotton cavalry twill (360 GSM)',
-      tailoring: 'High-waisted tailored waistband with military gusset pockets',
-      care: 'Wash inside out with similar colors • Iron low',
-      modelStats: 'Model is 175 cm / 5\'9" wearing Size S'
+      fabric: '450 GSM Custom Milled Organic Cotton French Terry & 13.5oz Ring-Spun Denim',
+      tailoring: 'Structured double hood without drawstrings, vintage 90s denim wash',
+      care: 'Machine wash cold • Tumble dry low',
+      modelStats: 'Model is 183 cm / 6\'0" wearing Size L'
     },
     pieces: [
-      { name: 'Wide-Leg Utility Cargo Pants in Olive', price: 140 },
-      { name: 'Ribbed Slate Long-Sleeve Crop', price: 85 },
-      { name: 'Vintage 90s Wire Sunglasses', price: 95 }
+      { name: 'Heavyweight Oatmeal French Terry Hoodie', price: 92 },
+      { name: 'Relaxed Light Wash 90s Denim Jeans', price: 145 },
+      { name: 'Retro Gum-Sole Trainers', price: 120 }
     ],
-    vibe: 'Minimalist 90s Street Revival • London'
-  },
-  {
-    id: 'fighter-kai',
-    number: '06',
-    name: 'Kai City Skater Noir',
-    subtitle: 'Washed City Graphic & Baggy Jorts',
-    image: '/fighter-kai.png',
-    handwritten: 'Kai (Skate)',
-    price: 260,
-    collectionBadge: 'TOKYO SUB-CULTURE DROP',
-    category: 'OVERSIZED SKATEWEAR',
-    description: 'Vintage mineral-washed cotton graphic tee matched with heavyweight 14oz washed denim shorts and padded skate footwear.',
-    palette: '#64748b',
-    stats: {
-      power: 76,
-      speed: 95,
-      chic: 82
-    },
-    details: {
-      fabric: '300 GSM combed organic cotton & 14oz ring-spun denim',
-      tailoring: 'Single-stitch vintage hem, boxy dropped shoulder, loose straight leg',
-      care: 'Machine wash cold inside out • Hang dry',
-      modelStats: 'Model is 185 cm / 6\'1" wearing Size L'
-    },
-    pieces: [
-      { name: 'Heavyweight Washed City Graphic Tee', price: 85 },
-      { name: 'Baggy Washed Grey Denim Shorts', price: 110 },
-      { name: 'Chunky Retro Skate Runners', price: 135 }
-    ],
-    vibe: 'Tokyo Skate Culture • Omotesando'
-  },
-  {
-    id: 'fighter-kenji',
-    number: '07',
-    name: 'Kenji Relaxed Sand Cargo',
-    subtitle: 'Heavyweight Boxy Noir Tee & Baggy Cargo',
-    image: '/fighter-kenji.png',
-    handwritten: 'Kenji (Cargo)',
-    price: 310,
-    collectionBadge: 'TOKYO STREETWEAR EDIT',
-    category: 'BOXY JERSEY & SAND CARGO',
-    description: 'Modern architectural streetwear fusing a heavyweight drop-shoulder noir cotton tee with relaxed multi-pocket sand cargo trousers and pristine leather runners.',
-    palette: '#78716c',
-    stats: {
-      power: 84,
-      speed: 90,
-      chic: 97
-    },
-    details: {
-      fabric: '340 GSM heavy combed cotton jersey, high-density sand cotton-nylon twill',
-      tailoring: 'Boxy oversized drape, bellowed utility cargo pockets, articulated knee seams',
-      care: 'Machine wash cold delicate • Air dry flat',
-      modelStats: 'Model is 181 cm / 5\'11" wearing Size L'
-    },
-    pieces: [
-      { name: 'Heavyweight Boxy Noir Tee', price: 85 },
-      { name: 'Baggy Sand Multi-Pocket Cargo Trousers', price: 135 },
-      { name: 'Sterling Silver Minimalist Pendant Chain', price: 90 }
-    ],
-    vibe: 'Metropolitan Harajuku Minimalist • Tokyo'
+    vibe: 'Timeless Minimalist Essentials • Atelier'
   }
 ];

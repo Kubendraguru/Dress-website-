@@ -1,25 +1,7 @@
 export const HERO_OUTFITS = [
   {
-    id: 'hero-ochre-jumpsuit',
-    tag: 'RUNWAY EDITION • SS26',
-    title: 'Solar Ochre Tailored Suit',
-    subtitle: 'Vibrant Precision & Architectural Cut',
-    price: 420,
-    rating: 5.0,
-    reviewsCount: 142,
-    image: '/hero-model-cutout.png',
-    cutoutImage: '/hero-model-cutout.png',
-    badge: 'Paris Runway Feature',
-    description: 'Statement sunshine yellow couture jumpsuit tailored with a peaked lapel, belted cinched waist, and straight-line silhouette inspired by 70s brutalist architecture.',
-    palette: ['#e5a919', '#d18c0c', '#121212'],
-    items: [
-      { name: 'Solar Tailored Jumpsuit', price: 340, id: 'item-yellow-suit', category: 'Suits & Jumpsuits', size: 'M' },
-      { name: 'Amber Tinted Retro Shades', price: 95, id: 'item-amber-shades', category: 'Eyewear', size: 'One Size' },
-      { name: 'Minimalist Pointed-Toe Booties', price: 195, id: 'item-yellow-shoes', category: 'Footwear', size: '41' }
-    ]
-  },
-  {
     id: 'hero-white-poplin',
+    shortTitle: 'Crisp White Poplin',
     tag: 'PARISIAN MINIMALISM • SS26',
     title: 'Crisp White & Sand Trouser',
     subtitle: 'Oversized French Poplin Shirt & Pleated Sand Wide-Leg Trousers',
@@ -41,6 +23,7 @@ export const HERO_OUTFITS = [
   },
   {
     id: 'hero-navy-crewneck',
+    shortTitle: 'Midnight Navy Crew',
     tag: 'IVY STREETWEAR • SS26',
     title: 'Midnight Navy Crew & Oxford',
     subtitle: 'Heavyweight French Terry Sweatshirt & Wide Cream Denim',
@@ -62,6 +45,7 @@ export const HERO_OUTFITS = [
   },
   {
     id: 'hero-bengal-stripe',
+    shortTitle: 'Bengal Stripe',
     tag: 'PARISIAN TAILORING • SS26',
     title: 'Bengal Stripe & Pleated White',
     subtitle: 'Oversized Striped Poplin Shirt, Ribbed Tank & Wide Trousers',
@@ -83,6 +67,7 @@ export const HERO_OUTFITS = [
   },
   {
     id: 'hero-lemon-linen',
+    shortTitle: 'Lemon Linen Resort',
     tag: 'RIVIERA RESORT • SS26',
     title: 'Lemon Linen & Cargo Mini',
     subtitle: 'Airy French Linen Shirt & Washed Olive Utility Skirt',
@@ -104,6 +89,7 @@ export const HERO_OUTFITS = [
   },
   {
     id: 'hero-sand-denim',
+    shortTitle: 'Sand Denim & Hoodie',
     tag: 'SEOUL STREET ATELIER • SS26',
     title: 'Sand Trucker & Baggy Denim',
     subtitle: 'Chore Trucker Jacket, French Terry Hoodie & Relaxed Denim',
@@ -125,6 +111,7 @@ export const HERO_OUTFITS = [
   },
   {
     id: 'hero-tokyo-streetwear',
+    shortTitle: 'Tokyo Street Cargo',
     tag: 'URBAN ATELIER • SS26',
     title: 'Tokyo Streetwear Cargo Fit',
     subtitle: 'Layered Oversized Silhouette & Washed Utility',
@@ -144,27 +131,104 @@ export const HERO_OUTFITS = [
     ]
   },
   {
-    id: 'hero-mannequin-black',
-    tag: 'SS26 FLAGSHIP COUTURE',
-    title: 'Noir Pleated Silhouette',
-    subtitle: 'Tailored Luxury & Modern Street Elegance',
-    price: 340,
-    rating: 4.9,
-    reviewsCount: 128,
-    image: '/mannequin-black.png',
-    cutoutImage: '/mannequin-cutout.png',
-    badge: 'Curator Choice ✦ Exclusive',
-    description: 'A masterclass in modern monochrome tailoring. Features a fluid silk-blend relaxed Cuban collar shirt with roll-cuffed sleeves, paired with high-waisted pleated architectural trousers and handcrafted leather chunky loafers.',
-    palette: ['#121212', '#2a2a2a', '#e6c281'],
-    hotspots: [
-      { id: 'spot-cuban', x: 50, y: 28, name: 'Fluid Noir Cuban Shirt', price: 140 },
-      { id: 'spot-pants-3', x: 50, y: 65, name: 'Pleated Architectural Trousers', price: 165 }
-    ],
+    id: 'hero-navy-linen-model',
+    shortTitle: 'Midnight Navy Linen',
+    tag: 'EDITORIAL ATELIER • SS26',
+    title: 'Midnight Navy & Pleated Sand',
+    subtitle: 'French Flax Linen Shirt & Pleated Sand Fluid Trousers',
+    price: 345,
+    rating: 5.0,
+    reviewsCount: 142,
+    image: '/men-navy-linen-model.jpg',
+    cutoutImage: '/men-navy-linen-cutout.png',
+    badge: 'Editorial Drop',
+    description: 'Tailored French Normandy midnight navy open-collar linen shirt paired effortlessly with pleated sand fluid wide-leg trousers, vintage leather watch, and clean retro court sneakers.',
+    palette: ['#1c2d42', '#d8caa8', '#a89a82', '#ffffff'],
     items: [
-      { name: 'Fluid Noir Cuban Shirt', price: 140, id: 'item-noir-shirt', category: 'Shirts', size: 'M' },
-      { name: 'Architectural Pleated Trousers', price: 165, id: 'item-noir-pants', category: 'Pants', size: '32' },
-      { name: '18K Gold Crucifix Pendant', price: 85, id: 'item-noir-chain', category: 'Jewelry', size: 'One Size' },
-      { name: 'Chunky Lug-Sole Loafers', price: 210, id: 'item-noir-loafers', category: 'Footwear', size: '42' }
+      { name: 'Normandy Midnight Navy Linen Shirt', price: 84, id: 'item-men-navy-linen', category: 'Shirts', size: 'L' },
+      { name: 'Pleated Sand Fluid Wide-Leg Trousers', price: 145, id: 'item-men-sand-pants', category: 'Pants', size: '32' },
+      { name: 'Vintage Leather Weekender Watch', price: 95, id: 'item-men-navy-watch', category: 'Jewelry', size: 'One Size' },
+      { name: 'Minimalist Retro Court Low-Tops', price: 120, id: 'item-men-navy-sneakers', category: 'Footwear', size: '42' }
+    ]
+  },
+  {
+    id: 'hero-ecru-polo-model',
+    shortTitle: 'Ribbed Ecru Polo',
+    tag: 'QUIET LUXURY • SS26',
+    title: 'Ribbed Ecru Polo & Washed Black Denim',
+    subtitle: 'Johnny Collar Knit Polo & Relaxed Black Denim',
+    price: 310,
+    rating: 4.9,
+    reviewsCount: 165,
+    image: '/men-ecru-polo-model.jpg',
+    cutoutImage: '/men-ecru-polo-cutout.png',
+    badge: 'Quiet Luxury',
+    description: 'Open-collar ribbed combed cotton knit polo in natural ecru paired with relaxed washed black denim jeans and handcrafted full-grain leather weekender duffel.',
+    palette: ['#f4efe6', '#222326', '#8a6240', '#121212'],
+    items: [
+      { name: 'Johnny Collar Ribbed Ecru Knit Polo', price: 78, id: 'item-men-ecru-polo', category: 'Shirts', size: 'L' },
+      { name: 'Washed Black Relaxed Denim Jeans', price: 140, id: 'item-men-black-denim', category: 'Pants', size: '32' },
+      { name: 'Heritage Full-Grain Leather Duffel', price: 195, id: 'item-men-leather-duffel', category: 'Bags', size: 'One Size' }
+    ]
+  },
+  {
+    id: 'hero-navy-contrast-polo',
+    shortTitle: 'Contrast Navy Polo',
+    tag: 'MILAN ATELIER • SS26',
+    title: 'Contrast Collar Navy Knit & White Trouser',
+    subtitle: 'Mercerized Cotton Knit Polo & Tailored White Trousers',
+    price: 330,
+    rating: 5.0,
+    reviewsCount: 138,
+    image: '/men-navy-contrast-polo.jpg',
+    cutoutImage: '/men-navy-contrast-cutout.png',
+    badge: 'Milan Drop',
+    description: 'Refined Italian-style fine-gauge navy knit polo with contrast white collar and cuffs, styled with tailored pleated white trousers and minimal leather low-tops.',
+    palette: ['#1e293b', '#ffffff', '#e2e8f0', '#121212'],
+    items: [
+      { name: 'Contrast Collar Navy Knit Polo', price: 82, id: 'item-men-contrast-polo', category: 'Shirts', size: 'L' },
+      { name: 'Tailored Pleated White Linen Trousers', price: 150, id: 'item-men-white-trouser', category: 'Pants', size: '32' },
+      { name: 'Minimalist White Calfskin Low-Tops', price: 125, id: 'item-men-white-shoes', category: 'Footwear', size: '42' }
+    ]
+  },
+  {
+    id: 'hero-archive-mocha-hoodie',
+    shortTitle: 'Archive Mocha Hoodie',
+    tag: 'STREET ATELIER • SS26',
+    title: 'Archive Two-Tone Mocha Raglan Hoodie',
+    subtitle: '480 GSM French Terry & Washed Cargo Silhouette',
+    price: 360,
+    rating: 5.0,
+    reviewsCount: 177,
+    image: '/men-archive-mocha-hoodie.jpg',
+    cutoutImage: '/men-archive-mocha-cutout.png',
+    badge: 'Archive Drop',
+    description: 'Heavyweight two-tone mocha brown and cream raglan French terry hoodie paired with vintage washed grey wide utility cargo pants.',
+    palette: ['#5c4033', '#ece6d8', '#4a4a50', '#121212'],
+    items: [
+      { name: 'Two-Tone Archive Mocha Raglan Hoodie', price: 98, id: 'item-men-archive-hoodie', category: 'Hoodies', size: 'L' },
+      { name: 'Vintage Washed Grey Wide Utility Cargo', price: 165, id: 'item-men-grey-cargo', category: 'Pants', size: '32' },
+      { name: 'Silver Box Chain Pendant', price: 75, id: 'item-men-silver-chain', category: 'Jewelry', size: 'One Size' }
+    ]
+  },
+  {
+    id: 'hero-oatmeal-terry-hoodie',
+    shortTitle: 'Oatmeal Terry Hoodie',
+    tag: 'CORE ESSENTIALS • SS26',
+    title: 'Organic Oatmeal French Terry Hoodie & Denim',
+    subtitle: '450 GSM Heavyweight Hoodie & Light Wash Denim',
+    price: 320,
+    rating: 4.9,
+    reviewsCount: 154,
+    image: '/men-oatmeal-hoodie.jpg',
+    cutoutImage: '/men-oatmeal-cutout.png',
+    badge: 'Core Essentials',
+    description: 'Heavyweight organic French terry hoodie in natural heather oatmeal paired with vintage relaxed light wash denim jeans.',
+    palette: ['#dcd7cd', '#8cb1d2', '#ffffff', '#2a2a2a'],
+    items: [
+      { name: 'Heavyweight Oatmeal French Terry Hoodie', price: 92, id: 'item-men-oatmeal-hoodie', category: 'Hoodies', size: 'L' },
+      { name: 'Relaxed Light Wash 90s Denim Jeans', price: 145, id: 'item-men-light-denim', category: 'Pants', size: '32' },
+      { name: 'Retro Gum-Sole Trainers', price: 120, id: 'item-men-gum-trainers', category: 'Footwear', size: '42' }
     ]
   }
 ];
@@ -277,14 +341,54 @@ export const LOOKBOOK_SLIDES = [
     price: 380
   },
   {
-    id: 'look-noir-tailored',
-    title: 'MONOCHROME DISCIPLINE',
-    subtitle: 'Sharp pleats and draped dark luxury',
-    season: 'Atelier Permanent Edition',
-    image: '/mannequin-black.png',
-    editorialNote: 'A deep study into pure black silk and structured wool. Perfect proportions crafted for effortless street elegance and evening galas.',
-    colorTheme: 'from-[#121212] via-[#2a2a2a] to-[#3d3d3d]',
-    price: 340
+    id: 'look-navy-linen',
+    title: 'MIDNIGHT NAVY & SAND LINEN',
+    subtitle: 'French Linen Shirt & Pleated Sand Trouser',
+    season: 'Atelier SS26 Collection',
+    image: '/men-navy-linen-model.jpg',
+    editorialNote: 'Tailored French Normandy midnight navy open-collar linen shirt paired effortlessly with pleated sand fluid wide-leg trousers and retro court sneakers.',
+    colorTheme: 'from-[#1c2d42] via-[#d8caa8] to-[#faf8f5]',
+    price: 345
+  },
+  {
+    id: 'look-ecru-polo',
+    title: 'QUIET LUXURY RIBBED ECRU',
+    subtitle: 'Johnny Collar Knit Polo & Washed Black Denim',
+    season: 'Quiet Luxury Capsule • SS26',
+    image: '/men-ecru-polo-model.jpg',
+    editorialNote: 'Open-collar ribbed cotton knit polo in natural ecru paired with relaxed washed black denim and vintage leather weekender duffel.',
+    colorTheme: 'from-[#f4efe6] via-[#222326] to-[#faf8f5]',
+    price: 310
+  },
+  {
+    id: 'look-navy-contrast',
+    title: 'CONTRAST COLLAR NAVY KNIT',
+    subtitle: 'Mercerized Knit Polo & Pleated White Trousers',
+    season: 'Milan Atelier • SS26',
+    image: '/men-navy-contrast-polo.jpg',
+    editorialNote: 'Refined Italian-style fine-gauge navy knit polo with contrast white collar and cuffs, styled with tailored pleated white trousers.',
+    colorTheme: 'from-[#1e293b] via-[#ffffff] to-[#faf8f5]',
+    price: 330
+  },
+  {
+    id: 'look-archive-mocha',
+    title: 'ARCHIVE TWO-TONE MOCHA',
+    subtitle: 'Heavyweight Raglan Hoodie & Cargo Silhouette',
+    season: 'Streetwear Atelier • SS26',
+    image: '/men-archive-mocha-hoodie.jpg',
+    editorialNote: '480 GSM Heavyweight French Terry with vintage contrast raglan sleeves, dual-tone mocha body, and washed grey cargo styling.',
+    colorTheme: 'from-[#5c4033] via-[#ece6d8] to-[#faf8f5]',
+    price: 360
+  },
+  {
+    id: 'look-oatmeal-hoodie',
+    title: 'ORGANIC OATMEAL TERRY',
+    subtitle: '450 GSM French Terry & Light Denim Wash',
+    season: 'Core Essentials • SS26',
+    image: '/men-oatmeal-hoodie.jpg',
+    editorialNote: 'Heavyweight organic French terry in natural heather oatmeal paired with vintage relaxed light wash denim jeans.',
+    colorTheme: 'from-[#dcd7cd] via-[#8cb1d2] to-[#faf8f5]',
+    price: 320
   }
 ];
 
@@ -362,35 +466,6 @@ export const SHOP_PRODUCTS = [
     description: 'Delicate vintage blue botanical porcelain floral print on lightweight breathable cotton-linen. High side-slit tunic tailoring designed for breezy movement and effortless layered styling.'
   },
   {
-    id: 'prod-1',
-    name: 'Fluid Noir Cuban Collar Shirt',
-    category: 'Tops & Shirts',
-    gender: 'men',
-    price: 140,
-    originalPrice: 175,
-    rating: 4.9,
-    image: '/mannequin-black.png',
-    hoverImage: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=800&auto=format&fit=crop',
-    badge: 'Bestseller',
-    color: 'Midnight Black',
-    sizes: ['S', 'M', 'L', 'XL'],
-    description: 'Crafted from premium heavy silk-blend with cuffed short sleeves and open camp collar for timeless relaxed elegance.'
-  },
-  {
-    id: 'prod-2',
-    name: 'Architectural Pleated Noir Trousers',
-    category: 'Trousers',
-    gender: 'men',
-    price: 165,
-    rating: 4.8,
-    image: 'https://images.unsplash.com/photo-1479064555552-3ef4979f8908?q=80&w=800&auto=format&fit=crop',
-    hoverImage: '/mannequin-black.png',
-    badge: 'Runway Choice',
-    color: 'Obsidian Black',
-    sizes: ['30', '32', '34', '36'],
-    description: 'Double front pleats with a generous wide-leg taper, tailored waistband, and deep interior pocketing.'
-  },
-  {
     id: 'prod-3',
     name: 'Solar Peaked-Lapel Jumpsuit',
     category: 'Suits & One-Pieces',
@@ -443,5 +518,80 @@ export const SHOP_PRODUCTS = [
     color: 'Polished 18K Gold',
     sizes: ['20 inch', '24 inch'],
     description: 'Hand-finished micro cross pendant hung on an intricate 1.8mm curb chain in heavy gold vermeil.'
+  },
+  {
+    id: 'prod-men-navy-linen',
+    name: 'Midnight Navy Linen Shirt & Pleated Sand Trouser',
+    category: 'Tops & Shirts',
+    gender: 'men',
+    price: 84,
+    originalPrice: 110,
+    rating: 5.0,
+    image: '/men-navy-linen-cutout.png',
+    hoverImage: '/men-navy-linen-model.jpg',
+    badge: 'Editorial SS26',
+    color: 'Midnight Navy & Sand',
+    sizes: ['S', 'M', 'L', 'XL', 'XXL'],
+    description: 'Tailored French Normandy midnight navy open-collar linen shirt paired with pleated sand fluid wide-leg trousers.'
+  },
+  {
+    id: 'prod-men-ecru-polo',
+    name: 'Quiet Luxury Ribbed Ecru Polo & Washed Black Denim',
+    category: 'Tops & Shirts',
+    gender: 'men',
+    price: 78,
+    originalPrice: 95,
+    rating: 4.9,
+    image: '/men-ecru-polo-cutout.png',
+    hoverImage: '/men-ecru-polo-model.jpg',
+    badge: 'Quiet Luxury',
+    color: 'Ecru White & Washed Black',
+    sizes: ['S', 'M', 'L', 'XL', 'XXL'],
+    description: 'Open-collar ribbed combed cotton knit polo in natural ecru paired with relaxed washed black denim and vintage leather weekender duffel.'
+  },
+  {
+    id: 'prod-men-navy-contrast-polo',
+    name: 'Contrast Collar Navy Knit Polo & Tailored White Trouser',
+    category: 'Tops & Shirts',
+    gender: 'men',
+    price: 82,
+    originalPrice: 105,
+    rating: 5.0,
+    image: '/men-navy-contrast-cutout.png',
+    hoverImage: '/men-navy-contrast-polo.jpg',
+    badge: 'Milan Atelier',
+    color: 'Navy & Optic White',
+    sizes: ['S', 'M', 'L', 'XL', 'XXL'],
+    description: 'Refined Italian-style fine-gauge navy knit polo with contrast white collar and cuffs, styled with tailored pleated white trousers.'
+  },
+  {
+    id: 'prod-men-archive-mocha',
+    name: 'Two-Tone Archive Mocha Raglan Hoodie',
+    category: 'Hoodies & Sweats',
+    gender: 'men',
+    price: 98,
+    originalPrice: 125,
+    rating: 5.0,
+    image: '/men-archive-mocha-cutout.png',
+    hoverImage: '/men-archive-mocha-hoodie.jpg',
+    badge: 'Archive Drop',
+    color: 'Mocha & Cream',
+    sizes: ['S', 'M', 'L', 'XL', 'XXL'],
+    description: '480 GSM Heavyweight French Terry with vintage contrast raglan sleeves, dual-tone mocha body, and washed grey cargo styling.'
+  },
+  {
+    id: 'prod-men-oatmeal-hoodie',
+    name: 'Heavyweight French Terry Oatmeal Hoodie & Relaxed Denim',
+    category: 'Hoodies & Sweats',
+    gender: 'men',
+    price: 92,
+    originalPrice: 115,
+    rating: 4.9,
+    image: '/men-oatmeal-cutout.png',
+    hoverImage: '/men-oatmeal-hoodie.jpg',
+    badge: 'Essential Drop',
+    color: 'Heather Oatmeal',
+    sizes: ['S', 'M', 'L', 'XL', 'XXL'],
+    description: '450 GSM Organic Cotton French Terry with natural fleck texture, seamless structured double hood, and relaxed light wash denim.'
   }
 ];

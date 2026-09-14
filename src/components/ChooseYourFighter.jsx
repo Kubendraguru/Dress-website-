@@ -226,8 +226,8 @@ export default function ChooseYourFighter({ onAddToCart }) {
             {/* Center Status Code Pill */}
             <div className="hidden sm:flex items-center gap-2 font-mono text-xs uppercase tracking-[0.2em] bg-white/90 backdrop-blur-md px-4 py-1.5 rounded-full border border-neutral-200/90 shadow-sm">
               <span className="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></span>
-              <span className="font-bold text-neutral-900">CODICE ATELIER BLM-00{selectedIndex + 1}V26</span>
-              <span className="text-neutral-400">/ 0{totalFighters}</span>
+              <span className="font-bold text-neutral-900">CODICE ATELIER BLM-{String(selectedIndex + 1).padStart(2, '0')}V26</span>
+              <span className="text-neutral-400">/ {String(totalFighters).padStart(2, '0')}</span>
             </div>
 
             {/* Right Atmosphere Toggle */}

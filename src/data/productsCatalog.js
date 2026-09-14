@@ -515,6 +515,83 @@ export const CATALOG_PRODUCTS = [
       'Chest Pocket with Pen Slot'
     ]
   },
+  {
+    id: 'shirt-men-navy-linen-model',
+    name: 'Midnight Navy Linen Shirt & Pleated Sand Trouser',
+    colorway: 'Midnight Navy & Sand',
+    price: 84.00,
+    category: 'Shirts',
+    gender: 'men',
+    badge: 'EDITORIAL SS26',
+    colorHex: '#1c2d42',
+    isDressShirt: true,
+    imageUrl: '/men-navy-linen-cutout.png',
+    localImage: '/men-navy-linen-cutout.png',
+    description: 'Tailored French Normandy midnight navy open-collar linen shirt paired effortlessly with pleated sand fluid wide-leg trousers and retro court sneakers.',
+    swatches: [
+      { name: 'Midnight Navy', hex: '#1c2d42', id: 'shirt-navy-model' },
+      { name: 'Sand Beige', hex: '#d8caa8', id: 'shirt-sand-model' },
+      { name: 'Crisp White', hex: '#f8f8fa', id: 'shirt-white' }
+    ],
+    sizes: ['S', 'M', 'L', 'XL', 'XXL'],
+    stock: 25,
+    details: [
+      '100% Normandy Pure Flax Linen (180 GSM)',
+      'Pleated Sand Fluid Trousers with Hidden Adjuster',
+      'Relaxed Open Camp Collar Styling'
+    ]
+  },
+  {
+    id: 'shirt-men-ecru-polo-model',
+    name: 'Quiet Luxury Ribbed Ecru Polo & Washed Black Denim',
+    colorway: 'Ecru White & Washed Black',
+    price: 78.00,
+    category: 'Shirts',
+    gender: 'men',
+    badge: 'QUIET LUXURY',
+    colorHex: '#f4efe6',
+    isDressShirt: true,
+    imageUrl: '/men-ecru-polo-cutout.png',
+    localImage: '/men-ecru-polo-cutout.png',
+    description: 'Open-collar ribbed cotton knit polo in natural ecru paired with relaxed washed black denim and vintage leather weekender duffel.',
+    swatches: [
+      { name: 'Ecru White', hex: '#f4efe6', id: 'polo-ecru' },
+      { name: 'Washed Black', hex: '#222326', id: 'polo-black' },
+      { name: 'Midnight Navy', hex: '#1c2d42', id: 'polo-navy' }
+    ],
+    sizes: ['S', 'M', 'L', 'XL', 'XXL'],
+    stock: 28,
+    details: [
+      'Fine-Gauge 100% Combed Ribbed Cotton Knit',
+      'Johnny Collar Open V-Neck Placket',
+      'Ribbed Cuffs and Hemline with Shape Memory'
+    ]
+  },
+  {
+    id: 'shirt-men-navy-contrast-polo',
+    name: 'Contrast Collar Navy Knit Polo & Tailored White Trouser',
+    colorway: 'Navy & Optic White',
+    price: 82.00,
+    category: 'Shirts',
+    gender: 'men',
+    badge: 'ATELIER DROP',
+    colorHex: '#1e293b',
+    isDressShirt: true,
+    imageUrl: '/men-navy-contrast-cutout.png',
+    localImage: '/men-navy-contrast-cutout.png',
+    description: 'Refined Italian-style fine-gauge navy knit polo with contrast white collar and cuffs, styled with tailored pleated white trousers and minimal leather low-tops.',
+    swatches: [
+      { name: 'Navy & White', hex: '#1e293b', id: 'polo-navy-white' },
+      { name: 'Pure White', hex: '#ffffff', id: 'polo-white' }
+    ],
+    sizes: ['S', 'M', 'L', 'XL', 'XXL'],
+    stock: 20,
+    details: [
+      '100% Mercerized Egyptian Cotton Knit',
+      'Contrast Optical White Collar and Sleeve Ribbing',
+      'Pleated Front White Trousers with Sharp Crease'
+    ]
+  },
 
   // --- MALE T-SHIRTS ---
   {
@@ -609,6 +686,55 @@ export const CATALOG_PRODUCTS = [
   },
 
   // --- MALE HOODIES ---
+  {
+    id: 'hoodie-men-archive-mocha',
+    name: 'Two-Tone Archive Mocha Raglan Hoodie',
+    colorway: 'Mocha Brown & Ecru Cream',
+    price: 98.00,
+    category: 'Hoodies',
+    gender: 'men',
+    badge: 'ARCHIVE DROP',
+    colorHex: '#5c4033',
+    type: 'hoodie',
+    imageUrl: '/men-archive-mocha-cutout.png',
+    localImage: '/men-archive-mocha-cutout.png',
+    swatches: [
+      { name: 'Mocha & Cream', hex: '#5c4033', id: 'hoodie-mocha' },
+      { name: 'Mineral Charcoal', hex: '#2c2e33', id: 'hoodie-charcoal' }
+    ],
+    sizes: ['S', 'M', 'L', 'XL', 'XXL'],
+    stock: 19,
+    details: [
+      '480 GSM Heavyweight French Terry with Vintage Contrast Raglan Sleeves',
+      'Custom Dual-Tone Mocha Body with Clean Cream Sleeve Panels',
+      'Pre-shrunk Garment Wash with Ribbed Cuffs and Hem'
+    ]
+  },
+  {
+    id: 'hoodie-men-oatmeal-terry',
+    name: 'Heavyweight French Terry Oatmeal Hoodie & Relaxed Denim',
+    colorway: 'Heather Oatmeal',
+    price: 92.00,
+    category: 'Hoodies',
+    gender: 'men',
+    badge: 'ESSENTIAL DROP',
+    colorHex: '#dcd7cd',
+    type: 'hoodie',
+    imageUrl: '/men-oatmeal-cutout.png',
+    localImage: '/men-oatmeal-cutout.png',
+    swatches: [
+      { name: 'Heather Oatmeal', hex: '#dcd7cd', id: 'hoodie-oatmeal' },
+      { name: 'Washed Black', hex: '#222326', id: 'hoodie-black' },
+      { name: 'Terracotta', hex: '#7a4234', id: 'hoodie-terra' }
+    ],
+    sizes: ['S', 'M', 'L', 'XL', 'XXL'],
+    stock: 22,
+    details: [
+      '450 GSM Organic Cotton French Terry with Natural Fleck Texture',
+      'Relaxed Dropped Shoulders and Seamless Structured Double Hood',
+      'Pairs perfectly with relaxed light wash denim and retro trainers'
+    ]
+  },
   {
     id: 'hoodie-french-terry',
     name: 'Heavyweight French Terry Hoodie',

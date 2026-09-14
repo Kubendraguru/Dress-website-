@@ -20,17 +20,17 @@ export default function App() {
 
   const [cart, setCart] = useState([
     {
-      id: 'fighter-tammy',
-      name: 'Tammy Oversized Leather Bomber',
-      price: 380,
+      id: 'hero-white-poplin',
+      name: 'White Poplin Shirt & Noir Trousers',
+      price: 370,
       quantity: 1,
       size: 'M',
-      image: '/fighter-tammy.png',
-      category: 'Streetwear Look'
+      image: '/white-poplin-cutout.png',
+      category: 'Atelier Poplin Set'
     }
   ]);
   
-  const [wishlist, setWishlist] = useState(['fighter-tammy', 'hero-ochre-jumpsuit', 'tee-port-wine']);
+  const [wishlist, setWishlist] = useState(['hero-white-poplin', 'hero-navy-crewneck', 'hero-navy-linen-model']);
   const [isCartOpen, setIsCartOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [toastMessage, setToastMessage] = useState(null);

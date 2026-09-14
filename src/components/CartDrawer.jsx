@@ -103,7 +103,7 @@ export default function CartDrawer({ isOpen, onClose, cartItems, onUpdateQuantit
               </div>
               <h4 className="font-editorial text-2xl font-bold text-neutral-800">Your Bag is Empty</h4>
               <p className="text-xs text-neutral-500 max-w-xs mx-auto">
-                Explore our flagship Noir mannequin outfit or runway pieces to begin your curated wardrobe.
+                Explore our flagship Atelier collection or runway pieces to begin your curated wardrobe.
               </p>
               <button
                 onClick={onClose}

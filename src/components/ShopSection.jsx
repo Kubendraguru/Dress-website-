@@ -6,7 +6,7 @@ export default function ShopSection({ onAddToCart, onQuickView, onToggleWishlist
   const [activeGender, setActiveGender] = useState('All');
   const [activeCategory, setActiveCategory] = useState('All');
 
-  const categories = ['All', 'Tops & Shirts', 'Trousers', 'Suits & One-Pieces', 'Outerwear', 'Footwear', 'Jewelry & Accessories'];
+  const categories = ['All', 'Tops & Shirts', 'Hoodies & Sweats', 'Trousers', 'Suits & One-Pieces', 'Outerwear', 'Footwear', 'Jewelry & Accessories'];
 
   const filteredProducts = SHOP_PRODUCTS.filter((p) => {
     const matchesGender = activeGender === 'All' 

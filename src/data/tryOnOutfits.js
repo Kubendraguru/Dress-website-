@@ -71,45 +71,45 @@ export const TRYON_OUTFITS = [
   },
   {
     id: 'tryon-6',
-    name: 'Noir Pleated Silhouette',
-    category: 'Monochrome Tailoring',
-    price: 340,
-    image: '/mannequin-cutout.png',
-    thumbnail: '/mannequin-cutout.png',
-    tag: 'MILAN ATELIER',
-    palette: '#18181b',
+    name: 'Midnight Navy & Pleated Sand',
+    category: 'French Linen Tailoring',
+    price: 345,
+    image: '/men-navy-linen-cutout.png',
+    thumbnail: '/men-navy-linen-cutout.png',
+    tag: 'ATELIER SS26',
+    palette: '#1c2d42',
     aspectRatio: 0.54,
     defaultScale: 1.0,
     defaultOffsetY: 0.04,
-    description: 'Relaxed silk Cuban collar shirt with architectural double-pleated trousers.'
+    description: 'French Normandy linen open-collar shirt with pleated sand fluid wide-leg trousers.'
   },
   {
     id: 'tryon-7',
-    name: 'Tammy Oversized Leather Bomber',
-    category: 'Heavyweight Grain Leather',
-    price: 380,
-    image: '/fighter-tammy.png',
-    thumbnail: '/fighter-tammy.png',
-    tag: 'BERLIN COUTURE',
-    palette: '#b45309',
-    aspectRatio: 0.58,
+    name: 'Ecru Textured Knit Polo',
+    category: 'Fine Rib Knit Menswear',
+    price: 310,
+    image: '/men-ecru-polo-cutout.png',
+    thumbnail: '/men-ecru-polo-cutout.png',
+    tag: 'SUMMER ATELIER',
+    palette: '#d8c7a8',
+    aspectRatio: 0.54,
     defaultScale: 1.0,
     defaultOffsetY: 0.04,
-    description: 'Boxy motorcycle vintage leather bomber with raw-selvedge denim bermudas.'
+    description: 'Textured ecru knit polo crafted from breathable micro-gauge cotton, paired with cream tailored trousers.'
   },
   {
     id: 'tryon-8',
-    name: 'Kenji Relaxed Sand Cargo',
+    name: 'Tokyo Underground Streetwear',
     category: 'Boxy Heavyweight & Sand Cargo',
-    price: 310,
-    image: '/fighter-kenji.png',
-    thumbnail: '/fighter-kenji.png',
+    price: 380,
+    image: '/streetwear-cutout.png',
+    thumbnail: '/streetwear-cutout.png',
     tag: 'TOKYO STREETWEAR',
     palette: '#78716c',
     aspectRatio: 0.56,
     defaultScale: 1.0,
     defaultOffsetY: 0.04,
-    description: 'Drop-shoulder heavyweight noir tee with relaxed multi-pocket sand cargo.'
+    description: 'Drop-shoulder heavyweight noir tee with relaxed multi-pocket sand cargo and retro chunky runners.'
   }
 ];
 

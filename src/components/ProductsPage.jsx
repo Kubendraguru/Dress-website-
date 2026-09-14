@@ -723,14 +723,14 @@ export default function ProductsPage({
 
                 {/* Garment Image Area */}
                 <div className="relative h-48 sm:h-56 my-3 flex items-center justify-center bg-neutral-50/60 rounded-lg overflow-hidden group-hover:bg-neutral-100/60 transition-colors">
-                  {product.isDressShirt ? (
-                    /* Hanger or Cutout Shirt Preview */
+                  {product.imageUrl ? (
+                    /* Real Photo or Cutout Shirt Preview */
                     <div className="w-full h-full p-2 flex items-center justify-center relative">
                       <img 
                         src={product.imageUrl} 
                         onError={(e) => { e.currentTarget.src = product.localImage || HERO_LOCAL_URL; }}
                         alt={product.name}
-                        className="w-full h-full object-contain p-1.5 rounded-lg group-hover:scale-105 transition-transform duration-500"
+                        className="w-full h-full object-contain p-1 rounded-lg group-hover:scale-105 transition-transform duration-500 drop-shadow-sm"
                       />
                       <div className="absolute top-2.5 left-2.5 bg-neutral-950/80 backdrop-blur-sm text-white text-[8px] uppercase tracking-wider px-1.5 py-0.5 rounded font-medium">
                         {product.colorway}
@@ -876,12 +876,12 @@ export default function ProductsPage({
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 items-center">
               {/* Image Preview */}
               <div className="bg-neutral-50 rounded-2xl p-6 flex items-center justify-center h-80 overflow-hidden">
-                {quickViewProduct.isDressShirt ? (
+                {quickViewProduct.imageUrl ? (
                   <img 
                     src={quickViewProduct.imageUrl} 
                     onError={(e) => { e.currentTarget.src = quickViewProduct.localImage || HERO_LOCAL_URL; }}
                     alt={quickViewProduct.name}
-                    className="w-full h-full object-contain rounded-xl"
+                    className="w-full h-full object-cover sm:object-contain rounded-xl"
                   />
                 ) : quickViewProduct.type === 'pants' ? (
                   <FlatLayPants colorHex={quickViewProduct.colorHex} />
