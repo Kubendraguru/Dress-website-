@@ -179,26 +179,26 @@ export default function Footer() {
         </div>
 
         {/* ========================================================================= */}
-        {/* 4. VIP PRIVATE SALON QUICK SUBSCRIPTION */}
+        {/* 4. FRANCHISE OPPORTUNITIES & INQUIRY */}
         {/* ========================================================================= */}
         <div className="max-w-md mx-auto bg-neutral-900/90 border border-neutral-800 rounded-2xl p-5 backdrop-blur-sm text-center">
           {subscribed ? (
             <div className="flex items-center justify-center gap-2 text-emerald-400 font-mono text-xs py-2">
               <Check className="w-4 h-4" />
-              <span>INVITATION DISPATCHED TO PRIVATE SALON</span>
+              <span>FRANCHISE INQUIRY RECEIVED — OUR TEAM WILL CONNECT SHORTLY</span>
             </div>
           ) : (
             <form onSubmit={handleSubscribe} className="space-y-3">
-              <div className="flex items-center justify-center gap-1.5 text-xs font-mono text-neutral-300 uppercase tracking-wider">
+              <div className="flex items-center justify-center gap-1.5 text-xs font-mono text-neutral-300 uppercase tracking-wider font-semibold">
                 <Sparkles className="w-3.5 h-3.5 text-[#e5a919]" />
-                <span>JOIN PRIVATE ATELIER CLUB</span>
+                <span>CONTACT FOR FRANCHISE</span>
               </div>
               <div className="flex items-center gap-2">
                 <input
-                  type="email"
+                  type="text"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  placeholder="Enter your email address..."
+                  placeholder="Enter email or contact number..."
                   required
                   className="flex-1 px-3 py-2 bg-neutral-950 border border-neutral-700 rounded-lg text-xs text-white placeholder-neutral-500 focus:outline-none focus:border-white font-mono"
                 />
@@ -206,7 +206,7 @@ export default function Footer() {
                   type="submit"
                   className="px-4 py-2 bg-[#e83d34] text-white rounded-lg text-xs font-mono font-bold hover:bg-white hover:text-black transition-colors flex items-center gap-1 flex-shrink-0 cursor-pointer"
                 >
-                  <span>JOIN</span>
+                  <span>SUBMIT</span>
                   <ArrowRight className="w-3 h-3" />
                 </button>
               </div>

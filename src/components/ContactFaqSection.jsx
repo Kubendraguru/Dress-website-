@@ -18,7 +18,7 @@ export default function ContactFaqSection({ onAddToCart = () => {} }) {
     tag: 'AVANT-GARDE STREETWEAR • SS26',
     title: 'Tokyo Layered Streetwear Set',
     subtitle: 'Double-Layer Oversized Tee & Washed Charcoal Cargo Trousers',
-    price: 340,
+    price: 2490,
     rating: 5.0,
     reviewsCount: 162,
     image: "https://res.cloudinary.com/qrhgjdrs/image/upload/v1789393791/streetwear-cutout_pu0nq7.png",
@@ -27,9 +27,9 @@ export default function ContactFaqSection({ onAddToCart = () => {} }) {
     description: 'Minimalist Tokyo street tailoring featuring a double-layer oversized black tee over cream micro-waffle longsleeve, washed charcoal relaxed cargo trousers, and monochrome court sneakers.',
     palette: ['#121212', '#dedede', '#4b4b4b', '#ffffff'],
     items: [
-      { name: 'Oversized Double-Layer Heavyweight Tee', price: 120, id: 'item-streetwear-tee', category: 'Tees', size: 'L' },
-      { name: 'Washed Charcoal Relaxed Cargo Trousers', price: 140, id: 'item-streetwear-cargo', category: 'Pants', size: '32' },
-      { name: 'Sterling Silver Atelier Chain Necklace', price: 80, id: 'item-streetwear-chain', category: 'Accessories', size: 'One Size' }
+      { name: 'Oversized Double-Layer Heavyweight Tee', price: 899, id: 'item-streetwear-tee', category: 'Tees', size: 'L' },
+      { name: 'Washed Charcoal Relaxed Cargo Trousers', price: 1199, id: 'item-streetwear-cargo', category: 'Pants', size: '32' },
+      { name: 'Sterling Silver Atelier Chain Necklace', price: 392, id: 'item-streetwear-chain', category: 'Accessories', size: 'One Size' }
     ]
   };
 
@@ -135,26 +135,9 @@ export default function ContactFaqSection({ onAddToCart = () => {} }) {
           </h1>
         </div>
 
-        {/* Right Standing Editorial Product Model with Interactive Shop Tag */}
+        {/* Right Standing Editorial Product Model */}
         <div className="absolute top-2 sm:top-6 right-0 sm:right-4 lg:right-10 z-20 w-[180px] sm:w-[260px] md:w-[330px] lg:w-[400px] xl:w-[450px] flex flex-col items-end group">
           
-          {/* Interactive Floating Product Tag */}
-          <button 
-            onClick={() => setIsShopLookModalOpen(true)}
-            className="mb-2 mr-2 px-3 py-1.5 sm:px-4 sm:py-2 rounded-xl bg-[#121214]/95 text-white border border-neutral-800 shadow-[0_15px_30px_rgba(0,0,0,0.4)] flex items-center gap-2.5 hover:bg-[#fbbf24] hover:text-black transition-all cursor-pointer group-hover:scale-105 z-30"
-          >
-            <div className="w-2 h-2 rounded-full bg-[#f59e0b] animate-pulse"></div>
-            <div className="text-left">
-              <p className="font-syne text-[8px] sm:text-[9px] uppercase tracking-widest text-neutral-400 group-hover:text-black leading-none font-bold">
-                SS26 RUNWAY PIECE
-              </p>
-              <p className="font-bebas text-xs sm:text-sm tracking-wider leading-tight pt-0.5">
-                TOKYO LAYERED SET • ₹340
-              </p>
-            </div>
-            <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" />
-          </button>
-
           {/* Model Image with Click to Open Product Modal */}
           <div 
             onClick={() => setIsShopLookModalOpen(true)}
@@ -170,7 +153,7 @@ export default function ContactFaqSection({ onAddToCart = () => {} }) {
             {/* Quick View Floating Pill on Hover */}
             <div className="absolute bottom-6 sm:bottom-10 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-all duration-300 bg-black/90 text-white px-3.5 py-1.5 rounded-full text-[10.5px] font-bebas tracking-[0.18em] uppercase flex items-center gap-1.5 shadow-2xl pointer-events-none whitespace-nowrap border border-neutral-700">
               <ShoppingBag className="w-3 h-3 text-[#fbbf24]" />
-              <span>SHOP THIS LOOK • ₹340</span>
+              <span>SHOP THIS LOOK • ₹2,490</span>
             </div>
           </div>
 
