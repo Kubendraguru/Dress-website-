@@ -36,11 +36,22 @@ export default function App() {
   const [toastMessage, setToastMessage] = useState(null);
 
   const [selectedCategory, setSelectedCategory] = useState('All');
+  const [selectedGender, setSelectedGender] = useState(() => {
+    if (window.location.hash === '#men') return 'men';
+    if (window.location.hash === '#women') return 'women';
+    return 'all';
+  });
 
   // Sync hash routing
   useEffect(() => {
     const handleHashChange = () => {
-      if (window.location.hash.startsWith('#products')) {
+      if (window.location.hash === '#men') {
+        setCurrentPage('products');
+        setSelectedGender('men');
+      } else if (window.location.hash === '#women') {
+        setCurrentPage('products');
+        setSelectedGender('women');
+      } else if (window.location.hash.startsWith('#products')) {
         setCurrentPage('products');
       } else if (window.location.hash === '#home' || window.location.hash === '') {
         setCurrentPage('home');
@@ -50,13 +61,16 @@ export default function App() {
     return () => window.removeEventListener('hashchange', handleHashChange);
   }, []);
 
-  const handleNavigate = (page, category = 'All') => {
+  const handleNavigate = (page, category = 'All', gender = null) => {
     setCurrentPage(page);
     if (category) {
       setSelectedCategory(category);
     }
+    if (gender) {
+      setSelectedGender(gender);
+    }
     if (page === 'products') {
-      window.location.hash = 'products';
+      window.location.hash = gender === 'men' ? 'men' : gender === 'women' ? 'women' : 'products';
       window.scrollTo({ top: 0, behavior: 'smooth' });
     } else {
       window.location.hash = 'home';
@@ -132,6 +146,7 @@ export default function App() {
         cartCount={totalCartCount}
         currentPage={currentPage}
         activeCategory={selectedCategory}
+        activeGender={selectedGender}
         onNavigate={handleNavigate}
         onOpenCart={() => setIsCartOpen(true)}
         onSearchClick={() => setIsSearchOpen(true)}
@@ -143,6 +158,7 @@ export default function App() {
           /* Dedicated Products Page (Ugmonk Minimalist Aesthetic & Wooden Clothes Rail Hero) */
           <ProductsPage
             initialCategory={selectedCategory}
+            initialGender={selectedGender}
             onAddToCart={handleAddToCart}
             onToggleWishlist={handleToggleWishlist}
             wishlist={wishlist}

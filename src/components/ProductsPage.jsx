@@ -157,6 +157,7 @@ function FlatLayObject({ objectType = 'leather-tray', colorHex = '#b4733e' }) {
 // ---------------------------------------------------------------------------
 export default function ProductsPage({ 
   initialCategory = 'All',
+  initialGender = 'all',
   onAddToCart = () => {}, 
   onToggleWishlist = () => {}, 
   wishlist = [],
@@ -168,7 +169,7 @@ export default function ProductsPage({
   const [isAutoStepping, setIsAutoStepping] = useState(false);
 
   // Gender Filter: 'all' | 'men' | 'women'
-  const [activeGender, setActiveGender] = useState('all');
+  const [activeGender, setActiveGender] = useState(initialGender || 'all');
 
   // Catalog grid category filter
   const [activeCategory, setActiveCategory] = useState(initialCategory || 'All');
@@ -183,6 +184,13 @@ export default function ProductsPage({
       setActiveCategory(initialCategory);
     }
   }, [initialCategory]);
+
+  // Sync when initialGender prop changes from Navbar
+  useEffect(() => {
+    if (initialGender) {
+      setActiveGender(initialGender);
+    }
+  }, [initialGender]);
 
   const activeShirt = DRESS_SHIRTS_HERO[activeShirtIndex] || DRESS_SHIRTS_HERO[0];
 
@@ -295,13 +303,13 @@ export default function ProductsPage({
 
         <div className="max-w-[1400px] mx-auto px-4 sm:px-8 pt-6 sm:pt-8 pb-12 sm:pb-16 relative z-10">
           
-          {/* Main Interactive Stage: 2-Column Grid (Hanger Rack on Left, Details Card with Portrait at Top on Right) */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+          {/* Main Interactive Stage: 2-Column Grid with Distinct Space Gap */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 lg:gap-16 xl:gap-20 items-start">
             
-            {/* 1. Left Card: The 5-Shirt Hanging Rack Photo (6 cols) */}
-            <div className="lg:col-span-6 xl:col-span-6 relative bg-[#ede8de]/60 rounded-3xl p-4 sm:p-6 border border-neutral-300/60 shadow-sm overflow-hidden flex flex-col justify-between">
+            {/* 1. Left Card: The 5-Shirt Hanging Rack Photo (7 cols) */}
+            <div className="lg:col-span-7 xl:col-span-7 relative bg-[#ede8de]/60 rounded-2xl p-4 sm:p-5 border border-neutral-300/60 shadow-sm overflow-hidden flex flex-col justify-between">
               
-              <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-md bg-neutral-900">
+              <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden shadow-md bg-neutral-900">
                 <img 
                   src={HERO_IMAGE_URL} 
                   onError={(e) => { e.currentTarget.src = HERO_LOCAL_URL; }}
@@ -324,25 +332,25 @@ export default function ProductsPage({
                         {/* Outer Pulse Ring */}
                         {isActive && (
                           <span 
-                            className="absolute w-10 h-10 rounded-full animate-ping opacity-40"
+                            className="absolute w-8 h-8 rounded-full animate-ping opacity-40"
                             style={{ backgroundColor: spot.hex }}
                           />
                         )}
                         {/* Main Dot */}
                         <span 
-                          className={`w-5 h-5 rounded-full border-2 transition-all duration-300 flex items-center justify-center shadow-lg ${
+                          className={`w-4 h-4 rounded-full border-2 transition-all duration-300 flex items-center justify-center shadow-lg ${
                             isActive 
                               ? 'scale-125 border-white ring-2 ring-neutral-950' 
                               : 'border-white/80 hover:scale-110 opacity-90'
                           }`}
                           style={{ backgroundColor: spot.hex }}
                         >
-                          {isActive && <span className="w-1.5 h-1.5 rounded-full bg-white block" />}
+                          {isActive && <span className="w-1 h-1 rounded-full bg-white block" />}
                         </span>
                       </div>
 
                       {/* Tooltip Tag */}
-                      <span className={`absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-2.5 py-1 rounded-md text-[10px] font-mono whitespace-nowrap tracking-wider shadow-lg transition-all duration-200 pointer-events-none ${
+                      <span className={`absolute bottom-full left-1/2 -translate-x-1/2 mb-1.5 px-2 py-0.5 rounded-md text-[9px] font-mono whitespace-nowrap tracking-wider shadow-md transition-all duration-200 pointer-events-none ${
                         isActive 
                           ? 'bg-neutral-950 text-white opacity-100 translate-y-0 scale-100 font-semibold' 
                           : 'bg-white/95 text-neutral-800 opacity-0 group-hover/spot:opacity-100 translate-y-1'
@@ -355,17 +363,17 @@ export default function ProductsPage({
               </div>
 
               {/* Bottom Hotspot Legend Strip */}
-              <div className="w-full mt-4 flex items-center justify-between text-xs text-neutral-600 px-2">
-                <span className="font-mono text-[11px] uppercase tracking-wider text-neutral-400">
+              <div className="w-full mt-3 flex items-center justify-between text-xs text-neutral-600 px-1">
+                <span className="font-mono text-[10px] uppercase tracking-wider text-neutral-400">
                   Click Hanger Pin to Inspect
                 </span>
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-1.5">
                   {SHIRT_HOTSPOTS.map((s) => (
                     <button
                       key={s.id}
                       onClick={() => setActiveShirtIndex(s.id)}
-                      className={`w-3.5 h-3.5 rounded-full transition-transform ${
-                        activeShirtIndex === s.id ? 'scale-125 ring-2 ring-neutral-950 shadow-sm' : 'opacity-60 hover:opacity-100'
+                      className={`w-3 h-3 rounded-full transition-transform ${
+                        activeShirtIndex === s.id ? 'scale-125 ring-2 ring-neutral-950 shadow-xs' : 'opacity-60 hover:opacity-100'
                       }`}
                       style={{ backgroundColor: s.hex }}
                       title={s.name}
@@ -376,119 +384,57 @@ export default function ProductsPage({
 
             </div>
 
-            {/* 2. Right Card: DRESS DETAILS WITH TOP PORTRAIT VIEW (6 cols) */}
-            <div className="lg:col-span-6 xl:col-span-6 bg-white rounded-3xl p-5 sm:p-7 border border-neutral-200 shadow-xl flex flex-col justify-between space-y-6">
+            {/* 2. Right Side: UNIFIED PORTRAIT VIEW & DRESS DETAILS CARD (5 cols) */}
+            <div className="lg:col-span-5 xl:col-span-5 w-full bg-[#faf8f5] rounded-2xl p-4 sm:p-5 border border-neutral-200/90 shadow-md flex flex-col justify-between space-y-4">
               
               {/* ============================================================ */}
-              {/* A. TOP PORTRAIT VIEW FRAME (EXACTLY AS MOCKUP) */}
+              {/* A. CLEAN 3:4 PORTRAIT VIEW IMAGE */}
               {/* ============================================================ */}
-              <div className="bg-[#faf8f5] rounded-2xl p-4 border border-neutral-200/90 shadow-sm relative group/portrait overflow-hidden">
-                
-                {/* Header in Portrait Frame */}
-                <div className="flex items-center justify-between pb-2.5 border-b border-neutral-200/60">
-                  <div className="flex items-center gap-2">
-                    <span className="w-2.5 h-2.5 rounded-full bg-[#52b788] shadow-xs block"></span>
-                    <span className="text-[11px] font-mono uppercase tracking-[0.18em] text-neutral-900 font-bold">
-                      PORTRAIT VIEW
-                    </span>
-                  </div>
-                  <span className="text-[10px] font-mono uppercase px-2.5 py-0.5 rounded-full bg-neutral-200/70 text-neutral-800 font-semibold tracking-wider">
-                    STUDIO SS26
-                  </span>
-                </div>
-
-                {/* Sub-header title inside frame */}
-                <div className="text-center pt-3 pb-1">
-                  <h3 className="font-serif italic text-base sm:text-lg text-neutral-800 font-normal">
-                    {activeShirt.name === 'Bengal Blue Stripe' ? 'Striped Shirt' : `${activeShirt.name} Shirt`}
-                  </h3>
-                </div>
-
-                {/* Center High-Res Image Area */}
-                <div className="relative min-h-[260px] sm:min-h-[300px] flex items-center justify-center overflow-hidden my-2">
-                  <img 
-                    key={activeShirt.id}
-                    src={activeShirt.imageUrl}
-                    onError={(e) => { e.currentTarget.src = activeShirt.localImage || '/shirt-white.jpg'; }}
-                    alt={`${activeShirt.name} Portrait View`}
-                    className="w-full max-h-[270px] sm:max-h-[310px] object-contain p-2 rounded-xl transition-transform duration-700 group-hover/portrait:scale-105 animate-in fade-in zoom-in-95 duration-300"
-                  />
-
-                  {/* Floating Bottom Pill: Swatch dot + Name + 100% Linen */}
-                  <div className="absolute bottom-1 inset-x-4 bg-white/95 backdrop-blur-md px-4 py-2 rounded-xl border border-neutral-200/90 shadow-md flex items-center justify-between text-xs">
-                    <div className="flex items-center gap-2.5">
-                      <span 
-                        className="w-3.5 h-3.5 rounded-full border border-neutral-300 shadow-xs"
-                        style={{ backgroundColor: activeShirt.hex }}
-                      />
-                      <span className="font-bodoni font-medium text-neutral-900 text-sm">
-                        {activeShirt.name}
-                      </span>
-                    </div>
-                    <span className="text-xs font-serif font-bold text-amber-900 tracking-wide">
-                      100% Linen
-                    </span>
-                  </div>
-                </div>
-
-                {/* Footer in Portrait Frame */}
-                <div className="pt-2.5 mt-2 border-t border-neutral-200/60 flex items-center justify-between text-[11px] font-mono">
-                  <span className="text-neutral-500">Architectural Drape</span>
-                  <span className="font-bold text-amber-900">{activeShirt.pantone}</span>
-                </div>
-
+              <div className="relative w-full aspect-[3/4] max-h-[340px] sm:max-h-[380px] mx-auto flex items-center justify-center overflow-hidden rounded-xl bg-white/70 border border-neutral-200/60 shadow-inner group/portrait">
+                <img 
+                  key={activeShirt.id}
+                  src={activeShirt.imageUrl}
+                  onError={(e) => { e.currentTarget.src = activeShirt.localImage || '/shirt-white.jpg'; }}
+                  alt={`${activeShirt.name} Portrait View`}
+                  className="w-full h-full object-contain p-2 transition-transform duration-700 group-hover/portrait:scale-105 animate-in fade-in zoom-in-95 drop-shadow-sm"
+                />
               </div>
 
               {/* ============================================================ */}
               {/* B. DRESS DETAILS & SIZING & ADD TO BAG */}
               {/* ============================================================ */}
-              <div className="space-y-4 pt-1">
+              <div className="space-y-3.5 pt-1">
                 
                 {/* Title & Price Header */}
                 <div className="flex items-baseline justify-between gap-4">
-                  <div>
-                    <h2 className="font-bodoni text-2xl sm:text-3xl font-normal text-neutral-950 leading-tight">
-                      {activeShirt.name}
-                    </h2>
-                    <p className="text-xs sm:text-sm text-neutral-500 font-light mt-0.5">
-                      {activeShirt.subName}
-                    </p>
-                  </div>
-                  <div className="text-right">
-                    <span className="text-2xl sm:text-3xl font-medium text-neutral-950 block">
-                      ${activeShirt.price.toFixed(2)}
-                    </span>
-                    <span className="text-[11px] text-neutral-500 font-mono">
-                      {activeShirt.fabric}
-                    </span>
-                  </div>
+                  <h2 className="font-bodoni text-xl sm:text-2xl font-normal text-neutral-950 leading-tight">
+                    {activeShirt.name}
+                  </h2>
+                  <span className="text-xl sm:text-2xl font-medium text-neutral-950">
+                    ${activeShirt.price.toFixed(2)}
+                  </span>
                 </div>
-
-                {/* Description */}
-                <p className="text-xs sm:text-sm text-neutral-600 font-light leading-relaxed">
-                  {activeShirt.description}
-                </p>
 
                 {/* Colorway Selection Swatches */}
                 <div>
-                  <label className="block text-[10px] font-mono uppercase tracking-wider text-neutral-400 mb-1.5">
+                  <label className="block text-[9px] font-mono uppercase tracking-wider text-neutral-400 mb-1">
                     Colorway Selection
                   </label>
-                  <div className="flex items-center gap-2.5">
+                  <div className="flex items-center gap-2">
                     {DRESS_SHIRTS_HERO.map((shirt, idx) => (
                       <button
                         key={shirt.id}
                         onClick={() => setActiveShirtIndex(idx)}
-                        className={`w-6 h-6 rounded-full border transition-all cursor-pointer ${
+                        className={`w-5 h-5 rounded-full border transition-all cursor-pointer ${
                           activeShirtIndex === idx 
-                            ? 'scale-115 ring-2 ring-neutral-950 ring-offset-2 border-transparent shadow-sm' 
+                            ? 'scale-115 ring-2 ring-neutral-950 ring-offset-2 border-transparent shadow-xs' 
                             : 'border-black/20 hover:scale-105 opacity-75'
                         }`}
                         style={{ backgroundColor: shirt.hex }}
                         title={shirt.name}
                       />
                     ))}
-                    <span className="text-xs text-neutral-500 font-mono ml-2">
+                    <span className="text-xs text-neutral-500 font-mono ml-1.5">
                       {activeShirt.name}
                     </span>
                   </div>
@@ -496,18 +442,18 @@ export default function ProductsPage({
 
                 {/* Size Selection */}
                 <div>
-                  <label className="block text-[10px] font-mono uppercase tracking-wider text-neutral-400 mb-1.5">
+                  <label className="block text-[9px] font-mono uppercase tracking-wider text-neutral-400 mb-1">
                     Select Size
                   </label>
-                  <div className="flex items-center gap-2">
+                  <div className="flex items-center gap-1.5">
                     {['S', 'M', 'L', 'XL', 'XXL'].map((sz) => (
                       <button
                         key={sz}
                         onClick={() => setSelectedHeroSize(sz)}
-                        className={`w-9 h-9 rounded-lg text-xs font-mono transition-colors cursor-pointer ${
+                        className={`w-8 h-8 rounded-md text-xs font-mono transition-colors cursor-pointer ${
                           selectedHeroSize === sz
                             ? 'bg-neutral-950 text-white font-bold'
-                            : 'bg-neutral-50 text-neutral-700 border border-neutral-200 hover:border-black'
+                            : 'bg-white text-neutral-700 border border-neutral-200 hover:border-black'
                         }`}
                       >
                         {sz}
@@ -517,7 +463,7 @@ export default function ProductsPage({
                 </div>
 
                 {/* Action Buttons */}
-                <div className="pt-3 border-t border-neutral-100 flex items-center gap-3">
+                <div className="pt-2.5 border-t border-neutral-200/70 flex items-center gap-2.5">
                   <button
                     onClick={() => {
                       onAddToCart({
@@ -530,15 +476,15 @@ export default function ProductsPage({
                         image: activeShirt.imageUrl || activeShirt.localImage || '/shirt-white.jpg'
                       });
                     }}
-                    className="flex-1 bg-neutral-950 hover:bg-neutral-800 text-white h-11 px-5 rounded-full text-xs font-medium uppercase tracking-[0.14em] flex items-center justify-center gap-2 transition-all duration-200 shadow-sm hover:shadow-md cursor-pointer"
+                    className="flex-1 bg-neutral-950 hover:bg-neutral-800 text-white h-10 px-4 rounded-full text-xs font-medium uppercase tracking-[0.12em] flex items-center justify-center gap-2 transition-all duration-200 shadow-sm hover:shadow-md cursor-pointer"
                   >
-                    <ShoppingBag className="w-4 h-4" />
+                    <ShoppingBag className="w-3.5 h-3.5" />
                     <span>Add To Bag &bull; ${activeShirt.price.toFixed(2)}</span>
                   </button>
 
                   <button
                     onClick={() => onToggleWishlist(activeShirt.id)}
-                    className={`h-11 w-11 rounded-full border flex items-center justify-center transition-colors cursor-pointer ${
+                    className={`h-10 w-10 rounded-full border flex items-center justify-center transition-colors cursor-pointer ${
                       wishlist.includes(activeShirt.id)
                         ? 'bg-red-50 border-red-200 text-red-600'
                         : 'border-neutral-200 text-neutral-600 hover:border-neutral-900 bg-white'
@@ -550,7 +496,7 @@ export default function ProductsPage({
                 </div>
 
                 {/* Stepper Controls */}
-                <div className="pt-2 border-t border-neutral-100 flex items-center justify-between text-xs text-neutral-400">
+                <div className="pt-2 border-t border-neutral-200/60 flex items-center justify-between text-xs text-neutral-400">
                   <div className="flex items-center gap-2 font-medium">
                     <button 
                       onClick={handlePrevShirt}
@@ -743,13 +689,13 @@ export default function ProductsPage({
             return (
               <div 
                 key={product.id}
-                className="group flex flex-col justify-between bg-white rounded-2xl border border-neutral-200/80 p-5 hover:shadow-xl transition-all duration-300 relative"
+                className="group flex flex-col justify-between bg-white rounded-xl border border-neutral-200/80 p-3.5 sm:p-4 hover:shadow-lg transition-all duration-300 relative"
               >
                 {/* Top Badge & Gender Pill & Wishlist Button */}
                 <div className="flex items-center justify-between z-10">
                   <div className="flex items-center gap-1.5 flex-wrap">
                     {product.badge && (
-                      <span className="text-[9px] uppercase tracking-widest px-2.5 py-0.5 rounded-full bg-neutral-100 text-neutral-800 font-semibold border border-neutral-200">
+                      <span className="text-[9px] uppercase tracking-widest px-2 py-0.5 rounded-full bg-neutral-100 text-neutral-800 font-semibold border border-neutral-200">
                         {product.badge}
                       </span>
                     )}
@@ -771,12 +717,12 @@ export default function ProductsPage({
                     }`}
                     aria-label="Wishlist"
                   >
-                    <Heart className={`w-4 h-4 ${isWishlisted ? 'fill-red-500' : ''}`} />
+                    <Heart className={`w-3.5 h-3.5 ${isWishlisted ? 'fill-red-500' : ''}`} />
                   </button>
                 </div>
 
                 {/* Garment Image Area */}
-                <div className="relative h-64 sm:h-72 my-4 flex items-center justify-center bg-neutral-50/60 rounded-xl overflow-hidden group-hover:bg-neutral-100/60 transition-colors">
+                <div className="relative h-48 sm:h-56 my-3 flex items-center justify-center bg-neutral-50/60 rounded-lg overflow-hidden group-hover:bg-neutral-100/60 transition-colors">
                   {product.isDressShirt ? (
                     /* Hanger or Cutout Shirt Preview */
                     <div className="w-full h-full p-2 flex items-center justify-center relative">
@@ -784,9 +730,9 @@ export default function ProductsPage({
                         src={product.imageUrl} 
                         onError={(e) => { e.currentTarget.src = product.localImage || HERO_LOCAL_URL; }}
                         alt={product.name}
-                        className="w-full h-full object-contain p-2 rounded-lg group-hover:scale-105 transition-transform duration-500"
+                        className="w-full h-full object-contain p-1.5 rounded-lg group-hover:scale-105 transition-transform duration-500"
                       />
-                      <div className="absolute top-3 left-3 bg-neutral-950/80 backdrop-blur-sm text-white text-[9px] uppercase tracking-wider px-2 py-0.5 rounded-md font-medium">
+                      <div className="absolute top-2.5 left-2.5 bg-neutral-950/80 backdrop-blur-sm text-white text-[8px] uppercase tracking-wider px-1.5 py-0.5 rounded font-medium">
                         {product.colorway}
                       </div>
                     </div>
@@ -814,7 +760,7 @@ export default function ProductsPage({
                   <div className="absolute inset-0 bg-black/20 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                     <button
                       onClick={() => setQuickViewProduct(product)}
-                      className="bg-white text-neutral-950 text-xs font-medium uppercase tracking-wider px-4 py-2.5 rounded-full shadow-lg flex items-center gap-2 hover:bg-neutral-950 hover:text-white transition-colors"
+                      className="bg-white text-neutral-950 text-xs font-medium uppercase tracking-wider px-3.5 py-2 rounded-full shadow-lg flex items-center gap-1.5 hover:bg-neutral-950 hover:text-white transition-colors"
                     >
                       <Eye className="w-3.5 h-3.5" />
                       <span>Quick View</span>
@@ -826,14 +772,14 @@ export default function ProductsPage({
                 <div>
                   {/* Color Swatch Selector Dots */}
                   {product.swatches && product.swatches.length > 1 && (
-                    <div className="flex items-center gap-2 mb-2.5">
+                    <div className="flex items-center gap-1.5 mb-2">
                       {product.swatches.map((swatch) => {
                         const isSelected = activeSwatch && activeSwatch.id === swatch.id;
                         return (
                           <button
                             key={swatch.id}
                             onClick={() => handleSwatchSelect(product.id, swatch)}
-                            className={`w-3.5 h-3.5 rounded-full border transition-transform ${
+                            className={`w-3 h-3 rounded-full border transition-transform ${
                               isSelected ? 'scale-125 ring-2 ring-neutral-950 ring-offset-1 border-transparent' : 'border-black/20 hover:scale-110 opacity-75'
                             }`}
                             style={{ backgroundColor: swatch.hex }}
@@ -841,35 +787,35 @@ export default function ProductsPage({
                           />
                         );
                       })}
-                      <span className="text-[11px] text-neutral-400 ml-1">
+                      <span className="text-[10px] text-neutral-400 ml-1">
                         {activeSwatch ? activeSwatch.name : product.colorway}
                       </span>
                     </div>
                   )}
 
                   {/* Title & Price */}
-                  <div className="flex items-start justify-between gap-2 mb-3">
+                  <div className="flex items-start justify-between gap-2 mb-2">
                     <div>
-                      <h3 className="font-bodoni text-lg font-normal text-neutral-950 leading-snug">
+                      <h3 className="font-bodoni text-base font-normal text-neutral-950 leading-snug">
                         {product.name}
                       </h3>
-                      <p className="text-xs text-neutral-500 font-light mt-0.5">
+                      <p className="text-[11px] text-neutral-500 font-light">
                         {activeSwatch ? activeSwatch.name : product.colorway}
                       </p>
                     </div>
-                    <span className="text-base font-medium text-neutral-950 flex-shrink-0">
+                    <span className="text-sm font-medium text-neutral-950 flex-shrink-0">
                       ${product.price.toFixed(2)}
                     </span>
                   </div>
 
                   {/* Size Selector Strip */}
                   {product.sizes && (
-                    <div className="flex items-center gap-1.5 mb-3 text-[10px]">
+                    <div className="flex items-center gap-1 mb-2.5 text-[9px]">
                       {product.sizes.map((sz) => (
                         <button
                           key={sz}
                           onClick={() => handleSizeSelect(product.id, sz)}
-                          className={`px-2 py-1 rounded-md border transition-colors ${
+                          className={`px-1.5 py-0.5 rounded border transition-colors ${
                             currentSize === sz
                               ? 'bg-neutral-950 text-white border-neutral-950 font-medium'
                               : 'bg-neutral-50 text-neutral-700 border-neutral-200 hover:border-black'
@@ -894,9 +840,9 @@ export default function ProductsPage({
                         image: product.imageUrl || product.localImage || '/hanger-shirts-hero.jpg'
                       });
                     }}
-                    className="w-full bg-neutral-100 hover:bg-neutral-950 hover:text-white text-neutral-900 py-2.5 rounded-full text-xs font-medium uppercase tracking-wider transition-all duration-200 flex items-center justify-center gap-2"
+                    className="w-full bg-neutral-100 hover:bg-neutral-950 hover:text-white text-neutral-900 py-2 rounded-full text-[11px] font-medium uppercase tracking-wider transition-all duration-200 flex items-center justify-center gap-1.5"
                   >
-                    <ShoppingBag className="w-3.5 h-3.5" />
+                    <ShoppingBag className="w-3 h-3" />
                     <span>Add to Bag</span>
                   </button>
                 </div>

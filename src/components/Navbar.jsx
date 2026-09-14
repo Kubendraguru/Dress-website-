@@ -15,6 +15,7 @@ export default function Navbar({
   onSearchClick,
   currentPage = 'home',
   activeCategory = 'All',
+  activeGender = 'all',
   onNavigate = () => {}
 }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -43,8 +44,8 @@ export default function Navbar({
     }
   }, [activeIndex, currentPage]);
 
-  const handleNav = (page, category = 'All') => {
-    onNavigate(page, category);
+  const handleNav = (page, category = 'All', gender = null) => {
+    onNavigate(page, category, gender);
     setMobileMenuOpen(false);
   };
 
@@ -79,11 +80,11 @@ export default function Navbar({
             <span className="hidden sm:inline">MENU</span>
           </button>
 
-          {/* Desktop Navigation Links */}
+          {/* Desktop Navigation Links (Men & Women Separately) */}
           <nav className="hidden md:flex items-center gap-6 ml-2 font-mono text-xs uppercase tracking-[0.16em]">
             <button
               onClick={() => handleNav('home')}
-              className={`transition-all py-1 px-1 border-b-2 ${
+              className={`transition-all py-1 px-1 border-b-2 cursor-pointer ${
                 currentPage === 'home' 
                   ? 'text-neutral-950 font-bold border-neutral-950' 
                   : 'text-neutral-500 hover:text-neutral-900 border-transparent'
@@ -93,17 +94,25 @@ export default function Navbar({
             </button>
 
             <button
-              onClick={() => handleNav('products', 'All')}
-              className={`transition-all py-1 px-1 flex items-center gap-1.5 border-b-2 ${
-                currentPage === 'products' 
-                  ? 'text-neutral-950 font-bold border-amber-900 text-amber-900' 
-                  : 'text-neutral-600 hover:text-neutral-900 border-transparent'
+              onClick={() => handleNav('products', 'All', 'men')}
+              className={`transition-all py-1 px-1 flex items-center gap-1.5 border-b-2 cursor-pointer ${
+                currentPage === 'products' && activeGender === 'men'
+                  ? 'text-neutral-950 font-bold border-neutral-950' 
+                  : 'text-neutral-600 hover:text-neutral-950 border-transparent'
               }`}
             >
-              <span>Products</span>
-              <span className="text-[9px] font-sans px-1.5 py-0.5 rounded-full bg-amber-100 text-amber-900 font-semibold tracking-wider uppercase">
-                Catalog
-              </span>
+              <span>Men</span>
+            </button>
+
+            <button
+              onClick={() => handleNav('products', 'All', 'women')}
+              className={`transition-all py-1 px-1 flex items-center gap-1.5 border-b-2 cursor-pointer ${
+                currentPage === 'products' && activeGender === 'women'
+                  ? 'text-neutral-950 font-bold border-neutral-950' 
+                  : 'text-neutral-600 hover:text-neutral-950 border-transparent'
+              }`}
+            >
+              <span>Women</span>
             </button>
           </nav>
         </div>
@@ -120,16 +129,26 @@ export default function Navbar({
           </button>
         </div>
 
-        {/* Right: Search, Mobile Products Link & Bag */}
-        <div className="flex items-center gap-3 sm:gap-6">
-          <button
-            onClick={() => handleNav('products', 'All')}
-            className={`md:hidden text-xs font-mono font-semibold uppercase tracking-wider px-2 py-1 rounded transition-colors ${
-              currentPage === 'products' ? 'bg-amber-100 text-amber-900' : 'text-neutral-700 hover:text-black'
-            }`}
-          >
-            Products
-          </button>
+        {/* Right: Search, Mobile Men & Women Links, Bag */}
+        <div className="flex items-center gap-2 sm:gap-6">
+          <div className="md:hidden flex items-center gap-1 font-mono text-[11px] uppercase font-semibold">
+            <button
+              onClick={() => handleNav('products', 'All', 'men')}
+              className={`px-2 py-1 rounded transition-colors ${
+                currentPage === 'products' && activeGender === 'men' ? 'bg-neutral-900 text-white' : 'text-neutral-700 hover:text-black'
+              }`}
+            >
+              Men
+            </button>
+            <button
+              onClick={() => handleNav('products', 'All', 'women')}
+              className={`px-2 py-1 rounded transition-colors ${
+                currentPage === 'products' && activeGender === 'women' ? 'bg-neutral-900 text-white' : 'text-neutral-700 hover:text-black'
+              }`}
+            >
+              Women
+            </button>
+          </div>
 
           <button 
             onClick={onSearchClick}
@@ -187,7 +206,7 @@ export default function Navbar({
                   <button
                     key={tab.id}
                     ref={(el) => (tabRefs.current[idx] = el)}
-                    onClick={() => handleNav('products', tab.id)}
+                    onClick={() => handleNav('products', tab.id, activeGender)}
                     className={`relative z-10 flex items-center justify-center gap-1.5 px-3.5 sm:px-5 py-1.5 text-xs font-mono uppercase tracking-wider transition-colors duration-200 rounded-full cursor-pointer select-none whitespace-nowrap ${
                       isActive 
                         ? 'text-white font-bold' 
@@ -234,7 +253,7 @@ export default function Navbar({
                 <span className="font-bodoni text-2xl font-bold tracking-widest">BLOOMAIR</span>
                 <button 
                   onClick={() => setMobileMenuOpen(false)}
-                  className="p-1.5 text-neutral-600 hover:text-black"
+                  className="p-1.5 text-neutral-600 hover:text-black cursor-pointer"
                 >
                   <X className="w-6 h-6" />
                 </button>
@@ -243,7 +262,7 @@ export default function Navbar({
               <nav className="mt-6 flex flex-col space-y-3 text-xs tracking-[0.18em] uppercase font-semibold">
                 <button 
                   onClick={() => handleNav('home')}
-                  className={`flex items-center justify-between py-2 border-b border-neutral-200/60 text-left transition-colors ${
+                  className={`flex items-center justify-between py-2 border-b border-neutral-200/60 text-left transition-colors cursor-pointer ${
                     currentPage === 'home' ? 'text-neutral-950 font-bold' : 'hover:text-amber-700'
                   }`}
                 >
@@ -251,17 +270,39 @@ export default function Navbar({
                   <ArrowRight className="w-4 h-4 opacity-40" />
                 </button>
 
-                {/* 02. Products Categories in Mobile */}
-                <div className="bg-white rounded-2xl p-4 border border-neutral-200 shadow-sm">
+                {/* 02. Men's Collection */}
+                <button 
+                  onClick={() => handleNav('products', 'All', 'men')}
+                  className={`flex items-center justify-between py-2.5 border-b border-neutral-200/60 text-left transition-colors cursor-pointer ${
+                    currentPage === 'products' && activeGender === 'men' ? 'text-neutral-950 font-bold' : 'hover:text-amber-700'
+                  }`}
+                >
+                  <span>02. Men's Collection</span>
+                  <ArrowRight className="w-4 h-4 opacity-40" />
+                </button>
+
+                {/* 03. Women's Collection */}
+                <button 
+                  onClick={() => handleNav('products', 'All', 'women')}
+                  className={`flex items-center justify-between py-2.5 border-b border-neutral-200/60 text-left transition-colors cursor-pointer ${
+                    currentPage === 'products' && activeGender === 'women' ? 'text-neutral-950 font-bold' : 'hover:text-amber-700'
+                  }`}
+                >
+                  <span>03. Women's Collection</span>
+                  <ArrowRight className="w-4 h-4 opacity-40" />
+                </button>
+
+                {/* Categories in Mobile */}
+                <div className="bg-white rounded-2xl p-4 border border-neutral-200 shadow-sm mt-2">
                   <div className="flex items-center justify-between pb-2 mb-2.5 border-b border-neutral-100">
                     <span className="text-[10px] font-mono text-amber-900 font-bold uppercase tracking-wider">
                       Categories
                     </span>
                     <button 
-                      onClick={() => handleNav('products', 'All')}
-                      className="text-[9px] text-neutral-500 hover:text-black font-mono underline"
+                      onClick={() => handleNav('products', 'All', activeGender)}
+                      className="text-[9px] text-neutral-500 hover:text-black font-mono underline cursor-pointer"
                     >
-                      ALL (11)
+                      ALL PIECES
                     </button>
                   </div>
 
@@ -269,8 +310,8 @@ export default function Navbar({
                     {tabs.map((b) => (
                       <button
                         key={b.id}
-                        onClick={() => handleNav('products', b.id)}
-                        className={`w-full text-left p-2 rounded-xl border flex items-center justify-between transition-all ${
+                        onClick={() => handleNav('products', b.id, activeGender)}
+                        className={`w-full text-left p-2 rounded-xl border flex items-center justify-between transition-all cursor-pointer ${
                           activeCategory === b.id && currentPage === 'products'
                             ? 'bg-neutral-900 text-white border-neutral-900 font-bold'
                             : 'bg-neutral-50/60 hover:bg-neutral-100/80 border-neutral-200/80 text-neutral-900'
