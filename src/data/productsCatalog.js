@@ -108,6 +108,110 @@ export const DRESS_SHIRTS_HERO = [
   }
 ];
 
+// 1b. The 5 Signature Hanging Women's T-Shirts & Polos for the Interactive Rack
+export const WOMEN_TEES_HERO = [
+  {
+    id: 'women-tee-block-stripe-polo',
+    name: 'Block-Stripe Rugby Polo',
+    subName: 'Heavyweight French Terry Knit',
+    hex: '#1b2838',
+    secondaryHex: '#e8e2d5',
+    buttonColor: '#fbfbfb',
+    pantone: 'PANTONE 19-4028 TCX',
+    textColor: 'text-sky-200',
+    price: 54.00,
+    fabric: '100% Heavyweight Organic Combed Cotton (280 GSM)',
+    fit: 'Oversized Boxy Silhouette',
+    gender: 'women',
+    hotspotX: 16,
+    hotspotY: 52,
+    imageUrl: '/women-tee-block-stripe-polo.png',
+    localImage: '/women-tee-block-stripe-polo.png',
+    details: 'Contrast white twill collar, hidden button placket, drop-shoulder seams, reinforced side slits.',
+    description: 'A contemporary take on the timeless heritage rugby polo with bold horizontal block stripes in saturated navy and unbleached ecru.'
+  },
+  {
+    id: 'women-tee-beardless-jersey',
+    name: 'Noir Athletic Jersey Tee',
+    subName: 'Performance Contrast-Piping Streetwear',
+    hex: '#141416',
+    secondaryHex: '#2a2a2e',
+    buttonColor: '#ffffff',
+    pantone: 'PANTONE 19-4007 TCX',
+    textColor: 'text-neutral-200',
+    price: 48.00,
+    fabric: 'Breathable Technical Mesh & Ring-Spun Cotton (240 GSM)',
+    fit: 'Relaxed Streetwear Fit',
+    gender: 'women',
+    hotspotX: 33,
+    hotspotY: 52,
+    imageUrl: '/women-tee-beardless-jersey.png',
+    localImage: '/women-tee-beardless-jersey.png',
+    details: 'Aerodynamic white piping across raglan sleeves, chest archive graphic, high crewneck binding.',
+    description: 'Sporty athletic streetwear cut from breathable structured jersey with contrast white raglan seam piping and a relaxed drape.'
+  },
+  {
+    id: 'women-tee-la-varsity-polo',
+    name: 'Varsity Script Ribbed Polo',
+    subName: 'Collegiate Micro-Ribbed V-Neck',
+    hex: '#162238',
+    secondaryHex: '#f0f0f4',
+    buttonColor: '#ffffff',
+    pantone: 'PANTONE 19-3921 TCX',
+    textColor: 'text-sky-300',
+    price: 52.00,
+    fabric: 'Micro-Ribbed Cotton & Modal Blend',
+    fit: 'Fitted Contoured Drape',
+    gender: 'women',
+    hotspotX: 50,
+    hotspotY: 52,
+    imageUrl: '/women-tee-la-varsity-polo.png',
+    localImage: '/women-tee-la-varsity-polo.png',
+    details: 'Split v-neckline, contrast white flat-knit collar, arched Los Angeles collegiate chest embroidery.',
+    description: 'Vintage varsity styling with a flattering fine-ribbed body, crisp white collar trim, and open split v-neck.'
+  },
+  {
+    id: 'women-tee-milan-striped-knit',
+    name: 'Milan Fine-Knit Striped Polo',
+    subName: 'European Resort Breton Knit Top',
+    hex: '#1c2430',
+    secondaryHex: '#f4efe6',
+    buttonColor: '#e0d8cc',
+    pantone: 'PANTONE 19-4015 TCX',
+    textColor: 'text-neutral-300',
+    price: 58.00,
+    fabric: '100% Ultra-Fine Gauge Organic Combed Cotton Knit',
+    fit: 'Tailored Slim Fit',
+    gender: 'women',
+    hotspotX: 67,
+    hotspotY: 52,
+    imageUrl: '/women-tee-milan-striped-knit.png',
+    localImage: '/women-tee-milan-striped-knit.png',
+    details: 'Full front mother-of-pearl button placket, French Breton stripe repeat, ribbed waist and sleeve cuffs.',
+    description: 'A luxurious Riviera resort knit spun from fine-gauge combed cotton featuring delicate horizontal Breton striping.'
+  },
+  {
+    id: 'women-tee-contrast-collar-polo',
+    name: 'Riviera Johnny-Collar Polo',
+    subName: 'Textured Piqué Open-Collar Polo',
+    hex: '#111e33',
+    secondaryHex: '#ffffff',
+    buttonColor: '#ffffff',
+    pantone: 'PANTONE 19-3920 TCX',
+    textColor: 'text-sky-300',
+    price: 46.00,
+    fabric: '100% Breathable Organic Cotton Piqué',
+    fit: 'Relaxed Tailored Polo Fit',
+    gender: 'women',
+    hotspotX: 84,
+    hotspotY: 52,
+    imageUrl: '/women-tee-contrast-collar-polo.png',
+    localImage: '/women-tee-contrast-collar-polo.png',
+    details: 'Buttonless open Johnny collar with contrast white tipping, white tipped cuffs, reinforced side vents.',
+    description: 'Effortless tennis polo aesthetic featuring a clean buttonless open collar, contrast tipping, and airy cotton piqué.'
+  }
+];
+
 // 2. Hanging T-Shirt Rack Colorways (Crewnecks)
 export const HANGING_RACK_TEES = [
   {
@@ -152,197 +256,492 @@ export const CATALOG_PRODUCTS = [
 
   // --- FEMALE SHIRTS & TOPS ---
   {
-    id: 'shirt-porcelain-floral-card',
-    name: 'Porcelain Floral Slit Linen Shirt',
-    colorway: 'Vintage Blue Chintz',
-    price: 78.00,
+    id: 'shirt-women-crinkle-blue',
+    name: 'Skyline Plissé Textured Oversized Shirt',
+    colorway: 'Dusty Slate Blue',
+    price: 68.00,
     category: 'Shirts',
     gender: 'women',
-    badge: 'SUMMER CAPSULE',
-    colorHex: '#7fa5c4',
+    badge: 'NEW ARRIVAL',
+    colorHex: '#7c94a6',
     isDressShirt: true,
-    imageUrl: '/floral-kurti-cutout.png',
-    localImage: '/floral-kurti-cutout.png',
-    description: 'Delicate vintage blue botanical porcelain floral print on lightweight breathable cotton-linen. High side-slit tunic tailoring designed for breezy movement and effortless layered denim styling.',
+    imageUrl: '/women-shirt-crinkle-blue.png',
+    localImage: '/women-shirt-crinkle-blue.png',
+    description: 'Micro-plissé crinkled lightweight fabric with an oversized relaxed drape, dropped shoulders, and airy fluid silhouette for effortless everyday elegance.',
     swatches: [
-      { name: 'Porcelain Blue', hex: '#7fa5c4', id: 'shirt-porcelain-blue' },
-      { name: 'Crisp White', hex: '#f8f8fa', id: 'shirt-white' },
-      { name: 'Sand Beige', hex: '#d8caa8', id: 'shirt-beige' }
+      { name: 'Slate Blue', hex: '#7c94a6', id: 'shirt-crinkle-blue' },
+      { name: 'Pure White', hex: '#ffffff', id: 'shirt-crinkle-white' }
     ],
     sizes: ['XS', 'S', 'M', 'L', 'XL'],
-    stock: 22,
+    stock: 24,
     details: [
-      '100% Breathable Fine-Weave Cotton Linen',
-      'Hand-Blocked Botanical Chintz Motif',
-      'High Side Slit Architectural Drape',
-      'Contoured 3/4 Sleeves with Clean Bindings'
+      'Textured Micro-Plissé Breathable Weave',
+      'Relaxed Dropped Shoulder Cut',
+      'Anti-Wrinkle Fluid Silhouette',
+      'Point Collar with Button Cuffs'
     ]
   },
   {
-    id: 'shirt-poplin-oversized-women',
-    name: 'Oversized Poplin Boyfriend Shirt',
-    colorway: 'Crisp White',
-    price: 74.00,
-    category: 'Shirts',
-    gender: 'women',
-    badge: 'PARISIAN MINIMALISM',
-    colorHex: '#ffffff',
-    isDressShirt: true,
-    imageUrl: '/white-poplin-cutout.png',
-    localImage: '/white-poplin-cutout.png',
-    description: 'Tailored with an oversized, relaxed silhouette in lightweight French poplin. Dropped shoulders, curved hem, and mother-of-pearl buttons.',
-    swatches: [
-      { name: 'Crisp White', hex: '#ffffff', id: 'shirt-poplin-white' },
-      { name: 'Sand Beige', hex: '#d8caa8', id: 'shirt-poplin-beige' }
-    ],
-    sizes: ['XS', 'S', 'M', 'L', 'XL'],
-    stock: 26,
-    details: [
-      '100% Long-Staple Organic Cotton Poplin',
-      'Deep Pleat Back Yoke for Fluid Movement',
-      'Mother-of-Pearl Button Placket'
-    ]
-  },
-  {
-    id: 'shirt-lemon-linen-women',
-    name: 'Riviera Resort Lemon Linen Shirt',
-    colorway: 'Pastel Lemon Yellow',
+    id: 'shirt-women-blush-poplin',
+    name: 'Dusty Rose Classic Tailored Poplin Shirt',
+    colorway: 'Dusty Blush Pink',
     price: 72.00,
     category: 'Shirts',
     gender: 'women',
-    badge: 'RESORT DROP',
-    colorHex: '#fef08a',
+    badge: 'BESTSELLER',
+    colorHex: '#e1afb0',
     isDressShirt: true,
-    imageUrl: '/lemon-linen-cutout.png',
-    localImage: '/lemon-linen-cutout.png',
-    description: 'Sun-drenched pastel lemon French linen shirt with relaxed camp collar, airy drape, and rolled cuffs.',
+    imageUrl: '/women-shirt-blush-poplin.png',
+    localImage: '/women-shirt-blush-poplin.png',
+    description: 'Crisp organic cotton poplin tailored with clean structured seams, structured collar, and soft dusty rose blush tone.',
     swatches: [
-      { name: 'Pastel Lemon', hex: '#fef08a', id: 'shirt-lemon' },
-      { name: 'Pure White', hex: '#ffffff', id: 'shirt-white' }
+      { name: 'Blush Pink', hex: '#e1afb0', id: 'shirt-blush-pink' },
+      { name: 'Crisp White', hex: '#ffffff', id: 'shirt-blush-white' }
+    ],
+    sizes: ['XS', 'S', 'M', 'L', 'XL'],
+    stock: 28,
+    details: [
+      '100% Long-Staple Organic Cotton Poplin',
+      'Clean Minimalist Placket with Tonal Buttons',
+      'Tailored Modern Fit with Subtle Curved Hem'
+    ]
+  },
+  {
+    id: 'shirt-women-candy-stripe',
+    name: 'Candy Pink Bengal Stripe Boyfriend Shirt',
+    colorway: 'Candy Pink & White Stripe',
+    price: 74.00,
+    category: 'Shirts',
+    gender: 'women',
+    badge: 'SUMMER FAVORITE',
+    colorHex: '#e894a4',
+    isDressShirt: true,
+    imageUrl: '/women-shirt-candy-stripe.png',
+    localImage: '/women-shirt-candy-stripe.png',
+    description: 'Vibrant candy pink and white vertical Bengal stripes woven from ultra-fine combed cotton in an easy boyfriend-fit silhouette.',
+    swatches: [
+      { name: 'Candy Stripe', hex: '#e894a4', id: 'shirt-candy-stripe' },
+      { name: 'Classic Blue Stripe', hex: '#7ba4c9', id: 'shirt-blue-stripe' }
+    ],
+    sizes: ['XS', 'S', 'M', 'L', 'XL'],
+    stock: 20,
+    details: [
+      '100% Yarn-Dyed Combed Cotton',
+      'Vertical Slimming Bengal Stripe Weave',
+      'Relaxed Boyfriend Fit with Curved Hemline'
+    ]
+  },
+  {
+    id: 'shirt-women-sage-pinstripe',
+    name: 'Sage Pinstripe Two-Piece Layered Shirt',
+    colorway: 'Sage Green & Ecru Stripe',
+    price: 76.00,
+    category: 'Shirts',
+    gender: 'women',
+    badge: 'TRENDING',
+    colorHex: '#93a793',
+    isDressShirt: true,
+    imageUrl: '/women-shirt-sage-pinstripe.png',
+    localImage: '/women-shirt-sage-pinstripe.png',
+    description: 'Fine pinstriped two-piece layered open overshirt set in earthy sage green. Designed for chic high-low summer layering.',
+    swatches: [
+      { name: 'Sage Green Stripe', hex: '#93a793', id: 'shirt-sage-stripe' },
+      { name: 'Ecru Plain', hex: '#ede6dc', id: 'shirt-sage-ecru' }
     ],
     sizes: ['XS', 'S', 'M', 'L'],
     stock: 18,
     details: [
-      '100% Normandy Pure Flax Linen (170 GSM)',
-      'Pre-washed for Ultra-Soft Hand Feel',
-      'Relaxed Spread Camp Collar'
+      'Layered 2-in-1 Dual-Piece Construction',
+      'Micro Pinstripe Yarn Dye',
+      'Airy Relaxed Hang with Drop Shoulders'
     ]
   },
   {
-    id: 'shirt-striped-poplin-women',
-    name: 'Bengal Stripe Relaxed Overshirt',
-    colorway: 'Bengal Blue Stripe',
-    price: 76.00,
+    id: 'shirt-women-noir-pinstripe',
+    name: 'Monochrome Pinstripe Open-Neck Drape Shirt',
+    colorway: 'Monochrome Black & White Stripe',
+    price: 70.00,
     category: 'Shirts',
     gender: 'women',
-    badge: 'EDITORIAL FAVORITE',
-    colorHex: '#7ba4c9',
+    badge: 'PARISIAN CHIC',
+    colorHex: '#3a3a3c',
     isDressShirt: true,
-    imageUrl: '/paris-striped-cutout.png',
-    localImage: '/paris-striped-cutout.png',
-    description: 'Classic Bengal blue & white striped oxford tailored with fine-gauge yarn. Combines crisp architectural lines with relaxed summer comfort.',
+    imageUrl: '/women-shirt-noir-pinstripe.png',
+    localImage: '/women-shirt-noir-pinstripe.png',
+    description: 'Sophisticated monochrome black & white vertical stripe shirt with open spread collar and graceful fluid drape.',
     swatches: [
-      { name: 'Bengal Blue Stripe', hex: '#7ba4c9', id: 'shirt-stripe' },
-      { name: 'Crisp White', hex: '#ffffff', id: 'shirt-white' }
+      { name: 'Monochrome Noir Stripe', hex: '#3a3a3c', id: 'shirt-noir-stripe' },
+      { name: 'White Stripe', hex: '#f0f0f0', id: 'shirt-white-stripe' }
     ],
-    sizes: ['XS', 'S', 'M', 'L'],
-    stock: 20,
+    sizes: ['XS', 'S', 'M', 'L', 'XL'],
+    stock: 22,
     details: [
-      '100% Combed Cotton Poplin',
-      'Double-stitched side seams',
-      'Extended curved hemline'
+      'Breathable Fluid Rayon-Cotton Blend',
+      'Open Notch Lapel Collar',
+      'Clean Finished Cuffs and Hem'
     ]
   },
 
   // --- FEMALE T-SHIRTS ---
   {
-    id: 'tee-women-contour-tank',
-    name: 'Ribbed Seamless Contour Tank Top',
-    colorway: 'Optic White',
-    price: 36.00,
+    id: 'women-tee-block-stripe-polo',
+    name: 'Oversized Block-Stripe Rugby Polo',
+    colorway: 'Navy & Ecru Stripe',
+    price: 54.00,
+    originalPrice: 68.00,
     category: 'T-Shirts',
     gender: 'women',
-    badge: 'ESSENTIAL',
-    colorHex: '#fbfbfb',
-    type: 'essential',
+    badge: 'NEW DROP',
+    colorHex: '#1b2838',
+    type: 'polo',
+    imageUrl: '/women-tee-block-stripe-polo.png',
+    localImage: '/women-tee-block-stripe-polo.png',
+    modelImage: '/women-tee-block-stripe-polo.png',
     swatches: [
-      { name: 'Optic White', hex: '#fbfbfb', id: 'tank-white' },
-      { name: 'Midnight Black', hex: '#1c1c1e', id: 'tank-black' },
-      { name: 'Sand Ecru', hex: '#e8e2d5', id: 'tank-ecru' }
-    ],
-    sizes: ['XS', 'S', 'M', 'L'],
-    stock: 35,
-    details: [
-      'Heavyweight 2x2 Micro-Ribbed Modal & Cotton',
-      'Form-flattering neckline and high armhole bindings'
-    ]
-  },
-  {
-    id: 'tee-women-boyfriend-tee',
-    name: 'Relaxed Boyfriend Drop-Shoulder Tee',
-    colorway: 'Bone Ecru',
-    price: 34.00,
-    category: 'T-Shirts',
-    gender: 'women',
-    badge: 'CORE PIECE',
-    colorHex: '#f4efe6',
-    type: 'essential',
-    swatches: [
-      { name: 'Bone Ecru', hex: '#f4efe6', id: 'tee-bf-bone' },
-      { name: 'Washed Rose', hex: '#c99b9b', id: 'tee-bf-rose' },
-      { name: 'Charcoal', hex: '#38393c', id: 'tee-bf-charcoal' }
+      { name: 'Navy & Cream Stripe', hex: '#1b2838', id: 'stripe-navy' },
+      { name: 'Forest & Ecru Stripe', hex: '#233829', id: 'stripe-forest' }
     ],
     sizes: ['XS', 'S', 'M', 'L', 'XL'],
-    stock: 28,
+    stock: 24,
     details: [
-      '220 GSM Organic Ring-Spun Combed Jersey',
-      'Oversized boxy drape with raw-look bound collar'
-    ]
+      'Heavyweight 280 GSM French Terry Cotton',
+      'Contrast white twill collar with hidden button placket',
+      'Dropped shoulders and relaxed boxy drape',
+      'Pre-shrunk vintage wash hand feel'
+    ],
+    description: 'Crafted from premium heavyweight combed cotton in bold navy and ecru horizontal rugby stripes. Features an exaggerated boxy drape with a crisp contrast collar.'
+  },
+  {
+    id: 'women-tee-beardless-jersey',
+    name: 'Noir Athletic Contrast-Piping Jersey Tee',
+    colorway: 'Matte Black & Ivory',
+    price: 48.00,
+    originalPrice: 60.00,
+    category: 'T-Shirts',
+    gender: 'women',
+    badge: 'TRENDING',
+    colorHex: '#141416',
+    type: 'streetwear',
+    imageUrl: '/women-tee-beardless-jersey.png',
+    localImage: '/women-tee-beardless-jersey.png',
+    modelImage: '/women-tee-beardless-jersey.png',
+    swatches: [
+      { name: 'Matte Black', hex: '#141416', id: 'jersey-black' },
+      { name: 'Slate Grey', hex: '#4a4f56', id: 'jersey-slate' }
+    ],
+    sizes: ['XS', 'S', 'M', 'L'],
+    stock: 19,
+    details: [
+      '240 GSM Breathable Performance Mesh & Jersey Blend',
+      'White raglan piping contour accents across chest & sleeves',
+      'Archival typographic chest graphic motif',
+      'Slightly elongated oversized silhouette'
+    ],
+    description: 'A sporty modern streetwear staple featuring aerodynamic contrast piping, raglan sleeve construction, and an effortless relaxed drape.'
+  },
+  {
+    id: 'women-tee-la-varsity-polo',
+    name: 'Varsity Script Ribbed V-Neck Polo',
+    colorway: 'Deep Navy / White Trim',
+    price: 52.00,
+    originalPrice: 65.00,
+    category: 'T-Shirts',
+    gender: 'women',
+    badge: 'COLLEGIATE',
+    colorHex: '#162238',
+    type: 'polo',
+    imageUrl: '/women-tee-la-varsity-polo.png',
+    localImage: '/women-tee-la-varsity-polo.png',
+    modelImage: '/women-tee-la-varsity-polo.png',
+    swatches: [
+      { name: 'Varsity Navy', hex: '#162238', id: 'la-navy' },
+      { name: 'Ivy Green', hex: '#1c3422', id: 'la-green' }
+    ],
+    sizes: ['XS', 'S', 'M', 'L'],
+    stock: 22,
+    details: [
+      'Micro-ribbed stretch cotton-modal knit',
+      'Contrast flat-knit white polo collar & split neckline',
+      'Embroidered Los Angeles arch lettering across chest',
+      'Fitted silhouette with ribbed sleeve cuffs'
+    ],
+    description: 'Collegiate vintage charm meets modern tailoring with a form-flattering ribbed texture, open split v-neck collar, and crisp white accent piping.'
+  },
+  {
+    id: 'women-tee-milan-striped-knit',
+    name: 'Milan Fine-Knit Striped Polo Top',
+    colorway: 'Navy & Cream Breton Stripe',
+    price: 58.00,
+    originalPrice: 74.00,
+    category: 'T-Shirts',
+    gender: 'women',
+    badge: 'ATELIER KNIT',
+    colorHex: '#1c2430',
+    type: 'knit',
+    imageUrl: '/women-tee-milan-striped-knit.png',
+    localImage: '/women-tee-milan-striped-knit.png',
+    modelImage: '/women-tee-milan-striped-knit.png',
+    swatches: [
+      { name: 'Breton Navy', hex: '#1c2430', id: 'milan-navy' },
+      { name: 'Sand Khaki', hex: '#b39c82', id: 'milan-sand' }
+    ],
+    sizes: ['XS', 'S', 'M', 'L'],
+    stock: 16,
+    details: [
+      '100% Ultra-Fine Gauge Organic Combed Cotton Knit',
+      'Full front button placket with genuine pearlized buttons',
+      'Classic French Breton stripe repeat',
+      'Tailored slim silhouette with ribbed hem and cuffs'
+    ],
+    description: 'An elegant European resort essential spun from luxurious fine-gauge cotton knit, finished with refined pearlized buttons and micro-striped elegance.'
+  },
+  {
+    id: 'women-tee-contrast-collar-polo',
+    name: 'Riviera Contrast-Trim V-Collar Polo',
+    colorway: 'Midnight Navy / Pure White',
+    price: 46.00,
+    originalPrice: 58.00,
+    category: 'T-Shirts',
+    gender: 'women',
+    badge: 'SIGNATURE',
+    colorHex: '#111e33',
+    type: 'polo',
+    imageUrl: '/women-tee-contrast-collar-polo.png',
+    localImage: '/women-tee-contrast-collar-polo.png',
+    modelImage: '/women-tee-contrast-collar-polo.png',
+    swatches: [
+      { name: 'Midnight Navy', hex: '#111e33', id: 'vneck-navy' },
+      { name: 'Burgundy Wine', hex: '#4a1525', id: 'vneck-wine' }
+    ],
+    sizes: ['XS', 'S', 'M', 'L', 'XL'],
+    stock: 27,
+    details: [
+      'Breathable Piqué Cotton with Natural Stretch',
+      'Open buttonless Johnny collar with contrast white tipping',
+      'Contrast white sleeve cuffs',
+      'Straight hem with reinforced side vents'
+    ],
+    description: 'Timeless tennis polo aesthetic reimagined with a relaxed buttonless open Johnny collar, crisp white border accents, and breathable piqué texture.'
   },
 
   // --- FEMALE PANTS & SKIRTS ---
+  
   {
-    id: 'pants-women-sand-fluid',
-    name: 'Fluid Pleated Sand Wide-Leg Trousers',
-    colorway: 'Pleated Sand',
-    price: 88.00,
-    category: 'Pants',
-    gender: 'women',
-    badge: 'NEW ARRIVAL',
-    colorHex: '#d6caa8',
-    type: 'pants',
-    swatches: [
-      { name: 'Pleated Sand', hex: '#d6caa8', id: 'pants-sand-w' },
-      { name: 'Pure White', hex: '#fbfbfb', id: 'pants-white-w' }
+    "id": "pants-women-ivory-pleated",
+    "name": "Ivory Pleated High-Waisted Wide Trousers",
+    "colorway": "Ivory Alabaster",
+    "price": 135,
+    "originalPrice": 158,
+    "category": "Pants",
+    "gender": "women",
+    "badge": "TAILORED ATELIER",
+    "colorHex": "#f4efe6",
+    "imageUrl": "/women-pants-ivory-pleated.png",
+    "localImage": "/women-pants-ivory-pleated.png",
+    "hoverImage": "/women-pants-ivory-pleated.png",
+    "description": "Masterfully tailored high-rise wide-leg trousers featuring deep front knife pleats, clean waistband with belt loops, and an ultra-fluid drape in refined Italian twill.",
+    "swatches": [
+        {
+            "name": "Ivory Alabaster",
+            "hex": "#f4efe6",
+            "id": "pants-ivory-swatch"
+        }
     ],
-    sizes: ['26', '28', '30', '32'],
-    stock: 18,
-    details: [
-      'Pure Fluid Linen-Tencel Blend for breezy drape',
-      'High-rise waist with tailored architectural double pleats'
+    "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+    ],
+    "stock": 22,
+    "details": [
+        "High-Waisted Knife-Pleated Front Design",
+        "Italian Poly-Viscose Fluid Suiting Twill",
+        "Full-Length Architectural Wide-Leg Sweep",
+        "Concealed Hook-and-Bar Atelier Closure"
     ]
-  },
+},
   {
-    id: 'pants-women-wide-denim',
-    name: 'Wide-Leg Light Wash Denim Jeans',
-    colorway: 'Stonewash Sky Blue',
-    price: 92.00,
-    category: 'Pants',
-    gender: 'women',
-    badge: 'BESTSELLER',
-    colorHex: '#8cb1d2',
-    type: 'pants',
-    swatches: [
-      { name: 'Sky Blue Wash', hex: '#8cb1d2', id: 'denim-sky' },
-      { name: 'Ecru Denim', hex: '#f1eee7', id: 'denim-ecru' }
+    "id": "pants-women-black-corset",
+    "name": "Noir Double-Button Corset Waist Trousers",
+    "colorway": "Midnight Noir",
+    "price": 142,
+    "originalPrice": 165,
+    "category": "Pants",
+    "gender": "women",
+    "badge": "NEW SILHOUETTE",
+    "colorHex": "#121214",
+    "imageUrl": "/women-pants-black-corset.png",
+    "localImage": "/women-pants-black-corset.png",
+    "hoverImage": "/women-pants-black-corset.png",
+    "description": "Sculptural high-rise trousers featuring an extended corset-style waistband with dual gold-toned metallic buttons, sharp structured pleats, and sweeping wide palazzo legs.",
+    "swatches": [
+        {
+            "name": "Midnight Noir",
+            "hex": "#121214",
+            "id": "pants-noir-corset"
+        }
     ],
-    sizes: ['26', '28', '30', '32', '34'],
-    stock: 24,
-    details: [
-      '13.5 oz 100% Rigid Organic Cotton Denim',
-      'Relaxed wide-leg taper with vintage silver hardware'
+    "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+    ],
+    "stock": 19,
+    "details": [
+        "Extended Cinched Corset High Waistband",
+        "Dual Engraved Atelier Metallic Buttons",
+        "Creased Center Front Drape Lines",
+        "Premium Anti-Crease Structured Crepe"
     ]
-  },
+},
+  {
+    "id": "pants-women-white-palazzo",
+    "name": "Pure White Fluid High-Waist Palazzo Trousers",
+    "colorway": "Optic White",
+    "price": 128,
+    "originalPrice": 148,
+    "category": "Pants",
+    "gender": "women",
+    "badge": "RUNWAY RESORT",
+    "colorHex": "#ffffff",
+    "imageUrl": "/women-pants-white-palazzo.png",
+    "localImage": "/women-pants-white-palazzo.png",
+    "hoverImage": "/women-pants-white-palazzo.png",
+    "description": "Effortless Riviera resort aesthetic with a high-rise seamless waistline, subtle darting, and billowing relaxed palazzo legs tailored from breathable matte-weave linen blend.",
+    "swatches": [
+        {
+            "name": "Optic White",
+            "hex": "#ffffff",
+            "id": "pants-white-palazzo"
+        }
+    ],
+    "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+    ],
+    "stock": 24,
+    "details": [
+        "High-Rise Contoured Waist Panel",
+        "Breathable Lightweight Matte-Weave Blend",
+        "Floor-Skimming Relaxed Silhouette",
+        "Seamless Hidden Side Zipper"
+    ]
+},
+  {
+    "id": "pants-women-charcoal-horseshoe",
+    "name": "Washed Charcoal Horseshoe Barrel Denim",
+    "colorway": "Washed Charcoal",
+    "price": 148,
+    "originalPrice": 172,
+    "category": "Pants",
+    "gender": "women",
+    "badge": "STATEMENT DENIM",
+    "colorHex": "#2c2c2e",
+    "imageUrl": "/women-pants-charcoal-horseshoe.png",
+    "localImage": "/women-pants-charcoal-horseshoe.png",
+    "hoverImage": "/women-pants-charcoal-horseshoe.png",
+    "description": "The definitive modern statement silhouette: dramatic curved horseshoe / balloon leg cut from 13.5oz vintage washed black denim with whiskered thighs and tapered hem.",
+    "swatches": [
+        {
+            "name": "Washed Charcoal",
+            "hex": "#2c2c2e",
+            "id": "pants-charcoal-horseshoe"
+        }
+    ],
+    "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+    ],
+    "stock": 18,
+    "details": [
+        "13.5oz Heavyweight 100% Cotton Ring-Spun Denim",
+        "Architectural Curved Barrel / Horseshoe Leg",
+        "Vintage Sun-Fade Whiskering & Stone Wash",
+        "Custom Engraved Hardware & 5-Pocket Styling"
+    ]
+},
+  {
+    "id": "pants-women-indigo-horseshoe",
+    "name": "Vintage Indigo Horseshoe Barrel Denim",
+    "colorway": "Vintage Indigo Wash",
+    "price": 148,
+    "originalPrice": 172,
+    "category": "Pants",
+    "gender": "women",
+    "badge": "STATEMENT DENIM",
+    "colorHex": "#6d8fa8",
+    "imageUrl": "/women-pants-indigo-horseshoe.png",
+    "localImage": "/women-pants-indigo-horseshoe.png",
+    "hoverImage": "/women-pants-indigo-horseshoe.png",
+    "description": "Sculpted curved barrel denim in an authentic vintage blue stone wash. Features an exaggerated outer curve through the knee with gentle inward taper at the stacked ankles.",
+    "swatches": [
+        {
+            "name": "Vintage Indigo",
+            "hex": "#6d8fa8",
+            "id": "pants-indigo-horseshoe"
+        }
+    ],
+    "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+    ],
+    "stock": 20,
+    "details": [
+        "Authentic Heavy Vintage Wash Japanese Denim",
+        "Dramatic Horseshoe Curved Outer Seam Construction",
+        "High-Rise Rise with Relaxed Hip & Thigh Volume",
+        "Atelier Clean-Finished Heavy Gauge Hem"
+    ]
+},
+  {
+    "id": "pants-women-black-flare",
+    "name": "Sculpt High-Waisted Flare Yoga Pants",
+    "colorway": "Onyx Black",
+    "price": 118,
+    "originalPrice": 138,
+    "category": "Pants",
+    "gender": "women",
+    "badge": "ATELIER ACTIVE",
+    "colorHex": "#121212",
+    "imageUrl": "/women-pants-black-flare.png",
+    "localImage": "/women-pants-black-flare.png",
+    "hoverImage": "/women-pants-black-flare.png",
+    "description": "Sculptural high-waisted flared bootcut yoga pants engineered with four-way stretch compression fabric, tummy-control crossover waistband, and an elongated bootcut flare hem.",
+    "swatches": [
+        {
+            "name": "Onyx Black",
+            "hex": "#121212",
+            "id": "pants-black-flare"
+        }
+    ],
+    "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+    ],
+    "stock": 28,
+    "details": [
+        "High-Rise Contoured Core Support Waistband",
+        "Buttery-Soft 4-Way Stretch Sculpting Knit",
+        "Elongating Flared Bootcut Silhouette",
+        "Non-Sheer Squat-Proof Atelier Weave"
+    ]
+},
 
   // --- FEMALE HOODIES ---
   {
@@ -804,5 +1203,389 @@ export const CATALOG_PRODUCTS = [
       'Full-grain Italian vegetable-tanned leather',
       'Solid brass corner rivets'
     ]
-  }
+  },
+
+  // =============================================================
+  // MEN'S CURATED FULL LOOK COMBOS
+  // =============================================================
+  {
+    id: 'combo-men-navy-linen',
+    name: 'Midnight Navy Linen & Sand Trouser Full Combo',
+    colorway: 'Midnight Navy / Pleated Sand',
+    price: 195.00,
+    originalPrice: 229.00,
+    category: 'Combos',
+    gender: 'men',
+    badge: 'LOOK SET • 15% OFF',
+    colorHex: '#1c2d42',
+    imageUrl: '/men-navy-linen-cutout.png',
+    localImage: '/men-navy-linen-cutout.png',
+    description: 'Complete 3-piece tailored outfit including the French Normandy midnight navy open-collar linen shirt, fluid sand pleated wide-leg trousers, and vintage leather watch.',
+    swatches: [
+      { name: 'Navy & Sand Set', hex: '#1c2d42', id: 'combo-navy-sand' }
+    ],
+    sizes: ['S', 'M', 'L', 'XL', 'XXL'],
+    stock: 18,
+    details: [
+      'Normandy 100% Pure Flax Linen Shirt',
+      'Pleated Fluid Sand Trousers with Hidden Adjuster',
+      'Curated Head-to-Toe Milanese Palette'
+    ]
+  },
+  {
+    id: 'combo-men-black-zip-polo',
+    name: 'Textured Black Quarter-Zip & Stone Chinos Combo',
+    colorway: 'Onyx Black / Stone Italian Chino',
+    price: 215.00,
+    originalPrice: 245.00,
+    category: 'Combos',
+    gender: 'men',
+    badge: 'ATELIER COMBO',
+    colorHex: '#121212',
+    imageUrl: '/men-black-zip-polo-cutout.png',
+    localImage: '/men-black-zip-polo-cutout.png',
+    description: 'Complete Italian smart-casual ensemble: fine-textured quarter-zip ribbed knit polo in midnight onyx black paired with tailored stone-beige relaxed trousers.',
+    swatches: [
+      { name: 'Onyx & Stone Set', hex: '#121212', id: 'combo-black-stone' }
+    ],
+    sizes: ['S', 'M', 'L', 'XL', 'XXL'],
+    stock: 20,
+    details: [
+      '100% Textured Combed Cotton Ribbed Polo',
+      'Tailored Italian Cotton Relaxed Chinos',
+      'Precision Color-Matched Palette'
+    ]
+  },
+  {
+    id: 'combo-men-ecru-polo',
+    name: 'Quiet Luxury Ecru Polo & Washed Denim Combo',
+    colorway: 'Natural Ecru / Washed Black Denim',
+    price: 188.00,
+    originalPrice: 218.00,
+    category: 'Combos',
+    gender: 'men',
+    badge: 'QUIET LUXURY',
+    colorHex: '#f4efe6',
+    imageUrl: '/men-ecru-polo-cutout.png',
+    localImage: '/men-ecru-polo-cutout.png',
+    description: 'Effortless understated luxury combo featuring the open-collar ribbed knit polo in natural ecru paired with relaxed washed black denim jeans.',
+    swatches: [
+      { name: 'Ecru & Black Set', hex: '#f4efe6', id: 'combo-ecru-black' }
+    ],
+    sizes: ['S', 'M', 'L', 'XL', 'XXL'],
+    stock: 16,
+    details: [
+      'Fine-Gauge Combed Cotton Johnny Polo',
+      'Heavyweight 14oz Washed Black Denim',
+      'Complete Coordinated Street Luxe Set'
+    ]
+  },
+  {
+    id: 'combo-men-archive-mocha',
+    name: 'Two-Tone Archive Mocha Hoodie & Cargo Combo',
+    colorway: 'Mocha Brown / Washed Utility Grey',
+    price: 235.00,
+    originalPrice: 263.00,
+    category: 'Combos',
+    gender: 'men',
+    badge: 'ARCHIVE COMBO',
+    colorHex: '#5c4033',
+    imageUrl: '/men-archive-mocha-cutout.png',
+    localImage: '/men-archive-mocha-cutout.png',
+    description: 'Heavyweight streetwear atelier combo featuring the 480 GSM two-tone mocha raglan hoodie and vintage washed grey wide utility cargo trousers.',
+    swatches: [
+      { name: 'Mocha & Grey Set', hex: '#5c4033', id: 'combo-mocha-grey' }
+    ],
+    sizes: ['S', 'M', 'L', 'XL', 'XXL'],
+    stock: 14,
+    details: [
+      '480 GSM Heavyweight French Terry Raglan Hoodie',
+      'Multi-Pocket Wide Utility Cargo Trousers',
+      'Complete Atelier Streetwear Styling'
+    ]
+  },
+  {
+    "id": "combo-women-denim-corset",
+    "name": "Denim Corset & Wide-Leg Jeans Atelier Set",
+    "colorway": "Vintage Indigo / Crisp Poplin",
+    "price": 225,
+    "originalPrice": 265,
+    "category": "Combos",
+    "gender": "women",
+    "badge": "LOOK SET • 15% OFF",
+    "colorHex": "#7ba4c9",
+    "imageUrl": "/women-combo-denim-corset.png",
+    "localImage": "/women-combo-denim-corset.png",
+    "hoverImage": "/women-combo-denim-corset.png",
+    "description": "Complete head-to-toe Parisian atelier ensemble: structured washed denim boned corset top layered over an ethereal bishop-sleeve white poplin blouse, matching wide-leg tailored jeans, structured crescent leather bag, and court sneakers.",
+    "swatches": [
+        {
+            "name": "Denim & Poplin Look",
+            "hex": "#7ba4c9",
+            "id": "combo-denim-corset"
+        }
+    ],
+    "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+    ],
+    "stock": 16,
+    "details": [
+        "Structured Washed Denim Boned Corset Top",
+        "Crisp White Bishop-Sleeve Poplin Blouse",
+        "High-Rise Vintage Wash Wide-Leg Denim Jeans",
+        "Curated Atelier Accessories & Footwear Match"
+    ]
+},
+  {
+    "id": "combo-women-lace-corset",
+    "name": "Espresso Lace Corset & Sand Denim Set",
+    "colorway": "Espresso Lace / Sand Denim",
+    "price": 210,
+    "originalPrice": 248,
+    "category": "Combos",
+    "gender": "women",
+    "badge": "ATELIER COMBO",
+    "colorHex": "#4a2c20",
+    "imageUrl": "/women-combo-lace-corset.png",
+    "localImage": "/women-combo-lace-corset.png",
+    "hoverImage": "/women-combo-lace-corset.png",
+    "description": "Sensual high-fashion street-luxe combination: floral sheer lace underwire corset top in rich dark espresso paired with relaxed high-waisted sand denim jeans, minimalist strappy leather heels, and ivory bag.",
+    "swatches": [
+        {
+            "name": "Espresso & Sand Look",
+            "hex": "#4a2c20",
+            "id": "combo-lace-sand"
+        }
+    ],
+    "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+    ],
+    "stock": 14,
+    "details": [
+        "Underwire Sheer Floral Lace Corset Bustier",
+        "Relaxed High-Waist Neutral Sand Denim",
+        "Minimalist Italian Strappy Leather Sandals",
+        "Curated Studio Flat-Lay Styling"
+    ]
+},
+  {
+    "id": "combo-women-brown-corduroy",
+    "name": "Cocoa Cropped Corduroy & Baggy Denim Combo",
+    "colorway": "Cocoa Corduroy / Charcoal Wash",
+    "price": 198,
+    "originalPrice": 230,
+    "category": "Combos",
+    "gender": "women",
+    "badge": "SIGNATURE COMBO",
+    "colorHex": "#5c4033",
+    "imageUrl": "/women-combo-brown-corduroy.png",
+    "localImage": "/women-combo-brown-corduroy.png",
+    "hoverImage": "/women-combo-brown-corduroy.png",
+    "description": "Effortless signature streetwear set: wide-wale cocoa brown cropped corduroy overshirt over a second-skin white crew tee, paired with ultra-wide pleated charcoal wash denim and canvas tote.",
+    "swatches": [
+        {
+            "name": "Cocoa & Charcoal Look",
+            "hex": "#5c4033",
+            "id": "combo-cocoa-charcoal"
+        }
+    ],
+    "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+    ],
+    "stock": 20,
+    "details": [
+        "Wide-Wale 100% Cotton Cropped Corduroy Jacket",
+        "Fitted Premium Heavy Cotton Base Tee",
+        "Ultra-Wide Stacked Charcoal Wash Baggy Jeans",
+        "Canvas Studio Tote Bag & Platform Court Lows"
+    ]
+},
+  {
+    "id": "combo-women-pink-corduroy",
+    "name": "Dusty Rose Corduroy & Vintage Blue Denim Combo",
+    "colorway": "Dusty Rose / Vintage Indigo",
+    "price": 198,
+    "originalPrice": 230,
+    "category": "Combos",
+    "gender": "women",
+    "badge": "NEW CO-ORD • 15% OFF",
+    "colorHex": "#b87d86",
+    "imageUrl": "/women-combo-pink-corduroy.png",
+    "localImage": "/women-combo-pink-corduroy.png",
+    "hoverImage": "/women-combo-pink-corduroy.png",
+    "description": "Playful pastel atelier outfit: vintage dusty rose cropped corduroy jacket with balloon gathered cuffs, clean white fitted crew tee, and slouchy wide-leg vintage blue indigo denim.",
+    "swatches": [
+        {
+            "name": "Rose & Indigo Look",
+            "hex": "#b87d86",
+            "id": "combo-rose-indigo"
+        }
+    ],
+    "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+    ],
+    "stock": 18,
+    "details": [
+        "Vintage Dusty Rose Cropped Corduroy Overshirt",
+        "Soft-Touch Stretch Cotton Fitted Tee",
+        "Relaxed High-Rise Vintage Blue Denim",
+        "Natural Cream Canvas Shopper & White Sneakers"
+    ]
+},
+  {
+    "id": "combo-women-vintage-chintz",
+    "name": "Vintage Blue Chintz Slit Kurta & Trousers Set",
+    "colorway": "Vintage Blue Chintz / Fluid Denim",
+    "price": 198,
+    "originalPrice": 232,
+    "category": "Combos",
+    "gender": "women",
+    "badge": "RUNWAY COMBO • 15% OFF",
+    "colorHex": "#7ba4c9",
+    "imageUrl": "/floral-kurti-cutout.png",
+    "localImage": "/floral-kurti-cutout.png",
+    "hoverImage": "/floral-kurti-model.png",
+    "description": "Complete Parisian runway co-ord look: French Normandy flax linen longline side-slit chintz kurta shirt layered over fluid vintage light wash palazzo trousers.",
+    "swatches": [
+        {
+            "name": "Vintage Blue Chintz Look",
+            "hex": "#7ba4c9",
+            "id": "combo-vintage-chintz"
+        }
+    ],
+    "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+    ],
+    "stock": 18,
+    "details": [
+        "100% Pure Flax Linen Chintz Slit Longline Shirt",
+        "Floor-Length Fluid Wide-Leg Denim Trousers",
+        "Curated Head-to-Toe Atelier Look Ensemble"
+    ]
+},
+  {
+    "id": "combo-women-crisp-white-sand",
+    "name": "Crisp White Poplin & Sand Fluid Trouser Set",
+    "colorway": "Crisp White / Sand Beige",
+    "price": 185,
+    "originalPrice": 218,
+    "category": "Combos",
+    "gender": "women",
+    "badge": "QUIET LUXURY COMBO",
+    "colorHex": "#f4efe6",
+    "imageUrl": "/white-poplin-cutout.png",
+    "localImage": "/white-poplin-cutout.png",
+    "hoverImage": "/white-poplin-model.png",
+    "description": "Effortless quiet luxury styling: oversized crisp Italian poplin boyfriend shirt paired with fluid sand-beige pleated wide-leg trousers, leather crossbody bag, and minimalist leather sneakers.",
+    "swatches": [
+        {
+            "name": "Crisp White & Sand Look",
+            "hex": "#f4efe6",
+            "id": "combo-crisp-white-sand"
+        }
+    ],
+    "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+    ],
+    "stock": 22,
+    "details": [
+        "100% Crisp Cotton Oversized Boyfriend Shirt",
+        "Pleated Fluid Sand High-Waist Wide Trousers",
+        "Minimalist Crossbody Bag & Sneaker Match"
+    ]
+},
+  {
+    "id": "combo-women-pastel-lemon",
+    "name": "Pastel Lemon Resort Linen & Utility Mini Set",
+    "colorway": "Pastel Lemon / Olive Denim",
+    "price": 175,
+    "originalPrice": 205,
+    "category": "Combos",
+    "gender": "women",
+    "badge": "SUMMER RESORT • 15% OFF",
+    "colorHex": "#e8df9b",
+    "imageUrl": "/lemon-linen-cutout.png",
+    "localImage": "/lemon-linen-cutout.png",
+    "hoverImage": "/lemon-linen-model.png",
+    "description": "Sun-drenched Riviera resort combo: lightweight airy pastel lemon yellow open-collar linen shirt over washed olive utility denim mini skirt with raffia tote and artisan slide sandals.",
+    "swatches": [
+        {
+            "name": "Pastel Lemon Resort Look",
+            "hex": "#e8df9b",
+            "id": "combo-pastel-lemon"
+        }
+    ],
+    "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+    ],
+    "stock": 20,
+    "details": [
+        "100% Breathable Open-Collar Linen Shirt",
+        "Washed Olive Utility Denim Cargo Mini Skirt",
+        "Woven Raffia Tote Bag & Leather Slide Styling"
+    ]
+},
+  {
+    "id": "combo-women-bengal-stripe-white",
+    "name": "Bengal Blue Stripe Poplin & White Palazzo Set",
+    "colorway": "Bengal Blue Stripe / Optic White",
+    "price": 188,
+    "originalPrice": 220,
+    "category": "Combos",
+    "gender": "women",
+    "badge": "COASTAL CHIC COMBO",
+    "colorHex": "#6d8fa8",
+    "imageUrl": "/paris-striped-cutout.png",
+    "localImage": "/paris-striped-cutout.png",
+    "hoverImage": "/paris-striped-model.png",
+    "description": "Coastal chic Milanese outfit: tailored relaxed Bengal blue and white striped poplin overshirt over a second-skin white rib tank, paired with flowing optic white wide palazzo trousers and slouchy canvas tote.",
+    "swatches": [
+        {
+            "name": "Bengal Stripe & White Look",
+            "hex": "#6d8fa8",
+            "id": "combo-bengal-stripe-white"
+        }
+    ],
+    "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+    ],
+    "stock": 25,
+    "details": [
+        "Crisp Italian Bengal Striped Poplin Overshirt",
+        "Optic White Fluid High-Waist Palazzo Trousers",
+        "Canvas Studio Tote Bag & Court Shoe Match"
+    ]
+}
 ];

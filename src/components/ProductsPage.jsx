@@ -11,10 +11,10 @@ import {
   X, 
   Grid3X3, 
   Grid2X2,
-  Users,
-  Sparkle
+  Users
 } from 'lucide-react';
-import { DRESS_SHIRTS_HERO, HANGING_RACK_TEES, CATALOG_PRODUCTS } from '../data/productsCatalog';
+import { DRESS_SHIRTS_HERO, WOMEN_TEES_HERO, HANGING_RACK_TEES, CATALOG_PRODUCTS } from '../data/productsCatalog';
+import WomenTeesHangerRack from './WomenTeesHangerRack';
 
 const HERO_IMAGE_URL = 'https://res.cloudinary.com/qrhgjdrs/image/upload/v1789314616/Comment_SHOP_and_I_ll_send_the_links_in_your_DM____mensfashion_wardrobeessentials_menswearindia_outfitideas_minimalstyle_menwithstyle_styleguide_summeroutfits_mensoutfit_fashionreels_simplefashion_cleanstyle_essentials_lar9h1.jpg';
 const HERO_LOCAL_URL = '/hanger-shirts-hero.jpg';
@@ -192,6 +192,9 @@ export default function ProductsPage({
     }
   }, [initialGender]);
 
+  // Determine which interactive rack to show
+  const currentHeroMode = activeGender === 'women' ? 'women' : 'men';
+
   const activeShirt = DRESS_SHIRTS_HERO[activeShirtIndex] || DRESS_SHIRTS_HERO[0];
 
   // Auto-step timer for Hero
@@ -240,9 +243,10 @@ export default function ProductsPage({
   // 2. Category filter applied to gender-filtered list
   const filteredProducts = genderFilteredProducts.filter((product) => {
     if (activeCategory === 'All') return true;
-    if (activeCategory === 'Shirts') return product.category === 'Shirts' || product.category === 'Dress Shirts';
-    if (activeCategory === 'T-Shirts') return product.category === 'T-Shirts' || product.category === 'Mens' || product.category === 'Graphic Series';
-    if (activeCategory === 'Pants') return product.category === 'Pants';
+    if (activeCategory === 'Shirts' || activeCategory === 'Shirt') return product.category === 'Shirts' || product.category === 'Dress Shirts';
+    if (activeCategory === 'T-Shirts' || activeCategory === 'T-Shirt') return product.category === 'T-Shirts' || product.category === 'Mens' || product.category === 'Graphic Series' || product.category === 'T-Shirt';
+    if (activeCategory === 'Pants' || activeCategory === 'Pant') return product.category === 'Pants' || product.category === 'Pant';
+    if (activeCategory === 'Combos' || activeCategory === 'Combo') return product.category === 'Combos' || product.category === 'Combo' || product.isCombo;
     if (activeCategory === 'Hoodies') return product.category === 'Hoodies';
     if (activeCategory === 'Objects') return product.category === 'Objects';
     return product.category === activeCategory;
@@ -252,9 +256,10 @@ export default function ProductsPage({
   const getCategoryCount = (catId) => {
     if (catId === 'All') return genderFilteredProducts.length;
     return genderFilteredProducts.filter((p) => {
-      if (catId === 'Shirts') return p.category === 'Shirts' || p.category === 'Dress Shirts';
-      if (catId === 'T-Shirts') return p.category === 'T-Shirts' || p.category === 'Mens' || p.category === 'Graphic Series';
-      if (catId === 'Pants') return p.category === 'Pants';
+      if (catId === 'Shirts' || catId === 'Shirt') return p.category === 'Shirts' || p.category === 'Dress Shirts';
+      if (catId === 'T-Shirts' || catId === 'T-Shirt') return p.category === 'T-Shirts' || p.category === 'Mens' || p.category === 'Graphic Series' || p.category === 'T-Shirt';
+      if (catId === 'Pants' || catId === 'Pant') return p.category === 'Pants' || p.category === 'Pant';
+      if (catId === 'Combos' || catId === 'Combo') return p.category === 'Combos' || p.category === 'Combo' || p.isCombo;
       if (catId === 'Hoodies') return p.category === 'Hoodies';
       if (catId === 'Objects') return p.category === 'Objects';
       return p.category === catId;
@@ -267,7 +272,7 @@ export default function ProductsPage({
       {/* ----------------------------------------------------------------- */}
       {/* HERO SECTION: INTERACTIVE RACK & DRESS DETAILS WITH TOP PORTRAIT */}
       {/* ----------------------------------------------------------------- */}
-      <section className="relative w-full bg-[#f6f3ee] border-b border-neutral-200/80 overflow-hidden select-none">
+      <section className="relative w-full bg-[#f7f5f0] border-b border-neutral-200/80 overflow-hidden select-none">
         
         {/* Soft Ambient Radial Lighting */}
         <div 
@@ -277,225 +282,248 @@ export default function ProductsPage({
           }}
         />
 
-        <div className="max-w-[1400px] mx-auto px-4 sm:px-8 pt-6 sm:pt-8 pb-12 sm:pb-16 relative z-10">
-          
-          {/* Main Interactive Stage: 2-Column Grid with Distinct Space Gap */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 lg:gap-16 xl:gap-20 items-start">
+        {/* Dynamic Interactive Rack Rendering */}
+        {currentHeroMode === 'women' ? (
+          <div className="pt-2 pb-10 sm:pb-14">
+            <WomenTeesHangerRack 
+              onAddToCart={onAddToCart}
+              onToggleWishlist={onToggleWishlist}
+              wishlist={wishlist}
+              onQuickView={(p) => setQuickViewProduct(p)}
+            />
+          </div>
+        ) : (
+          <div className="max-w-[1400px] mx-auto px-4 sm:px-8 pt-4 pb-12 sm:pb-16 relative z-10">
             
-            {/* 1. Left Card: The 5-Shirt Hanging Rack Photo (7 cols) */}
-            <div className="lg:col-span-7 xl:col-span-7 relative bg-[#ede8de]/60 rounded-2xl p-4 sm:p-5 border border-neutral-300/60 shadow-sm overflow-hidden flex flex-col justify-between">
-              
-              <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden shadow-md bg-neutral-900">
-                <img 
-                  src={HERO_IMAGE_URL} 
-                  onError={(e) => { e.currentTarget.src = HERO_LOCAL_URL; }}
-                  alt="Zudio Signature Shirts on Hanger" 
-                  className="w-full h-full object-cover object-center"
-                />
-
-                {/* Hotspot Markers */}
-                {SHIRT_HOTSPOTS.map((spot) => {
-                  const isActive = activeShirtIndex === spot.id;
-                  return (
-                    <button
-                      key={spot.id}
-                      onClick={() => setActiveShirtIndex(spot.id)}
-                      className="absolute -translate-x-1/2 -translate-y-1/2 group/spot z-20 cursor-pointer focus:outline-none"
-                      style={{ left: `${spot.x}%`, top: `${spot.y}%` }}
-                      aria-label={`Select ${spot.name}`}
-                    >
-                      <div className="relative flex items-center justify-center">
-                        {/* Outer Pulse Ring */}
-                        {isActive && (
-                          <span 
-                            className="absolute w-8 h-8 rounded-full animate-ping opacity-40"
-                            style={{ backgroundColor: spot.hex }}
-                          />
-                        )}
-                        {/* Main Dot */}
-                        <span 
-                          className={`w-4 h-4 rounded-full border-2 transition-all duration-300 flex items-center justify-center shadow-lg ${
-                            isActive 
-                              ? 'scale-125 border-white ring-2 ring-neutral-950' 
-                              : 'border-white/80 hover:scale-110 opacity-90'
-                          }`}
-                          style={{ backgroundColor: spot.hex }}
-                        >
-                          {isActive && <span className="w-1 h-1 rounded-full bg-white block" />}
-                        </span>
-                      </div>
-
-                      {/* Tooltip Tag */}
-                      <span className={`absolute bottom-full left-1/2 -translate-x-1/2 mb-1.5 px-2 py-0.5 rounded-md text-[9px] font-mono whitespace-nowrap tracking-wider shadow-md transition-all duration-200 pointer-events-none ${
-                        isActive 
-                          ? 'bg-neutral-950 text-white opacity-100 translate-y-0 scale-100 font-semibold' 
-                          : 'bg-white/95 text-neutral-800 opacity-0 group-hover/spot:opacity-100 translate-y-1'
-                      }`}>
-                        {spot.name}
-                      </span>
-                    </button>
-                  );
-                })}
-              </div>
-
-              {/* Bottom Hotspot Legend Strip */}
-              <div className="w-full mt-3 flex items-center justify-between text-xs text-neutral-600 px-1">
-                <span className="font-mono text-[10px] uppercase tracking-wider text-neutral-400">
-                  Click Hanger Pin to Inspect
-                </span>
-                <div className="flex items-center gap-1.5">
-                  {SHIRT_HOTSPOTS.map((s) => (
-                    <button
-                      key={s.id}
-                      onClick={() => setActiveShirtIndex(s.id)}
-                      className={`w-3 h-3 rounded-full transition-transform ${
-                        activeShirtIndex === s.id ? 'scale-125 ring-2 ring-neutral-950 shadow-xs' : 'opacity-60 hover:opacity-100'
-                      }`}
-                      style={{ backgroundColor: s.hex }}
-                      title={s.name}
-                    />
-                  ))}
-                </div>
-              </div>
-
+            {/* Header Title in Reference Image Aesthetic */}
+            <div className="text-center mb-7 sm:mb-9 select-none">
+              <h1 className="font-serif italic text-3xl sm:text-4xl md:text-5xl text-neutral-900 font-normal tracking-tight">
+                every man needs
+              </h1>
+              <p className="font-mono text-[11px] sm:text-xs uppercase tracking-[0.25em] text-neutral-500 font-medium mt-1.5">
+                (AND YOU ONLY WEAR 1 &bull;&bull;)
+              </p>
             </div>
 
-            {/* 2. Right Side: UNIFIED PORTRAIT VIEW & DRESS DETAILS CARD (5 cols) */}
-            <div className="lg:col-span-5 xl:col-span-5 w-full bg-[#faf8f5] rounded-2xl p-4 sm:p-5 border border-neutral-200/90 shadow-md flex flex-col justify-between space-y-4">
+            {/* Main Interactive Stage: 2-Column Grid with Distinct Space Gap */}
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 lg:gap-16 xl:gap-20 items-start">
               
-              {/* ============================================================ */}
-              {/* A. CLEAN 3:4 PORTRAIT VIEW IMAGE */}
-              {/* ============================================================ */}
-              <div className="relative w-full aspect-[3/4] max-h-[340px] sm:max-h-[380px] mx-auto flex items-center justify-center overflow-hidden rounded-xl bg-white/70 border border-neutral-200/60 shadow-inner group/portrait">
-                <img 
-                  key={activeShirt.id}
-                  src={activeShirt.imageUrl}
-                  onError={(e) => { e.currentTarget.src = activeShirt.localImage || '/shirt-white.jpg'; }}
-                  alt={`${activeShirt.name} Portrait View`}
-                  className="w-full h-full object-contain p-2 transition-transform duration-700 group-hover/portrait:scale-105 animate-in fade-in zoom-in-95 drop-shadow-sm"
-                />
+              {/* 1. Left Card: The 5-Shirt Hanging Rack Photo (7 cols) */}
+              <div className="lg:col-span-7 xl:col-span-7 relative bg-[#ede8de]/60 rounded-2xl p-4 sm:p-5 border border-neutral-300/60 shadow-sm overflow-hidden flex flex-col justify-between">
+                
+                <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden shadow-md bg-neutral-900">
+                  <img 
+                    src={HERO_IMAGE_URL} 
+                    onError={(e) => { e.currentTarget.src = HERO_LOCAL_URL; }}
+                    alt="Zudio Signature Shirts on Hanger" 
+                    className="w-full h-full object-cover object-center"
+                  />
+
+                  {/* Hotspot Markers */}
+                  {SHIRT_HOTSPOTS.map((spot) => {
+                    const isActive = activeShirtIndex === spot.id;
+                    return (
+                      <button
+                        key={spot.id}
+                        onClick={() => setActiveShirtIndex(spot.id)}
+                        className="absolute -translate-x-1/2 -translate-y-1/2 group/spot z-20 cursor-pointer focus:outline-none"
+                        style={{ left: `${spot.x}%`, top: `${spot.y}%` }}
+                        aria-label={`Select ${spot.name}`}
+                      >
+                        <div className="relative flex items-center justify-center">
+                          {/* Outer Pulse Ring */}
+                          {isActive && (
+                            <span 
+                              className="absolute w-8 h-8 rounded-full animate-ping opacity-40"
+                              style={{ backgroundColor: spot.hex }}
+                            />
+                          )}
+                          {/* Main Dot */}
+                          <span 
+                            className={`w-4 h-4 rounded-full border-2 transition-all duration-300 flex items-center justify-center shadow-lg ${
+                              isActive 
+                                ? 'scale-125 border-white ring-2 ring-neutral-950' 
+                                : 'border-white/80 hover:scale-110 opacity-90'
+                            }`}
+                            style={{ backgroundColor: spot.hex }}
+                          >
+                            {isActive && <span className="w-1 h-1 rounded-full bg-white block" />}
+                          </span>
+                        </div>
+
+                        {/* Tooltip Tag */}
+                        <span className={`absolute bottom-full left-1/2 -translate-x-1/2 mb-1.5 px-2 py-0.5 rounded-md text-[9px] font-mono whitespace-nowrap tracking-wider shadow-md transition-all duration-200 pointer-events-none ${
+                          isActive 
+                            ? 'bg-neutral-950 text-white opacity-100 translate-y-0 scale-100 font-semibold' 
+                            : 'bg-white/95 text-neutral-800 opacity-0 group-hover/spot:opacity-100 translate-y-1'
+                        }`}>
+                          {spot.name}
+                        </span>
+                      </button>
+                    );
+                  })}
+                </div>
+
+                {/* Bottom Hotspot Legend Strip */}
+                <div className="w-full mt-3 flex items-center justify-between text-xs text-neutral-600 px-1">
+                  <span className="font-mono text-[10px] uppercase tracking-wider text-neutral-400">
+                    Click Hanger Pin to Inspect
+                  </span>
+                  <div className="flex items-center gap-1.5">
+                    {SHIRT_HOTSPOTS.map((s) => (
+                      <button
+                        key={s.id}
+                        onClick={() => setActiveShirtIndex(s.id)}
+                        className={`w-3 h-3 rounded-full transition-transform ${
+                          activeShirtIndex === s.id ? 'scale-125 ring-2 ring-neutral-950 shadow-xs' : 'opacity-60 hover:opacity-100'
+                        }`}
+                        style={{ backgroundColor: s.hex }}
+                        title={s.name}
+                      />
+                    ))}
+                  </div>
+                </div>
+
               </div>
 
-              {/* ============================================================ */}
-              {/* B. DRESS DETAILS & SIZING & ADD TO BAG */}
-              {/* ============================================================ */}
-              <div className="space-y-3.5 pt-1">
+              {/* 2. Right Side: UNIFIED PORTRAIT VIEW & DRESS DETAILS CARD (5 cols) */}
+              <div className="lg:col-span-5 xl:col-span-5 w-full bg-[#faf8f5] rounded-2xl p-4 sm:p-5 border border-neutral-200/90 shadow-md flex flex-col justify-between space-y-4">
                 
-                {/* Title & Price Header */}
-                <div className="flex items-baseline justify-between gap-4">
-                  <h2 className="font-bodoni text-xl sm:text-2xl font-normal text-neutral-950 leading-tight">
-                    {activeShirt.name}
-                  </h2>
-                  <span className="text-xl sm:text-2xl font-medium text-neutral-950">
-                    ${activeShirt.price.toFixed(2)}
+                {/* 3:4 Portrait View */}
+                <div className="relative w-full aspect-[3/4] max-h-[340px] sm:max-h-[380px] mx-auto flex items-center justify-center overflow-hidden rounded-xl bg-white/70 border border-neutral-200/60 shadow-inner group/portrait">
+                  <img 
+                    key={activeShirt.id}
+                    src={activeShirt.imageUrl}
+                    onError={(e) => { e.currentTarget.src = activeShirt.localImage || '/shirt-white.jpg'; }}
+                    alt={`${activeShirt.name} Portrait View`}
+                    className="w-full h-full object-contain p-2 transition-transform duration-700 group-hover/portrait:scale-105 animate-in fade-in zoom-in-95 drop-shadow-sm"
+                  />
+                  <span className="absolute top-3 left-3 bg-neutral-950/80 backdrop-blur-xs text-white text-[9px] font-mono px-2 py-0.5 rounded tracking-widest uppercase">
+                    MEN'S LINEN
                   </span>
                 </div>
 
-                {/* Colorway Selection Swatches */}
-                <div>
-                  <label className="block text-[9px] font-mono uppercase tracking-wider text-neutral-400 mb-1">
-                    Colorway Selection
-                  </label>
-                  <div className="flex items-center gap-2">
-                    {DRESS_SHIRTS_HERO.map((shirt, idx) => (
-                      <button
-                        key={shirt.id}
-                        onClick={() => setActiveShirtIndex(idx)}
-                        className={`w-5 h-5 rounded-full border transition-all cursor-pointer ${
-                          activeShirtIndex === idx 
-                            ? 'scale-115 ring-2 ring-neutral-950 ring-offset-2 border-transparent shadow-xs' 
-                            : 'border-black/20 hover:scale-105 opacity-75'
-                        }`}
-                        style={{ backgroundColor: shirt.hex }}
-                        title={shirt.name}
-                      />
-                    ))}
-                    <span className="text-xs text-neutral-500 font-mono ml-1.5">
+                {/* Details & Actions */}
+                <div className="space-y-3.5 pt-1">
+                  
+                  {/* Title & Price Header */}
+                  <div className="flex items-baseline justify-between gap-4">
+                    <h2 className="font-bodoni text-xl sm:text-2xl font-normal text-neutral-950 leading-tight">
                       {activeShirt.name}
+                    </h2>
+                    <span className="text-xl sm:text-2xl font-medium text-neutral-950">
+                      ${activeShirt.price.toFixed(2)}
                     </span>
                   </div>
-                </div>
 
-                {/* Size Selection */}
-                <div>
-                  <label className="block text-[9px] font-mono uppercase tracking-wider text-neutral-400 mb-1">
-                    Select Size
-                  </label>
-                  <div className="flex items-center gap-1.5">
-                    {['S', 'M', 'L', 'XL', 'XXL'].map((sz) => (
-                      <button
-                        key={sz}
-                        onClick={() => setSelectedHeroSize(sz)}
-                        className={`w-8 h-8 rounded-md text-xs font-mono transition-colors cursor-pointer ${
-                          selectedHeroSize === sz
-                            ? 'bg-neutral-950 text-white font-bold'
-                            : 'bg-white text-neutral-700 border border-neutral-200 hover:border-black'
-                        }`}
+                  {/* Colorway Selection Swatches */}
+                  <div>
+                    <label className="block text-[9px] font-mono uppercase tracking-wider text-neutral-400 mb-1">
+                      Colorway Selection
+                    </label>
+                    <div className="flex items-center gap-2">
+                      {DRESS_SHIRTS_HERO.map((shirt, idx) => (
+                        <button
+                          key={shirt.id}
+                          onClick={() => setActiveShirtIndex(idx)}
+                          className={`w-5 h-5 rounded-full border transition-all cursor-pointer ${
+                            activeShirtIndex === idx 
+                              ? 'scale-115 ring-2 ring-neutral-950 ring-offset-2 border-transparent shadow-xs' 
+                              : 'border-black/20 hover:scale-105 opacity-75'
+                          }`}
+                          style={{ backgroundColor: shirt.hex }}
+                          title={shirt.name}
+                        />
+                      ))}
+                      <span className="text-xs text-neutral-500 font-mono ml-1.5">
+                        {activeShirt.name}
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* Size Selection */}
+                  <div>
+                    <label className="block text-[9px] font-mono uppercase tracking-wider text-neutral-400 mb-1">
+                      Select Size
+                    </label>
+                    <div className="flex items-center gap-1.5">
+                      {['S', 'M', 'L', 'XL', 'XXL'].map((sz) => (
+                        <button
+                          key={sz}
+                          onClick={() => setSelectedHeroSize(sz)}
+                          className={`w-8 h-8 rounded-md text-xs font-mono transition-colors cursor-pointer ${
+                            selectedHeroSize === sz
+                              ? 'bg-neutral-950 text-white font-bold'
+                              : 'bg-white text-neutral-700 border border-neutral-200 hover:border-black'
+                          }`}
+                        >
+                          {sz}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Action Buttons */}
+                  <div className="pt-2.5 border-t border-neutral-200/70 flex items-center gap-2.5">
+                    <button
+                      onClick={() => {
+                        onAddToCart({
+                          id: `hero-${activeShirt.id}`,
+                          name: `${activeShirt.name} Linen Shirt`,
+                          price: activeShirt.price,
+                          size: selectedHeroSize,
+                          color: activeShirt.name,
+                          category: 'Shirts',
+                          gender: 'men',
+                          image: activeShirt.imageUrl || activeShirt.localImage || '/shirt-white.jpg'
+                        });
+                      }}
+                      className="flex-1 bg-neutral-950 hover:bg-neutral-800 text-white h-10 px-4 rounded-full text-xs font-medium uppercase tracking-[0.12em] flex items-center justify-center gap-2 transition-all duration-200 shadow-sm hover:shadow-md cursor-pointer"
+                    >
+                      <ShoppingBag className="w-3.5 h-3.5" />
+                      <span>Add To Bag &bull; ${activeShirt.price.toFixed(2)}</span>
+                    </button>
+
+                    <button
+                      onClick={() => onToggleWishlist(activeShirt.id)}
+                      className={`h-10 w-10 rounded-full border flex items-center justify-center transition-colors cursor-pointer ${
+                        wishlist.includes(activeShirt.id)
+                          ? 'bg-red-50 border-red-200 text-red-600'
+                          : 'border-neutral-200 text-neutral-600 hover:border-neutral-900 bg-white'
+                      }`}
+                      aria-label="Wishlist"
+                    >
+                      <Heart className={`w-4 h-4 ${wishlist.includes(activeShirt.id) ? 'fill-red-600' : ''}`} />
+                    </button>
+                  </div>
+
+                  {/* Stepper Controls */}
+                  <div className="pt-2 border-t border-neutral-200/60 flex items-center justify-between text-xs text-neutral-400">
+                    <div className="flex items-center gap-2 font-medium">
+                      <button 
+                        onClick={handlePrevShirt}
+                        className="text-neutral-600 hover:text-neutral-950 flex items-center gap-1 transition-colors cursor-pointer"
                       >
-                        {sz}
+                        <ChevronLeft className="w-3.5 h-3.5" /> Previous
                       </button>
-                    ))}
-                  </div>
-                </div>
-
-                {/* Action Buttons */}
-                <div className="pt-2.5 border-t border-neutral-200/70 flex items-center gap-2.5">
-                  <button
-                    onClick={() => {
-                      onAddToCart({
-                        id: `hero-${activeShirt.id}`,
-                        name: `${activeShirt.name} Linen Shirt`,
-                        price: activeShirt.price,
-                        size: selectedHeroSize,
-                        color: activeShirt.name,
-                        category: 'Shirts',
-                        image: activeShirt.imageUrl || activeShirt.localImage || '/shirt-white.jpg'
-                      });
-                    }}
-                    className="flex-1 bg-neutral-950 hover:bg-neutral-800 text-white h-10 px-4 rounded-full text-xs font-medium uppercase tracking-[0.12em] flex items-center justify-center gap-2 transition-all duration-200 shadow-sm hover:shadow-md cursor-pointer"
-                  >
-                    <ShoppingBag className="w-3.5 h-3.5" />
-                    <span>Add To Bag &bull; ${activeShirt.price.toFixed(2)}</span>
-                  </button>
-
-                  <button
-                    onClick={() => onToggleWishlist(activeShirt.id)}
-                    className={`h-10 w-10 rounded-full border flex items-center justify-center transition-colors cursor-pointer ${
-                      wishlist.includes(activeShirt.id)
-                        ? 'bg-red-50 border-red-200 text-red-600'
-                        : 'border-neutral-200 text-neutral-600 hover:border-neutral-900 bg-white'
-                    }`}
-                    aria-label="Wishlist"
-                  >
-                    <Heart className={`w-4 h-4 ${wishlist.includes(activeShirt.id) ? 'fill-red-600' : ''}`} />
-                  </button>
-                </div>
-
-                {/* Stepper Controls */}
-                <div className="pt-2 border-t border-neutral-200/60 flex items-center justify-between text-xs text-neutral-400">
-                  <div className="flex items-center gap-2 font-medium">
+                      <span className="text-neutral-200">/</span>
+                      <button 
+                        onClick={handleNextShirt}
+                        className="text-neutral-600 hover:text-neutral-950 flex items-center gap-1 transition-colors cursor-pointer"
+                      >
+                        Next <ChevronRight className="w-3.5 h-3.5" />
+                      </button>
+                    </div>
                     <button 
-                      onClick={handlePrevShirt}
-                      className="text-neutral-600 hover:text-neutral-950 flex items-center gap-1 transition-colors cursor-pointer"
+                      onClick={() => setIsAutoStepping(!isAutoStepping)}
+                      className={`text-[11px] tracking-wide transition-colors cursor-pointer ${
+                        isAutoStepping ? 'text-amber-800 font-semibold' : 'text-neutral-400 hover:text-neutral-800'
+                      }`}
                     >
-                      <ChevronLeft className="w-3.5 h-3.5" /> Previous
-                    </button>
-                    <span className="text-neutral-200">/</span>
-                    <button 
-                      onClick={handleNextShirt}
-                      className="text-neutral-600 hover:text-neutral-950 flex items-center gap-1 transition-colors cursor-pointer"
-                    >
-                      Next <ChevronRight className="w-3.5 h-3.5" />
+                      {isAutoStepping ? 'Pause Slideshow' : 'Auto Play'}
                     </button>
                   </div>
-                  <button 
-                    onClick={() => setIsAutoStepping(!isAutoStepping)}
-                    className={`text-[11px] tracking-wide transition-colors cursor-pointer ${
-                      isAutoStepping ? 'text-amber-800 font-semibold' : 'text-neutral-400 hover:text-neutral-800'
-                    }`}
-                  >
-                    {isAutoStepping ? 'Pause Slideshow' : 'Auto Play'}
-                  </button>
+
                 </div>
 
               </div>
@@ -503,12 +531,9 @@ export default function ProductsPage({
             </div>
 
           </div>
-
-        </div>
+        )}
       </section>
 
-      {/* ----------------------------------------------------------------- */}
-      {/* CATALOG SECTION: GENDER SEPARATION & UIVERSE SLIDING GLIDER */}
       {/* ----------------------------------------------------------------- */}
       <section className="max-w-[1400px] mx-auto px-4 sm:px-8 py-10 sm:py-14">
         
@@ -565,7 +590,7 @@ export default function ProductsPage({
                   : 'text-neutral-600 hover:text-black'
               }`}
             >
-              <Sparkle className="w-3 h-3 text-amber-400" />
+              <Sparkles className="w-3 h-3 text-amber-400" />
               <span>Female (Women's)</span>
               <span className={`text-[10px] font-mono px-2 py-0.5 rounded-full ${
                 activeGender === 'women' ? 'bg-neutral-800 text-amber-300' : 'bg-neutral-100 text-neutral-500'
@@ -671,9 +696,20 @@ export default function ProductsPage({
                         src={product.imageUrl} 
                         onError={(e) => { e.currentTarget.src = product.localImage || HERO_LOCAL_URL; }}
                         alt={product.name}
-                        className="w-full h-full object-contain p-1 rounded-lg group-hover:scale-105 transition-transform duration-500 drop-shadow-sm"
+                        className={`w-full h-full object-contain p-1 rounded-lg transition-all duration-500 drop-shadow-sm ${
+                          product.hoverImage && product.hoverImage !== product.imageUrl
+                            ? "group-hover:opacity-0 group-hover:scale-95"
+                            : "group-hover:scale-105"
+                        }`}
                       />
-                      <div className="absolute top-2.5 left-2.5 bg-neutral-950/80 backdrop-blur-sm text-white text-[8px] uppercase tracking-wider px-1.5 py-0.5 rounded font-medium">
+                      {product.hoverImage && product.hoverImage !== product.imageUrl && (
+                        <img 
+                          src={product.hoverImage} 
+                          alt={product.name}
+                          className="absolute inset-0 w-full h-full object-contain p-1 rounded-lg opacity-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 drop-shadow-sm pointer-events-none"
+                        />
+                      )}
+                      <div className="absolute top-2.5 left-2.5 bg-neutral-950/80 backdrop-blur-sm text-white text-[8px] uppercase tracking-wider px-1.5 py-0.5 rounded font-medium z-10">
                         {product.colorway}
                       </div>
                     </div>

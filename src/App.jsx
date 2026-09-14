@@ -15,7 +15,8 @@ import { CheckCircle2 } from 'lucide-react';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState(() => {
-    return window.location.hash === '#products' ? 'products' : 'home';
+    const hash = typeof window !== 'undefined' ? window.location.hash : '';
+    return (hash === '#products' || hash === '#men' || hash === '#women' || hash.startsWith('#products')) ? 'products' : 'home';
   });
 
   const [cart, setCart] = useState([
