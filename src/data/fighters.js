@@ -328,5 +328,99 @@ export const FIGHTERS = [
       { name: 'Retro Gum-Sole Trainers', price: 120 }
     ],
     vibe: 'Timeless Minimalist Essentials • Atelier'
+  },
+  {
+    id: 'hero-plaid-crop-flannel',
+    number: '12',
+    name: 'Cropped Plaid Flannel & Black Trouser',
+    subtitle: 'Wool-Blend Cropped Shirt Jacket & Pleated Wide Trousers',
+    image: '/women-plaid-crop-cutout.png',
+    handwritten: 'Camille (Milan Chic)',
+    price: 385,
+    collectionBadge: 'MILAN STREET CHIC • SS26',
+    category: 'CROPPED FLANNEL & NOIR TROUSERS',
+    description: 'Cropped earth-tone plaid wool-blend flannel overshirt layered over a clean ribbed contour tank, styled with high-waisted pleated noir wide-leg trousers, black leather baguette bag, and platform sneakers.',
+    palette: '#c4a47c',
+    stats: {
+      power: 96,
+      speed: 94,
+      chic: 99
+    },
+    details: {
+      fabric: 'Italian Wool-Blend Brushed Flannel & High-Twist Tailoring Crepe',
+      tailoring: 'Boxy cropped hem, drop shoulder, front-knife trouser pleats with floor pool',
+      care: 'Specialist Dry Clean Only',
+      modelStats: 'Model is 176 cm / 5\'9" wearing Size S'
+    },
+    pieces: [
+      { name: 'Cropped Plaid Flannel Shirt Jacket', price: 135 },
+      { name: 'Ribbed Seamless Contour Crop Tank', price: 45 },
+      { name: 'High-Waist Pleated Noir Wide Trousers', price: 145 },
+      { name: 'Box Leather Shoulder Baguette', price: 95 },
+      { name: 'Chunky Platform Canvas Sneakers', price: 110 }
+    ],
+    vibe: 'Milan High-Street Editorial • Runway SS26'
+  },
+  {
+    id: 'hero-navy-ny23-jersey',
+    number: '13',
+    name: 'Navy 23 Varsity Tee & Baggy Denim',
+    subtitle: 'Heavyweight Football Jersey & 90s Wide-Leg Jeans',
+    image: '/women-navy-ny23-cutout.png',
+    handwritten: 'Maya (Varsity 23)',
+    price: 330,
+    collectionBadge: 'VINTAGE VARSITY • SS26',
+    category: 'VARSITY JERSEY & 90S DENIM',
+    description: 'Oversized midnight navy collegiate varsity football jersey with vintage athletic sleeve stripes, paired with relaxed light wash wide-leg denim, brown shoulder tote with teddy keychain, and clean white sneakers.',
+    palette: '#1d2d44',
+    stats: {
+      power: 90,
+      speed: 97,
+      chic: 93
+    },
+    details: {
+      fabric: '300 GSM Heavyweight Combed Cotton & 13oz Ring-Spun Vintage Denim',
+      tailoring: 'Oversized drop-shoulder block, screen-printed crackle varsity numbers, puddle hem denim',
+      care: 'Machine wash cold inside out • Line dry',
+      modelStats: 'Model is 172 cm / 5\'8" wearing Size M'
+    },
+    pieces: [
+      { name: 'Oversized New York 23 Varsity Tee', price: 85 },
+      { name: 'Relaxed Light Wash 90s Wide Jeans', price: 145 },
+      { name: 'Cognac Leather Shoulder Tote', price: 95 },
+      { name: 'Pristine Court Low-Top Sneakers', price: 120 }
+    ],
+    vibe: 'Vintage Collegiate Varsity • Tokyo Drop'
+  },
+  {
+    id: 'hero-mocha-ny-tee',
+    number: '14',
+    name: 'Mocha New York Tee & Relaxed Jeans',
+    subtitle: 'Drop-Shoulder Heavyweight Tee & Baggy Denim',
+    image: '/women-mocha-ny-cutout.png',
+    handwritten: 'Zoe (Campus Mocha)',
+    price: 310,
+    collectionBadge: 'CAMPUS LUXE • SS26',
+    category: 'MOCHA GRAPHIC & LIGHT BLUE DENIM',
+    description: 'Rich chocolate mocha heavyweight drop-shoulder graphic tee styled with relaxed wide-leg light blue jeans, retro cat-eye sunglasses, canvas backpack, and pristine court sneakers.',
+    palette: '#4a2e22',
+    stats: {
+      power: 91,
+      speed: 92,
+      chic: 96
+    },
+    details: {
+      fabric: '280 GSM Organic Cotton Jersey & Bleached Light Indigo Denim',
+      tailoring: 'Relaxed boxy body, arch collegiate typography, high-waist straight-wide denim',
+      care: 'Machine wash warm • Hang dry',
+      modelStats: 'Model is 174 cm / 5\'8.5" wearing Size M'
+    },
+    pieces: [
+      { name: 'Heavyweight Mocha New York Oversized Tee', price: 80 },
+      { name: 'Relaxed Light Blue Baggy Denim Jeans', price: 140 },
+      { name: 'Minimalist Canvas Daypack', price: 85 },
+      { name: 'Classic Retro Sunglasses', price: 60 }
+    ],
+    vibe: 'Campus Editorial Aesthetic • New York'
   }
 ];

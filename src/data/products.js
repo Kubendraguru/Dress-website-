@@ -230,6 +230,70 @@ export const HERO_OUTFITS = [
       { name: 'Relaxed Light Wash 90s Denim Jeans', price: 145, id: 'item-men-light-denim', category: 'Pants', size: '32' },
       { name: 'Retro Gum-Sole Trainers', price: 120, id: 'item-men-gum-trainers', category: 'Footwear', size: '42' }
     ]
+  },
+  {
+    id: 'hero-plaid-crop-flannel',
+    shortTitle: 'Plaid Crop & Trouser',
+    tag: 'MILAN STREET CHIC • SS26',
+    title: 'Cropped Plaid Flannel & Black Trouser',
+    subtitle: 'Wool-Blend Cropped Shirt Jacket & Pleated Wide Trousers',
+    price: 385,
+    rating: 5.0,
+    reviewsCount: 168,
+    image: '/women-plaid-crop-model.png',
+    cutoutImage: '/women-plaid-crop-cutout.png',
+    badge: 'Milan Runway Edit',
+    description: 'Cropped earth-tone plaid wool-blend flannel overshirt layered over a clean ribbed contour tank, styled with high-waisted pleated noir wide-leg trousers, black leather baguette bag, and platform sneakers.',
+    palette: ['#c4a47c', '#ffffff', '#1a1a1a', '#e8dfd1'],
+    items: [
+      { name: 'Cropped Plaid Flannel Shirt Jacket', price: 135, id: 'item-women-plaid-jacket', category: 'Shirts', size: 'S' },
+      { name: 'Ribbed Seamless Contour Crop Tank', price: 45, id: 'item-women-ribbed-tank', category: 'Tops', size: 'S' },
+      { name: 'High-Waist Pleated Noir Wide Trousers', price: 145, id: 'item-women-noir-trousers', category: 'Pants', size: '28' },
+      { name: 'Box Leather Shoulder Baguette', price: 95, id: 'item-women-black-bag', category: 'Bags', size: 'One Size' },
+      { name: 'Chunky Platform Canvas Sneakers', price: 110, id: 'item-women-platform-sneakers', category: 'Footwear', size: '38' }
+    ]
+  },
+  {
+    id: 'hero-navy-ny23-jersey',
+    shortTitle: 'Navy 23 Varsity',
+    tag: 'VINTAGE VARSITY • SS26',
+    title: 'Navy 23 Varsity Tee & Baggy Denim',
+    subtitle: 'Heavyweight Football Jersey & 90s Wide-Leg Jeans',
+    price: 330,
+    rating: 5.0,
+    reviewsCount: 192,
+    image: '/women-navy-ny23-model.jpg',
+    cutoutImage: '/women-navy-ny23-cutout.png',
+    badge: 'Varsity Drop',
+    description: 'Oversized midnight navy collegiate varsity football jersey with vintage athletic sleeve stripes, paired with relaxed light wash wide-leg denim, brown shoulder tote with teddy keychain, and clean white sneakers.',
+    palette: ['#1d2d44', '#ffffff', '#98b6d4', '#8c593b'],
+    items: [
+      { name: 'Oversized New York 23 Varsity Tee', price: 85, id: 'item-women-ny23-tee', category: 'T-Shirts', size: 'M' },
+      { name: 'Relaxed Light Wash 90s Wide Jeans', price: 145, id: 'item-women-wide-denim', category: 'Pants', size: '28' },
+      { name: 'Cognac Leather Shoulder Tote', price: 95, id: 'item-women-cognac-tote', category: 'Bags', size: 'One Size' },
+      { name: 'Pristine Court Low-Top Sneakers', price: 120, id: 'item-women-white-sneakers', category: 'Footwear', size: '38' }
+    ]
+  },
+  {
+    id: 'hero-mocha-ny-tee',
+    shortTitle: 'Mocha New York Tee',
+    tag: 'CAMPUS LUXE • SS26',
+    title: 'Mocha New York Tee & Relaxed Jeans',
+    subtitle: 'Drop-Shoulder Heavyweight Tee & Baggy Denim',
+    price: 310,
+    rating: 4.9,
+    reviewsCount: 145,
+    image: '/women-mocha-ny-model.png',
+    cutoutImage: '/women-mocha-ny-cutout.png',
+    badge: 'Campus Collection',
+    description: 'Rich chocolate mocha heavyweight drop-shoulder graphic tee styled with relaxed wide-leg light blue jeans, retro cat-eye sunglasses, canvas backpack, and pristine court sneakers.',
+    palette: ['#4a2e22', '#9fc1df', '#ffffff', '#f4ede4'],
+    items: [
+      { name: 'Heavyweight Mocha New York Oversized Tee', price: 80, id: 'item-women-mocha-tee', category: 'T-Shirts', size: 'M' },
+      { name: 'Relaxed Light Blue Baggy Denim Jeans', price: 140, id: 'item-women-light-blue-jeans', category: 'Pants', size: '28' },
+      { name: 'Minimalist Canvas Daypack', price: 85, id: 'item-women-daypack', category: 'Bags', size: 'One Size' },
+      { name: 'Classic Retro Sunglasses', price: 60, id: 'item-women-sunglasses', category: 'Eyewear', size: 'One Size' }
+    ]
   }
 ];
 
