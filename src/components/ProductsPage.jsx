@@ -15,6 +15,9 @@ import {
 } from 'lucide-react';
 import { DRESS_SHIRTS_HERO, WOMEN_TEES_HERO, HANGING_RACK_TEES, CATALOG_PRODUCTS } from '../data/productsCatalog';
 import WomenTeesHangerRack from './WomenTeesHangerRack';
+import WomenShirtsHangerRack from './WomenShirtsHangerRack';
+import WomenPantsHangerRack from './WomenPantsHangerRack';
+import WomenCombosHangerRack from './WomenCombosHangerRack';
 
 const HERO_IMAGE_URL = 'https://res.cloudinary.com/qrhgjdrs/image/upload/v1789314616/Comment_SHOP_and_I_ll_send_the_links_in_your_DM____mensfashion_wardrobeessentials_menswearindia_outfitideas_minimalstyle_menwithstyle_styleguide_summeroutfits_mensoutfit_fashionreels_simplefashion_cleanstyle_essentials_lar9h1.jpg';
 const HERO_LOCAL_URL = '/hanger-shirts-hero.jpg';
@@ -237,6 +240,7 @@ export default function ProductsPage({
     if (activeGender === 'all') return true;
     if (activeGender === 'men') return product.gender === 'men' || product.gender === 'unisex';
     if (activeGender === 'women') return product.gender === 'women' || product.gender === 'unisex';
+    if (activeGender === 'couple') return product.category === 'Combos' || product.gender === 'unisex' || product.isCombo;
     return true;
   });
 
@@ -285,12 +289,36 @@ export default function ProductsPage({
         {/* Dynamic Interactive Rack Rendering */}
         {currentHeroMode === 'women' ? (
           <div className="pt-2 pb-10 sm:pb-14">
-            <WomenTeesHangerRack 
-              onAddToCart={onAddToCart}
-              onToggleWishlist={onToggleWishlist}
-              wishlist={wishlist}
-              onQuickView={(p) => setQuickViewProduct(p)}
-            />
+            {/* Render Category-Specific Hanger Rack */}
+            {(activeCategory === 'Pants' || activeCategory === 'Pant') ? (
+              <WomenPantsHangerRack 
+                onAddToCart={onAddToCart}
+                onToggleWishlist={onToggleWishlist}
+                wishlist={wishlist}
+                onQuickView={(p) => setQuickViewProduct(p)}
+              />
+            ) : (activeCategory === 'Combos' || activeCategory === 'Combo') ? (
+              <WomenCombosHangerRack 
+                onAddToCart={onAddToCart}
+                onToggleWishlist={onToggleWishlist}
+                wishlist={wishlist}
+                onQuickView={(p) => setQuickViewProduct(p)}
+              />
+            ) : (activeCategory === 'T-Shirts' || activeCategory === 'T-Shirt') ? (
+              <WomenTeesHangerRack 
+                onAddToCart={onAddToCart}
+                onToggleWishlist={onToggleWishlist}
+                wishlist={wishlist}
+                onQuickView={(p) => setQuickViewProduct(p)}
+              />
+            ) : (
+              <WomenShirtsHangerRack 
+                onAddToCart={onAddToCart}
+                onToggleWishlist={onToggleWishlist}
+                wishlist={wishlist}
+                onQuickView={(p) => setQuickViewProduct(p)}
+              />
+            )}
           </div>
         ) : (
           <div className="max-w-[1400px] mx-auto px-4 sm:px-8 pt-4 pb-12 sm:pb-16 relative z-10">
@@ -599,7 +627,66 @@ export default function ProductsPage({
               </span>
             </button>
 
+            {/* Couple Sets */}
+            <button
+              onClick={() => { setActiveGender('couple'); setActiveCategory('Combos'); }}
+              className={`flex items-center gap-2 px-5 py-2 rounded-full font-semibold transition-all cursor-pointer ${
+                activeGender === 'couple'
+                  ? 'bg-neutral-950 text-white shadow-sm'
+                  : 'text-neutral-600 hover:text-black'
+              }`}
+            >
+              <span>Couple</span>
+              <span className={`text-[10px] font-mono px-2 py-0.5 rounded-full ${
+                activeGender === 'couple' ? 'bg-neutral-800 text-amber-300' : 'bg-neutral-100 text-neutral-500'
+              }`}>
+                {CATALOG_PRODUCTS.filter(p => p.category === 'Combos' || p.gender === 'unisex' || p.isCombo).length}
+              </span>
+            </button>
+
           </div>
+        </div>
+
+        {/* Category Filter Pills Strip */}
+        <div className="flex items-center justify-center gap-2 flex-wrap mb-10">
+          {[
+            { id: 'All', label: 'All Categories' },
+            { id: 'Shirts', label: 'Shirts & Tops' },
+            { id: 'T-Shirts', label: 'T-Shirts & Polos' },
+            { id: 'Pants', label: 'Pants & Trousers' },
+            { id: 'Combos', label: '2-Piece Combos', badge: '15% OFF' },
+            { id: 'Hoodies', label: 'Hoodies' }
+          ].map((cat) => {
+            const count = getCategoryCount(cat.id);
+            const isSelected = activeCategory === cat.id;
+            return (
+              <button
+                key={cat.id}
+                onClick={() => {
+                  setActiveCategory(cat.id);
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }}
+                className={`flex items-center gap-1.5 px-4 py-2 rounded-full text-xs font-medium transition-all cursor-pointer ${
+                  isSelected
+                    ? 'bg-neutral-900 text-white shadow-sm font-semibold'
+                    : 'bg-white text-neutral-600 border border-neutral-200/80 hover:border-black hover:text-black shadow-2xs'
+                }`}
+              >
+                {cat.id === 'Combos' && <Sparkles className="w-3 h-3 text-amber-400" />}
+                <span>{cat.label}</span>
+                <span className={`text-[10px] font-mono px-1.5 py-0.2 rounded-full ${
+                  isSelected ? 'bg-neutral-800 text-neutral-200' : 'bg-neutral-100 text-neutral-500'
+                }`}>
+                  {count}
+                </span>
+                {cat.badge && (
+                  <span className="text-[9px] font-mono font-bold text-amber-500 bg-amber-50 px-1.5 py-0.2 rounded">
+                    {cat.badge}
+                  </span>
+                )}
+              </button>
+            );
+          })}
         </div>
 
         {/* Navigation Bar / Catalog Header */}

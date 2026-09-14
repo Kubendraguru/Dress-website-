@@ -460,6 +460,19 @@ export default function Navbar({
                 </div>
               )}
             </div>
+
+            {/* COUPLE LINK (NO HAMBURGER/DROPDOWN ICON, DIRECT LINK) */}
+            <button
+              type="button"
+              onClick={() => handleNav('products', 'Combos', 'couple')}
+              className={`transition-all py-1 px-3 rounded-full flex items-center gap-1.5 cursor-pointer border ${
+                currentPage === 'products' && activeGender === 'couple'
+                  ? 'bg-neutral-950 text-amber-300 border-neutral-900 font-bold shadow-xs'
+                  : 'text-neutral-700 hover:text-neutral-950 hover:bg-neutral-200/60 border-transparent'
+              }`}
+            >
+              <span>Couple</span>
+            </button>
           </nav>
         </div>
 
@@ -494,6 +507,14 @@ export default function Navbar({
               }`}
             >
               Women
+            </button>
+            <button
+              onClick={() => handleNav('products', 'Combos', 'couple')}
+              className={`px-2 py-1 rounded transition-colors ${
+                currentPage === 'products' && activeGender === 'couple' ? 'bg-neutral-900 text-white' : 'text-neutral-700 hover:text-black'
+              }`}
+            >
+              Couple
             </button>
           </div>
 
@@ -695,39 +716,50 @@ export default function Navbar({
                   )}
                 </div>
 
+                {/* 04. Couple Section (Direct Link - No Hamburger dropdown) */}
+                <button 
+                  onClick={() => handleNav('products', 'Combos', 'couple')}
+                  className={`flex items-center justify-between py-2 border-b border-neutral-200/60 text-left transition-colors cursor-pointer ${
+                    currentPage === 'products' && activeGender === 'couple' ? 'text-neutral-950 font-bold' : 'hover:text-amber-700'
+                  }`}
+                >
+                  <span>04. Couple Collection</span>
+                  <ArrowRight className="w-4 h-4 opacity-40" />
+                </button>
+
                 <button 
                   onClick={() => handleSectionNav('collections')}
                   className="hover:text-amber-700 transition-colors flex items-center justify-between py-2 border-b border-neutral-200/60 text-left cursor-pointer"
                 >
-                  <span>04. Featured Collections</span>
+                  <span>05. Featured Collections</span>
                   <ArrowRight className="w-4 h-4 opacity-40" />
                 </button>
                 <button 
                   onClick={() => handleSectionNav('lookbook')}
                   className="hover:text-amber-700 transition-colors flex items-center justify-between py-2 border-b border-neutral-200/60 text-left cursor-pointer"
                 >
-                  <span>05. Architectural Showcase</span>
+                  <span>06. Architectural Showcase</span>
                   <ArrowRight className="w-4 h-4 opacity-40" />
                 </button>
                 <button 
                   onClick={() => handleSectionNav('fighter-select')}
                   className="hover:text-amber-700 transition-colors flex items-center justify-between py-2 border-b border-neutral-200/60 text-left cursor-pointer"
                 >
-                  <span>06. Atelier 3D Configurator</span>
+                  <span>07. Atelier 3D Configurator</span>
                   <ArrowRight className="w-4 h-4 opacity-40" />
                 </button>
                 <button 
                   onClick={() => handleSectionNav('community')}
                   className="hover:text-amber-700 transition-colors flex items-center justify-between py-2 border-b border-neutral-200/60 text-left cursor-pointer"
                 >
-                  <span>07. ZUDIO Community</span>
+                  <span>08. ZUDIO Community</span>
                   <ArrowRight className="w-4 h-4 opacity-40" />
                 </button>
                 <button 
                   onClick={() => handleSectionNav('newsletter')}
                   className="hover:text-amber-700 transition-colors flex items-center justify-between py-2 border-b border-neutral-200/60 text-left cursor-pointer"
                 >
-                  <span>08. Step Into Your Power</span>
+                  <span>09. Step Into Your Power</span>
                   <ArrowRight className="w-4 h-4 opacity-40" />
                 </button>
               </nav>

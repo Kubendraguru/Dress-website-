@@ -40,6 +40,7 @@ export default function App() {
   const [selectedGender, setSelectedGender] = useState(() => {
     if (window.location.hash === '#men') return 'men';
     if (window.location.hash === '#women') return 'women';
+    if (window.location.hash === '#couple') return 'couple';
     return 'all';
   });
 
@@ -52,6 +53,9 @@ export default function App() {
       } else if (window.location.hash === '#women') {
         setCurrentPage('products');
         setSelectedGender('women');
+      } else if (window.location.hash === '#couple') {
+        setCurrentPage('products');
+        setSelectedGender('couple');
       } else if (window.location.hash.startsWith('#products')) {
         setCurrentPage('products');
       } else if (window.location.hash === '#home' || window.location.hash === '') {
@@ -71,7 +75,7 @@ export default function App() {
       setSelectedGender(gender);
     }
     if (page === 'products') {
-      window.location.hash = gender === 'men' ? 'men' : gender === 'women' ? 'women' : 'products';
+      window.location.hash = gender === 'men' ? 'men' : gender === 'women' ? 'women' : gender === 'couple' ? 'couple' : 'products';
       window.scrollTo({ top: 0, behavior: 'smooth' });
     } else {
       window.location.hash = 'home';

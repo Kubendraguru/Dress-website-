@@ -212,6 +212,278 @@ export const WOMEN_TEES_HERO = [
   }
 ];
 
+// 1c. The 5 Signature Hanging Women's Shirts for the Interactive Rail
+export const WOMEN_SHIRTS_HERO = [
+  {
+    id: 'shirt-women-crinkle-blue',
+    name: 'Skyline Plissé Textured Shirt',
+    subName: 'Dusty Slate Blue Micro-Plissé',
+    hex: '#7c94a6',
+    secondaryHex: '#5f788c',
+    buttonColor: '#ffffff',
+    pantone: 'PANTONE 17-4412 TCX',
+    textColor: 'text-sky-900',
+    price: 68.00,
+    fabric: 'Textured Micro-Plissé Breathable Weave',
+    fit: 'Relaxed Oversized Drape',
+    gender: 'women',
+    imageUrl: '/women-shirt-crinkle-blue.png',
+    localImage: '/women-shirt-crinkle-blue.png',
+    details: 'Anti-wrinkle fluid micro-crinkle texture, relaxed dropped shoulders, point collar, buttoned cuffs.',
+    description: 'Micro-plissé crinkled lightweight fabric with an oversized relaxed drape, dropped shoulders, and airy fluid silhouette for effortless everyday elegance.'
+  },
+  {
+    id: 'shirt-women-blush-poplin',
+    name: 'Dusty Rose Classic Tailored Poplin',
+    subName: 'Long-Staple Organic Cotton Poplin',
+    hex: '#e1afb0',
+    secondaryHex: '#c79596',
+    buttonColor: '#f7f4f4',
+    pantone: 'PANTONE 14-1907 TCX',
+    textColor: 'text-rose-950',
+    price: 72.00,
+    fabric: '100% Long-Staple Organic Cotton Poplin',
+    fit: 'Tailored Modern Fit',
+    gender: 'women',
+    imageUrl: '/women-shirt-blush-poplin.png',
+    localImage: '/women-shirt-blush-poplin.png',
+    details: 'Structured point collar, seamless French placket with tonal buttons, subtle curved hemline.',
+    description: 'Crisp organic cotton poplin tailored with clean structured seams, structured collar, and soft dusty rose blush tone.'
+  },
+  {
+    id: 'shirt-women-candy-stripe',
+    name: 'Candy Pink Bengal Stripe Boyfriend Shirt',
+    subName: 'Yarn-Dyed Combed Cotton',
+    hex: '#e894a4',
+    secondaryHex: '#d17c8d',
+    buttonColor: '#ffffff',
+    pantone: 'PANTONE 15-2216 TCX',
+    textColor: 'text-pink-950',
+    price: 74.00,
+    fabric: '100% Yarn-Dyed Combed Cotton',
+    fit: 'Relaxed Boyfriend Fit',
+    gender: 'women',
+    imageUrl: '/women-shirt-candy-stripe.png',
+    localImage: '/women-shirt-candy-stripe.png',
+    details: 'Vertical slimming Bengal stripes, curved back yoke pleat, extended hemline, mother-of-pearl buttons.',
+    description: 'Vibrant candy pink and white vertical Bengal stripes woven from ultra-fine combed cotton in an easy boyfriend-fit silhouette.'
+  },
+  {
+    id: 'shirt-women-sage-pinstripe',
+    name: 'Sage Pinstripe Two-Piece Layered Shirt',
+    subName: '2-in-1 Dual-Piece Construction',
+    hex: '#93a793',
+    secondaryHex: '#799179',
+    buttonColor: '#ede6dc',
+    pantone: 'PANTONE 15-6316 TCX',
+    textColor: 'text-emerald-950',
+    price: 76.00,
+    fabric: 'Layered Dual-Piece Fine Pinstripe Cotton',
+    fit: 'Airy High-Low Layered Hang',
+    gender: 'women',
+    imageUrl: '/women-shirt-sage-pinstripe.png',
+    localImage: '/women-shirt-sage-pinstripe.png',
+    details: 'Integrated layered 2-in-1 silhouette, micro pinstripe yarn dye, drop shoulders, side split hem.',
+    description: 'Fine pinstriped two-piece layered open overshirt set in earthy sage green. Designed for chic high-low summer layering.'
+  },
+  {
+    id: 'shirt-women-noir-pinstripe',
+    name: 'Monochrome Pinstripe Open-Neck Drape Shirt',
+    subName: 'Fluid Rayon-Cotton Atelier Drape',
+    hex: '#3a3a3c',
+    secondaryHex: '#1e1e20',
+    buttonColor: '#ffffff',
+    pantone: 'PANTONE 19-3906 TCX',
+    textColor: 'text-neutral-100',
+    price: 70.00,
+    fabric: 'Breathable Fluid Rayon-Cotton Blend',
+    fit: 'Fluid Parisian Drape',
+    gender: 'women',
+    imageUrl: '/women-shirt-noir-pinstripe.png',
+    localImage: '/women-shirt-noir-pinstripe.png',
+    details: 'Open notch lapel collar, clean finished cuffs, continuous vertical monochrome pinstripe weave.',
+    description: 'Sophisticated monochrome black & white vertical stripe shirt with open spread collar and graceful fluid drape.'
+  }
+];
+
+// 1d. The 6 Signature Hanging Women's Tailored Pants for the Interactive Rail
+export const WOMEN_PANTS_HERO = [
+  {
+    id: 'pants-women-ivory-pleated',
+    name: 'Ivory Pleated Fluid Wide Trousers',
+    subName: 'Italian Suiting Poly-Viscose Twill',
+    hex: '#ded3c1',
+    secondaryHex: '#f4efe6',
+    pantone: 'PANTONE 11-0606 TCX',
+    textColor: 'text-neutral-900',
+    price: 135.00,
+    fabric: 'Italian Poly-Viscose Fluid Suiting Twill',
+    fit: 'High-Waisted Deep Knife Pleat Wide-Leg',
+    gender: 'women',
+    imageUrl: '/women-pants-ivory-pleated.png',
+    localImage: '/women-pants-ivory-pleated.png',
+    details: 'High-waisted knife-pleated front, full-length wide-leg sweep, concealed hook-and-bar closure.',
+    description: 'Masterfully tailored high-rise wide-leg trousers featuring deep front knife pleats, clean waistband with belt loops, and an ultra-fluid drape.'
+  },
+  {
+    id: 'pants-women-black-corset',
+    name: 'Noir Corset Double-Button Trousers',
+    subName: 'Structured Anti-Crease Heavy Crepe',
+    hex: '#18181a',
+    secondaryHex: '#2a2a2e',
+    pantone: 'PANTONE 19-4005 TCX',
+    textColor: 'text-neutral-100',
+    price: 142.00,
+    fabric: 'Premium Anti-Crease Structured Crepe',
+    fit: 'Extended Cinched Corset High Waist',
+    gender: 'women',
+    imageUrl: '/women-pants-black-corset.png',
+    localImage: '/women-pants-black-corset.png',
+    details: 'Extended cinched corset waistband, dual engraved metallic buttons, sharp front crease lines.',
+    description: 'Sculptural high-rise trousers featuring an extended corset-style waistband with dual gold-toned metallic buttons, sharp structured pleats, and sweeping palazzo legs.'
+  },
+  {
+    id: 'pants-women-white-palazzo',
+    name: 'Pure White Fluid High-Waist Palazzo',
+    subName: 'Matte-Weave Lightweight Linen Blend',
+    hex: '#f5f2eb',
+    secondaryHex: '#ffffff',
+    pantone: 'PANTONE 11-0104 TCX',
+    textColor: 'text-neutral-900',
+    price: 128.00,
+    fabric: 'Breathable Matte-Weave Linen Blend',
+    fit: 'Floor-Skimming Relaxed Palazzo',
+    gender: 'women',
+    imageUrl: '/women-pants-white-palazzo.png',
+    localImage: '/women-pants-white-palazzo.png',
+    details: 'High-rise contoured waist panel, floor-skimming silhouette, seamless hidden side zipper.',
+    description: 'Effortless Riviera resort aesthetic with a high-rise seamless waistline, subtle darting, and billowing relaxed palazzo legs.'
+  },
+  {
+    id: 'pants-women-charcoal-horseshoe',
+    name: 'Washed Charcoal Horseshoe Barrel Denim',
+    subName: '13.5oz Vintage Ring-Spun Cotton Denim',
+    hex: '#3a3c42',
+    secondaryHex: '#2c2c2e',
+    pantone: 'PANTONE 19-3908 TCX',
+    textColor: 'text-neutral-200',
+    price: 148.00,
+    fabric: '13.5oz Heavyweight 100% Ring-Spun Cotton',
+    fit: 'Architectural Curved Horseshoe Balloon',
+    gender: 'women',
+    imageUrl: '/women-pants-charcoal-horseshoe.png',
+    localImage: '/women-pants-charcoal-horseshoe.png',
+    details: 'Curved balloon outer seam, vintage stone wash whiskering, 5-pocket denim styling.',
+    description: 'The definitive modern statement silhouette: dramatic curved horseshoe / balloon leg cut from 13.5oz vintage washed black denim with whiskered thighs.'
+  },
+  {
+    id: 'pants-women-indigo-horseshoe',
+    name: 'Vintage Indigo Horseshoe Barrel Jean',
+    subName: 'Authentic Stone-Washed Japanese Denim',
+    hex: '#30445c',
+    secondaryHex: '#6d8fa8',
+    pantone: 'PANTONE 18-4020 TCX',
+    textColor: 'text-sky-200',
+    price: 148.00,
+    fabric: '100% Cotton Authentic Stone-Washed Denim',
+    fit: 'Dramatic Curved Horseshoe Barrel',
+    gender: 'women',
+    imageUrl: '/women-pants-indigo-horseshoe.png',
+    localImage: '/women-pants-indigo-horseshoe.png',
+    details: 'Dramatic horseshoe curved outer seams, high-rise with relaxed hip volume, clean heavy gauge hem.',
+    description: 'Sculpted curved barrel denim in an authentic vintage blue stone wash. Features an exaggerated outer curve through the knee with gentle inward taper at the ankles.'
+  },
+  {
+    id: 'pants-women-black-flare',
+    name: 'Sculpt High-Waisted Flare Yoga Pant',
+    subName: '4-Way Stretch Compression Sculpt Knit',
+    hex: '#141416',
+    secondaryHex: '#222226',
+    pantone: 'PANTONE 19-4004 TCX',
+    textColor: 'text-neutral-100',
+    price: 118.00,
+    fabric: '4-Way Stretch High-Density Sculpting Knit',
+    fit: 'High-Rise Crossover Bootcut Flare',
+    gender: 'women',
+    imageUrl: '/women-pants-black-flare.png',
+    localImage: '/women-pants-black-flare.png',
+    details: 'Core support crossover waistband, elongating bootcut flare hem, non-sheer squat-proof weave.',
+    description: 'Sculptural high-waisted flared bootcut yoga pants engineered with four-way stretch compression fabric, tummy-control crossover waistband, and an elongated flare hem.'
+  }
+];
+
+// 1e. The 4 Signature Hanging Women's Combos / 2-Piece Sets for the Interactive Rail
+export const WOMEN_COMBOS_HERO = [
+  {
+    id: 'combo-women-pink-corduroy',
+    name: 'Dusty Rose Corduroy & Blue Denim Set',
+    subName: 'Cropped Corduroy Jacket + Ribbed Tank + Wide Denim',
+    hex: '#d89b9e',
+    secondaryHex: '#b57b7f',
+    pantone: 'PANTONE 15-1607 TCX',
+    textColor: 'text-rose-950',
+    price: 118.00,
+    fabric: 'Soft Fine-Wale Velvet Corduroy & Heavyweight Ring-Spun Denim',
+    fit: 'Cropped Boxy Jacket & High-Rise Wide-Leg Denim',
+    gender: 'women',
+    imageUrl: '/women-combo-pink-corduroy.png',
+    localImage: '/women-combo-pink-corduroy.png',
+    details: '2-Piece Outfit: Dusty rose cropped corduroy jacket with balloon gathered cuffs over white ribbed tank, paired with wide-leg light indigo denim and canvas studio tote.',
+    description: 'Playful yet elevated Parisian aesthetic: vintage dusty rose cropped corduroy overshirt layered over a soft ribbed crop tank and relaxed wide-leg blue jeans.'
+  },
+  {
+    id: 'combo-women-brown-corduroy',
+    name: 'Mocha Corduroy & Charcoal Denim Set',
+    subName: 'Cropped Utility Jacket + Ribbed Tank + Charcoal Wide Jean',
+    hex: '#6c4e3e',
+    secondaryHex: '#523a2e',
+    pantone: 'PANTONE 19-1220 TCX',
+    textColor: 'text-amber-100',
+    price: 128.00,
+    fabric: 'Heavyweight Fine-Rib Warm Cotton Corduroy & 13.5oz Washed Denim',
+    fit: 'Relaxed Cropped Jacket & High-Waist Charcoal Balloon Denim',
+    gender: 'women',
+    imageUrl: '/women-combo-brown-corduroy.png',
+    localImage: '/women-combo-brown-corduroy.png',
+    details: '2-Piece Outfit: Rich espresso mocha cropped corduroy utility jacket with white ribbed tank, paired with washed charcoal wide-leg barrel denim and canvas tote.',
+    description: 'Earthy rich espresso mocha corduroy tailored into a sophisticated modern streetwear ensemble with washed charcoal curved wide-leg denim.'
+  },
+  {
+    id: 'combo-women-denim-corset',
+    name: 'Sculpted Denim Corset Jumpsuit Duo',
+    subName: 'Structured Boned Corset Bustier & Wide-Leg Denim',
+    hex: '#6d8fa8',
+    secondaryHex: '#24334a',
+    pantone: 'PANTONE 18-4020 TCX',
+    textColor: 'text-sky-950',
+    price: 135.00,
+    fabric: '12oz Structured Stone-Washed Indigo Cotton Denim',
+    fit: 'Fitted Structured Corset & High-Rise Wide-Leg Sweep',
+    gender: 'women',
+    imageUrl: '/women-combo-denim-corset.png',
+    localImage: '/women-combo-denim-corset.png',
+    details: '2-Piece Outfit: Strapless structured denim corset with architectural contour seam boning, paired with high-rise relaxed wide-leg indigo denim trousers.',
+    description: 'Runway statement duo: sculpted light indigo stone-washed denim corset featuring vertical boning and clean topstitching with floor-length wide-leg palazzo jeans.'
+  },
+  {
+    id: 'combo-women-lace-corset',
+    name: 'Espresso Lace Corset & Sand Chinos Set',
+    subName: 'Chantilly Lace Corset Top & High-Rise Sand Chinos',
+    hex: '#4a2e24',
+    secondaryHex: '#ded3c1',
+    pantone: 'PANTONE 19-1116 TCX',
+    textColor: 'text-amber-100',
+    price: 142.00,
+    fabric: 'French Floral Chantilly Lace & Tailored Cotton Twill Chinos',
+    fit: 'Boning Cinched Bustier & High-Rise Straight Cuffed Chinos',
+    gender: 'women',
+    imageUrl: '/women-combo-lace-corset.png',
+    localImage: '/women-combo-lace-corset.png',
+    details: '2-Piece Outfit: Espresso dark chocolate Chantilly floral lace underwire corset top, paired with relaxed sand-beige high-waist straight cuffed cotton chinos.',
+    description: 'A striking luxury ensemble pairing delicate espresso brown underwire lace corset bustier with relaxed tailored sand-beige cuffed chinos and strappy sandal heels.'
+  }
+];
+
 // 2. Hanging T-Shirt Rack Colorways (Crewnecks)
 export const HANGING_RACK_TEES = [
   {
@@ -1447,145 +1719,6 @@ export const CATALOG_PRODUCTS = [
         "Relaxed High-Rise Vintage Blue Denim",
         "Natural Cream Canvas Shopper & White Sneakers"
     ]
-},
-  {
-    "id": "combo-women-vintage-chintz",
-    "name": "Vintage Blue Chintz Slit Kurta & Trousers Set",
-    "colorway": "Vintage Blue Chintz / Fluid Denim",
-    "price": 198,
-    "originalPrice": 232,
-    "category": "Combos",
-    "gender": "women",
-    "badge": "RUNWAY COMBO • 15% OFF",
-    "colorHex": "#7ba4c9",
-    "imageUrl": "/floral-kurti-cutout.png",
-    "localImage": "/floral-kurti-cutout.png",
-    "hoverImage": "/floral-kurti-model.png",
-    "description": "Complete Parisian runway co-ord look: French Normandy flax linen longline side-slit chintz kurta shirt layered over fluid vintage light wash palazzo trousers.",
-    "swatches": [
-        {
-            "name": "Vintage Blue Chintz Look",
-            "hex": "#7ba4c9",
-            "id": "combo-vintage-chintz"
-        }
-    ],
-    "sizes": [
-        "XS",
-        "S",
-        "M",
-        "L",
-        "XL"
-    ],
-    "stock": 18,
-    "details": [
-        "100% Pure Flax Linen Chintz Slit Longline Shirt",
-        "Floor-Length Fluid Wide-Leg Denim Trousers",
-        "Curated Head-to-Toe Atelier Look Ensemble"
-    ]
-},
-  {
-    "id": "combo-women-crisp-white-sand",
-    "name": "Crisp White Poplin & Sand Fluid Trouser Set",
-    "colorway": "Crisp White / Sand Beige",
-    "price": 185,
-    "originalPrice": 218,
-    "category": "Combos",
-    "gender": "women",
-    "badge": "QUIET LUXURY COMBO",
-    "colorHex": "#f4efe6",
-    "imageUrl": "/white-poplin-cutout.png",
-    "localImage": "/white-poplin-cutout.png",
-    "hoverImage": "/white-poplin-model.png",
-    "description": "Effortless quiet luxury styling: oversized crisp Italian poplin boyfriend shirt paired with fluid sand-beige pleated wide-leg trousers, leather crossbody bag, and minimalist leather sneakers.",
-    "swatches": [
-        {
-            "name": "Crisp White & Sand Look",
-            "hex": "#f4efe6",
-            "id": "combo-crisp-white-sand"
-        }
-    ],
-    "sizes": [
-        "XS",
-        "S",
-        "M",
-        "L",
-        "XL"
-    ],
-    "stock": 22,
-    "details": [
-        "100% Crisp Cotton Oversized Boyfriend Shirt",
-        "Pleated Fluid Sand High-Waist Wide Trousers",
-        "Minimalist Crossbody Bag & Sneaker Match"
-    ]
-},
-  {
-    "id": "combo-women-pastel-lemon",
-    "name": "Pastel Lemon Resort Linen & Utility Mini Set",
-    "colorway": "Pastel Lemon / Olive Denim",
-    "price": 175,
-    "originalPrice": 205,
-    "category": "Combos",
-    "gender": "women",
-    "badge": "SUMMER RESORT • 15% OFF",
-    "colorHex": "#e8df9b",
-    "imageUrl": "/lemon-linen-cutout.png",
-    "localImage": "/lemon-linen-cutout.png",
-    "hoverImage": "/lemon-linen-model.png",
-    "description": "Sun-drenched Riviera resort combo: lightweight airy pastel lemon yellow open-collar linen shirt over washed olive utility denim mini skirt with raffia tote and artisan slide sandals.",
-    "swatches": [
-        {
-            "name": "Pastel Lemon Resort Look",
-            "hex": "#e8df9b",
-            "id": "combo-pastel-lemon"
-        }
-    ],
-    "sizes": [
-        "XS",
-        "S",
-        "M",
-        "L",
-        "XL"
-    ],
-    "stock": 20,
-    "details": [
-        "100% Breathable Open-Collar Linen Shirt",
-        "Washed Olive Utility Denim Cargo Mini Skirt",
-        "Woven Raffia Tote Bag & Leather Slide Styling"
-    ]
-},
-  {
-    "id": "combo-women-bengal-stripe-white",
-    "name": "Bengal Blue Stripe Poplin & White Palazzo Set",
-    "colorway": "Bengal Blue Stripe / Optic White",
-    "price": 188,
-    "originalPrice": 220,
-    "category": "Combos",
-    "gender": "women",
-    "badge": "COASTAL CHIC COMBO",
-    "colorHex": "#6d8fa8",
-    "imageUrl": "/paris-striped-cutout.png",
-    "localImage": "/paris-striped-cutout.png",
-    "hoverImage": "/paris-striped-model.png",
-    "description": "Coastal chic Milanese outfit: tailored relaxed Bengal blue and white striped poplin overshirt over a second-skin white rib tank, paired with flowing optic white wide palazzo trousers and slouchy canvas tote.",
-    "swatches": [
-        {
-            "name": "Bengal Stripe & White Look",
-            "hex": "#6d8fa8",
-            "id": "combo-bengal-stripe-white"
-        }
-    ],
-    "sizes": [
-        "XS",
-        "S",
-        "M",
-        "L",
-        "XL"
-    ],
-    "stock": 25,
-    "details": [
-        "Crisp Italian Bengal Striped Poplin Overshirt",
-        "Optic White Fluid High-Waist Palazzo Trousers",
-        "Canvas Studio Tote Bag & Court Shoe Match"
-    ]
-}
+  }
 ];
+
