@@ -105,15 +105,6 @@ export default function WomenTeesHangerRack({ onAddToCart, onToggleWishlist, wis
                       {isActive && <span className="w-1 h-1 rounded-full bg-white block" />}
                     </span>
                   </div>
-
-                  {/* Tooltip Tag */}
-                  <span className={`absolute bottom-full left-1/2 -translate-x-1/2 mb-1.5 px-2 py-0.5 rounded-md text-[9px] font-mono whitespace-nowrap tracking-wider shadow-md transition-all duration-200 pointer-events-none ${
-                    isActive 
-                      ? 'bg-neutral-950 text-white opacity-100 translate-y-0 scale-100 font-semibold' 
-                      : 'bg-white/95 text-neutral-800 opacity-0 group-hover/spot:opacity-100 translate-y-1'
-                  }`}>
-                    {spot.name}
-                  </span>
                 </button>
               );
             })}

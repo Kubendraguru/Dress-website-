@@ -484,6 +484,339 @@ export const WOMEN_COMBOS_HERO = [
   }
 ];
 
+// 1f. The 5 Signature Couple Ensembles
+export const COUPLE_HERO = [
+  {
+    id: 'couple-burgundy-cord',
+    name: 'Burgundy Atelier Couple Co-ord Set',
+    subName: 'Relaxed Wine Button-Downs & Pleated Cream Trousers',
+    hex: '#581825',
+    secondaryHex: '#e8e2d5',
+    pantone: 'PANTONE 19-1725 TCX',
+    textColor: 'text-rose-950',
+    price: 285.00,
+    originalPrice: 335.00,
+    fabric: '100% Breathable Combed Cotton & Fluid Suiting Twill',
+    fit: 'Relaxed Tailored Overshirt & Wide-Leg Pleated Trousers',
+    gender: 'couple',
+    category: 'Combos',
+    badge: 'COUPLE CO-ORD • 15% OFF',
+    imageUrl: '/couple-burgundy-cord.png',
+    localImage: '/couple-burgundy-cord.png',
+    details: 'Coordinated 2-person ensemble: tailored wine burgundy button-downs paired with high-waisted pleated fluid cream trousers and white leather trainers.',
+    description: 'Harmoniously coordinated couple ensemble featuring rich wine burgundy button-down overshirts paired with high-waisted pleated fluid cream trousers.'
+  },
+  {
+    id: 'couple-noir-linen',
+    name: 'Noir Black & Sand Tailored Couple Set',
+    subName: 'Camp-Collar Black Shirts & Tailored Sand Chinos',
+    hex: '#18181a',
+    secondaryHex: '#ded3c1',
+    pantone: 'PANTONE 19-4005 TCX',
+    textColor: 'text-neutral-100',
+    price: 295.00,
+    originalPrice: 345.00,
+    fabric: 'Premium Anti-Crease Crepe & Italian Cotton-Linen Twill',
+    fit: 'Boxy Casual Shirts & High-Waisted Wide Trousers',
+    gender: 'couple',
+    category: 'Combos',
+    badge: 'SIGNATURE PAIR • 15% OFF',
+    imageUrl: '/couple-noir-linen.png',
+    localImage: '/couple-noir-linen.png',
+    details: 'Coordinated 2-person ensemble: matching midnight black relaxed shirts with tailored high-waisted sand chino trousers, dark acetate sunglasses, and minimalist trainers.',
+    description: 'Effortless cosmopolitan pair featuring matching midnight black relaxed shirts with tailored high-waisted sand chino trousers and sleek black accessories.'
+  },
+  {
+    id: 'couple-indigo-festive',
+    name: 'Midnight Indigo Resort & Kurta Couple Duo',
+    subName: 'Navy Button-Down & Embroidered Kurta Ensemble',
+    hex: '#1e293b',
+    secondaryHex: '#ffffff',
+    pantone: 'PANTONE 19-3921 TCX',
+    textColor: 'text-sky-200',
+    price: 310.00,
+    originalPrice: 365.00,
+    fabric: 'French Normandy Linen & Embroidered Silk-Cotton Blend',
+    fit: 'Classic Tailored Shirt & Fluid Embroidered Kurta Palazzo',
+    gender: 'couple',
+    category: 'Combos',
+    badge: 'FESTIVE CAPSULE • 15% OFF',
+    imageUrl: '/couple-indigo-festive.png',
+    localImage: '/couple-indigo-festive.png',
+    details: 'Coordinated 2-person ensemble: gentleman\'s midnight navy linen button-down with relaxed cream trousers, complemented by her intricately embroidered indigo tunic and matching palazzo with dupatta.',
+    description: 'Exquisite celebration pair featuring gentleman\'s midnight navy linen button-down with relaxed cream trousers, and her silver-thread embroidered indigo tunic with dupatta.'
+  },
+  {
+    id: 'couple-mocha-linen',
+    name: 'Mocha Espresso Resort Couple Ensemble',
+    subName: 'Rich Earthy Brown Linen Shirts & Fluid Trousers',
+    hex: '#5c4033',
+    secondaryHex: '#f4efe6',
+    pantone: 'PANTONE 19-1220 TCX',
+    textColor: 'text-amber-100',
+    price: 290.00,
+    originalPrice: 340.00,
+    fabric: '100% Pure Garment-Dyed French Linen & Italian Poly-Viscose Twill',
+    fit: 'Relaxed Resort Fit Shirts & High-Rise Pleated Palazzo',
+    gender: 'couple',
+    category: 'Combos',
+    badge: 'AUTUMN RESORT • 15% OFF',
+    imageUrl: '/couple-mocha-linen.png',
+    localImage: '/couple-mocha-linen.png',
+    details: 'Coordinated 2-person ensemble: matching rich mocha espresso linen button-downs paired with flowing high-rise ivory pleated trousers and tortoiseshell accents.',
+    description: 'Romantic earthy palette: matching rich mocha espresso linen button-downs paired with flowing high-rise ivory pleated trousers and tortoiseshell accessories.'
+  },
+  {
+    id: 'couple-sky-stripe',
+    name: 'Sky Blue Bengal Stripe Summer Couple Set',
+    subName: 'Vertical Pinstripe Linen Shirt & Peplum Tie Top',
+    hex: '#7ba4c9',
+    secondaryHex: '#f5f2eb',
+    pantone: 'PANTONE 14-4115 TCX',
+    textColor: 'text-sky-950',
+    price: 275.00,
+    originalPrice: 320.00,
+    fabric: '100% Yarn-Dyed Combed Cotton & Breathable Linen-Blend Twill',
+    fit: 'Gentleman Relaxed Shirt & Lady Peplum Tie-Front Top with Wide Pants',
+    gender: 'couple',
+    category: 'Combos',
+    badge: 'SUMMER ESCAPE • 15% OFF',
+    imageUrl: '/couple-sky-stripe.png',
+    localImage: '/couple-sky-stripe.png',
+    details: 'Coordinated 2-person ensemble: gentleman\'s relaxed sky blue Bengal vertical stripe linen shirt, paired with her matching bow-tie peplum stripe top and airy ecru linen wide trousers.',
+    description: 'Sunny Riviera summer charm: gentleman\'s relaxed sky blue Bengal vertical stripe linen shirt, paired with her matching bow-tie peplum stripe top and airy ecru linen wide trousers.'
+  }
+];
+
+// 1g. The 5 Signature Hanging Men's T-Shirts & Polos for the Interactive Rack
+export const MEN_TEES_HERO = [
+  {
+    id: 'men-tee-ivory-pleated-polo',
+    name: 'Ivory Pleated Knit Open-Collar Polo',
+    subName: 'Fine-Gauge Vertical Pleat Cotton Knit',
+    hex: '#f6f4ee',
+    secondaryHex: '#161618',
+    pantone: 'PANTONE 11-0601 TCX',
+    textColor: 'text-neutral-900',
+    price: 58.00,
+    originalPrice: 72.00,
+    fabric: '100% Breathable Combed Cotton Pleated Knit',
+    fit: 'Relaxed Tailored Polo Fit',
+    gender: 'men',
+    category: 'T-Shirts',
+    badge: 'NEW SEASON',
+    hotspotX: 11.0,
+    hotspotY: 45,
+    imageUrl: '/men-tee-ivory-pleated-polo.png',
+    localImage: '/men-tee-ivory-pleated-polo.png',
+    details: 'Relaxed open notch Johnny collar, architectural vertical pleat knit texture, ribbed sleeve cuffs and hem.',
+    description: 'Architectural fine-gauge vertical pleated knit polo featuring a relaxed Johnny open collar, ribbed sleeve cuffs, and tailored fluid drape.'
+  },
+  {
+    id: 'men-tee-noir-zip-polo',
+    name: 'Noir Tipped Quarter-Zip Knit Polo',
+    subName: 'Athletic Quarter-Zip & Contrast Double Tipping',
+    hex: '#141416',
+    secondaryHex: '#ffffff',
+    pantone: 'PANTONE 19-4005 TCX',
+    textColor: 'text-neutral-100',
+    price: 62.00,
+    originalPrice: 78.00,
+    fabric: 'High-Density Pima Cotton & Modal Stretch Blend',
+    fit: 'Athletic Tapered Modern Fit',
+    gender: 'men',
+    category: 'T-Shirts',
+    badge: 'ATELIER DROP',
+    hotspotX: 30.0,
+    hotspotY: 45,
+    imageUrl: '/men-tee-noir-zip-polo.png',
+    localImage: '/men-tee-noir-zip-polo.png',
+    details: 'Polished silver quarter-zip closure, contrast double white tipped collar and sleeve cuffs.',
+    description: 'Modern luxury athletic silhouette crafted with subtle stretch jersey knit, polished silver quarter-zip collar, and contrast dual white tipping on collar and sleeves.'
+  },
+  {
+    id: 'men-tee-stripe-knit',
+    name: 'Block-Stripe Textured Knit Crewneck',
+    colorway: 'Ivory, Sand & Onyx Stripes',
+    subName: 'Textured Grid Knit with Contrast Chest Bands',
+    hex: '#f0ece1',
+    secondaryHex: '#1e2838',
+    pantone: 'PANTONE 13-0905 TCX',
+    textColor: 'text-neutral-900',
+    price: 54.00,
+    originalPrice: 68.00,
+    fabric: '100% Premium Cotton Textured Waffle Knit',
+    fit: 'Tailored Relaxed Fit',
+    gender: 'men',
+    category: 'T-Shirts',
+    badge: 'BESTSELLER',
+    hotspotX: 50.0,
+    hotspotY: 45,
+    imageUrl: '/men-tee-stripe-knit.png',
+    localImage: '/men-tee-stripe-knit.png',
+    details: 'Engineered yarn-dyed horizontal chest stripes, textured vertical grid knit body, reinforced ribbed crewneck collar.',
+    description: 'Retro European aesthetic featuring horizontal chest color-block stripes over vertical grid-textured knit with reinforced ribbed crewneck collar.'
+  },
+  {
+    id: 'men-tee-luffy-anime',
+    name: 'Luffy Straw Hat Anime Heavyweight Tee',
+    subName: '260 GSM Heavyweight Streetwear Tee',
+    hex: '#f5efe4',
+    secondaryHex: '#8b2626',
+    pantone: 'PANTONE 11-0104 TCX',
+    textColor: 'text-neutral-900',
+    price: 46.00,
+    originalPrice: 58.00,
+    fabric: '260 GSM Heavyweight Ringspun Organic Cotton',
+    fit: 'Oversized Streetwear Drop-Shoulder',
+    gender: 'men',
+    category: 'T-Shirts',
+    badge: 'ANIME CAPSULE',
+    hotspotX: 70.0,
+    hotspotY: 45,
+    imageUrl: '/men-tee-luffy-anime.png',
+    localImage: '/men-tee-luffy-anime.png',
+    details: 'High-definition back screenprint artwork, Japanese kanji calligraphy, pirate insignia crest, reinforced neckline.',
+    description: 'Statement streetwear graphic tee showcasing bold Luffy straw hat artwork, brush calligraphy, and oversized drop-shoulder cut crafted from 260 GSM heavyweight cotton.'
+  },
+  {
+    id: 'men-tee-tokyo-racing',
+    name: 'Tokyo Underground Racing Graphic Tee',
+    subName: 'Japanese Tuner Car Streetwear Tee',
+    hex: '#f5ecd5',
+    secondaryHex: '#222222',
+    pantone: 'PANTONE 12-0712 TCX',
+    textColor: 'text-neutral-900',
+    price: 44.00,
+    originalPrice: 55.00,
+    fabric: '240 GSM Combed Ring-Spun Cotton',
+    fit: 'Relaxed Boxy Street Cut',
+    gender: 'men',
+    category: 'T-Shirts',
+    badge: 'STREETWEAR',
+    hotspotX: 89.0,
+    hotspotY: 45,
+    imageUrl: '/men-tee-tokyo-racing.png',
+    localImage: '/men-tee-tokyo-racing.png',
+    details: 'Multi-layer front tuner sports car illustration, Tokyo underground dual sleeve screenprints, boxy relaxed drape.',
+    description: 'Japanese car culture racing tee with detailed underground tuner sports car art, dual sleeve typographic prints, and coordinates in a relaxed boxy fit.'
+  }
+];
+
+// 1h. The 5 Signature Hanging Men's Pants for the Interactive Rack
+export const MEN_PANTS_HERO = [
+  {
+    id: 'men-pants-noir-pleated',
+    name: 'Noir High-Waisted Pleated Suiting Trousers',
+    subName: 'Italian Suiting Poly-Viscose Fluid Twill',
+    hex: '#18181a',
+    secondaryHex: '#ffffff',
+    pantone: 'PANTONE 19-4005 TCX',
+    textColor: 'text-neutral-100',
+    price: 135.00,
+    originalPrice: 165.00,
+    fabric: 'Italian Poly-Viscose Fluid Suiting Twill',
+    fit: 'High-Waisted Deep Double Pleat Relaxed Drape',
+    gender: 'men',
+    category: 'Pants',
+    badge: 'ATELIER SUITING',
+    hotspotX: 11.0,
+    hotspotY: 45,
+    imageUrl: '/men-pants-noir-pleated.png',
+    localImage: '/men-pants-noir-pleated.png',
+    details: 'Extended high-rise waistband with button tab closure, double front knife pleats, sharp pressed center crease lines, side slant pockets.',
+    description: 'Masterfully tailored high-rise suiting trousers featuring deep front double pleats, an extended waistband with side button tab, and an ultra-fluid drape.'
+  },
+  {
+    id: 'men-pants-olive-cargo',
+    name: 'Washed Olive Relaxed Utility Cargo Pants',
+    subName: '100% Vintage Washed Cotton Twill',
+    hex: '#646862',
+    secondaryHex: '#e8e5dc',
+    pantone: 'PANTONE 18-0515 TCX',
+    textColor: 'text-neutral-100',
+    price: 118.00,
+    originalPrice: 145.00,
+    fabric: 'Heavyweight Pre-Washed Cotton Twill',
+    fit: 'Relaxed Wide-Leg with Articulated Knee Seams',
+    gender: 'men',
+    category: 'Pants',
+    badge: 'UTILITY ESSENTIAL',
+    hotspotX: 30.0,
+    hotspotY: 45,
+    imageUrl: '/men-pants-olive-cargo.png',
+    localImage: '/men-pants-olive-cargo.png',
+    details: 'Encased elastic waistband with tonal drawstring, dual side bellows cargo pockets with flap closures, articulated knee darts, relaxed hem.',
+    description: 'Functional utilitarian aesthetic tailored from vintage washed olive-gray cotton twill with roomy cargo flap pockets and articulated knee panels.'
+  },
+  {
+    id: 'men-pants-white-skate',
+    name: 'Optical White Wide-Leg Skate Denim Trousers',
+    subName: '13oz Unbleached Clean White Cotton Denim',
+    hex: '#f5f4ef',
+    secondaryHex: '#121212',
+    pantone: 'PANTONE 11-0601 TCX',
+    textColor: 'text-neutral-900',
+    price: 128.00,
+    originalPrice: 155.00,
+    fabric: '13oz 100% Ring-Spun Clean Cotton Denim',
+    fit: 'High-Rise Relaxed Wide Skate Sweep',
+    gender: 'men',
+    category: 'Pants',
+    badge: 'MINIMALIST',
+    hotspotX: 50.0,
+    hotspotY: 45,
+    imageUrl: '/men-pants-white-skate.png',
+    localImage: '/men-pants-white-skate.png',
+    details: 'Architectural vertical center leg seams, clean tailored waistband, 4-pocket construction with relaxed skater silhouette.',
+    description: 'Pristine optical white wide-leg denim trousers detailed with distinct vertical center front seams and a sweeping floor-grazing hem.'
+  },
+  {
+    id: 'men-pants-acid-denim',
+    name: 'Stone-Washed Acid Blue Baggy Denim Jeans',
+    subName: 'Authentic 90s Vintage Acid Wash Denim',
+    hex: '#7ba4c9',
+    secondaryHex: '#30445c',
+    pantone: 'PANTONE 14-4115 TCX',
+    textColor: 'text-sky-950',
+    price: 142.00,
+    originalPrice: 175.00,
+    fabric: '13.5oz Authentic Stone-Washed Ring-Spun Denim',
+    fit: 'Exaggerated 90s Baggy Wide-Leg',
+    gender: 'men',
+    category: 'Pants',
+    badge: 'VINTAGE DROP',
+    hotspotX: 70.0,
+    hotspotY: 45,
+    imageUrl: '/men-pants-acid-denim.png',
+    localImage: '/men-pants-acid-denim.png',
+    details: 'Allover vintage marble acid wash whiskering, subtle micro-distressing at coin pocket, 5-pocket hardware, loose slouchy drape.',
+    description: 'Iconic 90s skater nostalgia cut from 13.5oz heavyweight marble stone-washed denim in an effortless relaxed baggy silhouette.'
+  },
+  {
+    id: 'men-pants-cyber-jogger',
+    name: 'Y2K Cyber-Tribal Graphic Heavyweight Sweatpants',
+    subName: '400 GSM Ultra-Heavy French Terry Fleece',
+    hex: '#141416',
+    secondaryHex: '#ffffff',
+    pantone: 'PANTONE 19-4005 TCX',
+    textColor: 'text-neutral-100',
+    price: 124.00,
+    originalPrice: 150.00,
+    fabric: '400 GSM Heavyweight Brushed French Terry Cotton',
+    fit: 'Baggy Relaxed Streetwear Jogger',
+    gender: 'men',
+    category: 'Pants',
+    badge: 'STREETWEAR',
+    hotspotX: 89.0,
+    hotspotY: 45,
+    imageUrl: '/men-pants-cyber-jogger.png',
+    localImage: '/men-pants-cyber-jogger.png',
+    details: 'Oversized white cyber-tribal gothic screenprint graphics running down both pant legs, thick ribbed elastic waistband, deep side pockets.',
+    description: 'Statement streetwear sweatpants crafted from 400 GSM ultra-heavy French terry fleece featuring bold Y2K cyber-tribal screenprint artwork down both legs.'
+  }
+];
+
 // 2. Hanging T-Shirt Rack Colorways (Crewnecks)
 export const HANGING_RACK_TEES = [
   {
@@ -1264,96 +1597,288 @@ export const CATALOG_PRODUCTS = [
     ]
   },
 
-  // --- MALE T-SHIRTS ---
+  // --- MALE T-SHIRTS & POLOS (TRANSPARENT PNG CUTOUTS) ---
   {
-    id: 'tee-port',
-    name: "Men's Essential Crewneck Tee",
-    colorway: 'Port Wine',
-    price: 32.00,
+    id: 'men-tee-ivory-pleated-polo',
+    name: 'Ivory Pleated Knit Open-Collar Polo',
+    colorway: 'Pure Optical Cream',
+    price: 58.00,
+    originalPrice: 72.00,
+    category: 'T-Shirts',
+    gender: 'men',
+    badge: 'NEW SEASON',
+    colorHex: '#f6f4ee',
+    type: 'polo',
+    imageUrl: '/men-tee-ivory-pleated-polo.png',
+    localImage: '/men-tee-ivory-pleated-polo.png',
+    modelImage: '/men-tee-ivory-pleated-polo.png',
+    swatches: [
+      { name: 'Pure Cream', hex: '#f6f4ee', id: 'polo-ivory' },
+      { name: 'Noir Black', hex: '#161618', id: 'polo-black' }
+    ],
+    sizes: ['S', 'M', 'L', 'XL', 'XXL'],
+    stock: 26,
+    details: [
+      '100% Breathable Combed Cotton Pleated Knit',
+      'Relaxed Open Notch Johnny Collar',
+      'Ribbed Sleeve Bands & Straight Hem',
+      'Pre-shrunk Anti-Pilling Fine Gauge Yarn'
+    ],
+    description: 'Architectural fine-gauge vertical pleated knit polo featuring a relaxed Johnny open collar, ribbed sleeve cuffs, and tailored fluid drape.'
+  },
+  {
+    id: 'men-tee-noir-zip-polo',
+    name: 'Noir Tipped Quarter-Zip Knit Polo',
+    colorway: 'Midnight Black / White Tipping',
+    price: 62.00,
+    originalPrice: 78.00,
+    category: 'T-Shirts',
+    gender: 'men',
+    badge: 'ATELIER DROP',
+    colorHex: '#141416',
+    type: 'polo',
+    imageUrl: '/men-tee-noir-zip-polo.png',
+    localImage: '/men-tee-noir-zip-polo.png',
+    modelImage: '/men-tee-noir-zip-polo.png',
+    swatches: [
+      { name: 'Midnight Black', hex: '#141416', id: 'polo-zip-black' },
+      { name: 'Slate Gray', hex: '#484c54', id: 'polo-zip-slate' }
+    ],
+    sizes: ['S', 'M', 'L', 'XL', 'XXL'],
+    stock: 22,
+    details: [
+      'High-Density Pima Cotton & Modal Stretch Blend',
+      'Polished Silver Quarter-Zip Closure',
+      'Contrast Double White Tipped Trims on Collar & Sleeves',
+      'Athletic Tapered Modern Silhouette'
+    ],
+    description: 'Modern luxury athletic silhouette crafted with subtle stretch jersey knit, polished silver quarter-zip collar, and contrast dual white tipping on collar and sleeves.'
+  },
+  {
+    id: 'men-tee-stripe-knit',
+    name: 'Block-Stripe Textured Knit Crewneck',
+    colorway: 'Ivory, Sand & Onyx Stripes',
+    price: 54.00,
+    originalPrice: 68.00,
     category: 'T-Shirts',
     gender: 'men',
     badge: 'BESTSELLER',
-    colorHex: '#6b3636',
-    type: 'essential',
+    colorHex: '#f0ece1',
+    type: 'streetwear',
+    imageUrl: '/men-tee-stripe-knit.png',
+    localImage: '/men-tee-stripe-knit.png',
+    modelImage: '/men-tee-stripe-knit.png',
     swatches: [
-      { name: 'Port Wine', hex: '#6b3636', id: 'tee-port' },
-      { name: 'Deep Forest', hex: '#244234', id: 'tee-forest' },
-      { name: 'Bone White', hex: '#f4efe6', id: 'tee-bone' },
-      { name: 'Charcoal Slate', hex: '#38393c', id: 'tee-charcoal' }
+      { name: 'Ivory / Sand Stripe', hex: '#f0ece1', id: 'knit-stripe-ivory' },
+      { name: 'Navy / Forest Stripe', hex: '#1e2838', id: 'knit-stripe-navy' }
     ],
-    sizes: ['XS', 'S', 'M', 'L', 'XL', 'XXL'],
-    stock: 24,
+    sizes: ['S', 'M', 'L', 'XL', 'XXL'],
+    stock: 20,
     details: [
-      '100% Combed Ring-Spun Organic Cotton (240 GSM)',
-      'Pre-shrunk fabric with bound collar ribbing'
-    ]
+      '100% Premium Cotton Textured Waffle Knit',
+      'Engineered Yarn-Dyed Horizontal Chest Stripes',
+      'Heavyweight Ribbed Collar & Cuffs',
+      'Tailored Relaxed Parisian Cut'
+    ],
+    description: 'Retro European aesthetic featuring horizontal chest color-block stripes over vertical grid-textured knit with reinforced ribbed crewneck collar.'
   },
   {
-    id: 'graphic-waves',
-    name: 'Waves Graphic Screenprint Tee',
-    colorway: 'Midnight Navy / Ecru',
-    price: 38.00,
+    id: 'men-tee-luffy-anime',
+    name: 'Luffy Straw Hat Anime Heavyweight Tee',
+    colorway: 'Vintage Off-White / Vermilion Red',
+    price: 46.00,
+    originalPrice: 58.00,
     category: 'T-Shirts',
     gender: 'men',
-    badge: 'LIMITED EDITION',
-    colorHex: '#253549',
-    graphicType: 'waves',
+    badge: 'ANIME CAPSULE',
+    colorHex: '#f5efe4',
     type: 'graphic',
+    imageUrl: '/men-tee-luffy-anime.png',
+    localImage: '/men-tee-luffy-anime.png',
+    modelImage: '/men-tee-luffy-anime.png',
     swatches: [
-      { name: 'Midnight Navy', hex: '#253549', id: 'graphic-waves-navy' }
+      { name: 'Vintage Off-White', hex: '#f5efe4', id: 'luffy-white' },
+      { name: 'Washed Charcoal', hex: '#2c2c30', id: 'luffy-charcoal' }
     ],
-    sizes: ['S', 'M', 'L', 'XL'],
-    stock: 12,
+    sizes: ['S', 'M', 'L', 'XL', 'XXL'],
+    stock: 28,
     details: [
-      'Water-based screenprint on 220 GSM heavyweight combed cotton'
-    ]
+      '260 GSM Heavyweight Ringspun Organic Cotton',
+      'High-Definition Screenprint Graphic on Back',
+      'Japanese Typography & Pirate Crest Accents',
+      'Oversized Streetwear Drop-Shoulder Silhouette'
+    ],
+    description: 'Statement streetwear graphic tee showcasing bold Luffy straw hat artwork, brush calligraphy, and oversized drop-shoulder cut crafted from 260 GSM heavyweight cotton.'
+  },
+  {
+    id: 'men-tee-tokyo-racing',
+    name: 'Tokyo Underground Racing Graphic Tee',
+    colorway: 'Butter Cream / Amber Gold',
+    price: 44.00,
+    originalPrice: 55.00,
+    category: 'T-Shirts',
+    gender: 'men',
+    badge: 'STREETWEAR',
+    colorHex: '#f5ecd5',
+    type: 'graphic',
+    imageUrl: '/men-tee-tokyo-racing.png',
+    localImage: '/men-tee-tokyo-racing.png',
+    modelImage: '/men-tee-tokyo-racing.png',
+    swatches: [
+      { name: 'Butter Cream', hex: '#f5ecd5', id: 'tokyo-cream' },
+      { name: 'Matte Black', hex: '#161616', id: 'tokyo-black' }
+    ],
+    sizes: ['S', 'M', 'L', 'XL', 'XXL'],
+    stock: 25,
+    details: [
+      '240 GSM Combed Ring-Spun Cotton',
+      'Multi-Layer Front Sports Car Illustration',
+      'Tokyo Underground Sleeve Screenprints',
+      'Reinforced Collar & Boxy Street Cut'
+    ],
+    description: 'Japanese car culture racing tee with detailed underground tuner sports car art, dual sleeve typographic prints, and coordinates in a relaxed boxy fit.'
   },
 
-  // --- MALE PANTS ---
+  // --- MALE PANTS (TRANSPARENT PNG CUTOUTS) ---
   {
-    id: 'pants-linen-pleat',
-    name: 'Relaxed Pleated Linen Trousers',
-    colorway: 'Natural Sand',
-    price: 88.00,
+    id: 'men-pants-noir-pleated',
+    name: 'Noir High-Waisted Pleated Suiting Trousers',
+    colorway: 'Midnight Noir Suiting',
+    price: 135.00,
+    originalPrice: 165.00,
     category: 'Pants',
     gender: 'men',
-    badge: 'NEW ARRIVAL',
-    colorHex: '#c8bba2',
+    badge: 'ATELIER SUITING',
+    colorHex: '#18181a',
     type: 'pants',
+    imageUrl: '/men-pants-noir-pleated.png',
+    localImage: '/men-pants-noir-pleated.png',
+    modelImage: '/men-pants-noir-pleated.png',
     swatches: [
-      { name: 'Natural Sand', hex: '#c8bba2', id: 'pants-sand' },
-      { name: 'Midnight Navy', hex: '#1e2b3c', id: 'pants-navy' },
-      { name: 'Charcoal Olive', hex: '#3e443c', id: 'pants-olive' }
-    ],
-    sizes: ['30', '32', '34', '36'],
-    stock: 16,
-    details: [
-      '100% Pure Normandy Flax Linen with soft drape',
-      'Double front pleats with elasticated rear waistband',
-      'Corozo button waist tab and slanted side pockets'
-    ]
-  },
-  {
-    id: 'pants-atelier-chino',
-    name: 'Atelier Tailored Chino Pant',
-    colorway: 'Charcoal Slate',
-    price: 84.00,
-    category: 'Pants',
-    gender: 'men',
-    badge: 'EVERYDAY FIT',
-    colorHex: '#3a3d42',
-    type: 'pants',
-    swatches: [
-      { name: 'Charcoal Slate', hex: '#3a3d42', id: 'chino-charcoal' },
-      { name: 'Oatmeal Khaki', hex: '#d0c5af', id: 'chino-khaki' }
+      { name: 'Midnight Noir', hex: '#18181a', id: 'pants-noir' },
+      { name: 'Sand Khaki', hex: '#ded3c1', id: 'pants-sand-khaki' }
     ],
     sizes: ['28', '30', '32', '34', '36'],
     stock: 20,
     details: [
-      'Heavyweight 280 GSM Cotton Twill with 2% elastane flex',
-      'Tapered architectural leg silhouette',
-      'Reinforced bar-tack pockets'
-    ]
+      'Italian Poly-Viscose Fluid Suiting Twill',
+      'High-Waisted Deep Double Pleat Front',
+      'Extended Waistband with Side Button Tab',
+      'Sharp Center Creases & Relaxed Hem'
+    ],
+    description: 'Masterfully tailored high-rise suiting trousers featuring deep front double pleats, an extended waistband with side button tab, and an ultra-fluid drape.'
+  },
+  {
+    id: 'men-pants-olive-cargo',
+    name: 'Washed Olive Relaxed Utility Cargo Pants',
+    colorway: 'Vintage Olive Gray',
+    price: 118.00,
+    originalPrice: 145.00,
+    category: 'Pants',
+    gender: 'men',
+    badge: 'UTILITY ESSENTIAL',
+    colorHex: '#646862',
+    type: 'pants',
+    imageUrl: '/men-pants-olive-cargo.png',
+    localImage: '/men-pants-olive-cargo.png',
+    modelImage: '/men-pants-olive-cargo.png',
+    swatches: [
+      { name: 'Washed Olive', hex: '#646862', id: 'cargo-olive' },
+      { name: 'Washed Black', hex: '#242426', id: 'cargo-black' }
+    ],
+    sizes: ['28', '30', '32', '34', '36'],
+    stock: 24,
+    details: [
+      '100% Heavyweight Pre-Washed Cotton Twill',
+      'Elastic Drawstring Waistband for Adjustable Fit',
+      'Dual Side Flap Bellows Cargo Pockets',
+      'Articulated Knee Panels'
+    ],
+    description: 'Functional utilitarian aesthetic tailored from vintage washed olive-gray cotton twill with roomy cargo flap pockets and articulated knee panels.'
+  },
+  {
+    id: 'men-pants-white-skate',
+    name: 'Optical White Wide-Leg Skate Denim Trousers',
+    colorway: 'Pure Optical White',
+    price: 128.00,
+    originalPrice: 155.00,
+    category: 'Pants',
+    gender: 'men',
+    badge: 'MINIMALIST',
+    colorHex: '#f5f4ef',
+    type: 'pants',
+    imageUrl: '/men-pants-white-skate.png',
+    localImage: '/men-pants-white-skate.png',
+    modelImage: '/men-pants-white-skate.png',
+    swatches: [
+      { name: 'Optical White', hex: '#f5f4ef', id: 'skate-white' },
+      { name: 'Raw Indigo', hex: '#26344d', id: 'skate-indigo' }
+    ],
+    sizes: ['28', '30', '32', '34', '36'],
+    stock: 18,
+    details: [
+      '13oz 100% Ring-Spun Clean Cotton Denim',
+      'Architectural Vertical Center Front Leg Seams',
+      'High-Rise Relaxed Wide Skate Sweep',
+      'Reinforced Riveted Pockets'
+    ],
+    description: 'Pristine optical white wide-leg denim trousers detailed with distinct vertical center front seams and a sweeping floor-grazing hem.'
+  },
+  {
+    id: 'men-pants-acid-denim',
+    name: 'Stone-Washed Acid Blue Baggy Denim Jeans',
+    colorway: 'Marble Acid Blue',
+    price: 142.00,
+    originalPrice: 175.00,
+    category: 'Pants',
+    gender: 'men',
+    badge: 'VINTAGE DROP',
+    colorHex: '#7ba4c9',
+    type: 'pants',
+    imageUrl: '/men-pants-acid-denim.png',
+    localImage: '/men-pants-acid-denim.png',
+    modelImage: '/men-pants-acid-denim.png',
+    swatches: [
+      { name: 'Marble Acid Blue', hex: '#7ba4c9', id: 'denim-acid' },
+      { name: 'Vintage Stone Black', hex: '#303034', id: 'denim-stone-black' }
+    ],
+    sizes: ['28', '30', '32', '34', '36'],
+    stock: 22,
+    details: [
+      '13.5oz Authentic Stone-Washed Ring-Spun Denim',
+      'Allover Vintage Marble Acid Wash Whiskering',
+      'Classic 5-Pocket Hardware Construction',
+      'Relaxed Baggy Wide-Leg Silhouette'
+    ],
+    description: 'Iconic 90s skater nostalgia cut from 13.5oz heavyweight marble stone-washed denim in an effortless relaxed baggy silhouette.'
+  },
+  {
+    id: 'men-pants-cyber-jogger',
+    name: 'Y2K Cyber-Tribal Graphic Heavyweight Sweatpants',
+    colorway: 'Onyx Black / Cyber White',
+    price: 124.00,
+    originalPrice: 150.00,
+    category: 'Pants',
+    gender: 'men',
+    badge: 'STREETWEAR',
+    colorHex: '#141416',
+    type: 'pants',
+    imageUrl: '/men-pants-cyber-jogger.png',
+    localImage: '/men-pants-cyber-jogger.png',
+    modelImage: '/men-pants-cyber-jogger.png',
+    swatches: [
+      { name: 'Onyx Black', hex: '#141416', id: 'jogger-cyber-black' },
+      { name: 'Heather Gray', hex: '#8a8c90', id: 'jogger-cyber-gray' }
+    ],
+    sizes: ['S', 'M', 'L', 'XL', 'XXL'],
+    stock: 25,
+    details: [
+      '400 GSM Ultra-Heavy Brushed French Terry Cotton',
+      'High-Definition Screenprint Tribal Graphics Down Both Legs',
+      'Encased Elastic Waistband & Hidden Drawstrings',
+      'Baggy Relaxed Streetwear Drape'
+    ],
+    description: 'Statement streetwear sweatpants crafted from 400 GSM ultra-heavy French terry fleece featuring bold Y2K cyber-tribal screenprint artwork down both legs.'
   },
 
   // --- MALE HOODIES ---
@@ -1478,246 +2003,136 @@ export const CATALOG_PRODUCTS = [
   },
 
   // =============================================================
-  // MEN'S CURATED FULL LOOK COMBOS
+  // COUPLE CURATED ATELIER SETS
   // =============================================================
   {
-    id: 'combo-men-navy-linen',
-    name: 'Midnight Navy Linen & Sand Trouser Full Combo',
-    colorway: 'Midnight Navy / Pleated Sand',
-    price: 195.00,
-    originalPrice: 229.00,
-    category: 'Combos',
-    gender: 'men',
-    badge: 'LOOK SET • 15% OFF',
-    colorHex: '#1c2d42',
-    imageUrl: '/men-navy-linen-cutout.png',
-    localImage: '/men-navy-linen-cutout.png',
-    description: 'Complete 3-piece tailored outfit including the French Normandy midnight navy open-collar linen shirt, fluid sand pleated wide-leg trousers, and vintage leather watch.',
+    id: "couple-burgundy-cord",
+    name: "Burgundy Atelier Couple Co-ord Set",
+    colorway: "Deep Burgundy Wine / Ivory",
+    price: 285,
+    originalPrice: 335,
+    category: "Combos",
+    gender: "couple",
+    badge: "COUPLE CO-ORD • 15% OFF",
+    colorHex: "#581825",
+    imageUrl: "/couple-burgundy-cord.png",
+    localImage: "/couple-burgundy-cord.png",
+    hoverImage: "/couple-burgundy-cord.png",
+    description: "Harmoniously coordinated couple ensemble: tailored relaxed wine burgundy button-down overshirts paired with high-waisted pleated fluid cream trousers and crisp white court sneakers.",
     swatches: [
-      { name: 'Navy & Sand Set', hex: '#1c2d42', id: 'combo-navy-sand' }
+      { name: "Burgundy & Ivory", hex: "#581825", id: "couple-burgundy" }
     ],
-    sizes: ['S', 'M', 'L', 'XL', 'XXL'],
-    stock: 18,
+    sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+    stock: 12,
     details: [
-      'Normandy 100% Pure Flax Linen Shirt',
-      'Pleated Fluid Sand Trousers with Hidden Adjuster',
-      'Curated Head-to-Toe Milanese Palette'
+      "Coordinated 2-Person Look (His & Hers Set)",
+      "100% Breathable Fine-Woven Cotton Blend",
+      "Deep Knife-Pleated High-Rise Wide Trousers",
+      "Curated Minimalist Atelier Palette Match"
     ]
   },
   {
-    id: 'combo-men-black-zip-polo',
-    name: 'Textured Black Quarter-Zip & Stone Chinos Combo',
-    colorway: 'Onyx Black / Stone Italian Chino',
-    price: 215.00,
-    originalPrice: 245.00,
-    category: 'Combos',
-    gender: 'men',
-    badge: 'ATELIER COMBO',
-    colorHex: '#121212',
-    imageUrl: '/men-black-zip-polo-cutout.png',
-    localImage: '/men-black-zip-polo-cutout.png',
-    description: 'Complete Italian smart-casual ensemble: fine-textured quarter-zip ribbed knit polo in midnight onyx black paired with tailored stone-beige relaxed trousers.',
+    id: "couple-noir-linen",
+    name: "Noir Black & Sand Tailored Couple Set",
+    colorway: "Midnight Noir / Sand Dune",
+    price: 295,
+    originalPrice: 345,
+    category: "Combos",
+    gender: "couple",
+    badge: "SIGNATURE PAIR • 15% OFF",
+    colorHex: "#18181a",
+    imageUrl: "/couple-noir-linen.png",
+    localImage: "/couple-noir-linen.png",
+    hoverImage: "/couple-noir-linen.png",
+    description: "Effortless cosmopolitan pair: matching midnight black relaxed shirts with tailored high-waisted sand chino trousers, dark acetate sunglasses, and minimalist white leather trainers.",
     swatches: [
-      { name: 'Onyx & Stone Set', hex: '#121212', id: 'combo-black-stone' }
+      { name: "Noir & Sand", hex: "#18181a", id: "couple-noir" }
     ],
-    sizes: ['S', 'M', 'L', 'XL', 'XXL'],
-    stock: 20,
+    sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+    stock: 15,
     details: [
-      '100% Textured Combed Cotton Ribbed Polo',
-      'Tailored Italian Cotton Relaxed Chinos',
-      'Precision Color-Matched Palette'
+      "Matching Minimalist Resort Shirts",
+      "High-Density Sand Cotton-Linen Chino Weave",
+      "Wide-Leg Pleated Tailored Cut for Her & Him",
+      "Complete City-Chic Couple Styling"
     ]
   },
   {
-    id: 'combo-men-ecru-polo',
-    name: 'Quiet Luxury Ecru Polo & Washed Denim Combo',
-    colorway: 'Natural Ecru / Washed Black Denim',
-    price: 188.00,
-    originalPrice: 218.00,
-    category: 'Combos',
-    gender: 'men',
-    badge: 'QUIET LUXURY',
-    colorHex: '#f4efe6',
-    imageUrl: '/men-ecru-polo-cutout.png',
-    localImage: '/men-ecru-polo-cutout.png',
-    description: 'Effortless understated luxury combo featuring the open-collar ribbed knit polo in natural ecru paired with relaxed washed black denim jeans.',
+    id: "couple-indigo-festive",
+    name: "Midnight Indigo Resort & Kurta Couple Duo",
+    colorway: "Midnight Indigo / Pure White",
+    price: 310,
+    originalPrice: 365,
+    category: "Combos",
+    gender: "couple",
+    badge: "FESTIVE CAPSULE • 15% OFF",
+    colorHex: "#1e293b",
+    imageUrl: "/couple-indigo-festive.png",
+    localImage: "/couple-indigo-festive.png",
+    hoverImage: "/couple-indigo-festive.png",
+    description: "Exquisite celebration pair: gentleman's midnight navy linen button-down with relaxed cream trousers, complemented by her intricately embroidered indigo tunic with matching palazzo and sheer drape dupatta.",
     swatches: [
-      { name: 'Ecru & Black Set', hex: '#f4efe6', id: 'combo-ecru-black' }
+      { name: "Midnight Indigo", hex: "#1e293b", id: "couple-indigo" }
     ],
-    sizes: ['S', 'M', 'L', 'XL', 'XXL'],
-    stock: 16,
+    sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+    stock: 10,
     details: [
-      'Fine-Gauge Combed Cotton Johnny Polo',
-      'Heavyweight 14oz Washed Black Denim',
-      'Complete Coordinated Street Luxe Set'
+      "His: French Normandy Navy Linen Button-Down",
+      "Hers: Silver-Thread Embroidered Indigo Kurta Set & Dupatta",
+      "Tailored Relaxed White Canvas Trousers",
+      "Premium Breathable Silk-Cotton & Linen Weave"
     ]
   },
   {
-    id: 'combo-men-archive-mocha',
-    name: 'Two-Tone Archive Mocha Hoodie & Cargo Combo',
-    colorway: 'Mocha Brown / Washed Utility Grey',
-    price: 235.00,
-    originalPrice: 263.00,
-    category: 'Combos',
-    gender: 'men',
-    badge: 'ARCHIVE COMBO',
-    colorHex: '#5c4033',
-    imageUrl: '/men-archive-mocha-cutout.png',
-    localImage: '/men-archive-mocha-cutout.png',
-    description: 'Heavyweight streetwear atelier combo featuring the 480 GSM two-tone mocha raglan hoodie and vintage washed grey wide utility cargo trousers.',
+    id: "couple-mocha-linen",
+    name: "Mocha Espresso Resort Couple Ensemble",
+    colorway: "Mocha Espresso / Cream Twill",
+    price: 290,
+    originalPrice: 340,
+    category: "Combos",
+    gender: "couple",
+    badge: "AUTUMN RESORT • 15% OFF",
+    colorHex: "#5c4033",
+    imageUrl: "/couple-mocha-linen.png",
+    localImage: "/couple-mocha-linen.png",
+    hoverImage: "/couple-mocha-linen.png",
+    description: "Romantic earthy palette: matching rich mocha espresso linen button-downs paired with flowing high-rise ivory pleated trousers, tortoiseshell accents, and white platform trainers.",
     swatches: [
-      { name: 'Mocha & Grey Set', hex: '#5c4033', id: 'combo-mocha-grey' }
+      { name: "Mocha & Cream", hex: "#5c4033", id: "couple-mocha" }
     ],
-    sizes: ['S', 'M', 'L', 'XL', 'XXL'],
+    sizes: ["XS", "S", "M", "L", "XL", "XXL"],
     stock: 14,
     details: [
-      '480 GSM Heavyweight French Terry Raglan Hoodie',
-      'Multi-Pocket Wide Utility Cargo Trousers',
-      'Complete Atelier Streetwear Styling'
+      "Warm Espresso Garment-Dyed Pure Linen",
+      "Tortoiseshell Atelier Placket Buttons",
+      "High-Waisted Italian Suiting Wide-Leg Trousers",
+      "Synchronized Warm Earth-Tone Look"
     ]
   },
   {
-    "id": "combo-women-denim-corset",
-    "name": "Denim Corset & Wide-Leg Jeans Atelier Set",
-    "colorway": "Vintage Indigo / Crisp Poplin",
-    "price": 225,
-    "originalPrice": 265,
-    "category": "Combos",
-    "gender": "women",
-    "badge": "LOOK SET • 15% OFF",
-    "colorHex": "#7ba4c9",
-    "imageUrl": "/women-combo-denim-corset.png",
-    "localImage": "/women-combo-denim-corset.png",
-    "hoverImage": "/women-combo-denim-corset.png",
-    "description": "Complete head-to-toe Parisian atelier ensemble: structured washed denim boned corset top layered over an ethereal bishop-sleeve white poplin blouse, matching wide-leg tailored jeans, structured crescent leather bag, and court sneakers.",
-    "swatches": [
-        {
-            "name": "Denim & Poplin Look",
-            "hex": "#7ba4c9",
-            "id": "combo-denim-corset"
-        }
+    id: "couple-sky-stripe",
+    name: "Sky Blue Bengal Stripe Summer Couple Set",
+    colorway: "Sky Blue Bengal Stripe / Ecru",
+    price: 275,
+    originalPrice: 320,
+    category: "Combos",
+    gender: "couple",
+    badge: "SUMMER ESCAPE • 15% OFF",
+    colorHex: "#7ba4c9",
+    imageUrl: "/couple-sky-stripe.png",
+    localImage: "/couple-sky-stripe.png",
+    hoverImage: "/couple-sky-stripe.png",
+    description: "Sunny Riviera summer charm: gentleman's relaxed sky blue Bengal vertical stripe linen shirt, paired with her matching bow-tie peplum stripe top and airy ecru linen wide trousers.",
+    swatches: [
+      { name: "Sky Bengal Stripe", hex: "#7ba4c9", id: "couple-sky" }
     ],
-    "sizes": [
-        "XS",
-        "S",
-        "M",
-        "L",
-        "XL"
-    ],
-    "stock": 16,
-    "details": [
-        "Structured Washed Denim Boned Corset Top",
-        "Crisp White Bishop-Sleeve Poplin Blouse",
-        "High-Rise Vintage Wash Wide-Leg Denim Jeans",
-        "Curated Atelier Accessories & Footwear Match"
-    ]
-},
-  {
-    "id": "combo-women-lace-corset",
-    "name": "Espresso Lace Corset & Sand Denim Set",
-    "colorway": "Espresso Lace / Sand Denim",
-    "price": 210,
-    "originalPrice": 248,
-    "category": "Combos",
-    "gender": "women",
-    "badge": "ATELIER COMBO",
-    "colorHex": "#4a2c20",
-    "imageUrl": "/women-combo-lace-corset.png",
-    "localImage": "/women-combo-lace-corset.png",
-    "hoverImage": "/women-combo-lace-corset.png",
-    "description": "Sensual high-fashion street-luxe combination: floral sheer lace underwire corset top in rich dark espresso paired with relaxed high-waisted sand denim jeans, minimalist strappy leather heels, and ivory bag.",
-    "swatches": [
-        {
-            "name": "Espresso & Sand Look",
-            "hex": "#4a2c20",
-            "id": "combo-lace-sand"
-        }
-    ],
-    "sizes": [
-        "XS",
-        "S",
-        "M",
-        "L",
-        "XL"
-    ],
-    "stock": 14,
-    "details": [
-        "Underwire Sheer Floral Lace Corset Bustier",
-        "Relaxed High-Waist Neutral Sand Denim",
-        "Minimalist Italian Strappy Leather Sandals",
-        "Curated Studio Flat-Lay Styling"
-    ]
-},
-  {
-    "id": "combo-women-brown-corduroy",
-    "name": "Cocoa Cropped Corduroy & Baggy Denim Combo",
-    "colorway": "Cocoa Corduroy / Charcoal Wash",
-    "price": 198,
-    "originalPrice": 230,
-    "category": "Combos",
-    "gender": "women",
-    "badge": "SIGNATURE COMBO",
-    "colorHex": "#5c4033",
-    "imageUrl": "/women-combo-brown-corduroy.png",
-    "localImage": "/women-combo-brown-corduroy.png",
-    "hoverImage": "/women-combo-brown-corduroy.png",
-    "description": "Effortless signature streetwear set: wide-wale cocoa brown cropped corduroy overshirt over a second-skin white crew tee, paired with ultra-wide pleated charcoal wash denim and canvas tote.",
-    "swatches": [
-        {
-            "name": "Cocoa & Charcoal Look",
-            "hex": "#5c4033",
-            "id": "combo-cocoa-charcoal"
-        }
-    ],
-    "sizes": [
-        "XS",
-        "S",
-        "M",
-        "L",
-        "XL"
-    ],
-    "stock": 20,
-    "details": [
-        "Wide-Wale 100% Cotton Cropped Corduroy Jacket",
-        "Fitted Premium Heavy Cotton Base Tee",
-        "Ultra-Wide Stacked Charcoal Wash Baggy Jeans",
-        "Canvas Studio Tote Bag & Platform Court Lows"
-    ]
-},
-  {
-    "id": "combo-women-pink-corduroy",
-    "name": "Dusty Rose Corduroy & Vintage Blue Denim Combo",
-    "colorway": "Dusty Rose / Vintage Indigo",
-    "price": 198,
-    "originalPrice": 230,
-    "category": "Combos",
-    "gender": "women",
-    "badge": "NEW CO-ORD • 15% OFF",
-    "colorHex": "#b87d86",
-    "imageUrl": "/women-combo-pink-corduroy.png",
-    "localImage": "/women-combo-pink-corduroy.png",
-    "hoverImage": "/women-combo-pink-corduroy.png",
-    "description": "Playful pastel atelier outfit: vintage dusty rose cropped corduroy jacket with balloon gathered cuffs, clean white fitted crew tee, and slouchy wide-leg vintage blue indigo denim.",
-    "swatches": [
-        {
-            "name": "Rose & Indigo Look",
-            "hex": "#b87d86",
-            "id": "combo-rose-indigo"
-        }
-    ],
-    "sizes": [
-        "XS",
-        "S",
-        "M",
-        "L",
-        "XL"
-    ],
-    "stock": 18,
-    "details": [
-        "Vintage Dusty Rose Cropped Corduroy Overshirt",
-        "Soft-Touch Stretch Cotton Fitted Tee",
-        "Relaxed High-Rise Vintage Blue Denim",
-        "Natural Cream Canvas Shopper & White Sneakers"
+    sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+    stock: 16,
+    details: [
+      "Yarn-Dyed Fine Bengal Stripe Combed Cotton",
+      "Hers: Triple Bow-Tie Front Peplum Sleeveless Blouse",
+      "His: Classic Spread Collar Long-Sleeve Linen Shirt",
+      "Breathable Matte Linen-Blend Ecru Trousers"
     ]
   }
 ];

@@ -4,28 +4,30 @@ import {
   Heart, 
   ChevronLeft, 
   ChevronRight,
-  Sparkles
+  Sparkles,
+  Layers,
+  Eye
 } from 'lucide-react';
-import { WOMEN_PANTS_HERO } from '../data/productsCatalog';
+import { MEN_PANTS_HERO } from '../data/productsCatalog';
 
-const WOMEN_PANTS_HERO_IMAGE_URL = '/women-pants-hanger-hero.jpg';
+const MEN_PANTS_HERO_IMAGE_URL = '/men-pants-hanger-hero.jpg';
 
-// The 6 Interactive Hotspot Coordinates on the Real Photo
-const WOMEN_PANTS_HOTSPOTS = [
-  { id: 0, key: 'pants-women-ivory-pleated', name: 'Ivory Pleated Wide Trousers', x: 11.5, y: 48, hex: '#ded3c1' },
-  { id: 1, key: 'pants-women-black-corset', name: 'Noir Double-Button Trousers', x: 27.2, y: 48, hex: '#18181a' },
-  { id: 2, key: 'pants-women-white-palazzo', name: 'Pure White High-Waist Palazzo', x: 43.2, y: 48, hex: '#f5f2eb' },
-  { id: 3, key: 'pants-women-charcoal-horseshoe', name: 'Washed Charcoal Horseshoe Denim', x: 59.0, y: 48, hex: '#3a3c42' },
-  { id: 4, key: 'pants-women-indigo-horseshoe', name: 'Vintage Indigo Horseshoe Jean', x: 75.5, y: 48, hex: '#6d8fa8' },
-  { id: 5, key: 'pants-women-black-flare', name: 'Sculpt High-Waisted Flare Pant', x: 91.0, y: 48, hex: '#141416' }
+// The 5 Interactive Hotspot Coordinates across the Clothes Rail Photo
+const MEN_PANTS_HOTSPOTS = [
+  { id: 0, key: 'men-pants-noir-pleated', name: 'Noir Pleated Trousers', x: 12.1, y: 45.0, hex: '#18181a' },
+  { id: 1, key: 'men-pants-olive-cargo', name: 'Washed Olive Utility Cargo', x: 30.5, y: 45.0, hex: '#646862' },
+  { id: 2, key: 'men-pants-white-skate', name: 'Optical White Skate Denim', x: 48.4, y: 45.0, hex: '#f5f4ef' },
+  { id: 3, key: 'men-pants-acid-denim', name: 'Acid Blue Baggy Denim', x: 66.4, y: 45.0, hex: '#7ba4c9' },
+  { id: 4, key: 'men-pants-cyber-jogger', name: 'Cyber-Tribal Sweatpants', x: 85.9, y: 45.0, hex: '#141416' }
 ];
 
-export default function WomenPantsHangerRack({ onAddToCart, onToggleWishlist, wishlist = [], onQuickView }) {
+export default function MenPantsHangerRack({ onAddToCart, onToggleWishlist, wishlist = [], onQuickView }) {
   const [activeIdx, setActiveIdx] = useState(0);
-  const [selectedSize, setSelectedSize] = useState('26');
+  const [selectedSize, setSelectedSize] = useState('32');
+  const [cardSelectedSizes, setCardSelectedSizes] = useState({});
   const [isAutoStepping, setIsAutoStepping] = useState(false);
 
-  const pants = WOMEN_PANTS_HERO;
+  const pants = MEN_PANTS_HERO;
   const activePant = pants[activeIdx] || pants[0];
 
   // Auto-step slideshow
@@ -49,17 +51,24 @@ export default function WomenPantsHangerRack({ onAddToCart, onToggleWishlist, wi
     setActiveIdx((prev) => (prev + 1) % pants.length);
   };
 
+  const handleCardSizeSelect = (pantId, size) => {
+    setCardSelectedSizes((prev) => ({
+      ...prev,
+      [pantId]: size
+    }));
+  };
+
   return (
     <div className="max-w-[1400px] mx-auto px-4 sm:px-8 pt-4 pb-12 sm:pb-16 relative z-10 select-none">
       
-      {/* Header Title in Reference Image Aesthetic */}
+      {/* Header Title */}
       <div className="text-center mb-7 sm:mb-9 select-none">
         <h1 className="font-serif italic text-3xl sm:text-4xl md:text-5xl text-neutral-900 font-normal tracking-tight">
-          every woman needs
+          every man needs
         </h1>
         <p className="font-mono text-[11px] sm:text-xs uppercase tracking-[0.25em] text-neutral-500 font-medium mt-1.5 flex items-center justify-center gap-2">
           <span>&bull;&bull;</span>
-          <span>TAILORED TROUSERS &amp; DENIM RAIL</span>
+          <span>SIGNATURE ATELIER SUITING &amp; WIDE DENIM TROUSERS</span>
           <span>&bull;&bull;</span>
         </p>
       </div>
@@ -67,18 +76,18 @@ export default function WomenPantsHangerRack({ onAddToCart, onToggleWishlist, wi
       {/* Main Interactive Stage: 2-Column Grid */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 lg:gap-16 xl:gap-20 items-start">
         
-        {/* 1. Left Card: The Real Photograph with 6 Interactive Hotspots (7 cols) */}
+        {/* 1. Left Card: The Real Photograph with 5 Interactive Hotspots (7 cols) */}
         <div className="lg:col-span-7 xl:col-span-7 relative bg-[#ede8de]/60 rounded-3xl p-4 sm:p-5 border border-neutral-300/60 shadow-sm overflow-hidden flex flex-col justify-between">
           
-          <div className="relative w-full aspect-[3/2] sm:aspect-[4/3] rounded-2xl overflow-hidden shadow-md bg-neutral-900">
+          <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-md bg-neutral-900">
             <img 
-              src={WOMEN_PANTS_HERO_IMAGE_URL} 
-              alt="Women's Signature Trousers & Denim on Wooden Clothes Rail" 
+              src={MEN_PANTS_HERO_IMAGE_URL} 
+              alt="Curated Men's Trousers & Denim on Wooden Clothes Rail" 
               className="w-full h-full object-cover object-center"
             />
 
             {/* Hotspot Markers */}
-            {WOMEN_PANTS_HOTSPOTS.map((spot) => {
+            {MEN_PANTS_HOTSPOTS.map((spot) => {
               const isActive = activeIdx === spot.id;
               return (
                 <button
@@ -116,18 +125,18 @@ export default function WomenPantsHangerRack({ onAddToCart, onToggleWishlist, wi
           {/* Bottom Hotspot Legend Strip */}
           <div className="w-full mt-3.5 flex items-center justify-between text-xs text-neutral-600 px-1">
             <span className="font-mono text-[10px] uppercase tracking-wider text-neutral-500">
-              Click any trouser pin to inspect tailoring &amp; rise
+              Click any trouser pin on the wooden rail to inspect tailoring
             </span>
-            <div className="flex items-center gap-2">
-              {WOMEN_PANTS_HOTSPOTS.map((s) => (
+            <div className="flex items-center gap-1.5">
+              {pants.map((p, idx) => (
                 <button
-                  key={s.id}
-                  onClick={() => setActiveIdx(s.id)}
+                  key={p.id}
+                  onClick={() => setActiveIdx(idx)}
                   className={`w-3.5 h-3.5 rounded-full transition-all cursor-pointer ${
-                    activeIdx === s.id ? 'scale-125 ring-2 ring-neutral-950 shadow-xs' : 'opacity-60 hover:opacity-100'
+                    activeIdx === idx ? 'scale-125 ring-2 ring-neutral-950 shadow-xs' : 'opacity-60 hover:opacity-100'
                   }`}
-                  style={{ backgroundColor: s.hex }}
-                  title={s.name}
+                  style={{ backgroundColor: p.hex }}
+                  title={p.name}
                 />
               ))}
             </div>
@@ -138,17 +147,17 @@ export default function WomenPantsHangerRack({ onAddToCart, onToggleWishlist, wi
         {/* 2. Right Side: UNIFIED PORTRAIT VIEW & PRODUCT DETAILS CARD (5 cols) */}
         <div className="lg:col-span-5 xl:col-span-5 w-full bg-[#faf8f5] rounded-3xl p-5 sm:p-6 border border-neutral-200/90 shadow-md flex flex-col justify-between space-y-4">
           
-          {/* 3:4 Portrait View */}
+          {/* 3:4 Portrait View with Transparent Cutout */}
           <div className="relative w-full aspect-[3/4] max-h-[320px] sm:max-h-[360px] mx-auto flex items-center justify-center overflow-hidden rounded-2xl bg-white/80 border border-neutral-200/70 shadow-inner group/portrait">
             <img 
               key={activePant.id}
               src={activePant.imageUrl}
-              onError={(e) => { e.currentTarget.src = activePant.localImage || '/women-pants-ivory-pleated.png'; }}
+              onError={(e) => { e.currentTarget.src = activePant.localImage || '/men-pants-noir-pleated.png'; }}
               alt={`${activePant.name} Portrait View`}
               className="w-full h-full object-contain p-3 transition-transform duration-700 group-hover/portrait:scale-105 animate-in fade-in zoom-in-95 drop-shadow-sm"
             />
             <span className="absolute top-3 left-3 bg-neutral-950 text-white text-[9px] font-mono px-2.5 py-1 rounded-full tracking-widest uppercase shadow-xs">
-              WOMEN'S TAILORED TROUSERS
+              MEN'S TAILORED TROUSERS
             </span>
           </div>
 
@@ -206,7 +215,7 @@ export default function WomenPantsHangerRack({ onAddToCart, onToggleWishlist, wi
                 Select Waist Size
               </label>
               <div className="flex items-center gap-1.5">
-                {['24', '26', '28', '30', '32'].map((sz) => (
+                {['28', '30', '32', '34', '36'].map((sz) => (
                   <button
                     key={sz}
                     onClick={() => setSelectedSize(sz)}
@@ -223,7 +232,7 @@ export default function WomenPantsHangerRack({ onAddToCart, onToggleWishlist, wi
             </div>
 
             {/* Action Buttons */}
-            <div className="pt-2.5 border-t border-neutral-200/70 flex items-center gap-2.5">
+            <div className="pt-2.5 border-t border-neutral-200/70 flex items-center gap-2">
               <button
                 onClick={() => {
                   onAddToCart({
@@ -233,7 +242,7 @@ export default function WomenPantsHangerRack({ onAddToCart, onToggleWishlist, wi
                     size: selectedSize,
                     color: activePant.name,
                     category: 'Pants',
-                    gender: 'women',
+                    gender: 'men',
                     image: activePant.imageUrl
                   });
                 }}
@@ -244,8 +253,24 @@ export default function WomenPantsHangerRack({ onAddToCart, onToggleWishlist, wi
               </button>
 
               <button
+                onClick={() => {
+                  if (onQuickView) {
+                    onQuickView({
+                      ...activePant,
+                      sizes: ['28', '30', '32', '34', '36']
+                    });
+                  }
+                }}
+                className="h-10 px-3.5 rounded-full border border-neutral-200 hover:border-neutral-900 bg-white text-neutral-800 hover:bg-neutral-50 flex items-center justify-center gap-1.5 text-xs font-medium uppercase tracking-wider transition-colors cursor-pointer shadow-2xs flex-shrink-0"
+                title="Quick View Details"
+              >
+                <Eye className="w-3.5 h-3.5 text-neutral-600" />
+                <span>View</span>
+              </button>
+
+              <button
                 onClick={() => onToggleWishlist(activePant.id)}
-                className={`h-10 w-10 rounded-full border flex items-center justify-center transition-colors cursor-pointer ${
+                className={`h-10 w-10 rounded-full border flex items-center justify-center transition-colors cursor-pointer flex-shrink-0 ${
                   wishlist.includes(activePant.id)
                     ? 'bg-red-50 border-red-200 text-red-600'
                     : 'border-neutral-200 text-neutral-600 hover:border-neutral-900 bg-white'
@@ -285,6 +310,157 @@ export default function WomenPantsHangerRack({ onAddToCart, onToggleWishlist, wi
 
           </div>
 
+        </div>
+
+      </div>
+
+      {/* 3. PRODUCT CARDS AT DOWN / BOTTOM */}
+      <div className="mt-12 sm:mt-16 pt-8 border-t border-neutral-300/60">
+        
+        <div className="flex items-center justify-between mb-6 px-1">
+          <span className="text-xs font-mono uppercase tracking-[0.2em] text-neutral-600 font-bold flex items-center gap-2">
+            <Layers className="w-4 h-4 text-amber-600" />
+            <span>Men's Trousers &amp; Denim &bull; Atelier Catalog</span>
+          </span>
+          <span className="text-[11px] font-mono text-neutral-400">
+            {pants.length} Tailored Silhouettes
+          </span>
+        </div>
+
+        {/* Product Cards Grid matching Women section sizing */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-8">
+          {pants.map((p, idx) => {
+            const isSelected = activeIdx === idx;
+            const currentCardSize = cardSelectedSizes[p.id] || '32';
+            const isWishlisted = wishlist.includes(p.id);
+
+            return (
+              <div
+                key={p.id}
+                onClick={() => setActiveIdx(idx)}
+                className={`group flex flex-col justify-between bg-white rounded-2xl border transition-all duration-300 p-4 sm:p-5 relative cursor-pointer ${
+                  isSelected 
+                    ? 'border-neutral-950 shadow-xl ring-2 ring-neutral-950/20 -translate-y-1' 
+                    : 'border-neutral-200/90 hover:border-neutral-400 hover:shadow-md hover:-translate-y-0.5'
+                }`}
+              >
+                {/* Top Garment Image Area */}
+                <div className="relative w-full aspect-[4/5] max-h-[290px] mb-3.5 flex items-center justify-center bg-[#faf8f5]/80 rounded-xl overflow-hidden group-hover:bg-[#f5f0e6]/60 transition-colors p-3.5">
+                  <img 
+                    src={p.imageUrl} 
+                    alt={p.name}
+                    className="w-full h-full object-contain drop-shadow-md transition-transform duration-500 group-hover:scale-105"
+                  />
+                  
+                  {/* Wishlist Heart on Top Right */}
+                  <button
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      onToggleWishlist(p.id);
+                    }}
+                    className={`absolute top-2.5 right-2.5 p-1.5 rounded-full transition-colors z-10 ${
+                      isWishlisted ? 'text-red-500 bg-red-50' : 'text-neutral-400 hover:text-neutral-900 bg-white/80 backdrop-blur-xs shadow-xs'
+                    }`}
+                    aria-label="Wishlist"
+                  >
+                    <Heart className={`w-3.5 h-3.5 ${isWishlisted ? 'fill-red-500' : ''}`} />
+                  </button>
+                </div>
+
+                {/* Product Info */}
+                <div className="space-y-2.5">
+                  
+                  {/* Swatch & Colorway Name */}
+                  <div className="flex items-center gap-1.5">
+                    <span 
+                      className="w-3 h-3 rounded-full border border-neutral-300 shadow-2xs"
+                      style={{ backgroundColor: p.hex }}
+                    />
+                    <span className="text-[10px] font-mono text-neutral-500">
+                      {p.name.split(' ')[0]} {p.name.split(' ')[1]}
+                    </span>
+                  </div>
+
+                  {/* Title & Price */}
+                  <div className="flex items-start justify-between gap-2">
+                    <h3 className="font-bodoni text-sm sm:text-base font-normal text-neutral-950 leading-snug line-clamp-2">
+                      {p.name}
+                    </h3>
+                    <span className="text-sm font-medium text-neutral-950 flex-shrink-0">
+                      ${p.price.toFixed(2)}
+                    </span>
+                  </div>
+
+                  {/* Subtitle */}
+                  <p className="text-[11px] text-neutral-500 font-light truncate">
+                    {p.subName}
+                  </p>
+
+                  {/* Size Selector Pills Strip */}
+                  <div className="flex items-center gap-1 pt-1 text-[9px] font-mono">
+                    {['28', '30', '32', '34', '36'].map((sz) => (
+                      <button
+                        key={sz}
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          handleCardSizeSelect(p.id, sz);
+                        }}
+                        className={`px-2 py-0.5 rounded border transition-colors cursor-pointer ${
+                          currentCardSize === sz
+                            ? 'bg-neutral-950 text-white border-neutral-950 font-bold'
+                            : 'bg-neutral-50 text-neutral-700 border-neutral-200 hover:border-black'
+                        }`}
+                      >
+                        {sz}
+                      </button>
+                    ))}
+                  </div>
+
+                  {/* Action Buttons: View & Add to Bag */}
+                  <div className="flex items-center gap-1.5 pt-1">
+                    <button
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        if (onQuickView) {
+                          onQuickView({
+                            ...p,
+                            sizes: ['28', '30', '32', '34', '36']
+                          });
+                        }
+                      }}
+                      className="px-2.5 py-2 bg-white hover:bg-neutral-950 hover:text-white text-neutral-800 border border-neutral-300 rounded-full text-[10.5px] font-medium uppercase tracking-wider transition-all duration-200 flex items-center justify-center gap-1 cursor-pointer shadow-2xs flex-shrink-0"
+                      title="Quick View Details"
+                    >
+                      <Eye className="w-3 h-3" />
+                      <span>View</span>
+                    </button>
+
+                    <button
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        onAddToCart({
+                          id: p.id,
+                          name: p.name,
+                          price: p.price,
+                          size: currentCardSize,
+                          color: p.name,
+                          category: 'Pants',
+                          gender: 'men',
+                          image: p.imageUrl
+                        });
+                      }}
+                      className="flex-1 bg-neutral-100 hover:bg-neutral-950 hover:text-white text-neutral-900 py-2 rounded-full text-[10.5px] font-medium uppercase tracking-wider transition-all duration-200 flex items-center justify-center gap-1.5 cursor-pointer shadow-2xs truncate"
+                    >
+                      <ShoppingBag className="w-3 h-3 flex-shrink-0" />
+                      <span>Add to Bag</span>
+                    </button>
+                  </div>
+
+                </div>
+
+              </div>
+            );
+          })}
         </div>
 
       </div>

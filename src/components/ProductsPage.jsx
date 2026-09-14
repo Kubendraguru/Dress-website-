@@ -18,6 +18,9 @@ import WomenTeesHangerRack from './WomenTeesHangerRack';
 import WomenShirtsHangerRack from './WomenShirtsHangerRack';
 import WomenPantsHangerRack from './WomenPantsHangerRack';
 import WomenCombosHangerRack from './WomenCombosHangerRack';
+import CoupleHangerRack from './CoupleHangerRack';
+import MenTeesHangerRack from './MenTeesHangerRack';
+import MenPantsHangerRack from './MenPantsHangerRack';
 
 const HERO_IMAGE_URL = 'https://res.cloudinary.com/qrhgjdrs/image/upload/v1789314616/Comment_SHOP_and_I_ll_send_the_links_in_your_DM____mensfashion_wardrobeessentials_menswearindia_outfitideas_minimalstyle_menwithstyle_styleguide_summeroutfits_mensoutfit_fashionreels_simplefashion_cleanstyle_essentials_lar9h1.jpg';
 const HERO_LOCAL_URL = '/hanger-shirts-hero.jpg';
@@ -196,7 +199,7 @@ export default function ProductsPage({
   }, [initialGender]);
 
   // Determine which interactive rack to show
-  const currentHeroMode = activeGender === 'women' ? 'women' : 'men';
+  const currentHeroMode = activeGender === 'couple' ? 'couple' : activeGender === 'women' ? 'women' : 'men';
 
   const activeShirt = DRESS_SHIRTS_HERO[activeShirtIndex] || DRESS_SHIRTS_HERO[0];
 
@@ -287,7 +290,16 @@ export default function ProductsPage({
         />
 
         {/* Dynamic Interactive Rack Rendering */}
-        {currentHeroMode === 'women' ? (
+        {currentHeroMode === 'couple' ? (
+          <div className="pt-2 pb-10 sm:pb-14">
+            <CoupleHangerRack 
+              onAddToCart={onAddToCart}
+              onToggleWishlist={onToggleWishlist}
+              wishlist={wishlist}
+              onQuickView={(p) => setQuickViewProduct(p)}
+            />
+          </div>
+        ) : currentHeroMode === 'women' ? (
           <div className="pt-2 pb-10 sm:pb-14">
             {/* Render Category-Specific Hanger Rack */}
             {(activeCategory === 'Pants' || activeCategory === 'Pant') ? (
@@ -319,6 +331,24 @@ export default function ProductsPage({
                 onQuickView={(p) => setQuickViewProduct(p)}
               />
             )}
+          </div>
+        ) : (activeCategory === 'Pants' || activeCategory === 'Pant') ? (
+          <div className="pt-2 pb-10 sm:pb-14">
+            <MenPantsHangerRack 
+              onAddToCart={onAddToCart}
+              onToggleWishlist={onToggleWishlist}
+              wishlist={wishlist}
+              onQuickView={(p) => setQuickViewProduct(p)}
+            />
+          </div>
+        ) : (activeCategory === 'T-Shirts' || activeCategory === 'T-Shirt') ? (
+          <div className="pt-2 pb-10 sm:pb-14">
+            <MenTeesHangerRack 
+              onAddToCart={onAddToCart}
+              onToggleWishlist={onToggleWishlist}
+              wishlist={wishlist}
+              onQuickView={(p) => setQuickViewProduct(p)}
+            />
           </div>
         ) : (
           <div className="max-w-[1400px] mx-auto px-4 sm:px-8 pt-4 pb-12 sm:pb-16 relative z-10">
@@ -378,15 +408,6 @@ export default function ProductsPage({
                             {isActive && <span className="w-1 h-1 rounded-full bg-white block" />}
                           </span>
                         </div>
-
-                        {/* Tooltip Tag */}
-                        <span className={`absolute bottom-full left-1/2 -translate-x-1/2 mb-1.5 px-2 py-0.5 rounded-md text-[9px] font-mono whitespace-nowrap tracking-wider shadow-md transition-all duration-200 pointer-events-none ${
-                          isActive 
-                            ? 'bg-neutral-950 text-white opacity-100 translate-y-0 scale-100 font-semibold' 
-                            : 'bg-white/95 text-neutral-800 opacity-0 group-hover/spot:opacity-100 translate-y-1'
-                        }`}>
-                          {spot.name}
-                        </span>
                       </button>
                     );
                   })}
@@ -742,48 +763,46 @@ export default function ProductsPage({
             return (
               <div 
                 key={product.id}
-                className="group flex flex-col justify-between bg-white rounded-xl border border-neutral-200/80 p-3.5 sm:p-4 hover:shadow-lg transition-all duration-300 relative"
+                className="group flex flex-col justify-between bg-white rounded-2xl border border-neutral-200/90 p-4 sm:p-5 hover:shadow-xl hover:border-neutral-400 transition-all duration-300 relative"
               >
-                {/* Top Badge & Gender Pill & Wishlist Button */}
-                <div className="flex items-center justify-between z-10">
-                  <div className="flex items-center gap-1.5 flex-wrap">
-                    {product.badge && (
-                      <span className="text-[9px] uppercase tracking-widest px-2 py-0.5 rounded-full bg-neutral-100 text-neutral-800 font-semibold border border-neutral-200">
-                        {product.badge}
-                      </span>
-                    )}
-                    <span className={`text-[9px] uppercase font-mono tracking-wider px-2 py-0.5 rounded-full font-bold ${
-                      product.gender === 'women'
-                        ? 'bg-rose-50 text-rose-700 border border-rose-200'
-                        : product.gender === 'men'
-                        ? 'bg-sky-50 text-sky-800 border border-sky-200'
-                        : 'bg-neutral-100 text-neutral-600'
-                    }`}>
-                      {product.gender === 'women' ? 'Women' : product.gender === 'men' ? 'Men' : 'Unisex'}
-                    </span>
-                  </div>
+                {/* Garment Image Area with Badge & Heart inside */}
+                <div className="relative w-full aspect-[4/5] max-h-[290px] mb-3.5 flex items-center justify-center bg-[#faf8f5]/80 group-hover:bg-[#f5f0e6]/60 rounded-xl overflow-hidden p-3.5 transition-colors">
+                  
+                  {/* Top-Left Colorway / Badge Pill inside Image (clean & concise only) */}
+                  {(() => {
+                    const badgeText = activeSwatch ? activeSwatch.name : (product.badge || (product.colorway && product.colorway.length <= 16 ? product.colorway : null));
+                    if (!badgeText || product.gender === 'men') return null;
+                    return (
+                      <div className="absolute top-2.5 left-2.5 bg-neutral-950/85 backdrop-blur-xs text-white text-[8px] sm:text-[8.5px] uppercase font-mono tracking-wider px-2 py-0.5 rounded font-medium z-10 shadow-xs max-w-[140px] truncate">
+                        {badgeText}
+                      </div>
+                    );
+                  })()}
 
+                  {/* Top-Right Wishlist Button */}
                   <button
-                    onClick={() => onToggleWishlist(product.id)}
-                    className={`p-1.5 rounded-full transition-colors ${
-                      isWishlisted ? 'text-red-500 bg-red-50' : 'text-neutral-400 hover:text-neutral-900 hover:bg-neutral-100'
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      onToggleWishlist(product.id);
+                    }}
+                    className={`absolute top-2.5 right-2.5 p-1.5 rounded-full transition-colors z-10 ${
+                      isWishlisted 
+                        ? 'text-red-500 bg-red-50' 
+                        : 'text-neutral-400 hover:text-neutral-900 bg-white/80 backdrop-blur-xs shadow-xs'
                     }`}
                     aria-label="Wishlist"
                   >
                     <Heart className={`w-3.5 h-3.5 ${isWishlisted ? 'fill-red-500' : ''}`} />
                   </button>
-                </div>
 
-                {/* Garment Image Area */}
-                <div className="relative h-48 sm:h-56 my-3 flex items-center justify-center bg-neutral-50/60 rounded-lg overflow-hidden group-hover:bg-neutral-100/60 transition-colors">
+                  {/* Garment Product Image */}
                   {product.imageUrl ? (
-                    /* Real Photo or Cutout Shirt Preview */
-                    <div className="w-full h-full p-2 flex items-center justify-center relative">
+                    <div className="w-full h-full flex items-center justify-center relative">
                       <img 
                         src={product.imageUrl} 
                         onError={(e) => { e.currentTarget.src = product.localImage || HERO_LOCAL_URL; }}
                         alt={product.name}
-                        className={`w-full h-full object-contain p-1 rounded-lg transition-all duration-500 drop-shadow-sm ${
+                        className={`w-full h-full object-contain drop-shadow-md transition-all duration-500 ${
                           product.hoverImage && product.hoverImage !== product.imageUrl
                             ? "group-hover:opacity-0 group-hover:scale-95"
                             : "group-hover:scale-105"
@@ -793,12 +812,9 @@ export default function ProductsPage({
                         <img 
                           src={product.hoverImage} 
                           alt={product.name}
-                          className="absolute inset-0 w-full h-full object-contain p-1 rounded-lg opacity-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 drop-shadow-sm pointer-events-none"
+                          className="absolute inset-0 w-full h-full object-contain drop-shadow-md opacity-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 pointer-events-none"
                         />
                       )}
-                      <div className="absolute top-2.5 left-2.5 bg-neutral-950/80 backdrop-blur-sm text-white text-[8px] uppercase tracking-wider px-1.5 py-0.5 rounded font-medium z-10">
-                        {product.colorway}
-                      </div>
                     </div>
                   ) : product.type === 'pants' ? (
                     /* Tailored Pants */
@@ -819,69 +835,71 @@ export default function ProductsPage({
                       graphicType={product.graphicType} 
                     />
                   )}
-
-                  {/* Hover Quick View Button */}
-                  <div className="absolute inset-0 bg-black/20 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                    <button
-                      onClick={() => setQuickViewProduct(product)}
-                      className="bg-white text-neutral-950 text-xs font-medium uppercase tracking-wider px-3.5 py-2 rounded-full shadow-lg flex items-center gap-1.5 hover:bg-neutral-950 hover:text-white transition-colors"
-                    >
-                      <Eye className="w-3.5 h-3.5" />
-                      <span>Quick View</span>
-                    </button>
-                  </div>
                 </div>
 
                 {/* Product Info */}
-                <div>
-                  {/* Color Swatch Selector Dots */}
-                  {product.swatches && product.swatches.length > 1 && (
-                    <div className="flex items-center gap-1.5 mb-2">
+                <div className="space-y-2.5">
+                  
+                  {/* Color Swatch Selector Dots & Colorway Name */}
+                  {product.swatches && product.swatches.length > 0 ? (
+                    <div className="flex items-center gap-1.5">
                       {product.swatches.map((swatch) => {
                         const isSelected = activeSwatch && activeSwatch.id === swatch.id;
                         return (
                           <button
                             key={swatch.id}
                             onClick={() => handleSwatchSelect(product.id, swatch)}
-                            className={`w-3 h-3 rounded-full border transition-transform ${
-                              isSelected ? 'scale-125 ring-2 ring-neutral-950 ring-offset-1 border-transparent' : 'border-black/20 hover:scale-110 opacity-75'
+                            className={`w-3.5 h-3.5 rounded-full border transition-transform cursor-pointer ${
+                              isSelected 
+                                ? 'scale-125 ring-2 ring-neutral-950 ring-offset-1 border-transparent shadow-2xs' 
+                                : 'border-black/20 hover:scale-110 opacity-75'
                             }`}
                             style={{ backgroundColor: swatch.hex }}
                             title={swatch.name}
                           />
                         );
                       })}
-                      <span className="text-[10px] text-neutral-400 ml-1">
+                      <span className="text-[10px] font-mono text-neutral-500 ml-1 truncate">
                         {activeSwatch ? activeSwatch.name : product.colorway}
+                      </span>
+                    </div>
+                  ) : (
+                    <div className="flex items-center gap-1.5">
+                      <span 
+                        className="w-3.5 h-3.5 rounded-full border border-neutral-300 shadow-2xs"
+                        style={{ backgroundColor: product.colorHex || '#1a1a1a' }}
+                      />
+                      <span className="text-[10px] font-mono text-neutral-500 truncate">
+                        {product.colorway || product.name}
                       </span>
                     </div>
                   )}
 
                   {/* Title & Price */}
-                  <div className="flex items-start justify-between gap-2 mb-2">
-                    <div>
-                      <h3 className="font-bodoni text-base font-normal text-neutral-950 leading-snug">
-                        {product.name}
-                      </h3>
-                      <p className="text-[11px] text-neutral-500 font-light">
-                        {activeSwatch ? activeSwatch.name : product.colorway}
-                      </p>
-                    </div>
+                  <div className="flex items-start justify-between gap-2">
+                    <h3 className="font-bodoni text-sm sm:text-base font-normal text-neutral-950 leading-snug line-clamp-2">
+                      {product.name}
+                    </h3>
                     <span className="text-sm font-medium text-neutral-950 flex-shrink-0">
                       ${product.price.toFixed(2)}
                     </span>
                   </div>
 
+                  {/* Subtitle / Colorway */}
+                  <p className="text-[11px] text-neutral-500 font-light truncate">
+                    {product.subName || (activeSwatch ? activeSwatch.name : product.colorway) || product.category}
+                  </p>
+
                   {/* Size Selector Strip */}
                   {product.sizes && (
-                    <div className="flex items-center gap-1 mb-2.5 text-[9px]">
+                    <div className="flex items-center gap-1 pt-0.5 text-[9px] font-mono flex-wrap">
                       {product.sizes.map((sz) => (
                         <button
                           key={sz}
                           onClick={() => handleSizeSelect(product.id, sz)}
-                          className={`px-1.5 py-0.5 rounded border transition-colors ${
+                          className={`px-2 py-0.5 rounded border transition-colors cursor-pointer ${
                             currentSize === sz
-                              ? 'bg-neutral-950 text-white border-neutral-950 font-medium'
+                              ? 'bg-neutral-950 text-white border-neutral-950 font-bold'
                               : 'bg-neutral-50 text-neutral-700 border-neutral-200 hover:border-black'
                           }`}
                         >
@@ -891,24 +909,37 @@ export default function ProductsPage({
                     </div>
                   )}
 
-                  {/* Add to Bag Action */}
-                  <button
-                    onClick={() => {
-                      onAddToCart({
-                        id: product.id,
-                        name: `${product.name} (${activeSwatch ? activeSwatch.name : product.colorway})`,
-                        price: product.price,
-                        size: currentSize,
-                        color: activeSwatch ? activeSwatch.name : product.colorway,
-                        category: product.category,
-                        image: product.imageUrl || product.localImage || '/hanger-shirts-hero.jpg'
-                      });
-                    }}
-                    className="w-full bg-neutral-100 hover:bg-neutral-950 hover:text-white text-neutral-900 py-2 rounded-full text-[11px] font-medium uppercase tracking-wider transition-all duration-200 flex items-center justify-center gap-1.5"
-                  >
-                    <ShoppingBag className="w-3 h-3" />
-                    <span>Add to Bag</span>
-                  </button>
+                  {/* Action Buttons: View & Add to Bag */}
+                  <div className="flex items-center gap-1.5 pt-1">
+                    <button
+                      onClick={() => setQuickViewProduct(product)}
+                      className="px-2.5 py-2 bg-white hover:bg-neutral-950 hover:text-white text-neutral-800 border border-neutral-300 rounded-full text-[10.5px] font-medium uppercase tracking-wider transition-all duration-200 flex items-center justify-center gap-1 cursor-pointer shadow-2xs flex-shrink-0"
+                      title="Quick View Details"
+                    >
+                      <Eye className="w-3 h-3" />
+                      <span>View</span>
+                    </button>
+
+                    <button
+                      onClick={() => {
+                        onAddToCart({
+                          id: product.id,
+                          name: `${product.name} (${activeSwatch ? activeSwatch.name : product.colorway})`,
+                          price: product.price,
+                          size: currentSize,
+                          color: activeSwatch ? activeSwatch.name : product.colorway,
+                          category: product.category,
+                          gender: product.gender,
+                          image: product.imageUrl || product.localImage || '/hanger-shirts-hero.jpg'
+                        });
+                      }}
+                      className="flex-1 bg-neutral-100 hover:bg-neutral-950 hover:text-white text-neutral-900 py-2 rounded-full text-[10.5px] font-medium uppercase tracking-wider transition-all duration-200 flex items-center justify-center gap-1.5 cursor-pointer shadow-2xs truncate"
+                    >
+                      <ShoppingBag className="w-3 h-3 flex-shrink-0" />
+                      <span>Add to Bag</span>
+                    </button>
+                  </div>
+
                 </div>
 
               </div>
@@ -965,7 +996,7 @@ export default function ProductsPage({
                     {quickViewProduct.category}
                   </span>
                   <span className="text-[10px] uppercase font-mono tracking-widest px-2.5 py-0.5 rounded-full bg-amber-100 text-amber-900 font-bold">
-                    {quickViewProduct.gender === 'women' ? "Women's" : quickViewProduct.gender === 'men' ? "Men's" : "Unisex"}
+                    {quickViewProduct.gender === 'women' ? "Women's" : quickViewProduct.gender === 'men' ? "Men's" : quickViewProduct.gender === 'couple' ? "Couple" : "Unisex"}
                   </span>
                 </div>
 
@@ -981,14 +1012,21 @@ export default function ProductsPage({
                 </p>
 
                 {quickViewProduct.details && (
-                  <ul className="mt-4 space-y-1.5 text-xs text-neutral-600 font-light">
-                    {quickViewProduct.details.map((item, i) => (
-                      <li key={i} className="flex items-center gap-2">
-                        <Check className="w-3.5 h-3.5 text-emerald-600 flex-shrink-0" />
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
+                  Array.isArray(quickViewProduct.details) ? (
+                    <ul className="mt-4 space-y-1.5 text-xs text-neutral-600 font-light">
+                      {quickViewProduct.details.map((item, i) => (
+                        <li key={i} className="flex items-center gap-2">
+                          <Check className="w-3.5 h-3.5 text-emerald-600 flex-shrink-0" />
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  ) : (
+                    <div className="mt-4 p-3 bg-neutral-50 rounded-xl text-xs text-neutral-600 font-light border border-neutral-100 flex items-start gap-2">
+                      <Check className="w-3.5 h-3.5 text-emerald-600 flex-shrink-0 mt-0.5" />
+                      <span>{quickViewProduct.details}</span>
+                    </div>
+                  )
                 )}
 
                 <button
