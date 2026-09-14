@@ -69,7 +69,7 @@ function FlatLayTee({ colorHex = '#6b3636', graphicType = null, className = "w-f
         <path d="M 152 70 C 168 84, 232 84, 248 70 C 235 60, 165 60, 152 70 Z" fill="#0a0a0c" opacity="0.3" />
         <rect x="184" y="80" width="32" height="18" rx="2" fill="#ffffff" opacity="0.9" />
         <text x="200" y="92" textAnchor="middle" fontSize="6.5" fontFamily="monospace" fontWeight="bold" fill="#121212" letterSpacing="1">
-          BLOOMAIR
+          ZUDIO
         </text>
 
         {graphicType === 'waves' && (
@@ -145,7 +145,7 @@ function FlatLayObject({ objectType = 'leather-tray', colorHex = '#b4733e' }) {
           <circle cx="224" cy="16" r="6" fill="#eab308" stroke="#713f12" strokeWidth="1.5" />
           <circle cx="16" cy="224" r="6" fill="#eab308" stroke="#713f12" strokeWidth="1.5" />
           <circle cx="224" cy="224" r="6" fill="#eab308" stroke="#713f12" strokeWidth="1.5" />
-          <text x="120" y="126" textAnchor="middle" fontSize="9" fontFamily="monospace" fill="rgba(0,0,0,0.4)" letterSpacing="2">BLOOMAIR ATELIER</text>
+          <text x="120" y="126" textAnchor="middle" fontSize="9" fontFamily="monospace" fill="rgba(0,0,0,0.4)" letterSpacing="2">ZUDIO ATELIER</text>
         </g>
       </svg>
     </div>
@@ -289,7 +289,7 @@ export default function ProductsPage({
                 <img 
                   src={HERO_IMAGE_URL} 
                   onError={(e) => { e.currentTarget.src = HERO_LOCAL_URL; }}
-                  alt="Bloomair Signature Shirts on Hanger" 
+                  alt="Zudio Signature Shirts on Hanger" 
                   className="w-full h-full object-cover object-center"
                 />
 

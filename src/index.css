@@ -77,3 +77,13 @@
 .card-tilt-right:hover {
   transform: rotate(1deg) translateY(-8px) scale(1.03);
 }
+
+/* Luxury Button Shimmer Animation */
+@keyframes luxuryShimmer {
+  0% { transform: translateX(-150%) skewX(-20deg); }
+  35%, 100% { transform: translateX(250%) skewX(-20deg); }
+}
+
+.animate-luxury-shimmer {
+  animation: luxuryShimmer 4s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}

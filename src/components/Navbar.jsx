@@ -93,14 +93,14 @@ export default function Navbar({
           </nav>
         </div>
 
-        {/* Center: Brand Mark (Bloomair) */}
+        {/* Center: Brand Mark (Zudio) */}
         <div className="text-center">
           <button 
             onClick={() => handleNav('home')}
             className="inline-block group focus:outline-none cursor-pointer"
           >
             <span className="font-bodoni text-xl sm:text-2xl md:text-3xl font-semibold tracking-[0.15em] text-neutral-950 uppercase transition-transform group-hover:scale-[1.02] inline-block">
-              BLOOMAIR
+              ZUDIO
             </span>
           </button>
         </div>
@@ -158,7 +158,7 @@ export default function Navbar({
           <div className="fixed inset-y-0 left-0 max-w-sm w-full bg-[#faf8f5] p-6 sm:p-8 shadow-2xl flex flex-col justify-between z-50 animate-in slide-in-from-left duration-300 overflow-y-auto">
             <div>
               <div className="flex items-center justify-between pb-5 border-b border-neutral-200">
-                <span className="font-bodoni text-2xl font-bold tracking-widest">BLOOMAIR</span>
+                <span className="font-bodoni text-2xl font-bold tracking-widest">ZUDIO</span>
                 <button 
                   onClick={() => setMobileMenuOpen(false)}
                   className="p-1.5 text-neutral-600 hover:text-black cursor-pointer"
@@ -263,7 +263,7 @@ export default function Navbar({
                   onClick={() => handleSectionNav('community')}
                   className="hover:text-amber-700 transition-colors flex items-center justify-between py-2 border-b border-neutral-200/60 text-left"
                 >
-                  <span>06. BLOOMAIR Community</span>
+                  <span>06. ZUDIO Community</span>
                   <ArrowRight className="w-4 h-4 opacity-40" />
                 </button>
                 <button 

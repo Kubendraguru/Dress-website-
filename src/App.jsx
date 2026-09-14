@@ -191,12 +191,12 @@ export default function App() {
               onAddToCart={handleAddToCart}
             />
 
-            {/* 6. Bloomair Runway & Atelier Configurator */}
+            {/* 6. Zudio Runway & Atelier Configurator */}
             <ChooseYourFighter
               onAddToCart={handleAddToCart}
             />
 
-            {/* 7. BLOOMAIR Community + Marquee Ticker 2 */}
+            {/* 7. ZUDIO Community + Marquee Ticker 2 */}
             <CommunitySection />
 
             {/* 8. Step Into Your Power Newsletter Archway */}

@@ -568,28 +568,28 @@ export const CATALOG_PRODUCTS = [
     ]
   },
   {
-    id: 'shirt-men-navy-contrast-polo',
-    name: 'Contrast Collar Navy Knit Polo & Tailored White Trouser',
-    colorway: 'Navy & Optic White',
-    price: 82.00,
+    id: 'shirt-men-black-zip-polo',
+    name: 'Textured Black Quarter-Zip Polo & Stone Chino',
+    colorway: 'Onyx Black & Stone',
+    price: 88.00,
     category: 'Shirts',
     gender: 'men',
     badge: 'ATELIER DROP',
-    colorHex: '#1e293b',
+    colorHex: '#121212',
     isDressShirt: true,
-    imageUrl: '/men-navy-contrast-cutout.png',
-    localImage: '/men-navy-contrast-cutout.png',
-    description: 'Refined Italian-style fine-gauge navy knit polo with contrast white collar and cuffs, styled with tailored pleated white trousers and minimal leather low-tops.',
+    imageUrl: '/men-black-zip-polo-cutout.png',
+    localImage: '/men-black-zip-polo-cutout.png',
+    description: 'Fine-textured quarter-zip ribbed knit polo in midnight onyx black, styled with tailored stone-beige relaxed trousers and stainless steel chronograph.',
     swatches: [
-      { name: 'Navy & White', hex: '#1e293b', id: 'polo-navy-white' },
-      { name: 'Pure White', hex: '#ffffff', id: 'polo-white' }
+      { name: 'Onyx Black', hex: '#121212', id: 'polo-black-zip' },
+      { name: 'Stone Beige', hex: '#d8d2c4', id: 'polo-stone' }
     ],
     sizes: ['S', 'M', 'L', 'XL', 'XXL'],
-    stock: 20,
+    stock: 24,
     details: [
-      '100% Mercerized Egyptian Cotton Knit',
-      'Contrast Optical White Collar and Sleeve Ribbing',
-      'Pleated Front White Trousers with Sharp Crease'
+      '100% Textured Combed Cotton Rib Knit',
+      'Silver Quarter-Zip Collar Closure',
+      'Tailored Italian Cotton Relaxed Fit'
     ]
   },
 

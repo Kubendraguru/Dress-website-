@@ -768,7 +768,7 @@ export default function FitYourDressModal({ isOpen, onClose, onAddToCart }) {
             </div>
             <div>
               <span className="font-bodoni text-lg sm:text-xl font-bold tracking-[0.18em] uppercase block leading-none text-white">
-                BLOOMAIR
+                ZUDIO
               </span>
               <span className="text-[9px] font-mono tracking-[0.25em] text-amber-400 uppercase font-semibold flex items-center gap-1.5">
                 <span>VIRTUAL ATELIER // FIT YOUR DRESS</span>
@@ -1423,7 +1423,7 @@ export default function FitYourDressModal({ isOpen, onClose, onAddToCart }) {
             <div className="flex items-center justify-between gap-3 pt-2">
               <a
                 href={capturedSnapshot}
-                download={`bloomair-virtual-fit-${activeOutfit.id}.png`}
+                download={`zudio-virtual-fit-${activeOutfit.id}.png`}
                 className="flex-1 py-3 rounded-full bg-neutral-800 hover:bg-neutral-700 text-white font-mono text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2 border border-neutral-700 transition-colors"
               >
                 <Download className="w-4 h-4" />

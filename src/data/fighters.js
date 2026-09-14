@@ -240,34 +240,34 @@ export const FIGHTERS = [
     vibe: 'Quiet Luxury Minimalism • Milan'
   },
   {
-    id: 'hero-navy-contrast-polo',
+    id: 'hero-black-zip-polo',
     number: '09',
-    name: 'Contrast Collar Navy Knit',
-    subtitle: 'Mercerized Cotton Knit Polo & Tailored White Trousers',
-    image: '/men-navy-contrast-cutout.png',
-    handwritten: 'Enzo (Contrast Polo)',
-    price: 330,
+    name: 'Textured Black Quarter-Zip',
+    subtitle: 'Waffle-Knit Zip Polo & Tailored Italian Chinos',
+    image: '/men-black-zip-polo-cutout.png',
+    handwritten: 'Matteo (Zip Polo)',
+    price: 345,
     collectionBadge: 'MILAN ATELIER • SS26',
-    category: 'MERCERIZED KNIT & WHITE TROUSERS',
-    description: 'Refined Italian-style fine-gauge navy knit polo with contrast white collar and cuffs, styled with tailored pleated white trousers and minimal leather low-tops.',
-    palette: '#1e293b',
+    category: 'TEXTURED KNIT & STONE CHINOS',
+    description: 'Fine-textured quarter-zip ribbed knit polo in midnight onyx black, styled with tailored stone-beige relaxed trousers, stainless chronograph watch, and minimal styling.',
+    palette: '#121212',
     stats: {
-      power: 90,
-      speed: 85,
+      power: 92,
+      speed: 88,
       chic: 99
     },
     details: {
-      fabric: '100% Mercerized Egyptian Cotton Knit & High-Density White Tropical Linen',
-      tailoring: 'Contrast collar tipping, razor sharp trouser front crease',
+      fabric: '100% Textured Combed Cotton Rib Knit & Italian Tailored Stretch Cotton',
+      tailoring: 'Silver metal zipper with custom pull, pleated relaxed waistband',
       care: 'Dry clean or gentle hand wash',
-      modelStats: 'Model is 184 cm / 6\'0.5" wearing Size L'
+      modelStats: 'Model is 185 cm / 6\'1" wearing Size L'
     },
     pieces: [
-      { name: 'Contrast Collar Navy Knit Polo', price: 82 },
-      { name: 'Tailored Pleated White Linen Trousers', price: 150 },
-      { name: 'Minimalist White Calfskin Low-Tops', price: 125 }
+      { name: 'Ribbed Quarter-Zip Onyx Polo', price: 88 },
+      { name: 'Tailored Stone Italian Chinos', price: 145 },
+      { name: 'Chronograph Steel Link Watch', price: 112 }
     ],
-    vibe: 'Italian Riviera Sartorial • Portofino'
+    vibe: 'Milanese Riviera Sophistication • SS26'
   },
   {
     id: 'hero-archive-mocha-hoodie',

@@ -11,6 +11,7 @@ import {
 } from 'lucide-react';
 import { HERO_OUTFITS } from '../data/products';
 import ShopLookModal from './ShopLookModal';
+import LiquidCarveButton from './originkit/ui/liquid-carve-button-base';
 
 export default function Hero({ onAddToCart }) {
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -186,10 +187,10 @@ export default function Hero({ onAddToCart }) {
           </div>
         </div>
 
-        {/* Headline: "Bloomair" (Grand Wide Typography Locked Background) */}
+        {/* Headline: "Zudio" (Grand Wide Typography Locked Background) */}
         <div className="absolute top-[3%] sm:top-[2%] inset-x-0 text-center pointer-events-none z-0">
           <h1 className="font-bodoni text-[110px] sm:text-[170px] md:text-[220px] lg:text-[260px] font-normal text-[#121212] tracking-[-0.035em] leading-none select-none">
-            Bloomair
+            Zudio
           </h1>
         </div>
 
@@ -302,17 +303,42 @@ export default function Hero({ onAddToCart }) {
 
         </div>
 
-        {/* Floating Prominent Shop Pill Button (Directly Anchored in Center Stage) */}
-        <div className="absolute bottom-[1.5%] sm:bottom-[2%] left-1/2 -translate-x-1/2 z-30 whitespace-nowrap pointer-events-auto">
-          <button
+        {/* Floating Prominent Liquid Carve Shop Pill Button */}
+        <div className="absolute bottom-[2%] sm:bottom-[2.5%] left-1/2 -translate-x-1/2 z-30 whitespace-nowrap pointer-events-auto filter drop-shadow-[0_12px_28px_rgba(0,0,0,0.35)]">
+          <LiquidCarveButton
+            label={`SHOP LOOK • $${currentOutfit.price}`}
+            colors={{
+              fill: "#101012",
+              textColor: "#FFFFFF"
+            }}
+            blob={{
+              color: "#f59e0b",
+              size: 72,
+              smoothness: 55
+            }}
+            font={{
+              fontFamily: '"Space Mono", monospace',
+              fontWeight: 700,
+              fontSize: 12.5,
+              lineHeight: "1.2em",
+              letterSpacing: "0.18em",
+              textAlign: "center"
+            }}
+            padding="14px 34px 14px 30px"
+            rounded={100}
+            addIcon={true}
+            icon={{
+              type: "symbol",
+              symbol: "✦",
+              color: "#f59e0b",
+              size: 13,
+              padding: 0,
+              rounded: 0,
+              side: "left"
+            }}
+            gap={10}
             onClick={() => setIsShopLookModalOpen(true)}
-            className="group/btn relative px-7 sm:px-8 py-3.5 bg-neutral-950 hover:bg-neutral-900 text-white rounded-full text-xs sm:text-[13px] font-mono font-bold tracking-[0.16em] uppercase flex items-center gap-2.5 shadow-[0_14px_35px_rgba(0,0,0,0.38)] border border-white/20 hover:border-amber-400/60 transition-all duration-300 hover:scale-105 active:scale-95 cursor-pointer"
-          >
-            <div className="w-5 h-5 rounded-full bg-amber-400/20 flex items-center justify-center">
-              <ShoppingBag className="w-3.5 h-3.5 text-amber-400 fill-amber-400" />
-            </div>
-            <span>SHOP LOOK (${currentOutfit.price})</span>
-          </button>
+          />
         </div>
 
         {/* Right Side Stacked Action Card (Positioned Generously to the Right) */}
@@ -352,13 +378,6 @@ export default function Hero({ onAddToCart }) {
             </div>
           </div>
 
-        </div>
-
-        {/* Right Vertical Faint Watermark Outline Typography (Locked Background Element) */}
-        <div className="absolute right-[-1%] sm:right-[1%] top-[38%] select-none pointer-events-none z-0 hidden sm:block">
-          <span className="font-bodoni text-[90px] md:text-[115px] lg:text-[135px] font-normal text-transparent tracking-widest uppercase rotate-90 block origin-center text-stroke-dark opacity-[0.055]">
-            {isStripe ? 'PARIS' : isLemon ? 'RIVIERA' : isSandDenim ? 'SEOUL' : isStreetwear ? 'TOKYO' : isWhitePoplin ? 'MINIMAL' : isNavyCrew ? 'IVY' : 'ATELIER'}
-          </span>
         </div>
 
       </div>

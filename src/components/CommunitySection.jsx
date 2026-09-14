@@ -22,7 +22,7 @@ export default function CommunitySection() {
 
           <div className="relative z-10">
             <h2 className="font-bodoni text-3xl sm:text-4xl md:text-5xl font-normal tracking-wide">
-              BLOOMAIR Community
+              ZUDIO Community
             </h2>
             <p className="font-bodoni italic text-neutral-400 text-sm sm:text-base mt-2">
               Real looks styled by our global circle across the world

@@ -8,13 +8,13 @@ export function getGeminiApiKey() {
   if (envKey && envKey.trim() && !envKey.includes('YOUR_GEMINI_API_KEY')) {
     return envKey.trim();
   }
-  const storedKey = localStorage.getItem('bloomair_gemini_api_key');
+  const storedKey = localStorage.getItem('zudio_gemini_api_key') || localStorage.getItem('bloomair_gemini_api_key');
   return (storedKey && storedKey.trim()) ? storedKey.trim() : null;
 }
 
 export function saveGeminiApiKey(key) {
   if (key && key.trim()) {
-    localStorage.setItem('bloomair_gemini_api_key', key.trim());
+    localStorage.setItem('zudio_gemini_api_key', key.trim());
     cachedWorkingModel = null; // reset cache on new key
     return true;
   }
@@ -22,6 +22,7 @@ export function saveGeminiApiKey(key) {
 }
 
 export function clearGeminiApiKey() {
+  localStorage.removeItem('zudio_gemini_api_key');
   localStorage.removeItem('bloomair_gemini_api_key');
   cachedWorkingModel = null;
 }

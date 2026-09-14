@@ -185,7 +185,7 @@ export default function ChooseYourFighter({ onAddToCart }) {
         {/* Main Grand Studio Frame */}
         <div className="relative bg-gradient-to-b from-[#faf8f5] via-[#f7f4ee] to-[#f2ede4] rounded-[36px] border border-neutral-300/80 shadow-[0_25px_70px_rgba(0,0,0,0.06)] p-6 sm:p-10 md:p-12 min-h-[740px] md:min-h-[820px] flex flex-col justify-between overflow-hidden">
           
-          {/* 1. Giant Background Watermark Numeral & BLOOMAIR Typographic Drift (Matching Image 1) */}
+          {/* 1. Giant Background Watermark Numeral & ZUDIO Typographic Drift (Matching Image 1) */}
           <div 
             ref={parallaxBgRef}
             className="absolute inset-0 pointer-events-none flex items-center whitespace-nowrap z-0 opacity-[0.055]"
@@ -195,7 +195,7 @@ export default function ChooseYourFighter({ onAddToCart }) {
                 <div key={i} className="flex items-center gap-16">
                   <span>{item.number}</span>
                   <span className="font-sans font-black text-[140px] md:text-[200px] tracking-tight text-stroke-dark">
-                    BLOOMAIR
+                    ZUDIO
                   </span>
                 </div>
               ))}
@@ -216,7 +216,7 @@ export default function ChooseYourFighter({ onAddToCart }) {
             {/* Left Brand Identity */}
             <div>
               <span className="font-bodoni text-2xl sm:text-3xl font-semibold tracking-[0.16em] text-neutral-950 uppercase block leading-none">
-                BLOOMAIR
+                ZUDIO
               </span>
               <span className="text-[9px] font-mono tracking-[0.35em] text-neutral-500 uppercase block mt-1 font-semibold">
                 HAUTE COUTURE • PARIS

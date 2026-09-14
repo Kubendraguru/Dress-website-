@@ -54,7 +54,7 @@ export default function Footer() {
             <ul className="space-y-2.5 text-neutral-400 font-light">
               <li>Private Client</li>
               <li>Concierge Service</li>
-              <li>press@bloomair.com</li>
+              <li>press@zudio.com</li>
             </ul>
           </div>
 
@@ -63,13 +63,13 @@ export default function Footer() {
         {/* Massive Full-Width Editorial Serif Title (Direct from Mockup) */}
         <div className="pt-10 pb-6 text-center select-none overflow-hidden">
           <h1 className="font-bodoni text-[70px] sm:text-[130px] md:text-[180px] lg:text-[230px] font-normal tracking-tight text-white leading-none uppercase">
-            BLOOMAIR
+            ZUDIO
           </h1>
         </div>
 
         {/* Fine Bottom Copyright */}
         <div className="pt-6 border-t border-neutral-950 flex flex-col sm:flex-row items-center justify-between text-[11px] font-mono text-neutral-600 gap-2">
-          <span>© 2026 BLOOMAIR. ALL RIGHTS RESERVED.</span>
+          <span>© 2026 ZUDIO. ALL RIGHTS RESERVED.</span>
           <div className="flex gap-6">
             <a href="#" className="hover:text-neutral-400">PRIVACY</a>
             <a href="#" className="hover:text-neutral-400">TERMS</a>

@@ -199,7 +199,7 @@ export default function CinematicHorizontalScroll({ onAddToCart, cartCount, onOp
             <div key={i} className="flex items-center gap-16">
               <span>{item.number}</span>
               <span className="font-sans font-black text-[120px] md:text-[180px] tracking-tight text-stroke-dark">
-                BLOOMAIR
+                ZUDIO
               </span>
             </div>
           ))}
@@ -221,7 +221,7 @@ export default function CinematicHorizontalScroll({ onAddToCart, cartCount, onOp
         <div className="flex items-center gap-4">
           <a href="#" className="group">
             <span className="font-bodoni text-2xl sm:text-3xl font-semibold tracking-[0.18em] text-neutral-950 uppercase block leading-none">
-              BLOOMAIR
+              ZUDIO
             </span>
             <span className="text-[9px] font-mono tracking-[0.35em] text-neutral-500 uppercase block mt-1 font-semibold">
               HAUTE COUTURE • PARIS

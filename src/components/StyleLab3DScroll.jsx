@@ -138,7 +138,7 @@ export default function StyleLab3DScroll({ onAddToCart }) {
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between border-b border-neutral-400/50 pb-4 gap-4">
           <div>
             <div className="text-[11px] font-mono tracking-[0.25em] text-neutral-600 uppercase font-semibold">
-              + MODEL: BLOOMAIR 6.0 ZOOM PRIMO ID
+              + MODEL: ZUDIO 6.0 ZOOM PRIMO ID
             </div>
             <h2 className="text-2xl sm:text-3xl font-black tracking-tight uppercase text-neutral-950 flex items-center gap-2 mt-0.5">
               <span>STYLE LAB</span>
@@ -395,7 +395,7 @@ export default function StyleLab3DScroll({ onAddToCart }) {
               onClick={() => {
                 onAddToCart({
                   id: 'prod-zoom-primo-id',
-                  name: 'Bloomair 6.0 Zoom Primo iD',
+                  name: 'Zudio 6.0 Zoom Primo iD',
                   price: 240,
                   image: '/style-lab-sneaker.png',
                   category: 'Footwear Lab'

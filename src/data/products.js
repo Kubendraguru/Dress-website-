@@ -172,23 +172,23 @@ export const HERO_OUTFITS = [
     ]
   },
   {
-    id: 'hero-navy-contrast-polo',
-    shortTitle: 'Contrast Navy Polo',
+    id: 'hero-black-zip-polo',
+    shortTitle: 'Black Ribbed Zip Polo',
     tag: 'MILAN ATELIER • SS26',
-    title: 'Contrast Collar Navy Knit & White Trouser',
-    subtitle: 'Mercerized Cotton Knit Polo & Tailored White Trousers',
-    price: 330,
+    title: 'Textured Black Quarter-Zip & Stone Chinos',
+    subtitle: 'Waffle-Knit Zip Polo & Tailored Italian Chinos',
+    price: 345,
     rating: 5.0,
-    reviewsCount: 138,
-    image: '/men-navy-contrast-polo.jpg',
-    cutoutImage: '/men-navy-contrast-cutout.png',
+    reviewsCount: 164,
+    image: '/men-black-zip-polo-model.jpg',
+    cutoutImage: '/men-black-zip-polo-cutout.png',
     badge: 'Milan Drop',
-    description: 'Refined Italian-style fine-gauge navy knit polo with contrast white collar and cuffs, styled with tailored pleated white trousers and minimal leather low-tops.',
-    palette: ['#1e293b', '#ffffff', '#e2e8f0', '#121212'],
+    description: 'Fine-textured quarter-zip ribbed knit polo in midnight onyx black, styled with tailored stone-beige relaxed trousers, stainless chronograph watch, and minimal styling.',
+    palette: ['#121212', '#d8d2c4', '#686663', '#ffffff'],
     items: [
-      { name: 'Contrast Collar Navy Knit Polo', price: 82, id: 'item-men-contrast-polo', category: 'Shirts', size: 'L' },
-      { name: 'Tailored Pleated White Linen Trousers', price: 150, id: 'item-men-white-trouser', category: 'Pants', size: '32' },
-      { name: 'Minimalist White Calfskin Low-Tops', price: 125, id: 'item-men-white-shoes', category: 'Footwear', size: '42' }
+      { name: 'Ribbed Quarter-Zip Onyx Polo', price: 88, id: 'item-men-black-zip-polo', category: 'Shirts', size: 'L' },
+      { name: 'Tailored Stone Italian Chinos', price: 145, id: 'item-men-stone-chinos', category: 'Pants', size: '32' },
+      { name: 'Chronograph Steel Link Watch', price: 112, id: 'item-men-steel-watch', category: 'Jewelry', size: 'One Size' }
     ]
   },
   {
@@ -425,14 +425,14 @@ export const LOOKBOOK_SLIDES = [
     price: 310
   },
   {
-    id: 'look-navy-contrast',
-    title: 'CONTRAST COLLAR NAVY KNIT',
-    subtitle: 'Mercerized Knit Polo & Pleated White Trousers',
+    id: 'look-black-zip-polo',
+    title: 'TEXTURED BLACK QUARTER-ZIP',
+    subtitle: 'Waffle-Knit Zip Polo & Stone Chinos',
     season: 'Milan Atelier • SS26',
-    image: '/men-navy-contrast-polo.jpg',
-    editorialNote: 'Refined Italian-style fine-gauge navy knit polo with contrast white collar and cuffs, styled with tailored pleated white trousers.',
-    colorTheme: 'from-[#1e293b] via-[#ffffff] to-[#faf8f5]',
-    price: 330
+    image: '/men-black-zip-polo-model.jpg',
+    editorialNote: 'Fine-textured quarter-zip ribbed knit polo in onyx black, styled with tailored stone trousers and stainless steel chronograph.',
+    colorTheme: 'from-[#121212] via-[#d8d2c4] to-[#faf8f5]',
+    price: 345
   },
   {
     id: 'look-archive-mocha',
@@ -491,7 +491,7 @@ export const COMMUNITY_POSTS = [
     image: 'https://images.unsplash.com/photo-1529139574466-a303027c1d8b?q=80&w=800&auto=format&fit=crop',
     look: 'Solar Ochre Suit + Leather Bucket Hat',
     likes: 2480,
-    tags: ['#BloomairStyle', '#ParisFashionWeek', '#OchreDrop']
+    tags: ['#ZudioStyle', '#ParisFashionWeek', '#OchreDrop']
   },
   {
     id: 'post-2',
@@ -500,7 +500,7 @@ export const COMMUNITY_POSTS = [
     image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=800&auto=format&fit=crop',
     look: 'Fluid Noir Cuban Shirt & Pleated Trousers',
     likes: 3120,
-    tags: ['#MonochromeTailoring', '#BloomairMan', '#MinimalistVibe']
+    tags: ['#MonochromeTailoring', '#ZudioMan', '#MinimalistVibe']
   },
   {
     id: 'post-3',
@@ -614,19 +614,19 @@ export const SHOP_PRODUCTS = [
     description: 'Open-collar ribbed combed cotton knit polo in natural ecru paired with relaxed washed black denim and vintage leather weekender duffel.'
   },
   {
-    id: 'prod-men-navy-contrast-polo',
-    name: 'Contrast Collar Navy Knit Polo & Tailored White Trouser',
+    id: 'prod-men-black-zip-polo',
+    name: 'Textured Black Quarter-Zip Polo & Stone Chino',
     category: 'Tops & Shirts',
     gender: 'men',
-    price: 82,
-    originalPrice: 105,
+    price: 88,
+    originalPrice: 115,
     rating: 5.0,
-    image: '/men-navy-contrast-cutout.png',
-    hoverImage: '/men-navy-contrast-polo.jpg',
+    image: '/men-black-zip-polo-cutout.png',
+    hoverImage: '/men-black-zip-polo-model.jpg',
     badge: 'Milan Atelier',
-    color: 'Navy & Optic White',
+    color: 'Onyx Black & Stone',
     sizes: ['S', 'M', 'L', 'XL', 'XXL'],
-    description: 'Refined Italian-style fine-gauge navy knit polo with contrast white collar and cuffs, styled with tailored pleated white trousers.'
+    description: 'Fine-textured quarter-zip ribbed knit polo in onyx black, styled with tailored stone-beige relaxed trousers.'
   },
   {
     id: 'prod-men-archive-mocha',

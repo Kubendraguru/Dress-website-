@@ -33,3 +33,4 @@ dist-ssr
 # Temporary scratch
 scratch/
 
+.originkit/
