@@ -8,25 +8,30 @@ import {
   Layers,
   Eye
 } from 'lucide-react';
-import { WOMEN_COMBOS_HERO } from '../data/productsCatalog';
+import { MEN_COMBOS_HERO, CATALOG_PRODUCTS } from '../data/productsCatalog';
 
-const WOMEN_COMBOS_HERO_IMAGE_URL = '/women-combos-hanger-hero.jpg';
+const MEN_COMBOS_HERO_IMAGE_URL = '/men-combos-hanger-hero.jpg';
 
-// The 4 Interactive Hotspot Coordinates on the Real Photo
-const WOMEN_COMBOS_HOTSPOTS = [
-  { id: 0, key: 'combo-women-pink-corduroy', name: 'Dusty Rose Corduroy & Blue Denim Set', x: 15.5, y: 46, hex: '#d89b9e' },
-  { id: 1, key: 'combo-women-brown-corduroy', name: 'Mocha Corduroy & Charcoal Denim Set', x: 39.0, y: 46, hex: '#6c4e3e' },
-  { id: 2, key: 'combo-women-denim-corset', name: 'Sculpted Denim Corset Jumpsuit Duo', x: 61.0, y: 46, hex: '#6d8fa8' },
-  { id: 3, key: 'combo-women-lace-corset', name: 'Espresso Lace Corset & Sand Chinos Set', x: 83.5, y: 46, hex: '#4a2e24' }
+// The 5 Interactive Hotspot Coordinates across the Clothes Rail Photo
+const MEN_COMBOS_HOTSPOTS = [
+  { id: 0, key: 'men-combo-camel-jacket-set', name: 'Camel Wool Work Jacket Set', x: 11.8, y: 44.4, hex: '#9e734c' },
+  { id: 1, key: 'men-combo-black-oxford-denim', name: 'Noir Oxford & Light Denim Duo', x: 30.5, y: 44.4, hex: '#141416' },
+  { id: 2, key: 'men-combo-graphic-23-streetwear', name: '#23 Graphic Boxy Streetwear Set', x: 50.0, y: 44.4, hex: '#f6f4ee' },
+  { id: 3, key: 'men-combo-pinstripe-charcoal', name: 'Skyline Pinstripe & Charcoal Set', x: 68.8, y: 44.4, hex: '#7c94a6' },
+  { id: 4, key: 'men-combo-plaid-linen-black', name: 'Silver Plaid Linen & Noir Duo', x: 87.4, y: 44.4, hex: '#d4d6db' }
 ];
 
-export default function WomenCombosHangerRack({ onAddToCart, onToggleWishlist, wishlist = [], onQuickView }) {
+export default function MenCombosHangerRack({ onAddToCart, onToggleWishlist, wishlist = [], onQuickView }) {
   const [activeIdx, setActiveIdx] = useState(0);
-  const [selectedSize, setSelectedSize] = useState('S');
+  const [selectedSize, setSelectedSize] = useState('M');
   const [cardSelectedSizes, setCardSelectedSizes] = useState({});
   const [isAutoStepping, setIsAutoStepping] = useState(false);
 
-  const combos = WOMEN_COMBOS_HERO;
+  const combos = MEN_COMBOS_HERO;
+  const allCatalogCombos = CATALOG_PRODUCTS.filter(
+    (p) => p.gender === 'men' && (p.category === 'Combos' || p.isCombo)
+  );
+  const displayCombos = allCatalogCombos.length > 0 ? allCatalogCombos : combos;
   const activeCombo = combos[activeIdx] || combos[0];
 
   // Auto-step slideshow
@@ -60,14 +65,14 @@ export default function WomenCombosHangerRack({ onAddToCart, onToggleWishlist, w
   return (
     <div className="max-w-[1400px] mx-auto px-4 sm:px-8 pt-4 pb-12 sm:pb-16 relative z-10 select-none">
       
-      {/* Header Title in Reference Image Aesthetic */}
+      {/* Header Title */}
       <div className="text-center mb-7 sm:mb-9 select-none">
         <h1 className="font-serif italic text-3xl sm:text-4xl md:text-5xl text-neutral-900 font-normal tracking-tight">
-          every woman needs
+          every man needs
         </h1>
         <p className="font-mono text-[11px] sm:text-xs uppercase tracking-[0.25em] text-neutral-500 font-medium mt-1.5 flex items-center justify-center gap-2">
           <span>&bull;&bull;</span>
-          <span>CURATED 2-PIECE CO-ORD ENSEMBLES</span>
+          <span>CURATED 2-PIECE CO-ORD ENSEMBLES &amp; STREETWEAR COMBOS</span>
           <span>&bull;&bull;</span>
         </p>
       </div>
@@ -75,18 +80,18 @@ export default function WomenCombosHangerRack({ onAddToCart, onToggleWishlist, w
       {/* Main Interactive Stage: 2-Column Grid */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 lg:gap-16 xl:gap-20 items-start">
         
-        {/* 1. Left Card: The Real Photograph with 4 Interactive Hotspots (7 cols) */}
+        {/* 1. Left Card: The Real Photograph with 5 Interactive Hotspots (7 cols) */}
         <div className="lg:col-span-7 xl:col-span-7 relative bg-[#ede8de]/60 rounded-3xl p-4 sm:p-5 border border-neutral-300/60 shadow-sm overflow-hidden flex flex-col justify-between">
           
           <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-md bg-neutral-900">
             <img 
-              src={WOMEN_COMBOS_HERO_IMAGE_URL} 
-              alt="Women's Signature 2-Piece Combos on Wooden Clothes Rail" 
+              src={MEN_COMBOS_HERO_IMAGE_URL} 
+              alt="Curated Men's 2-Piece Combos on Wooden Clothes Rail" 
               className="w-full h-full object-cover object-center"
             />
 
             {/* Hotspot Markers */}
-            {WOMEN_COMBOS_HOTSPOTS.map((spot) => {
+            {MEN_COMBOS_HOTSPOTS.map((spot) => {
               const isActive = activeIdx === spot.id;
               return (
                 <button
@@ -124,18 +129,18 @@ export default function WomenCombosHangerRack({ onAddToCart, onToggleWishlist, w
           {/* Bottom Hotspot Legend Strip */}
           <div className="w-full mt-3.5 flex items-center justify-between text-xs text-neutral-600 px-1">
             <span className="font-mono text-[10px] uppercase tracking-wider text-neutral-500">
-              Click any outfit pin to inspect 2-piece set
+              Click any ensemble pin to inspect complete 2-piece styling
             </span>
-            <div className="flex items-center gap-2">
-              {WOMEN_COMBOS_HOTSPOTS.map((s) => (
+            <div className="flex items-center gap-1.5">
+              {combos.map((c, idx) => (
                 <button
-                  key={s.id}
-                  onClick={() => setActiveIdx(s.id)}
+                  key={c.id}
+                  onClick={() => setActiveIdx(idx)}
                   className={`w-3.5 h-3.5 rounded-full transition-all cursor-pointer ${
-                    activeIdx === s.id ? 'scale-125 ring-2 ring-neutral-950 shadow-xs' : 'opacity-60 hover:opacity-100'
+                    activeIdx === idx ? 'scale-125 ring-2 ring-neutral-950 shadow-xs' : 'opacity-60 hover:opacity-100'
                   }`}
-                  style={{ backgroundColor: s.hex }}
-                  title={s.name}
+                  style={{ backgroundColor: c.hex }}
+                  title={c.name}
                 />
               ))}
             </div>
@@ -146,18 +151,18 @@ export default function WomenCombosHangerRack({ onAddToCart, onToggleWishlist, w
         {/* 2. Right Side: UNIFIED PORTRAIT VIEW & PRODUCT DETAILS CARD (5 cols) */}
         <div className="lg:col-span-5 xl:col-span-5 w-full bg-[#faf8f5] rounded-3xl p-5 sm:p-6 border border-neutral-200/90 shadow-md flex flex-col justify-between space-y-4">
           
-          {/* 3:4 Portrait View */}
+          {/* 3:4 Portrait View with Transparent Cutout */}
           <div className="relative w-full aspect-[3/4] max-h-[320px] sm:max-h-[360px] mx-auto flex items-center justify-center overflow-hidden rounded-2xl bg-white/80 border border-neutral-200/70 shadow-inner group/portrait">
             <img 
               key={activeCombo.id}
               src={activeCombo.imageUrl}
-              onError={(e) => { e.currentTarget.src = activeCombo.localImage || '/women-combo-pink-corduroy.png'; }}
+              onError={(e) => { e.currentTarget.src = activeCombo.localImage || '/men-combo-camel-jacket-set.png'; }}
               alt={`${activeCombo.name} Portrait View`}
               className="w-full h-full object-contain p-3 transition-transform duration-700 group-hover/portrait:scale-105 animate-in fade-in zoom-in-95 drop-shadow-sm"
             />
             <span className="absolute top-3 left-3 bg-neutral-950 text-white text-[9px] font-mono px-2.5 py-1 rounded-full tracking-widest uppercase shadow-xs flex items-center gap-1">
               <Sparkles className="w-2.5 h-2.5 text-amber-400" />
-              <span>2-PIECE CO-ORD ATELIER &bull; 15% OFF</span>
+              <span>{activeCombo.badge}</span>
             </span>
           </div>
 
@@ -174,9 +179,16 @@ export default function WomenCombosHangerRack({ onAddToCart, onToggleWishlist, w
                   {activeCombo.subName}
                 </p>
               </div>
-              <span className="text-xl sm:text-2xl font-medium text-neutral-950">
-                ${activeCombo.price.toFixed(2)}
-              </span>
+              <div className="text-right flex-shrink-0">
+                <span className="text-xl sm:text-2xl font-medium text-neutral-950">
+                  ${activeCombo.price.toFixed(2)}
+                </span>
+                {activeCombo.originalPrice && (
+                  <span className="block text-xs text-neutral-400 line-through">
+                    ${activeCombo.originalPrice.toFixed(2)}
+                  </span>
+                )}
+              </div>
             </div>
 
             {/* Description / Fabric */}
@@ -187,7 +199,7 @@ export default function WomenCombosHangerRack({ onAddToCart, onToggleWishlist, w
             {/* Colorway Selection Swatches */}
             <div>
               <label className="block text-[9px] font-mono uppercase tracking-wider text-neutral-400 mb-1">
-                Colorway Selection
+                Curated Ensemble Selection
               </label>
               <div className="flex items-center gap-2">
                 {combos.map((combo, idx) => (
@@ -203,7 +215,7 @@ export default function WomenCombosHangerRack({ onAddToCart, onToggleWishlist, w
                     title={combo.name}
                   />
                 ))}
-                <span className="text-xs text-neutral-500 font-mono ml-1.5">
+                <span className="text-xs text-neutral-500 font-mono ml-1.5 truncate">
                   {activeCombo.name}
                 </span>
               </div>
@@ -212,10 +224,10 @@ export default function WomenCombosHangerRack({ onAddToCart, onToggleWishlist, w
             {/* Size Selection */}
             <div>
               <label className="block text-[9px] font-mono uppercase tracking-wider text-neutral-400 mb-1">
-                Select Size
+                Select Ensemble Size
               </label>
               <div className="flex items-center gap-1.5">
-                {['XS', 'S', 'M', 'L', 'XL'].map((sz) => (
+                {['S', 'M', 'L', 'XL', 'XXL'].map((sz) => (
                   <button
                     key={sz}
                     onClick={() => setSelectedSize(sz)}
@@ -242,7 +254,7 @@ export default function WomenCombosHangerRack({ onAddToCart, onToggleWishlist, w
                     size: selectedSize,
                     color: activeCombo.name,
                     category: 'Combos',
-                    gender: 'women',
+                    gender: 'men',
                     image: activeCombo.imageUrl
                   });
                 }}
@@ -257,7 +269,7 @@ export default function WomenCombosHangerRack({ onAddToCart, onToggleWishlist, w
                   if (onQuickView) {
                     onQuickView({
                       ...activeCombo,
-                      sizes: ['XS', 'S', 'M', 'L', 'XL']
+                      sizes: ['S', 'M', 'L', 'XL', 'XXL']
                     });
                   }
                 }}
@@ -320,24 +332,28 @@ export default function WomenCombosHangerRack({ onAddToCart, onToggleWishlist, w
         <div className="flex items-center justify-between mb-6 px-1">
           <span className="text-xs font-mono uppercase tracking-[0.2em] text-neutral-600 font-bold flex items-center gap-2">
             <Layers className="w-4 h-4 text-amber-600" />
-            <span>Women's 2-Piece Combos &bull; Atelier Wardrobe</span>
+            <span>Men's 2-Piece Combos &bull; Atelier Wardrobe</span>
           </span>
           <span className="text-[11px] font-mono text-neutral-400">
-            {combos.length} Curated Ensembles
+            {displayCombos.length} Curated Ensembles
           </span>
         </div>
 
         {/* Product Cards Grid matching Women section sizing */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-8">
-          {combos.map((c, idx) => {
-            const isSelected = activeIdx === idx;
-            const currentCardSize = cardSelectedSizes[c.id] || 'S';
+          {displayCombos.map((c, idx) => {
+            const isSelected = activeIdx === idx && idx < combos.length;
+            const currentCardSize = cardSelectedSizes[c.id] || 'M';
             const isWishlisted = wishlist.includes(c.id);
+            const cardHex = c.colorHex || c.hex || (c.swatches && c.swatches[0]?.hex) || '#141416';
+            const cardImg = c.imageUrl || c.localImage || '/men-combo-camel-jacket-set.png';
 
             return (
               <div
                 key={c.id}
-                onClick={() => setActiveIdx(idx)}
+                onClick={() => {
+                  if (idx < combos.length) setActiveIdx(idx);
+                }}
                 className={`group flex flex-col justify-between bg-white rounded-2xl border transition-all duration-300 p-4 sm:p-5 relative cursor-pointer ${
                   isSelected 
                     ? 'border-neutral-950 shadow-xl ring-2 ring-neutral-950/20 -translate-y-1' 
@@ -347,7 +363,7 @@ export default function WomenCombosHangerRack({ onAddToCart, onToggleWishlist, w
                 {/* Top Garment Image Area without text badges */}
                 <div className="relative w-full aspect-[4/5] max-h-[290px] mb-3.5 flex items-center justify-center bg-[#faf8f5]/80 rounded-xl overflow-hidden group-hover:bg-[#f5f0e6]/60 transition-colors p-3.5">
                   <img 
-                    src={c.imageUrl} 
+                    src={cardImg} 
                     alt={c.name}
                     className="w-full h-full object-contain drop-shadow-md transition-transform duration-500 group-hover:scale-105"
                   />
@@ -374,10 +390,10 @@ export default function WomenCombosHangerRack({ onAddToCart, onToggleWishlist, w
                   <div className="flex items-center gap-1.5">
                     <span 
                       className="w-3.5 h-3.5 rounded-full border border-neutral-300 shadow-2xs"
-                      style={{ backgroundColor: c.hex }}
+                      style={{ backgroundColor: cardHex }}
                     />
                     <span className="text-[10px] font-mono text-neutral-500 truncate">
-                      {c.name.split(' ')[0]} {c.name.split(' ')[1]}
+                      {c.colorway || (c.swatches && c.swatches[0]?.name) || c.name.split(' ')[0]}
                     </span>
                   </div>
 
@@ -391,14 +407,14 @@ export default function WomenCombosHangerRack({ onAddToCart, onToggleWishlist, w
                     </span>
                   </div>
 
-                  {/* Subtitle */}
+                  {/* Subtitle / Fabric note */}
                   <p className="text-[11px] text-neutral-500 font-light truncate">
-                    {c.subName}
+                    {c.subName || (Array.isArray(c.details) ? c.details[0] : c.details) || 'Complete 2-Piece Ensemble'}
                   </p>
 
                   {/* Size Selector Pills Strip */}
                   <div className="flex items-center gap-1 pt-1 text-[9px] font-mono">
-                    {['XS', 'S', 'M', 'L', 'XL'].map((sz) => (
+                    {['S', 'M', 'L', 'XL', 'XXL'].map((sz) => (
                       <button
                         key={sz}
                         onClick={(e) => {
@@ -424,7 +440,7 @@ export default function WomenCombosHangerRack({ onAddToCart, onToggleWishlist, w
                         if (onQuickView) {
                           onQuickView({
                             ...c,
-                            sizes: ['XS', 'S', 'M', 'L', 'XL']
+                            sizes: ['S', 'M', 'L', 'XL', 'XXL']
                           });
                         }
                       }}
@@ -443,10 +459,10 @@ export default function WomenCombosHangerRack({ onAddToCart, onToggleWishlist, w
                           name: c.name,
                           price: c.price,
                           size: currentCardSize,
-                          color: c.name,
+                          color: c.colorway || c.name,
                           category: 'Combos',
-                          gender: 'women',
-                          image: c.imageUrl
+                          gender: 'men',
+                          image: cardImg
                         });
                       }}
                       className="flex-1 bg-neutral-100 hover:bg-neutral-950 hover:text-white text-neutral-900 py-2 rounded-full text-[10.5px] font-medium uppercase tracking-wider transition-all duration-200 flex items-center justify-center gap-1.5 cursor-pointer shadow-2xs truncate"

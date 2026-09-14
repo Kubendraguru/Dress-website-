@@ -817,6 +817,120 @@ export const MEN_PANTS_HERO = [
   }
 ];
 
+// 1i. The 5 Signature Hanging Men's Combos / 2-Piece Ensembles for the Interactive Rail
+export const MEN_COMBOS_HERO = [
+  {
+    id: 'men-combo-camel-jacket-set',
+    name: 'Camel Wool Work Jacket & Pleated Trousers Set',
+    subName: 'Brushed Wool Overshirt + Mock-Neck Knit + Pleated Pants',
+    hex: '#9e734c',
+    secondaryHex: '#141416',
+    pantone: 'PANTONE 17-1137 TCX',
+    textColor: 'text-amber-100',
+    price: 168.00,
+    originalPrice: 198.00,
+    fabric: 'Heavyweight Melton Wool Blend & Fluid Suiting Twill',
+    fit: 'Boxy Structured Overshirt & Relaxed Pleated Trousers',
+    gender: 'men',
+    category: 'Combos',
+    badge: '2-PIECE SET • 15% OFF',
+    hotspotX: 11.0,
+    hotspotY: 44,
+    imageUrl: '/men-combo-camel-jacket-set.png',
+    localImage: '/men-combo-camel-jacket-set.png',
+    details: '2-Piece Outfit: Camel brown brushed melton wool work jacket with dual flap chest pockets over white mock-neck knit, paired with tailored noir pleated trousers and clean court sneakers.',
+    description: 'Elevated Parisian autumn aesthetic pairing a rich camel brown structured wool overshirt with high-rise pleated black trousers, white knit underlayer, and white leather trainers.'
+  },
+  {
+    id: 'men-combo-black-oxford-denim',
+    name: 'Noir Oxford Shirt & Light Baggy Denim Duo',
+    subName: 'Garment-Dyed Oxford Button-Down & Vintage Baggy Denim',
+    hex: '#141416',
+    secondaryHex: '#7ba4c9',
+    pantone: 'PANTONE 19-4005 TCX',
+    textColor: 'text-neutral-100',
+    price: 148.00,
+    originalPrice: 175.00,
+    fabric: 'Garment-Dyed Oxford Cotton & 13.5oz Stone-Washed Denim',
+    fit: 'Relaxed Button-Down & Baggy Skate Denim Trousers',
+    gender: 'men',
+    category: 'Combos',
+    badge: '2-PIECE SET • 15% OFF',
+    hotspotX: 30.0,
+    hotspotY: 44,
+    imageUrl: '/men-combo-black-oxford-denim.png',
+    localImage: '/men-combo-black-oxford-denim.png',
+    details: '2-Piece Outfit: Pitch black relaxed button-down oxford shirt with rolled sleeves and unbuttoned collar, paired with light indigo baggy stone-washed denim jeans and white sneakers.',
+    description: 'Effortless cosmopolitan street style combining an unbuttoned black oxford long-sleeve shirt with vintage stone-washed baggy denim and retro white trainers.'
+  },
+  {
+    id: 'men-combo-graphic-23-streetwear',
+    name: '#23 Graphic Boxy Streetwear Tee & Black Denim Set',
+    subName: '280 GSM Heavyweight #23 Tee & Washed Charcoal Denim',
+    hex: '#f6f4ee',
+    secondaryHex: '#25262a',
+    pantone: 'PANTONE 11-0601 TCX',
+    textColor: 'text-neutral-900',
+    price: 138.00,
+    originalPrice: 160.00,
+    fabric: '280 GSM Combed Jersey & Heavyweight Acid-Washed Denim',
+    fit: 'Oversized Boxy Silhouette & Ultra-Wide Skate Jeans',
+    gender: 'men',
+    category: 'Combos',
+    badge: 'STREETWEAR • 15% OFF',
+    hotspotX: 50.0,
+    hotspotY: 44,
+    imageUrl: '/men-combo-graphic-23-streetwear.png',
+    localImage: '/men-combo-graphic-23-streetwear.png',
+    details: '2-Piece Outfit: Heavyweight optic white graphic boxy streetwear tee with bold front and sleeve varsity numbering, paired with washed charcoal black puddle denim jeans and sneakers.',
+    description: 'Tokyo Y2K streetwear vibe featuring an oversized heavyweight #23 graphic tee paired with washed black wide-leg puddle jeans and skate sneakers.'
+  },
+  {
+    id: 'men-combo-pinstripe-charcoal',
+    name: 'Skyline Pinstripe Oxford & Charcoal Denim Set',
+    subName: 'Crisp Pinstripe Button-Down & Washed Black Denim',
+    hex: '#7c94a6',
+    secondaryHex: '#2b2c30',
+    pantone: 'PANTONE 16-4013 TCX',
+    textColor: 'text-sky-950',
+    price: 154.00,
+    originalPrice: 180.00,
+    fabric: '100% Fine Poplin Cotton & Ring-Spun Black Washed Denim',
+    fit: 'Relaxed Tailored Fit & Wide-Leg Relaxed Silhouette',
+    gender: 'men',
+    category: 'Combos',
+    badge: 'ATELIER SMART • 15% OFF',
+    hotspotX: 70.0,
+    hotspotY: 44,
+    imageUrl: '/men-combo-pinstripe-charcoal.png',
+    localImage: '/men-combo-pinstripe-charcoal.png',
+    details: '2-Piece Outfit: Skyline blue & white pinstripe button-down shirt with rolled cuffs and subtle chest embroidery, paired with relaxed washed charcoal denim and dark sunglasses.',
+    description: 'Modern smart-casual aesthetic pairing a relaxed blue-and-white vertical pinstripe oxford button-down with washed charcoal denim trousers and white trainers.'
+  },
+  {
+    id: 'men-combo-plaid-linen-black',
+    name: 'Silver Plaid Linen Overshirt & Noir Chinos Duo',
+    subName: 'Subtle Plaid Linen-Cotton Shirt & Tailored Black Chinos',
+    hex: '#d4d6db',
+    secondaryHex: '#141416',
+    pantone: 'PANTONE 14-4102 TCX',
+    textColor: 'text-neutral-900',
+    price: 158.00,
+    originalPrice: 185.00,
+    fabric: 'Breathable Plaid Linen-Cotton Weave & Cotton Suiting Twill',
+    fit: 'Relaxed Lightweight Overshirt & Straight-Leg Noir Chinos',
+    gender: 'men',
+    category: 'Combos',
+    badge: 'SUMMER ESSENTIAL • 15% OFF',
+    hotspotX: 89.0,
+    hotspotY: 44,
+    imageUrl: '/men-combo-plaid-linen-black.png',
+    localImage: '/men-combo-plaid-linen-black.png',
+    details: '2-Piece Outfit: Silver-grey and white subtle windowpane plaid linen overshirt with chest pocket, paired with straight-leg tailored noir black chinos, leather backpack and watch.',
+    description: 'Minimalist Tokyo cafe aesthetic pairing a breathable silver plaid linen-cotton shirt with straight tailored black cotton chinos and refined leather accessories.'
+  }
+];
+
 // 2. Hanging T-Shirt Rack Colorways (Crewnecks)
 export const HANGING_RACK_TEES = [
   {
@@ -1348,28 +1462,117 @@ export const CATALOG_PRODUCTS = [
     ]
 },
 
-  // --- FEMALE HOODIES ---
+  // --- FEMALE 2-PIECE COMBOS / CO-ORD SETS ---
   {
-    id: 'hoodie-women-ivory-terry',
-    name: 'Boxy French Terry Cropped Hoodie',
-    colorway: 'Heather Bone',
-    price: 88.00,
-    category: 'Hoodies',
+    id: 'combo-women-pink-corduroy',
+    name: 'Dusty Rose Corduroy & Blue Denim Set',
+    colorway: 'Dusty Rose / Sky Blue',
+    price: 118.00,
+    originalPrice: 140.00,
+    category: 'Combos',
     gender: 'women',
-    badge: 'ATELIER CUT',
-    colorHex: '#ede8de',
-    type: 'hoodie',
+    isCombo: true,
+    badge: '2-PIECE CO-ORD • 15% OFF',
+    colorHex: '#d89b9e',
+    imageUrl: '/women-combo-pink-corduroy.png',
+    localImage: '/women-combo-pink-corduroy.png',
+    hoverImage: '/women-combo-pink-corduroy.png',
+    description: 'Playful yet elevated Parisian aesthetic: vintage dusty rose cropped corduroy overshirt layered over a soft ribbed crop tank and relaxed wide-leg blue jeans.',
     swatches: [
-      { name: 'Heather Bone', hex: '#ede8de', id: 'hoodie-w-bone' },
-      { name: 'Terracotta', hex: '#7a4234', id: 'hoodie-w-terra' }
+      { name: 'Dusty Rose & Denim', hex: '#d89b9e', id: 'w-combo-pink' }
     ],
-    sizes: ['XS', 'S', 'M', 'L'],
-    stock: 16,
+    sizes: ['XS', 'S', 'M', 'L', 'XL'],
+    stock: 22,
     details: [
-      '420 GSM Milled Organic Cotton French Terry',
-      'Structured double hood without drawstrings'
+      'Cropped Fine-Wale Velvet Corduroy Overshirt',
+      'White Combed Cotton Ribbed Layering Tank',
+      'High-Rise Ring-Spun Light Indigo Wide Denim',
+      'Complete 2-Piece Synchronized Ensemble'
     ]
   },
+  {
+    id: 'combo-women-brown-corduroy',
+    name: 'Mocha Corduroy & Charcoal Denim Set',
+    colorway: 'Mocha Espresso / Charcoal',
+    price: 128.00,
+    originalPrice: 155.00,
+    category: 'Combos',
+    gender: 'women',
+    isCombo: true,
+    badge: '2-PIECE CO-ORD • 15% OFF',
+    colorHex: '#6c4e3e',
+    imageUrl: '/women-combo-brown-corduroy.png',
+    localImage: '/women-combo-brown-corduroy.png',
+    hoverImage: '/women-combo-brown-corduroy.png',
+    description: 'Earthy rich espresso mocha corduroy tailored into a sophisticated modern streetwear ensemble with washed charcoal curved wide-leg denim.',
+    swatches: [
+      { name: 'Mocha & Charcoal', hex: '#6c4e3e', id: 'w-combo-brown' }
+    ],
+    sizes: ['XS', 'S', 'M', 'L', 'XL'],
+    stock: 19,
+    details: [
+      'Heavyweight Fine-Rib Warm Cotton Corduroy',
+      'Flap Utility Chest Pockets with Tortoise Buttons',
+      '13.5oz Washed Charcoal Curved Balloon Denim',
+      'Complete 2-Piece Synchronized Ensemble'
+    ]
+  },
+  {
+    id: 'combo-women-denim-corset',
+    name: 'Sculpted Denim Corset Jumpsuit Duo',
+    colorway: 'Stone-Washed Indigo',
+    price: 135.00,
+    originalPrice: 160.00,
+    category: 'Combos',
+    gender: 'women',
+    isCombo: true,
+    badge: 'RUNWAY DUO • 15% OFF',
+    colorHex: '#6d8fa8',
+    imageUrl: '/women-combo-denim-corset.png',
+    localImage: '/women-combo-denim-corset.png',
+    hoverImage: '/women-combo-denim-corset.png',
+    description: 'Runway statement duo: sculpted light indigo stone-washed denim corset featuring vertical boning and clean topstitching with floor-length wide-leg palazzo jeans.',
+    swatches: [
+      { name: 'Indigo Stone Wash', hex: '#6d8fa8', id: 'w-combo-denim' }
+    ],
+    sizes: ['XS', 'S', 'M', 'L', 'XL'],
+    stock: 16,
+    details: [
+      '12oz Structured Stone-Washed Indigo Cotton Denim',
+      'Architectural Contour Seam Boning Bustier',
+      'High-Rise Relaxed Wide-Leg Sweep Palazzo',
+      'Complete 2-Piece Synchronized Ensemble'
+    ]
+  },
+  {
+    id: 'combo-women-lace-corset',
+    name: 'Espresso Lace Corset & Sand Chinos Set',
+    colorway: 'Espresso Lace / Sand Chinos',
+    price: 142.00,
+    originalPrice: 170.00,
+    category: 'Combos',
+    gender: 'women',
+    isCombo: true,
+    badge: 'LUXURY CO-ORD • 15% OFF',
+    colorHex: '#4a2e24',
+    imageUrl: '/women-combo-lace-corset.png',
+    localImage: '/women-combo-lace-corset.png',
+    hoverImage: '/women-combo-lace-corset.png',
+    description: 'A striking luxury ensemble pairing delicate espresso brown underwire lace corset bustier with relaxed tailored sand-beige cuffed chinos and strappy sandal heels.',
+    swatches: [
+      { name: 'Espresso & Sand', hex: '#4a2e24', id: 'w-combo-lace' }
+    ],
+    sizes: ['XS', 'S', 'M', 'L', 'XL'],
+    stock: 14,
+    details: [
+      'French Floral Chantilly Lace Bustier Top',
+      'Underwire Contour Support & Boning',
+      'High-Rise Tailored Cotton Twill Sand Chinos',
+      'Complete 2-Piece Synchronized Ensemble'
+    ]
+  },
+
+
 
 
   // =============================================================
@@ -1517,83 +1720,6 @@ export const CATALOG_PRODUCTS = [
       '100% French Flax Linen',
       'Saturated Midnight Navy Pigment',
       'Chest Pocket with Pen Slot'
-    ]
-  },
-  {
-    id: 'shirt-men-navy-linen-model',
-    name: 'Midnight Navy Linen Shirt & Pleated Sand Trouser',
-    colorway: 'Midnight Navy & Sand',
-    price: 84.00,
-    category: 'Shirts',
-    gender: 'men',
-    badge: 'EDITORIAL SS26',
-    colorHex: '#1c2d42',
-    isDressShirt: true,
-    imageUrl: '/men-navy-linen-cutout.png',
-    localImage: '/men-navy-linen-cutout.png',
-    description: 'Tailored French Normandy midnight navy open-collar linen shirt paired effortlessly with pleated sand fluid wide-leg trousers and retro court sneakers.',
-    swatches: [
-      { name: 'Midnight Navy', hex: '#1c2d42', id: 'shirt-navy-model' },
-      { name: 'Sand Beige', hex: '#d8caa8', id: 'shirt-sand-model' },
-      { name: 'Crisp White', hex: '#f8f8fa', id: 'shirt-white' }
-    ],
-    sizes: ['S', 'M', 'L', 'XL', 'XXL'],
-    stock: 25,
-    details: [
-      '100% Normandy Pure Flax Linen (180 GSM)',
-      'Pleated Sand Fluid Trousers with Hidden Adjuster',
-      'Relaxed Open Camp Collar Styling'
-    ]
-  },
-  {
-    id: 'shirt-men-ecru-polo-model',
-    name: 'Quiet Luxury Ribbed Ecru Polo & Washed Black Denim',
-    colorway: 'Ecru White & Washed Black',
-    price: 78.00,
-    category: 'Shirts',
-    gender: 'men',
-    badge: 'QUIET LUXURY',
-    colorHex: '#f4efe6',
-    isDressShirt: true,
-    imageUrl: '/men-ecru-polo-cutout.png',
-    localImage: '/men-ecru-polo-cutout.png',
-    description: 'Open-collar ribbed cotton knit polo in natural ecru paired with relaxed washed black denim and vintage leather weekender duffel.',
-    swatches: [
-      { name: 'Ecru White', hex: '#f4efe6', id: 'polo-ecru' },
-      { name: 'Washed Black', hex: '#222326', id: 'polo-black' },
-      { name: 'Midnight Navy', hex: '#1c2d42', id: 'polo-navy' }
-    ],
-    sizes: ['S', 'M', 'L', 'XL', 'XXL'],
-    stock: 28,
-    details: [
-      'Fine-Gauge 100% Combed Ribbed Cotton Knit',
-      'Johnny Collar Open V-Neck Placket',
-      'Ribbed Cuffs and Hemline with Shape Memory'
-    ]
-  },
-  {
-    id: 'shirt-men-black-zip-polo',
-    name: 'Textured Black Quarter-Zip Polo & Stone Chino',
-    colorway: 'Onyx Black & Stone',
-    price: 88.00,
-    category: 'Shirts',
-    gender: 'men',
-    badge: 'ATELIER DROP',
-    colorHex: '#121212',
-    isDressShirt: true,
-    imageUrl: '/men-black-zip-polo-cutout.png',
-    localImage: '/men-black-zip-polo-cutout.png',
-    description: 'Fine-textured quarter-zip ribbed knit polo in midnight onyx black, styled with tailored stone-beige relaxed trousers and stainless steel chronograph.',
-    swatches: [
-      { name: 'Onyx Black', hex: '#121212', id: 'polo-black-zip' },
-      { name: 'Stone Beige', hex: '#d8d2c4', id: 'polo-stone' }
-    ],
-    sizes: ['S', 'M', 'L', 'XL', 'XXL'],
-    stock: 24,
-    details: [
-      '100% Textured Combed Cotton Rib Knit',
-      'Silver Quarter-Zip Collar Closure',
-      'Tailored Italian Cotton Relaxed Fit'
     ]
   },
 
@@ -1931,76 +2057,6 @@ export const CATALOG_PRODUCTS = [
       'Pairs perfectly with relaxed light wash denim and retro trainers'
     ]
   },
-  {
-    id: 'hoodie-french-terry',
-    name: 'Heavyweight French Terry Hoodie',
-    colorway: 'Earthen Terracotta',
-    price: 94.00,
-    category: 'Hoodies',
-    gender: 'men',
-    badge: 'SIGNATURE PIECE',
-    colorHex: '#7a4234',
-    type: 'hoodie',
-    swatches: [
-      { name: 'Terracotta', hex: '#7a4234', id: 'hoodie-terra' },
-      { name: 'Heather Bone', hex: '#ede8de', id: 'hoodie-bone' },
-      { name: 'Washed Black', hex: '#222326', id: 'hoodie-black' }
-    ],
-    sizes: ['S', 'M', 'L', 'XL', 'XXL'],
-    stock: 18,
-    details: [
-      '450 GSM Custom Milled Organic Cotton French Terry',
-      'Double-layered structured hood with no drawstrings',
-      'Seamless kangaroo pocket with reinforced bartacks'
-    ]
-  },
-  {
-    id: 'hoodie-zip-terry',
-    name: 'Relaxed Full-Zip Terry Hoodie',
-    colorway: 'Washed Mineral Charcoal',
-    price: 98.00,
-    category: 'Hoodies',
-    gender: 'men',
-    badge: 'ATELIER CUT',
-    colorHex: '#2c2e33',
-    type: 'hoodie',
-    swatches: [
-      { name: 'Mineral Charcoal', hex: '#2c2e33', id: 'zip-charcoal' },
-      { name: 'Bone Cream', hex: '#ece6d8', id: 'zip-cream' }
-    ],
-    sizes: ['S', 'M', 'L', 'XL'],
-    stock: 14,
-    details: [
-      'Two-way matte nickel YKK zipper',
-      'Double needle coverstitch on all seams',
-      'Ribbed side gussets for mobility'
-    ]
-  },
-
-  // =============================================================
-  // UNISEX / ATELIER OBJECTS
-  // =============================================================
-  {
-    id: 'obj-leather-tray',
-    name: 'Atelier Leather Catchall Tray',
-    colorway: 'Natural Whiskey Tan',
-    price: 54.00,
-    category: 'Objects',
-    gender: 'unisex',
-    badge: 'HANDCRAFTED',
-    colorHex: '#b4733e',
-    type: 'object',
-    objectType: 'leather-tray',
-    swatches: [
-      { name: 'Whiskey Tan', hex: '#b4733e', id: 'tray-tan' }
-    ],
-    sizes: ['One Size'],
-    stock: 9,
-    details: [
-      'Full-grain Italian vegetable-tanned leather',
-      'Solid brass corner rivets'
-    ]
-  },
 
   // =============================================================
   // COUPLE CURATED ATELIER SETS
@@ -2133,6 +2189,226 @@ export const CATALOG_PRODUCTS = [
       "Hers: Triple Bow-Tie Front Peplum Sleeveless Blouse",
       "His: Classic Spread Collar Long-Sleeve Linen Shirt",
       "Breathable Matte Linen-Blend Ecru Trousers"
+    ]
+  },
+
+  // =============================================================
+  // MEN'S 2-PIECE ATELIER COMBOS
+  // =============================================================
+  {
+    id: "men-combo-camel-jacket-set",
+    name: "Camel Wool Work Jacket & Pleated Trousers Set",
+    colorway: "Camel Wool / Noir",
+    price: 168.00,
+    originalPrice: 198.00,
+    category: "Combos",
+    gender: "men",
+    isCombo: true,
+    badge: "2-PIECE SET • 15% OFF",
+    colorHex: "#9e734c",
+    imageUrl: "/men-combo-camel-jacket-set.png",
+    localImage: "/men-combo-camel-jacket-set.png",
+    hoverImage: "/men-combo-camel-jacket-set.png",
+    description: "Elevated Parisian autumn aesthetic pairing a rich camel brown structured wool overshirt with high-rise pleated black trousers, white knit underlayer, and white leather trainers.",
+    swatches: [
+      { name: "Camel & Noir", hex: "#9e734c", id: "combo-camel-noir" }
+    ],
+    sizes: ["S", "M", "L", "XL", "XXL"],
+    stock: 15,
+    details: [
+      "Heavyweight Melton Brushed Wool Overshirt",
+      "Mock-Neck Premium Ribbed Cotton Underlayer",
+      "High-Rise Deep Knife-Pleat Suiting Trousers",
+      "Complete 2-Piece Synchronized Outfit"
+    ]
+  },
+  {
+    id: "men-combo-black-oxford-denim",
+    name: "Noir Oxford Shirt & Light Baggy Denim Duo",
+    colorway: "Midnight Noir / Ice Blue Denim",
+    price: 148.00,
+    originalPrice: 175.00,
+    category: "Combos",
+    gender: "men",
+    isCombo: true,
+    badge: "2-PIECE SET • 15% OFF",
+    colorHex: "#141416",
+    imageUrl: "/men-combo-black-oxford-denim.png",
+    localImage: "/men-combo-black-oxford-denim.png",
+    hoverImage: "/men-combo-black-oxford-denim.png",
+    description: "Effortless cosmopolitan street style combining an unbuttoned black oxford long-sleeve shirt with vintage stone-washed baggy denim and retro white trainers.",
+    swatches: [
+      { name: "Noir & Ice Blue", hex: "#141416", id: "combo-noir-ice" }
+    ],
+    sizes: ["S", "M", "L", "XL", "XXL"],
+    stock: 18,
+    details: [
+      "Garment-Dyed Breathable Cotton Oxford Button-Down",
+      "13.5oz Authentic Stone-Washed Baggy Denim",
+      "Mother-of-Pearl Fasteners & Extended Curved Hem",
+      "Complete 2-Piece Synchronized Outfit"
+    ]
+  },
+  {
+    id: "men-combo-graphic-23-streetwear",
+    name: "#23 Graphic Boxy Streetwear Tee & Black Denim Set",
+    colorway: "Optic White / Washed Black",
+    price: 138.00,
+    originalPrice: 160.00,
+    category: "Combos",
+    gender: "men",
+    isCombo: true,
+    badge: "STREETWEAR • 15% OFF",
+    colorHex: "#f6f4ee",
+    imageUrl: "/men-combo-graphic-23-streetwear.png",
+    localImage: "/men-combo-graphic-23-streetwear.png",
+    hoverImage: "/men-combo-graphic-23-streetwear.png",
+    description: "Tokyo Y2K streetwear vibe featuring an oversized heavyweight #23 graphic tee paired with washed black wide-leg puddle jeans and skate sneakers.",
+    swatches: [
+      { name: "Optic White & Charcoal", hex: "#f6f4ee", id: "combo-23-charcoal" }
+    ],
+    sizes: ["S", "M", "L", "XL", "XXL"],
+    stock: 22,
+    details: [
+      "280 GSM Heavyweight Combed Cotton Jersey",
+      "Y2K Numbering & Sleeve Screenprints",
+      "Acid-Washed Charcoal Wide-Leg Denim",
+      "Complete 2-Piece Synchronized Outfit"
+    ]
+  },
+  {
+    id: "men-combo-pinstripe-charcoal",
+    name: "Skyline Pinstripe Oxford & Charcoal Denim Set",
+    colorway: "Skyline Blue Stripe / Washed Charcoal",
+    price: 154.00,
+    originalPrice: 180.00,
+    category: "Combos",
+    gender: "men",
+    isCombo: true,
+    badge: "ATELIER SMART • 15% OFF",
+    colorHex: "#7c94a6",
+    imageUrl: "/men-combo-pinstripe-charcoal.png",
+    localImage: "/men-combo-pinstripe-charcoal.png",
+    hoverImage: "/men-combo-pinstripe-charcoal.png",
+    description: "Modern smart-casual aesthetic pairing a relaxed blue-and-white vertical pinstripe oxford button-down with washed charcoal denim trousers and white trainers.",
+    swatches: [
+      { name: "Skyline Stripe & Noir", hex: "#7c94a6", id: "combo-stripe-noir" }
+    ],
+    sizes: ["S", "M", "L", "XL", "XXL"],
+    stock: 16,
+    details: [
+      "Crisp Poplin Yarn-Dyed Fine Pinstripe Cotton",
+      "Structured Button-Down Spread Collar",
+      "Washed Charcoal Relaxed Denim Trousers",
+      "Complete 2-Piece Synchronized Outfit"
+    ]
+  },
+  {
+    id: "men-combo-plaid-linen-black",
+    name: "Silver Plaid Linen Overshirt & Noir Chinos Duo",
+    colorway: "Silver Windowpane Plaid / Onyx Black",
+    price: 158.00,
+    originalPrice: 185.00,
+    category: "Combos",
+    gender: "men",
+    isCombo: true,
+    badge: "SUMMER ESSENTIAL • 15% OFF",
+    colorHex: "#d4d6db",
+    imageUrl: "/men-combo-plaid-linen-black.png",
+    localImage: "/men-combo-plaid-linen-black.png",
+    hoverImage: "/men-combo-plaid-linen-black.png",
+    description: "Minimalist Tokyo cafe aesthetic pairing a breathable silver plaid linen-cotton shirt with straight tailored black cotton chinos and refined leather accessories.",
+    swatches: [
+      { name: "Silver Plaid & Noir", hex: "#d4d6db", id: "combo-plaid-noir" }
+    ],
+    sizes: ["S", "M", "L", "XL", "XXL"],
+    stock: 14,
+    details: [
+      "Breathable Linen-Cotton Windowpane Plaid",
+      "Casual Camp Pocket & Spread Collar",
+      "Tailored Straight-Leg Cotton Chinos",
+      "Complete 2-Piece Synchronized Outfit"
+    ]
+  },
+  {
+    id: "men-combo-navy-linen-sand",
+    name: "Midnight Navy Linen Shirt & Pleated Sand Trouser Set",
+    colorway: "Midnight Navy & Sand",
+    price: 145.00,
+    originalPrice: 170.00,
+    category: "Combos",
+    gender: "men",
+    isCombo: true,
+    badge: "2-PIECE SET • 15% OFF",
+    colorHex: "#1c2d42",
+    imageUrl: "/men-navy-linen-cutout.png",
+    localImage: "/men-navy-linen-cutout.png",
+    hoverImage: "/men-navy-linen-cutout.png",
+    description: "Tailored French Normandy midnight navy open-collar linen shirt paired effortlessly with pleated sand fluid wide-leg trousers and retro court sneakers.",
+    swatches: [
+      { name: "Midnight Navy & Sand", hex: "#1c2d42", id: "combo-navy-sand" }
+    ],
+    sizes: ["S", "M", "L", "XL", "XXL"],
+    stock: 25,
+    details: [
+      "100% Normandy Pure Flax Linen (180 GSM)",
+      "Pleated Sand Fluid Trousers with Hidden Adjuster",
+      "Relaxed Open Camp Collar Styling",
+      "Complete 2-Piece Synchronized Outfit"
+    ]
+  },
+  {
+    id: "men-combo-ecru-polo-black-denim",
+    name: "Quiet Luxury Ribbed Ecru Polo & Washed Black Denim Set",
+    colorway: "Ecru White & Washed Black",
+    price: 139.00,
+    originalPrice: 165.00,
+    category: "Combos",
+    gender: "men",
+    isCombo: true,
+    badge: "QUIET LUXURY • 15% OFF",
+    colorHex: "#f4efe6",
+    imageUrl: "/men-ecru-polo-cutout.png",
+    localImage: "/men-ecru-polo-cutout.png",
+    hoverImage: "/men-ecru-polo-cutout.png",
+    description: "Open-collar ribbed cotton knit polo in natural ecru paired with relaxed washed black denim and vintage leather weekender duffel.",
+    swatches: [
+      { name: "Ecru & Washed Black", hex: "#f4efe6", id: "combo-ecru-black" }
+    ],
+    sizes: ["S", "M", "L", "XL", "XXL"],
+    stock: 28,
+    details: [
+      "Fine-Gauge 100% Combed Ribbed Cotton Knit",
+      "Johnny Collar Open V-Neck Placket",
+      "Relaxed Fit Washed Black Denim Trousers",
+      "Complete 2-Piece Synchronized Outfit"
+    ]
+  },
+  {
+    id: "men-combo-black-zip-stone-chino",
+    name: "Textured Black Quarter-Zip Polo & Stone Chino Set",
+    colorway: "Onyx Black & Stone",
+    price: 148.00,
+    originalPrice: 175.00,
+    category: "Combos",
+    gender: "men",
+    isCombo: true,
+    badge: "2-PIECE SET • 15% OFF",
+    colorHex: "#121212",
+    imageUrl: "/men-black-zip-polo-cutout.png",
+    localImage: "/men-black-zip-polo-cutout.png",
+    hoverImage: "/men-black-zip-polo-cutout.png",
+    description: "Fine-textured quarter-zip ribbed knit polo in midnight onyx black, styled with tailored stone-beige relaxed trousers and stainless steel chronograph.",
+    swatches: [
+      { name: "Onyx Black & Stone", hex: "#121212", id: "combo-black-stone" }
+    ],
+    sizes: ["S", "M", "L", "XL", "XXL"],
+    stock: 24,
+    details: [
+      "100% Textured Combed Cotton Rib Knit",
+      "Silver Quarter-Zip Collar Closure",
+      "Tailored Stone-Beige Cotton Chinos",
+      "Complete 2-Piece Synchronized Outfit"
     ]
   }
 ];

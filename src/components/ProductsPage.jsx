@@ -21,6 +21,7 @@ import WomenCombosHangerRack from './WomenCombosHangerRack';
 import CoupleHangerRack from './CoupleHangerRack';
 import MenTeesHangerRack from './MenTeesHangerRack';
 import MenPantsHangerRack from './MenPantsHangerRack';
+import MenCombosHangerRack from './MenCombosHangerRack';
 
 const HERO_IMAGE_URL = 'https://res.cloudinary.com/qrhgjdrs/image/upload/v1789314616/Comment_SHOP_and_I_ll_send_the_links_in_your_DM____mensfashion_wardrobeessentials_menswearindia_outfitideas_minimalstyle_menwithstyle_styleguide_summeroutfits_mensoutfit_fashionreels_simplefashion_cleanstyle_essentials_lar9h1.jpg';
 const HERO_LOCAL_URL = '/hanger-shirts-hero.jpg';
@@ -331,6 +332,15 @@ export default function ProductsPage({
                 onQuickView={(p) => setQuickViewProduct(p)}
               />
             )}
+          </div>
+        ) : (activeCategory === 'Combos' || activeCategory === 'Combo') ? (
+          <div className="pt-2 pb-10 sm:pb-14">
+            <MenCombosHangerRack 
+              onAddToCart={onAddToCart}
+              onToggleWishlist={onToggleWishlist}
+              wishlist={wishlist}
+              onQuickView={(p) => setQuickViewProduct(p)}
+            />
           </div>
         ) : (activeCategory === 'Pants' || activeCategory === 'Pant') ? (
           <div className="pt-2 pb-10 sm:pb-14">
