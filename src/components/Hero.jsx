@@ -116,15 +116,15 @@ export default function Hero({ onAddToCart }) {
       if (runwayContainerRef.current) {
         const modelElements = runwayContainerRef.current.querySelectorAll('.hero-model-item');
         const viewportWidth = window.innerWidth;
-        const spacing = viewportWidth < 640 ? 220 : viewportWidth < 1024 ? 290 : 350;
+        const spacing = viewportWidth < 640 ? 260 : viewportWidth < 1024 ? 380 : 460;
 
         modelElements.forEach((el, idx) => {
           const delta = idx - currentProg;
           const xPos = delta * spacing;
           const absDelta = Math.abs(delta);
 
-          // Center model is full grand scale (1.02x), side models scale down to 0.70x
-          const scale = Math.max(0.68, 1.02 - absDelta * 0.34);
+          // Center model is full grand scale (1.04x), side models scale down to 0.70x
+          const scale = Math.max(0.68, 1.04 - absDelta * 0.36);
           
           // Center is full opacity (1.0), side models fade to ~0.26, distant fade to 0
           const opacity = Math.max(0, 1 - absDelta * 0.72);
@@ -171,14 +171,14 @@ export default function Hero({ onAddToCart }) {
   return (
     <section 
       id="hero" 
-      className="relative pt-20 pb-8 sm:pt-24 sm:pb-12 bg-[#faf8f5] overflow-hidden flex flex-col items-center justify-center select-none"
+      className="relative pt-16 pb-8 sm:pt-20 sm:pb-12 bg-[#faf8f5] overflow-hidden flex flex-col items-center justify-center select-none"
     >
-      {/* Main Locked Graphic Canvas Frame (All Background Elements Remain Fixed) */}
-      <div className="relative w-full max-w-[1020px] h-[600px] sm:h-[660px] md:h-[720px] flex items-center justify-center px-4">
+      {/* Main Locked Graphic Canvas Frame (Wide High-End Editorial Presentation) */}
+      <div className="relative w-full max-w-[1440px] h-[640px] sm:h-[700px] md:h-[780px] flex items-center justify-center px-4 sm:px-8 lg:px-12">
         
         {/* Concentric Circular Wireframe Rings (Locked Background behind model) */}
-        <div className="absolute top-[16%] sm:top-[14%] left-1/2 -translate-x-1/2 pointer-events-none z-0">
-          <div className="relative w-[340px] h-[340px] sm:w-[460px] sm:h-[460px] md:w-[560px] md:h-[560px] flex items-center justify-center">
+        <div className="absolute top-[14%] sm:top-[12%] left-1/2 -translate-x-1/2 pointer-events-none z-0">
+          <div className="relative w-[420px] h-[420px] sm:w-[580px] sm:h-[580px] md:w-[700px] md:h-[700px] lg:w-[780px] lg:h-[780px] flex items-center justify-center">
             <div className="absolute inset-0 rounded-full border border-neutral-300/60"></div>
             <div className="absolute inset-[15%] rounded-full border border-neutral-300/45"></div>
             <div className="absolute inset-[30%] rounded-full border border-dashed border-neutral-300/35"></div>
@@ -186,27 +186,26 @@ export default function Hero({ onAddToCart }) {
           </div>
         </div>
 
-        {/* Headline: "Bloomair" (Locked Background Behind Head & Shoulders) */}
-        <div className="absolute top-[4%] sm:top-[3%] inset-x-0 text-center pointer-events-none z-0">
-          <h1 className="font-bodoni text-[90px] sm:text-[140px] md:text-[170px] font-normal text-[#121212] tracking-[-0.03em] leading-none select-none">
+        {/* Headline: "Bloomair" (Grand Wide Typography Locked Background) */}
+        <div className="absolute top-[3%] sm:top-[2%] inset-x-0 text-center pointer-events-none z-0">
+          <h1 className="font-bodoni text-[110px] sm:text-[170px] md:text-[220px] lg:text-[260px] font-normal text-[#121212] tracking-[-0.035em] leading-none select-none">
             Bloomair
           </h1>
         </div>
 
-        {/* Split Second Line: "We Bel" (Left) and "Fashion" (Right) (Locked Background) */}
-        <div className="absolute top-[36%] sm:top-[34%] md:top-[33%] inset-x-0 flex items-center justify-between px-2 sm:px-6 md:px-10 pointer-events-none z-0">
-          <div className="w-1/2 pr-12 sm:pr-20 md:pr-24 text-left">
-            <span className="font-bodoni italic text-4xl sm:text-6xl md:text-7xl lg:text-[80px] font-normal text-[#121212] tracking-tight leading-none block">
+        {/* Split Second Line: "We Bel" (Left) and "Fashion" (Right) (Wide Spaced Out) */}
+        <div className="absolute top-[36%] sm:top-[34%] md:top-[33%] inset-x-0 flex items-center justify-between px-4 sm:px-10 md:px-16 lg:px-24 pointer-events-none z-0">
+          <div className="w-1/2 pr-16 sm:pr-24 md:pr-32 lg:pr-40 text-left">
+            <span className="font-bodoni italic text-5xl sm:text-7xl md:text-8xl lg:text-[96px] font-normal text-[#121212] tracking-tight leading-none block">
               We Bel
             </span>
           </div>
-          <div className="w-1/2 pl-12 sm:pl-20 md:pl-24 text-right">
-            <span className="font-bodoni text-4xl sm:text-6xl md:text-7xl lg:text-[80px] font-normal text-[#121212] tracking-tight leading-none block">
+          <div className="w-1/2 pl-16 sm:pl-24 md:pl-32 lg:pl-40 text-right">
+            <span className="font-bodoni text-5xl sm:text-7xl md:text-8xl lg:text-[96px] font-normal text-[#121212] tracking-tight leading-none block">
               Fashion
             </span>
           </div>
         </div>
-
 
         {/* Diagonal Ribbon Banner (Passing Behind Model & Hips - Locked Background) */}
         <div className="absolute inset-x-[-15%] bottom-[16%] sm:bottom-[15%] -rotate-[7deg] pointer-events-none z-10 overflow-hidden">
@@ -260,15 +259,15 @@ export default function Hero({ onAddToCart }) {
                   }}
                   className="hero-model-item absolute flex flex-col items-center justify-start pointer-events-auto cursor-pointer select-none top-0 sm:top-1"
                   style={{
-                    width: '380px',
-                    height: '670px',
+                    width: '420px',
+                    height: '720px',
                   }}
                 >
                   <div className="relative w-full h-full flex items-start justify-center pt-0">
                     <img
                       src={imageSrc}
                       alt={outfit.title}
-                      className="w-auto h-[520px] sm:h-[600px] md:h-[660px] max-w-[340px] sm:max-w-[400px] object-contain object-top drop-shadow-[0_24px_45px_rgba(0,0,0,0.22)] pointer-events-none transition-transform duration-300"
+                      className="w-auto h-[540px] sm:h-[620px] md:h-[680px] lg:h-[720px] max-w-[360px] sm:max-w-[420px] md:max-w-[460px] object-contain object-top drop-shadow-[0_24px_45px_rgba(0,0,0,0.22)] pointer-events-none transition-transform duration-300"
                       draggable={false}
                     />
                   </div>
@@ -283,7 +282,7 @@ export default function Hero({ onAddToCart }) {
               e.stopPropagation();
               handlePrev();
             }}
-            className="absolute left-3 sm:left-8 md:left-14 z-40 w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-white/90 hover:bg-neutral-950 text-neutral-900 hover:text-white border border-neutral-300/80 flex items-center justify-center shadow-lg hover:scale-110 active:scale-95 transition-all cursor-pointer"
+            className="absolute left-3 sm:left-6 md:left-10 lg:left-14 z-40 w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-white/95 hover:bg-neutral-950 text-neutral-900 hover:text-white border border-neutral-300/80 flex items-center justify-center shadow-xl hover:scale-110 active:scale-95 transition-all cursor-pointer"
             aria-label="Previous Outfit"
           >
             <ChevronLeft className="w-5 h-5 stroke-[2.2]" />
@@ -295,7 +294,7 @@ export default function Hero({ onAddToCart }) {
               e.stopPropagation();
               handleNext();
             }}
-            className="absolute right-3 sm:right-8 md:right-14 z-40 w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-white/90 hover:bg-neutral-950 text-neutral-900 hover:text-white border border-neutral-300/80 flex items-center justify-center shadow-lg hover:scale-110 active:scale-95 transition-all cursor-pointer"
+            className="absolute right-3 sm:right-6 md:right-10 lg:right-14 z-40 w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-white/95 hover:bg-neutral-950 text-neutral-900 hover:text-white border border-neutral-300/80 flex items-center justify-center shadow-xl hover:scale-110 active:scale-95 transition-all cursor-pointer"
             aria-label="Next Outfit"
           >
             <ChevronRight className="w-5 h-5 stroke-[2.2]" />
@@ -304,10 +303,10 @@ export default function Hero({ onAddToCart }) {
         </div>
 
         {/* Floating Prominent Shop Pill Button (Directly Anchored in Center Stage) */}
-        <div className="absolute bottom-[2%] sm:bottom-[3%] left-1/2 -translate-x-1/2 z-30 whitespace-nowrap pointer-events-auto">
+        <div className="absolute bottom-[1.5%] sm:bottom-[2%] left-1/2 -translate-x-1/2 z-30 whitespace-nowrap pointer-events-auto">
           <button
             onClick={() => setIsShopLookModalOpen(true)}
-            className="group/btn relative px-6 sm:px-7 py-3 bg-neutral-950 hover:bg-neutral-900 text-white rounded-full text-xs sm:text-[13px] font-mono font-bold tracking-[0.16em] uppercase flex items-center gap-2.5 shadow-[0_12px_30px_rgba(0,0,0,0.35)] border border-white/20 hover:border-amber-400/60 transition-all duration-300 hover:scale-105 active:scale-95 cursor-pointer"
+            className="group/btn relative px-7 sm:px-8 py-3.5 bg-neutral-950 hover:bg-neutral-900 text-white rounded-full text-xs sm:text-[13px] font-mono font-bold tracking-[0.16em] uppercase flex items-center gap-2.5 shadow-[0_14px_35px_rgba(0,0,0,0.38)] border border-white/20 hover:border-amber-400/60 transition-all duration-300 hover:scale-105 active:scale-95 cursor-pointer"
           >
             <div className="w-5 h-5 rounded-full bg-amber-400/20 flex items-center justify-center">
               <ShoppingBag className="w-3.5 h-3.5 text-amber-400 fill-amber-400" />
@@ -316,8 +315,8 @@ export default function Hero({ onAddToCart }) {
           </button>
         </div>
 
-        {/* Right Side Stacked Action Card (Locked Background Element) */}
-        <div className="absolute right-2 sm:right-6 md:right-10 top-[46%] sm:top-[44%] z-30 pointer-events-auto">
+        {/* Right Side Stacked Action Card (Positioned Generously to the Right) */}
+        <div className="absolute right-3 sm:right-6 md:right-10 lg:right-14 top-[44%] sm:top-[42%] md:top-[40%] z-30 pointer-events-auto">
           
           <div className="relative">
             {/* Back offset black card */}
@@ -356,8 +355,8 @@ export default function Hero({ onAddToCart }) {
         </div>
 
         {/* Right Vertical Faint Watermark Outline Typography (Locked Background Element) */}
-        <div className="absolute right-[-2%] sm:right-[0%] top-[38%] select-none pointer-events-none z-0 hidden sm:block">
-          <span className="font-bodoni text-[85px] md:text-[105px] lg:text-[120px] font-normal text-transparent tracking-widest uppercase rotate-90 block origin-center text-stroke-dark opacity-[0.06]">
+        <div className="absolute right-[-1%] sm:right-[1%] top-[38%] select-none pointer-events-none z-0 hidden sm:block">
+          <span className="font-bodoni text-[90px] md:text-[115px] lg:text-[135px] font-normal text-transparent tracking-widest uppercase rotate-90 block origin-center text-stroke-dark opacity-[0.055]">
             {isStripe ? 'PARIS' : isLemon ? 'RIVIERA' : isSandDenim ? 'SEOUL' : isStreetwear ? 'TOKYO' : isWhitePoplin ? 'MINIMAL' : isNavyCrew ? 'IVY' : 'ATELIER'}
           </span>
         </div>
