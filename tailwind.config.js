@@ -12,7 +12,11 @@ export default {
       fontFamily: {
         bodoni: ['"Bodoni Moda"', 'Italiana', '"Playfair Display"', 'Didot', 'serif'],
         serif: ['"Bodoni Moda"', '"Playfair Display"', 'Italiana', 'serif'],
-        display: ['"Bodoni Moda"', 'Italiana', 'serif'],
+        display: ['"Syne"', '"Bodoni Moda"', 'Italiana', 'sans-serif'],
+        syne: ['"Syne"', 'sans-serif'],
+        bebas: ['"Bebas Neue"', '"Oswald"', 'sans-serif'],
+        oswald: ['"Oswald"', 'sans-serif'],
+        space: ['"Space Grotesk"', 'sans-serif'],
         sans: ['"Plus Jakarta Sans"', 'Montserrat', 'sans-serif'],
         mono: ['"Space Mono"', 'monospace'],
       },

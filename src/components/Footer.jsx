@@ -1,93 +1,107 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { 
   ArrowUp, 
+  ArrowRight, 
+  Check, 
   Shirt, 
   Gem, 
   Sparkles, 
   Users, 
   Globe 
 } from 'lucide-react';
+import confetti from 'canvas-confetti';
 
 export default function Footer() {
+  const [email, setEmail] = useState('');
+  const [subscribed, setSubscribed] = useState(false);
+
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
+  const handleSubscribe = (e) => {
+    e.preventDefault();
+    if (!email || !email.includes('@')) return;
+    setSubscribed(true);
+    try {
+      confetti({
+        particleCount: 80,
+        spread: 60,
+        origin: { y: 0.85 },
+        colors: ['#ffffff', '#e83d34', '#e5a919', '#3b82f6']
+      });
+    } catch (err) {}
+  };
+
   return (
-    <footer className="w-full bg-black text-neutral-300 pt-16 sm:pt-20 pb-10 border-t border-neutral-900 relative overflow-hidden select-none">
+    <footer className="w-full bg-[#0a0a0a] text-neutral-300 pt-16 sm:pt-20 pb-10 border-t border-neutral-900 relative overflow-hidden select-none font-sans">
       
       {/* Soft Ambient Radial Glow */}
       <div 
-        className="absolute inset-0 pointer-events-none opacity-30"
+        className="absolute inset-0 pointer-events-none opacity-20"
         style={{
-          backgroundImage: 'radial-gradient(circle at 50% 10%, rgba(255,255,255,0.08) 0%, transparent 60%)'
+          backgroundImage: 'radial-gradient(circle at 50% 10%, rgba(255,255,255,0.12) 0%, transparent 60%)'
         }}
       />
 
       <div className="max-w-[1300px] mx-auto px-4 sm:px-8 relative z-10 space-y-12 sm:space-y-16">
         
         {/* ========================================================================= */}
-        {/* 1. 4 CLEAN NAVIGATION COLUMNS (AT TOP IN BLACK THEME) */}
+        {/* 1. 3 HIGH-FASHION EDITORIAL DIRECTORY COLUMNS */}
         {/* ========================================================================= */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 sm:gap-10 pb-12 border-b border-neutral-900 text-xs tracking-wider">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-10 pb-12 border-b border-neutral-900 text-xs text-center sm:text-left">
           
-          {/* MENU */}
-          <div>
-            <h4 className="font-mono text-xs font-bold uppercase tracking-[0.25em] text-white mb-4 pb-1 border-b border-neutral-800">
-              MENU
+          {/* GLOBAL STORES */}
+          <div className="space-y-3">
+            <h4 className="font-mono text-xs font-bold uppercase tracking-[0.25em] text-white pb-1.5 border-b border-neutral-800">
+              STORES &amp; SALONS
             </h4>
-            <ul className="space-y-2.5 text-neutral-400 font-light text-[12px]">
-              <li><a href="#hero" className="hover:text-white transition-colors">Collections</a></li>
-              <li><a href="#collections" className="hover:text-white transition-colors">Modern Room Showroom</a></li>
-              <li><a href="#ethos" className="hover:text-white transition-colors">The Ethos</a></li>
-              <li><a href="#products" className="hover:text-white transition-colors">2-Piece Sets</a></li>
-              <li><a href="#community" className="hover:text-white transition-colors">Community &amp; Gallery</a></li>
-            </ul>
+            <div className="grid grid-cols-2 gap-2 text-[11.5px] font-mono text-neutral-400 font-light">
+              <div className="space-y-1.5">
+                <p>SOUTH KOREA</p>
+                <p>AUSTRALIA</p>
+                <p>AUSTRIA</p>
+                <p>INDIA (BKC MUMBAI)</p>
+              </div>
+              <div className="space-y-1.5">
+                <p>FRANCE (PARIS)</p>
+                <p>ITALY (MILAN)</p>
+                <p>JAPAN (TOKYO)</p>
+                <p>UNITED KINGDOM</p>
+              </div>
+            </div>
           </div>
 
-          {/* ARCHIVES */}
-          <div>
-            <h4 className="font-mono text-xs font-bold uppercase tracking-[0.25em] text-white mb-4 pb-1 border-b border-neutral-800">
-              ARCHIVES
+          {/* FOLLOW US */}
+          <div className="space-y-3">
+            <h4 className="font-mono text-xs font-bold uppercase tracking-[0.25em] text-white pb-1.5 border-b border-neutral-800">
+              FOLLOW US
             </h4>
-            <ul className="space-y-2.5 text-neutral-400 font-light text-[12px]">
-              <li><a href="#products" className="hover:text-white transition-colors">SS26 Runway Edition</a></li>
-              <li><a href="#products" className="hover:text-white transition-colors">Pop Art Graphic Series</a></li>
-              <li><a href="#products" className="hover:text-white transition-colors">Silk &amp; Linen Series</a></li>
-              <li><a href="#products" className="hover:text-white transition-colors">Tailored Suiting</a></li>
-            </ul>
+            <div className="text-[11.5px] font-mono text-neutral-400 space-y-2 font-light">
+              <p><a href="https://instagram.com" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">INSTAGRAM &bull; @ZUDIO</a></p>
+              <p><a href="https://youtube.com" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">YOUTUBE ATELIER</a></p>
+              <p><a href="https://twitter.com" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">TWITTER (X)</a></p>
+              <p><a href="https://tiktok.com" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">TIKTOK EDITORIAL</a></p>
+            </div>
           </div>
 
-          {/* STORES */}
-          <div>
-            <h4 className="font-mono text-xs font-bold uppercase tracking-[0.25em] text-white mb-4 pb-1 border-b border-neutral-800">
-              STORES
+          {/* CONTACT & PRIVATE SALON */}
+          <div className="space-y-3">
+            <h4 className="font-mono text-xs font-bold uppercase tracking-[0.25em] text-white pb-1.5 border-b border-neutral-800">
+              CONTACT &amp; SALON
             </h4>
-            <ul className="space-y-2.5 text-neutral-400 font-light text-[12px]">
-              <li>Flagship Salons</li>
-              <li>Store Locator</li>
-              <li>Paris &bull; Milan &bull; Tokyo</li>
-              <li>New York SoHo</li>
-            </ul>
-          </div>
-
-          {/* CONTACT */}
-          <div>
-            <h4 className="font-mono text-xs font-bold uppercase tracking-[0.25em] text-white mb-4 pb-1 border-b border-neutral-800">
-              CONTACT
-            </h4>
-            <ul className="space-y-2.5 text-neutral-400 font-light text-[12px]">
-              <li>Private Client Concierge</li>
-              <li>Customer Support</li>
-              <li className="font-mono text-white font-medium pt-0.5">support@zudio.com</li>
-              <li className="font-mono text-[11px] text-neutral-500">+1 (800) 983-4628</li>
-            </ul>
+            <div className="text-[11.5px] font-mono text-neutral-400 space-y-1.5 font-light">
+              <p className="text-white font-medium">pr.atelier@zudio.com</p>
+              <p>showroom.it@zudio.com</p>
+              <p className="text-neutral-500 pt-1 text-[11px]">+91 (022) 6700-9000</p>
+              <p className="text-[10px] text-neutral-600">TRENT HOUSE, BKC, MUMBAI</p>
+            </div>
           </div>
 
         </div>
 
         {/* ========================================================================= */}
-        {/* 2. ZUDIO BRAND BANNER PICTURE (MIDDLE) */}
+        {/* 2. ZUDIO BRAND BANNER PICTURE */}
         {/* ========================================================================= */}
         <div className="relative w-full rounded-2xl sm:rounded-3xl overflow-hidden bg-white border border-neutral-800 shadow-2xl group">
           <img 
@@ -98,9 +112,9 @@ export default function Footer() {
         </div>
 
         {/* ========================================================================= */}
-        {/* 3. 4 VALUE PROPOSITIONS STRIP (DOWN / BELOW THE ZUDIO IMAGE) */}
+        {/* 3. 4 VALUE PROPOSITIONS STRIP */}
         {/* ========================================================================= */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 pt-4 pb-10 border-b border-neutral-900 text-xs">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 pt-2 pb-8 border-b border-neutral-900 text-xs">
           
           {/* 1. WIDE RANGE */}
           <div className="flex items-start gap-3.5">
@@ -165,13 +179,49 @@ export default function Footer() {
         </div>
 
         {/* ========================================================================= */}
-        {/* 4. FINE BOTTOM COPYRIGHT & UTILITIES */}
+        {/* 4. VIP PRIVATE SALON QUICK SUBSCRIPTION */}
+        {/* ========================================================================= */}
+        <div className="max-w-md mx-auto bg-neutral-900/90 border border-neutral-800 rounded-2xl p-5 backdrop-blur-sm text-center">
+          {subscribed ? (
+            <div className="flex items-center justify-center gap-2 text-emerald-400 font-mono text-xs py-2">
+              <Check className="w-4 h-4" />
+              <span>INVITATION DISPATCHED TO PRIVATE SALON</span>
+            </div>
+          ) : (
+            <form onSubmit={handleSubscribe} className="space-y-3">
+              <div className="flex items-center justify-center gap-1.5 text-xs font-mono text-neutral-300 uppercase tracking-wider">
+                <Sparkles className="w-3.5 h-3.5 text-[#e5a919]" />
+                <span>JOIN PRIVATE ATELIER CLUB</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <input
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="Enter your email address..."
+                  required
+                  className="flex-1 px-3 py-2 bg-neutral-950 border border-neutral-700 rounded-lg text-xs text-white placeholder-neutral-500 focus:outline-none focus:border-white font-mono"
+                />
+                <button
+                  type="submit"
+                  className="px-4 py-2 bg-[#e83d34] text-white rounded-lg text-xs font-mono font-bold hover:bg-white hover:text-black transition-colors flex items-center gap-1 flex-shrink-0 cursor-pointer"
+                >
+                  <span>JOIN</span>
+                  <ArrowRight className="w-3 h-3" />
+                </button>
+              </div>
+            </form>
+          )}
+        </div>
+
+        {/* ========================================================================= */}
+        {/* 5. FINE BOTTOM COPYRIGHT & UTILITIES */}
         {/* ========================================================================= */}
         <div className="pt-2 flex flex-col sm:flex-row items-center justify-between text-[11px] font-mono text-neutral-500 gap-4">
           
           <div className="flex items-center gap-2">
             <Globe className="w-3.5 h-3.5 text-neutral-400" />
-            <span>&copy; 2026 ZUDIO. ALL RIGHTS RESERVED.</span>
+            <span>&copy; 2026 ZUDIO ATELIER. ALL RIGHTS RESERVED.</span>
           </div>
 
           <div className="flex items-center gap-6 sm:gap-8 flex-wrap justify-center">

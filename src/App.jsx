@@ -5,7 +5,7 @@ import MarqueeBanner from './components/MarqueeBanner';
 import FeaturedCollections from './components/FeaturedCollections';
 import ChooseYourFighter from './components/ChooseYourFighter';
 import CommunitySection from './components/CommunitySection';
-import NewsletterArch from './components/NewsletterArch';
+import ContactFaqSection from './components/ContactFaqSection';
 import ProductsPage from './components/ProductsPage';
 import Footer from './components/Footer';
 import CartDrawer from './components/CartDrawer';
@@ -199,8 +199,8 @@ export default function App() {
             {/* 7. ZUDIO Community + Marquee Ticker 2 */}
             <CommunitySection />
 
-            {/* 8. Step Into Your Power Newsletter Archway */}
-            <NewsletterArch />
+            {/* 8. Editorial Magazine Contact & FAQ Section (Juun.J / Atelier inspired) */}
+            <ContactFaqSection onAddToCart={handleAddToCart} />
           </>
         )}
       </main>

@@ -8,6 +8,7 @@ import {
   Check
 } from 'lucide-react';
 import ShopLookModal from './ShopLookModal';
+import LiquidCarveButton from './originkit/ui/liquid-carve-button-base';
 
 export default function FeaturedCollections({ onAddToCart, onSelectCollection }) {
   const [hoveredIdx, setHoveredIdx] = useState(null);
@@ -82,8 +83,8 @@ export default function FeaturedCollections({ onAddToCart, onSelectCollection })
       objectPos: '50% 10%',
       tag: 'MEN • RUNWAY',
       items: [
-        { id: 'item-s5-1', name: 'Noir Zip Textured Knit Polo', price: 68, category: 'Polos', size: 'L' },
-        { id: 'item-s5-2', name: 'Pleated Suiting Trouser', price: 78, category: 'Pants', size: '32' }
+        { id: 'item-s4-1', name: 'Noir Zip Textured Knit Polo', price: 68, category: 'Polos', size: 'L' },
+        { id: 'item-s4-2', name: 'Pleated Suiting Trouser', price: 78, category: 'Pants', size: '32' }
       ]
     },
     {
@@ -138,10 +139,13 @@ export default function FeaturedCollections({ onAddToCart, onSelectCollection })
         {/* TOP TITLE: "MODERN ROOM" (DIRECT FROM REFERENCE IMAGE) */}
         {/* ========================================================================= */}
         <div className="text-center mb-12 sm:mb-16">
-          <h2 className="font-sans font-black text-4xl sm:text-6xl md:text-7xl lg:text-[80px] tracking-[0.14em] text-[#1c1a20] uppercase leading-none">
+          <h2 className="font-bebas text-5xl sm:text-7xl md:text-8xl lg:text-[92px] tracking-[0.18em] text-[#121214] uppercase leading-none font-black drop-shadow-xs">
             MODERN ROOM
           </h2>
-          <div className="w-16 h-1 bg-neutral-900 mx-auto mt-4 rounded-full opacity-20" />
+          <p className="font-mono text-xs uppercase tracking-[0.25em] text-neutral-500 mt-2">
+            CURATED ATELIER ARCHIVE &bull; SS26 SHOWROOM
+          </p>
+          <div className="w-16 h-1 bg-neutral-900 mx-auto mt-3 rounded-full opacity-30" />
         </div>
 
         {/* ========================================================================= */}
@@ -195,7 +199,7 @@ export default function FeaturedCollections({ onAddToCart, onSelectCollection })
                       />
 
                       {/* Subtle Vignette / Gradient Overlay */}
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/15 to-transparent opacity-60 group-hover:opacity-90 transition-opacity" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent opacity-60 group-hover:opacity-95 transition-opacity" />
 
                       {/* Hover Info Capsule */}
                       <div 
@@ -203,25 +207,26 @@ export default function FeaturedCollections({ onAddToCart, onSelectCollection })
                       >
                         {/* Top Tag */}
                         <div className="flex justify-start">
-                          <span className="px-2.5 py-1 rounded-full bg-white/95 backdrop-blur-md text-neutral-950 font-mono text-[9px] font-bold uppercase tracking-wider shadow-sm">
+                          <span className="px-2.5 py-1 rounded-full bg-white/95 backdrop-blur-md text-neutral-950 font-syne text-[9px] font-extrabold uppercase tracking-wider shadow-sm">
                             {slice.tag}
                           </span>
                         </div>
 
                         {/* Bottom Title & Price */}
-                        <div className="space-y-1 text-white text-left">
-                          <p className="text-[10px] font-mono uppercase tracking-widest text-amber-300 font-semibold">
+                        <div className="space-y-1.5 text-white text-left">
+                          <p className="text-[10px] font-mono uppercase tracking-widest text-[#fbbf24] font-semibold">
                             {slice.category}
                           </p>
-                          <h4 className="font-sans font-bold text-sm sm:text-base leading-tight drop-shadow-md">
+                          <h4 className="font-bebas text-lg sm:text-xl tracking-wider leading-tight drop-shadow-md uppercase text-white font-bold">
                             {slice.title}
                           </h4>
-                          <div className="flex items-center justify-between pt-1">
+                          
+                          <div className="pt-1 flex items-center justify-between">
                             <span className="text-xs font-mono font-bold text-white/95">
                               ${slice.price}.00
                             </span>
-                            <span className="inline-flex items-center gap-1 text-[10px] font-bold text-neutral-900 bg-white px-2 py-0.5 rounded-full shadow-xs">
-                              <span>Shop</span>
+                            <span className="inline-flex items-center gap-1 text-[10px] font-mono font-bold text-neutral-950 bg-amber-400 hover:bg-amber-300 px-2.5 py-1 rounded-full shadow-xs transition-colors">
+                              <span>VIEW LOOK</span>
                               <ArrowUpRight className="w-2.5 h-2.5" />
                             </span>
                           </div>
@@ -250,21 +255,41 @@ export default function FeaturedCollections({ onAddToCart, onSelectCollection })
         </div>
 
         {/* ========================================================================= */}
-        {/* BOTTOM HEADLINE (DIRECT FROM REFERENCE IMAGE) */}
+        {/* BOTTOM HEADLINE & INTERACTIVE LIQUID CURSOR BUTTON */}
         {/* ========================================================================= */}
         <div className="mt-14 sm:mt-20 max-w-4xl mx-auto text-center px-4">
           <p className="font-sans font-black text-xs sm:text-sm md:text-base lg:text-[17px] tracking-[0.06em] text-[#1c1a20] uppercase leading-relaxed sm:leading-snug">
-            SAVE TIME AND MONEY WHILE SATISFYING ALL YOUR FASHION, CLOTHING AND ACCESSORY NEEDS BY VISITING THESE BEST SHOWROOM
+            SAVE TIME AND MONEY WHILE SATISFYING ALL YOUR FASHION, CLOTHING AND ACCESSORY NEEDS BY EXPLORING OUR MEN, WOMEN &amp; COUPLE PRODUCTS
           </p>
 
-          <div className="mt-6 flex items-center justify-center gap-4">
-            <a
-              href="#products"
-              className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-neutral-950 hover:bg-neutral-800 text-white font-mono text-xs font-bold tracking-wider uppercase transition-all hover:scale-105 shadow-md cursor-pointer"
-            >
-              <span>Explore All Showrooms</span>
-              <ArrowUpRight className="w-3.5 h-3.5" />
-            </a>
+          {/* Liquid Cursor Interactive Button */}
+          <div className="mt-8 flex items-center justify-center filter drop-shadow-[0_10px_25px_rgba(0,0,0,0.25)]">
+            <LiquidCarveButton
+              label="EXPLORE MEN, WOMEN & COUPLE PRODUCTS  ↗"
+              colors={{
+                fill: "#101012",
+                textColor: "#FFFFFF"
+              }}
+              blob={{
+                color: "#f59e0b",
+                size: 72,
+                smoothness: 55
+              }}
+              font={{
+                fontFamily: '"Space Mono", monospace',
+                fontWeight: 700,
+                fontSize: 12,
+                lineHeight: "1.2em",
+                letterSpacing: "0.18em",
+                textAlign: "center"
+              }}
+              padding="16px 36px"
+              rounded={9999}
+              onClick={() => {
+                const el = document.getElementById('products');
+                if (el) el.scrollIntoView({ behavior: 'smooth' });
+              }}
+            />
           </div>
         </div>
 
