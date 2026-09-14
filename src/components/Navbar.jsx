@@ -37,7 +37,7 @@ export default function Navbar({
     {
       id: 'Shirts',
       name: 'Shirt',
-      desc: 'Linen, Oxford & Rib-Knit Polos',
+      desc: 'Linen, Oxford & Polos',
       badge: 'Atelier',
       icon: (
         <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -48,7 +48,7 @@ export default function Navbar({
     {
       id: 'Pants',
       name: 'Pant',
-      desc: 'Pleated Trousers & Italian Chinos',
+      desc: 'Pleated Trousers & Chinos',
       badge: 'Tailored',
       icon: (
         <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -59,7 +59,7 @@ export default function Navbar({
     {
       id: 'T-Shirts',
       name: 'T-Shirt',
-      desc: 'Graphic Series & Heavyweight Tees',
+      desc: 'Graphic & Boxy Tees',
       badge: 'Essential',
       icon: (
         <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -72,7 +72,7 @@ export default function Navbar({
     {
       id: 'Combos',
       name: 'Combo',
-      desc: 'Curated Head-to-Toe Look Sets',
+      desc: 'Curated Look Sets',
       badge: '15% OFF',
       highlight: true,
       icon: (
@@ -85,7 +85,7 @@ export default function Navbar({
     {
       id: 'Shirts',
       name: 'Shirt',
-      desc: 'Linen Blouses, Poplin & Atelier Tops',
+      desc: 'Linen & Poplin Tops',
       badge: 'Couture',
       icon: (
         <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -96,7 +96,7 @@ export default function Navbar({
     {
       id: 'Pants',
       name: 'Pant',
-      desc: 'Wide-Leg Trousers, Pleated & Tailored Chinos',
+      desc: 'Wide Trousers & Chinos',
       badge: 'Tailored',
       icon: (
         <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -107,7 +107,7 @@ export default function Navbar({
     {
       id: 'T-Shirts',
       name: 'T-Shirt',
-      desc: 'Boxy Cropped & Heavyweight Graphic Tees',
+      desc: 'Cropped & Graphic Tees',
       badge: 'Essential',
       icon: (
         <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -120,7 +120,7 @@ export default function Navbar({
     {
       id: 'Combos',
       name: 'Combo',
-      desc: 'Co-ord Sets & Curated Runway Ensembles',
+      desc: 'Curated Co-Ord Sets',
       badge: '15% OFF',
       highlight: true,
       icon: (
@@ -279,73 +279,73 @@ export default function Navbar({
                 <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${menMenuOpen ? 'rotate-180 text-amber-300' : 'text-neutral-500'}`} />
               </button>
 
-              {/* Seamless Luxury Dropdown Menu with Shirt, Pant, T-Shirt, Combo (Matching Reference Theme) */}
+              {/* Seamless Luxury Dropdown Menu with Shirt, Pant, T-Shirt, Combo */}
               {menMenuOpen && (
                 <div 
-                  className="absolute top-full left-0 pt-2 w-84 z-50 animate-in fade-in slide-in-from-top-2 duration-200"
+                  className="absolute top-full left-0 pt-2 w-[310px] z-50 animate-in fade-in slide-in-from-top-2 duration-200"
                   onMouseEnter={handleMenMouseEnter}
                   onMouseLeave={handleMenMouseLeave}
                 >
-                  <div className="rounded-2xl bg-[#121214] border border-neutral-800/90 shadow-[0_25px_60px_rgba(0,0,0,0.7),0_0_30px_rgba(245,158,11,0.12)] p-3.5 backdrop-blur-xl">
+                  <div className="rounded-2xl bg-[#121214] border border-neutral-800/90 shadow-[0_20px_50px_rgba(0,0,0,0.7),0_0_25px_rgba(245,158,11,0.1)] p-3 backdrop-blur-xl">
                     
                     {/* Header: Men's Department & SS26 */}
-                    <div className="flex items-center justify-between pb-3 mb-2 border-b border-neutral-800/80 px-1">
+                    <div className="flex items-center justify-between pb-2 mb-1.5 border-b border-neutral-800/80 px-1">
                       <div className="flex items-center gap-2">
                         <span className="w-2 h-2 rounded-full bg-[#f59e0b] shadow-[0_0_8px_#f59e0b] animate-pulse"></span>
-                        <span className="font-bebas text-sm sm:text-base tracking-[0.22em] text-neutral-200 uppercase font-semibold">
+                        <span className="font-bebas text-sm sm:text-base tracking-[0.2em] text-neutral-200 uppercase font-semibold whitespace-nowrap">
                           MEN&apos;S DEPARTMENT
                         </span>
                       </div>
-                      <span className="font-bebas text-sm tracking-wider text-[#fbbf24] font-bold">
+                      <span className="font-bebas text-xs tracking-wider text-[#fbbf24] font-bold px-1.5 py-0.5 rounded bg-neutral-900 border border-neutral-800">
                         SS26
                       </span>
                     </div>
 
                     {/* Category List */}
-                    <div className="space-y-1.5">
+                    <div className="space-y-1">
                       {MEN_CATEGORIES.map((cat) => {
                         const isActive = currentPage === 'products' && activeGender === 'men' && (activeCategory === cat.id || activeCategory === cat.name);
                         return (
                           <button
                             key={cat.id}
                             onClick={() => handleNav('products', cat.id, 'men')}
-                            className={`w-full group text-left p-2.5 rounded-xl flex items-center justify-between transition-all cursor-pointer ${
+                            className={`w-full group text-left px-2.5 py-1.5 rounded-xl flex items-center justify-between transition-all cursor-pointer ${
                               cat.highlight
-                                ? 'bg-amber-500/10 hover:bg-amber-500/15 border border-amber-500/30 shadow-[0_0_15px_rgba(245,158,11,0.15)] text-white'
+                                ? 'bg-amber-500/10 hover:bg-amber-500/15 border border-amber-500/30 text-white'
                                 : isActive
                                 ? 'bg-neutral-800/90 text-white border border-neutral-700 shadow-inner'
                                 : 'hover:bg-neutral-800/70 text-neutral-200 border border-transparent'
                             }`}
                           >
-                            <div className="flex items-center gap-3">
-                              <div className={`w-9 h-9 rounded-xl flex items-center justify-center transition-all flex-shrink-0 ${
+                            <div className="flex items-center gap-2.5 min-w-0">
+                              <div className={`w-8 h-8 rounded-lg flex items-center justify-center transition-all flex-shrink-0 ${
                                 cat.highlight 
-                                  ? 'bg-amber-500/20 text-[#fbbf24] border border-amber-500/40 shadow-[0_0_10px_rgba(245,158,11,0.25)]' 
+                                  ? 'bg-amber-500/20 text-[#fbbf24] border border-amber-500/40' 
                                   : 'bg-neutral-900 border border-neutral-800 text-neutral-300 group-hover:border-neutral-700 group-hover:text-white'
                               }`}>
                                 {cat.icon}
                               </div>
-                              <div>
+                              <div className="min-w-0">
                                 <div className="flex items-center gap-1.5 leading-none">
-                                  <span className="font-bebas text-base sm:text-lg tracking-wider text-white font-bold">
+                                  <span className="font-bebas text-sm sm:text-base tracking-wider text-white font-bold whitespace-nowrap">
                                     {cat.name}
                                   </span>
                                   {cat.badge && (
-                                    <span className={`text-[9px] font-syne font-bold uppercase tracking-wider px-1.5 py-0.5 rounded ${
+                                    <span className={`text-[8.5px] font-syne font-bold uppercase tracking-wider px-1.5 py-0.5 rounded whitespace-nowrap ${
                                       cat.highlight 
-                                        ? 'bg-[#fbbf24] text-black shadow-xs font-black' 
+                                        ? 'bg-[#fbbf24] text-black font-black' 
                                         : 'bg-neutral-800 text-neutral-400 border border-neutral-700/60'
                                     }`}>
                                       {cat.badge}
                                     </span>
                                   )}
                                 </div>
-                                <div className="text-[11px] text-neutral-400 font-sans font-light tracking-tight pt-1">
+                                <div className="text-[11px] text-neutral-400 font-sans font-light tracking-tight truncate pt-0.5">
                                   {cat.desc}
                                 </div>
                               </div>
                             </div>
-                            <ArrowRight className={`w-3.5 h-3.5 transition-transform group-hover:translate-x-1 flex-shrink-0 ${
+                            <ArrowRight className={`w-3.5 h-3.5 transition-transform group-hover:translate-x-1 flex-shrink-0 ml-2 ${
                               cat.highlight ? 'text-amber-400' : 'text-neutral-500 group-hover:text-white'
                             }`} />
                           </button>
@@ -354,10 +354,10 @@ export default function Navbar({
                     </div>
 
                     {/* Bottom Button */}
-                    <div className="mt-2.5 pt-2 border-t border-neutral-800/80 px-0.5">
+                    <div className="mt-2 pt-1.5 border-t border-neutral-800/80 px-0.5">
                       <button
                         onClick={() => handleNav('products', 'All', 'men')}
-                        className="w-full py-2.5 px-3 rounded-xl bg-neutral-950 hover:bg-[#fbbf24] text-[#fbbf24] hover:text-black font-bebas text-sm sm:text-base font-bold uppercase tracking-[0.2em] text-center flex items-center justify-center gap-2 transition-all duration-200 cursor-pointer border border-neutral-800 hover:border-[#fbbf24] shadow-md group"
+                        className="w-full py-2 px-3 rounded-xl bg-neutral-950 hover:bg-[#fbbf24] text-[#fbbf24] hover:text-black font-bebas text-sm font-bold uppercase tracking-[0.18em] text-center flex items-center justify-center gap-1.5 transition-all duration-200 cursor-pointer border border-neutral-800 hover:border-[#fbbf24] shadow-sm group whitespace-nowrap"
                       >
                         <span>EXPLORE ALL MEN&apos;S</span>
                         <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1 stroke-[2.5]" />
@@ -400,73 +400,73 @@ export default function Navbar({
                 <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${womenMenuOpen ? 'rotate-180 text-amber-300' : 'text-neutral-500'}`} />
               </button>
 
-              {/* Seamless Luxury Dropdown Menu with Shirt, Pant, T-Shirt, Combo (Matching Reference Theme) */}
+              {/* Seamless Luxury Dropdown Menu with Shirt, Pant, T-Shirt, Combo */}
               {womenMenuOpen && (
                 <div 
-                  className="absolute top-full left-0 pt-2 w-84 z-50 animate-in fade-in slide-in-from-top-2 duration-200"
+                  className="absolute top-full left-0 pt-2 w-[310px] z-50 animate-in fade-in slide-in-from-top-2 duration-200"
                   onMouseEnter={handleWomenMouseEnter}
                   onMouseLeave={handleWomenMouseLeave}
                 >
-                  <div className="rounded-2xl bg-[#121214] border border-neutral-800/90 shadow-[0_25px_60px_rgba(0,0,0,0.7),0_0_30px_rgba(245,158,11,0.12)] p-3.5 backdrop-blur-xl">
+                  <div className="rounded-2xl bg-[#121214] border border-neutral-800/90 shadow-[0_20px_50px_rgba(0,0,0,0.7),0_0_25px_rgba(245,158,11,0.1)] p-3 backdrop-blur-xl">
                     
                     {/* Header: Women's Department & SS26 */}
-                    <div className="flex items-center justify-between pb-3 mb-2 border-b border-neutral-800/80 px-1">
+                    <div className="flex items-center justify-between pb-2 mb-1.5 border-b border-neutral-800/80 px-1">
                       <div className="flex items-center gap-2">
                         <span className="w-2 h-2 rounded-full bg-[#f59e0b] shadow-[0_0_8px_#f59e0b] animate-pulse"></span>
-                        <span className="font-bebas text-sm sm:text-base tracking-[0.22em] text-neutral-200 uppercase font-semibold">
+                        <span className="font-bebas text-sm sm:text-base tracking-[0.2em] text-neutral-200 uppercase font-semibold whitespace-nowrap">
                           WOMEN&apos;S DEPARTMENT
                         </span>
                       </div>
-                      <span className="font-bebas text-sm tracking-wider text-[#fbbf24] font-bold">
+                      <span className="font-bebas text-xs tracking-wider text-[#fbbf24] font-bold px-1.5 py-0.5 rounded bg-neutral-900 border border-neutral-800">
                         SS26
                       </span>
                     </div>
 
                     {/* Category List */}
-                    <div className="space-y-1.5">
+                    <div className="space-y-1">
                       {WOMEN_CATEGORIES.map((cat) => {
                         const isActive = currentPage === 'products' && activeGender === 'women' && (activeCategory === cat.id || activeCategory === cat.name);
                         return (
                           <button
                             key={cat.id}
                             onClick={() => handleNav('products', cat.id, 'women')}
-                            className={`w-full group text-left p-2.5 rounded-xl flex items-center justify-between transition-all cursor-pointer ${
+                            className={`w-full group text-left px-2.5 py-1.5 rounded-xl flex items-center justify-between transition-all cursor-pointer ${
                               cat.highlight
-                                ? 'bg-amber-500/10 hover:bg-amber-500/15 border border-amber-500/30 shadow-[0_0_15px_rgba(245,158,11,0.15)] text-white'
+                                ? 'bg-amber-500/10 hover:bg-amber-500/15 border border-amber-500/30 text-white'
                                 : isActive
                                 ? 'bg-neutral-800/90 text-white border border-neutral-700 shadow-inner'
                                 : 'hover:bg-neutral-800/70 text-neutral-200 border border-transparent'
                             }`}
                           >
-                            <div className="flex items-center gap-3">
-                              <div className={`w-9 h-9 rounded-xl flex items-center justify-center transition-all flex-shrink-0 ${
+                            <div className="flex items-center gap-2.5 min-w-0">
+                              <div className={`w-8 h-8 rounded-lg flex items-center justify-center transition-all flex-shrink-0 ${
                                 cat.highlight 
-                                  ? 'bg-amber-500/20 text-[#fbbf24] border border-amber-500/40 shadow-[0_0_10px_rgba(245,158,11,0.25)]' 
+                                  ? 'bg-amber-500/20 text-[#fbbf24] border border-amber-500/40' 
                                   : 'bg-neutral-900 border border-neutral-800 text-neutral-300 group-hover:border-neutral-700 group-hover:text-white'
                               }`}>
                                 {cat.icon}
                               </div>
-                              <div>
+                              <div className="min-w-0">
                                 <div className="flex items-center gap-1.5 leading-none">
-                                  <span className="font-bebas text-base sm:text-lg tracking-wider text-white font-bold">
+                                  <span className="font-bebas text-sm sm:text-base tracking-wider text-white font-bold whitespace-nowrap">
                                     {cat.name}
                                   </span>
                                   {cat.badge && (
-                                    <span className={`text-[9px] font-syne font-bold uppercase tracking-wider px-1.5 py-0.5 rounded ${
+                                    <span className={`text-[8.5px] font-syne font-bold uppercase tracking-wider px-1.5 py-0.5 rounded whitespace-nowrap ${
                                       cat.highlight 
-                                        ? 'bg-[#fbbf24] text-black shadow-xs font-black' 
+                                        ? 'bg-[#fbbf24] text-black font-black' 
                                         : 'bg-neutral-800 text-neutral-400 border border-neutral-700/60'
                                     }`}>
                                       {cat.badge}
                                     </span>
                                   )}
                                 </div>
-                                <div className="text-[11px] text-neutral-400 font-sans font-light tracking-tight pt-1">
+                                <div className="text-[11px] text-neutral-400 font-sans font-light tracking-tight truncate pt-0.5">
                                   {cat.desc}
                                 </div>
                               </div>
                             </div>
-                            <ArrowRight className={`w-3.5 h-3.5 transition-transform group-hover:translate-x-1 flex-shrink-0 ${
+                            <ArrowRight className={`w-3.5 h-3.5 transition-transform group-hover:translate-x-1 flex-shrink-0 ml-2 ${
                               cat.highlight ? 'text-amber-400' : 'text-neutral-500 group-hover:text-white'
                             }`} />
                           </button>
@@ -475,10 +475,10 @@ export default function Navbar({
                     </div>
 
                     {/* Bottom Button */}
-                    <div className="mt-2.5 pt-2 border-t border-neutral-800/80 px-0.5">
+                    <div className="mt-2 pt-1.5 border-t border-neutral-800/80 px-0.5">
                       <button
                         onClick={() => handleNav('products', 'All', 'women')}
-                        className="w-full py-2.5 px-3 rounded-xl bg-neutral-950 hover:bg-[#fbbf24] text-[#fbbf24] hover:text-black font-bebas text-sm sm:text-base font-bold uppercase tracking-[0.2em] text-center flex items-center justify-center gap-2 transition-all duration-200 cursor-pointer border border-neutral-800 hover:border-[#fbbf24] shadow-md group"
+                        className="w-full py-2 px-3 rounded-xl bg-neutral-950 hover:bg-[#fbbf24] text-[#fbbf24] hover:text-black font-bebas text-sm font-bold uppercase tracking-[0.18em] text-center flex items-center justify-center gap-1.5 transition-all duration-200 cursor-pointer border border-neutral-800 hover:border-[#fbbf24] shadow-sm group whitespace-nowrap"
                       >
                         <span>EXPLORE ALL WOMEN&apos;S</span>
                         <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1 stroke-[2.5]" />
